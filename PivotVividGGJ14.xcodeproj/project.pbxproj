@@ -12,6 +12,7 @@
 		627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BBB18938DAA00409C84 /* CCActionFollowGGJ.m */; };
 		627C5BC01893972600409C84 /* Mood.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BBF1893972600409C84 /* Mood.m */; };
 		627C5BC318939D5300409C84 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BC218939D5300409C84 /* Hero.m */; };
+		627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BC51893B82D00409C84 /* BasicEnemy.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
 		B71F5913188484E7003F4D28 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
@@ -70,6 +71,8 @@
 		627C5BBF1893972600409C84 /* Mood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mood.m; sourceTree = "<group>"; };
 		627C5BC118939D5300409C84 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = Source/Hero.h; sourceTree = "<group>"; };
 		627C5BC218939D5300409C84 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hero.m; path = Source/Hero.m; sourceTree = "<group>"; };
+		627C5BC41893B82D00409C84 /* BasicEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicEnemy.h; path = Source/BasicEnemy.h; sourceTree = "<group>"; };
+		627C5BC51893B82D00409C84 /* BasicEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicEnemy.m; path = Source/BasicEnemy.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				627C5BB81893873100409C84 /* GroundBlock.m */,
 				627C5BC118939D5300409C84 /* Hero.h */,
 				627C5BC218939D5300409C84 /* Hero.m */,
+				627C5BC41893B82D00409C84 /* BasicEnemy.h */,
+				627C5BC51893B82D00409C84 /* BasicEnemy.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				627C5BC01893972600409C84 /* Mood.m in Sources */,
 				627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */,
+				627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */,
 				627C5BB51893750300409C84 /* Gameplay.m in Sources */,
 				627C5BB91893873100409C84 /* GroundBlock.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
