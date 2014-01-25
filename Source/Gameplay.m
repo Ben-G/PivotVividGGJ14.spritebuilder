@@ -178,7 +178,10 @@ static const int INITIAL_MASKS = 2;
     
     // remove one mask
     Mask *firstMask = _masks[0];
-    [firstMask removeFromParent];
+    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
+    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
+    [firstMask runAction:bounceOut];
+//    [firstMask removeFromParent];
     [_masks removeObject:firstMask];
     
     _currentMoodIndex += 1;
