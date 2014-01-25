@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "208"
             endingLineNumber = "208"
-            landmarkName = "-ccPhysicsCollisionPostSolve:hero:mask:"
+            landmarkName = "-switchMood"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "215"
             endingLineNumber = "215"
-            landmarkName = "-ccPhysicsCollisionPostSolve:hero:enemy:"
+            landmarkName = "-switchMood"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,8 +57,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "194"
             endingLineNumber = "194"
-            landmarkName = "@implementation Gameplay"
-            landmarkType = "3">
+            landmarkName = "-touchEnded:withEvent:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -73,7 +73,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "203"
             endingLineNumber = "203"
-            landmarkName = "-ccPhysicsCollisionPostSolve:hero:ground:"
+            landmarkName = "-switchMood"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
