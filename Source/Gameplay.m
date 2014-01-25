@@ -38,8 +38,9 @@
     
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
+    _physicsNode.debugDraw = TRUE;
     
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(100, 0)];
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(200, 0)];
     CCActionRepeatForever *repeatMovement = [CCActionRepeatForever actionWithAction:moveBy];
     [_hero runAction:repeatMovement];
     
@@ -66,6 +67,7 @@
     calm.moodPrefix = @"calm";
     
     _moods = @[happy, angry, calm];
+    [self switchMood];
 }
 
 #pragma mark - Update
@@ -73,6 +75,14 @@
 - (void)update:(CCTime)delta {
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
+    if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
+        [self endGame];
+    }
+}
+
+- (void)endGame {
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -106,11 +116,8 @@
     
     Mood *newMood = _moods[_currentMoodIndex];
     
-    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", newMood.moodPrefix];
-    CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
-
     for (GroundBlock *block in _blocks) {
-        [block setSpriteFrame:spriteFrame];
+        [block applyMood:newMood];
     }
 }
 
@@ -129,6 +136,8 @@
 #pragma mark - Collision Handling
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
+    CCLOG(@"x:%f y:%f", pair.totalImpulse.x, pair.totalImpulse.y);
+
     if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
         _onGround = TRUE;
     }

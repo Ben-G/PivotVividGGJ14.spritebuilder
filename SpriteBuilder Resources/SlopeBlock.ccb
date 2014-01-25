@@ -25,7 +25,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>GroundBlock</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -49,24 +49,24 @@
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>0.30000001192092896</real>
+			<real>1</real>
 			<key>points</key>
 			<array>
 				<array>
+					<real>-0.003936767578125</real>
+					<real>17.9140625</real>
+				</array>
+				<array>
 					<real>0.0</real>
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>150</real>
-				</array>
-				<array>
-					<real>150</real>
-					<real>150</real>
-				</array>
-				<array>
 					<real>150</real>
 					<real>0.0</real>
+				</array>
+				<array>
+					<real>149.99993896484375</real>
+					<real>138.82421875</real>
 				</array>
 			</array>
 		</dict>
