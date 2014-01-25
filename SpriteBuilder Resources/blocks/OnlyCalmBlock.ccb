@@ -36,7 +36,7 @@
 				<key>type</key>
 				<integer>3</integer>
 				<key>value</key>
-				<string>angry</string>
+				<string>calm</string>
 			</dict>
 		</array>
 		<key>displayName</key>
@@ -70,16 +70,16 @@
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>73.761688232421875</real>
-					<real>1.50390625</real>
+					<real>0.0</real>
+					<real>75</real>
 				</array>
 				<array>
-					<real>73.761688232421875</real>
-					<real>74.50390625</real>
+					<real>75</real>
+					<real>75</real>
 				</array>
 				<array>
-					<real>1.585906982421875</real>
-					<real>74.546875</real>
+					<real>75</real>
+					<real>0.0</real>
 				</array>
 			</array>
 		</dict>
@@ -114,8 +114,8 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.5</real>
-					<real>0.5</real>
+					<real>0.4749477207660675</real>
+					<real>0.49854165315628052</real>
 				</array>
 			</dict>
 			<dict>
@@ -139,7 +139,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/angry_block.png</string>
+					<string>art/calm_block.png</string>
 				</array>
 			</dict>
 			<dict>

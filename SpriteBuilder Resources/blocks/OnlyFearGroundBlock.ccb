@@ -25,18 +25,18 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>BasicEnemy</string>
+		<string>GroundBlock</string>
 		<key>customProperties</key>
 		<array>
 			<dict>
 				<key>name</key>
-				<string>moodToKill</string>
+				<string>onlyVisibleInMood</string>
 				<key>optimized</key>
 				<false/>
 				<key>type</key>
 				<integer>3</integer>
 				<key>value</key>
-				<string>angry</string>
+				<string>fear</string>
 			</dict>
 		</array>
 		<key>displayName</key>
@@ -52,13 +52,13 @@
 			<key>allowsRotation</key>
 			<true/>
 			<key>bodyShape</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>cornerRadius</key>
-			<real>9.4880952835083008</real>
+			<real>0.0</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
-			<true/>
+			<false/>
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
@@ -66,8 +66,20 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>15</real>
-					<real>15</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<array>
+					<real>0.0</real>
+					<real>75</real>
+				</array>
+				<array>
+					<real>75</real>
+					<real>75</real>
+				</array>
+				<array>
+					<real>75</real>
+					<real>0.0</real>
 				</array>
 			</array>
 		</dict>
@@ -127,7 +139,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/space-invaders.png</string>
+					<string>art/fear_block.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -144,6 +156,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
