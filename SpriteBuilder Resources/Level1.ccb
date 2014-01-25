@@ -54,8 +54,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>36</real>
-							<real>41.25</real>
+							<real>37</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -114,8 +114,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>108.66666412353516</real>
-							<real>41.25</real>
+							<real>109.66666412353516</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -174,8 +174,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>181.33332824707031</real>
-							<real>41.25</real>
+							<real>182.33332824707031</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -234,8 +234,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>254</real>
-							<real>40.25</real>
+							<real>255</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -295,7 +295,7 @@
 						<key>value</key>
 						<array>
 							<real>400</real>
-							<real>40.25</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -355,7 +355,7 @@
 						<key>value</key>
 						<array>
 							<real>472</real>
-							<real>40.25</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -391,6 +391,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>angry</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>CCBFile</string>
 				<key>memberVarAssignmentName</key>
@@ -414,8 +427,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>546</real>
-							<real>36.875</real>
+							<real>547</real>
+							<real>38.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -440,7 +453,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>GroundBlock.ccb</string>
+						<string>blocks/OnlyAngryGroundBlock.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -474,8 +487,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>326.99993896484375</real>
-							<real>40.25</real>
+							<real>327.99993896484375</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -608,7 +621,7 @@
 						<key>value</key>
 						<array>
 							<real>620</real>
-							<real>37.875</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -668,7 +681,7 @@
 						<key>value</key>
 						<array>
 							<real>692</real>
-							<real>40.25</real>
+							<real>37.974998474121094</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1244,6 +1257,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>angry</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>CCBFile</string>
 				<key>memberVarAssignmentName</key>
@@ -1293,7 +1319,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>GroundBlock.ccb</string>
+						<string>blocks/OnlyAngryGroundBlock.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -1304,6 +1330,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>happy</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>CCBFile</string>
 				<key>memberVarAssignmentName</key>
@@ -1327,8 +1366,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1487</real>
-							<real>37.875</real>
+							<real>1523</real>
+							<real>98.875</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1353,7 +1392,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>GroundBlock.ccb</string>
+						<string>blocks/OnlyHappyGroundBlock.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -1364,6 +1403,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>happy</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>CCBFile</string>
 				<key>memberVarAssignmentName</key>
@@ -1387,8 +1439,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1561</real>
-							<real>38.875</real>
+							<real>1640</real>
+							<real>143.875</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1413,7 +1465,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>GroundBlock.ccb</string>
+						<string>blocks/OnlyHappyGroundBlock.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -1424,6 +1476,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>happy</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>CCBFile</string>
 				<key>memberVarAssignmentName</key>
@@ -1447,8 +1512,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1635</real>
-							<real>40.875</real>
+							<real>1759</real>
+							<real>158.875</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1473,247 +1538,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>GroundBlock.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>CCBFile</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>1708</real>
-							<real>40.875</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>GroundBlock.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>CCBFile</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>1780</real>
-							<real>37.875</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>GroundBlock.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>CCBFile</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>1850</real>
-							<real>39.875</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>GroundBlock.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>CCBFile</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>1923</real>
-							<real>37.875</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>GroundBlock.ccb</string>
+						<string>blocks/OnlyHappyGroundBlock.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -4834,6 +4659,152 @@
 						<string>CCBFile</string>
 						<key>value</key>
 						<string>GroundBlock.ccb</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>baseClass</key>
+				<string>CCBFile</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>moodToKill</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>calm</string>
+					</dict>
+				</array>
+				<key>displayName</key>
+				<string>CCBFile</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>0</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>679</real>
+							<real>88</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ccbFile</string>
+						<key>type</key>
+						<string>CCBFile</string>
+						<key>value</key>
+						<string>Enemy.ccb</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>baseClass</key>
+				<string>CCBFile</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>moodToKill</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>calm</string>
+					</dict>
+				</array>
+				<key>displayName</key>
+				<string>CCBFile</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>0</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>1040</real>
+							<real>89</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ccbFile</string>
+						<key>type</key>
+						<string>CCBFile</string>
+						<key>value</key>
+						<string>Enemy.ccb</string>
 					</dict>
 				</array>
 			</dict>

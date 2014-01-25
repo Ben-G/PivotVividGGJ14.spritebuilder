@@ -185,10 +185,10 @@
     }
 }
 
-- (void)dash {
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:.5f position:ccp(25, 0)];
-    [_hero runAction:moveBy];
-}
+//- (void)dash {
+//    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:.5f position:ccp(25, 0)];
+//    [_hero runAction:moveBy];
+//}
 
 #pragma mark - Collision Handling
 
