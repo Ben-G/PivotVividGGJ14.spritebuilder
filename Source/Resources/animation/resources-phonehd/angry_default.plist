@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>angry0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{9, 102}, {254, 162}}</string>
+			<key>spriteOffset</key>
+			<string>{-23, -2}</string>
+			<key>spriteSize</key>
+			<string>{254, 162}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 158}, {254, 162}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{10, 110}, {256, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{-21, -7}</string>
+			<key>spriteSize</key>
+			<string>{256, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {256, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{15, 113}, {252, 158}}</string>
+			<key>spriteOffset</key>
+			<string>{-18, -11}</string>
+			<key>spriteSize</key>
+			<string>{252, 158}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{256, 226}, {252, 158}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{26, 116}, {246, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, -12}</string>
+			<key>spriteSize</key>
+			<string>{246, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 482}, {246, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{23, 112}, {252, 158}}</string>
+			<key>spriteOffset</key>
+			<string>{-10, -10}</string>
+			<key>spriteSize</key>
+			<string>{252, 158}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 322}, {252, 158}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{25, 83}, {228, 182}}</string>
+			<key>spriteOffset</key>
+			<string>{-20, 7}</string>
+			<key>spriteSize</key>
+			<string>{228, 182}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{242, 842}, {228, 182}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{28, 55}, {202, 212}}</string>
+			<key>spriteOffset</key>
+			<string>{-30, 20}</string>
+			<key>spriteSize</key>
+			<string>{202, 212}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{708, 234}, {202, 212}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{31, 35}, {202, 230}}</string>
+			<key>spriteOffset</key>
+			<string>{-27, 31}</string>
+			<key>spriteSize</key>
+			<string>{202, 230}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{462, 548}, {202, 230}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{31, 21}, {206, 240}}</string>
+			<key>spriteOffset</key>
+			<string>{-25, 40}</string>
+			<key>spriteSize</key>
+			<string>{206, 240}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{254, 386}, {206, 240}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{26, 19}, {216, 232}}</string>
+			<key>spriteOffset</key>
+			<string>{-25, 46}</string>
+			<key>spriteSize</key>
+			<string>{216, 232}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{704, 0}, {216, 232}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{25, 16}, {220, 224}}</string>
+			<key>spriteOffset</key>
+			<string>{-24, 53}</string>
+			<key>spriteSize</key>
+			<string>{220, 224}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{258, 0}, {220, 224}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{26, 14}, {222, 218}}</string>
+			<key>spriteOffset</key>
+			<string>{-22, 58}</string>
+			<key>spriteSize</key>
+			<string>{222, 218}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{480, 0}, {222, 218}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{31, 13}, {220, 210}}</string>
+			<key>spriteOffset</key>
+			<string>{-18, 63}</string>
+			<key>spriteSize</key>
+			<string>{220, 210}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{666, 742}, {220, 210}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{39, 12}, {216, 202}}</string>
+			<key>spriteOffset</key>
+			<string>{-12, 68}</string>
+			<key>spriteSize</key>
+			<string>{216, 202}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{244, 638}, {216, 202}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{23, 31}, {232, 192}}</string>
+			<key>spriteOffset</key>
+			<string>{-20, 54}</string>
+			<key>spriteSize</key>
+			<string>{232, 192}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{666, 548}, {232, 192}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0016.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{14, 51}, {240, 182}}</string>
+			<key>spriteOffset</key>
+			<string>{-25, 39}</string>
+			<key>spriteSize</key>
+			<string>{240, 182}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 812}, {240, 182}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0017.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{12, 72}, {242, 172}}</string>
+			<key>spriteOffset</key>
+			<string>{-26, 23}</string>
+			<key>spriteSize</key>
+			<string>{242, 172}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 638}, {242, 172}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>angry0018.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{14, 93}, {244, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-23, 8}</string>
+			<key>spriteSize</key>
+			<string>{244, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{318, 362}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{462, 386}, {244, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.6.0</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+		<key>name</key>
+		<string>angry</string>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>angry_default</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>angry_default</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

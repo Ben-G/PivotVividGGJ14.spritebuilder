@@ -7,8 +7,9 @@
 //
 
 #import "CCNode.h"
+#import "CCAnimatedSprite.h"
 
-@interface Hero : CCSprite
+@interface Hero : CCAnimatedSprite
 
 @property (nonatomic, assign) CGPoint previousPosition;
 @property (nonatomic, assign) float speed;

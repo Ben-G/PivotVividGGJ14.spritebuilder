@@ -82,7 +82,7 @@ static const float BASE_SPEED = 200.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level1"];
+    _level = [CCBReader load:@"Level10"];
     
     levelGoal = _level.contentSize.width - 300;
     
@@ -94,7 +94,7 @@ static const float BASE_SPEED = 200.f;
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
-//    _physicsNode.debugDraw = TRUE;
+    _physicsNode.debugDraw = TRUE;
     
     // setup a camera to follow the hero
 //    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
@@ -132,13 +132,13 @@ static const float BASE_SPEED = 200.f;
     
 
     // preload audio
-    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
-    audio.preloadCacheEnabled = TRUE;
-    
-    for (Mood *mood in _moods) {
-        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
-        [audio preloadEffect:filename];
-    }
+//    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+//    audio.preloadCacheEnabled = TRUE;
+//    
+//    for (Mood *mood in _moods) {
+//        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
+//        [audio preloadEffect:filename];
+//    }
     
     // initialize mood & maksk
     [self switchMood];
@@ -256,8 +256,8 @@ static const float BASE_SPEED = 200.f;
     // play new song for this mood
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
-    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
-    [audio playEffect:filename loop:TRUE];
+//    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+//    [audio playEffect:filename loop:TRUE];
     
     
     // apply new mood to all blocks

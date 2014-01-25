@@ -7,8 +7,13 @@
 //
 
 #import "MainScene.h"
+#import "CCAnimatedSprite.h"
 
 @implementation MainScene
+
+- (void)didLoadFromCCB {
+
+}
 
 - (void)startButtonPressed {
     CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];

@@ -37,11 +37,11 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<false/>
+			<true/>
 			<key>bodyShape</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>cornerRadius</key>
-			<real>0.0</real>
+			<real>55.500030517578125</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -49,32 +49,12 @@
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>1</real>
+			<real>0.30000001192092896</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>1.83984375</real>
-					<real>41.828125</real>
-				</array>
-				<array>
-					<real>2.83984375</real>
-					<real>5.87109375</real>
-				</array>
-				<array>
-					<real>20.83984375</real>
-					<real>-0.12890625</real>
-				</array>
-				<array>
-					<real>39.83984375</real>
-					<real>7.87109375</real>
-				</array>
-				<array>
-					<real>38.83984375</real>
-					<real>41.828125</real>
-				</array>
-				<array>
-					<real>20.83984375</real>
-					<real>51.828125</real>
+					<real>71.890594482421875</real>
+					<real>80.5</real>
 				</array>
 			</array>
 		</dict>
@@ -134,7 +114,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/mario.png</string>
+					<string>art/sad0015.png</string>
 				</array>
 			</dict>
 			<dict>

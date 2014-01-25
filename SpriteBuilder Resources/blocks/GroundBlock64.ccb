@@ -20,12 +20,43 @@
 	<false/>
 	<key>nodeGraph</key>
 	<dict>
+		<key>animatedProperties</key>
+		<dict>
+			<key>0</key>
+			<dict>
+				<key>opacity</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>1</integer>
+							</dict>
+							<key>name</key>
+							<string>opacity</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>10</integer>
+							<key>value</key>
+							<real>1</real>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>opacity</string>
+					<key>type</key>
+					<integer>10</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>baseClass</key>
 		<string>CCSprite</string>
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string></string>
+		<string>GroundBlock64</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -92,6 +123,16 @@
 				</array>
 			</dict>
 			<dict>
+				<key>baseValue</key>
+				<real>1</real>
+				<key>name</key>
+				<string>opacity</string>
+				<key>type</key>
+				<string>Float</string>
+				<key>value</key>
+				<real>1</real>
+			</dict>
+			<dict>
 				<key>name</key>
 				<string>color</string>
 				<key>type</key>
@@ -105,6 +146,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>seqExpanded</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

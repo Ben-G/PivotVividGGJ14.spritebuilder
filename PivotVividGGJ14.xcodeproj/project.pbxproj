@@ -18,6 +18,19 @@
 		627C5BF61893EE5C00409C84 /* fear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 627C5BF21893EE5C00409C84 /* fear.mp3 */; };
 		627C5BF71893EE5C00409C84 /* happy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 627C5BF31893EE5C00409C84 /* happy.mp3 */; };
 		627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BFA1893FC3800409C84 /* LevelBatchNode.m */; };
+		627C5C071894676000409C84 /* GroundBlockEight.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5C061894676000409C84 /* GroundBlockEight.m */; };
+		627C5C0B1894677D00409C84 /* GroundBlock64.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5C0A1894677D00409C84 /* GroundBlock64.m */; };
+		627C5C1918946BDF00409C84 /* angry_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C0F18946BDF00409C84 /* angry_default.plist */; };
+		627C5C1A18946BDF00409C84 /* angry_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1018946BDF00409C84 /* angry_default.png */; };
+		627C5C1B18946BDF00409C84 /* happy_default-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1118946BDF00409C84 /* happy_default-hd.plist */; };
+		627C5C1C18946BDF00409C84 /* happy_default-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1218946BDF00409C84 /* happy_default-hd.png */; };
+		627C5C1D18946BDF00409C84 /* kaput_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1318946BDF00409C84 /* kaput_default.plist */; };
+		627C5C1E18946BDF00409C84 /* kaput_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1418946BDF00409C84 /* kaput_default.png */; };
+		627C5C1F18946BDF00409C84 /* sad_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1518946BDF00409C84 /* sad_default.plist */; };
+		627C5C2018946BDF00409C84 /* sad_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1618946BDF00409C84 /* sad_default.png */; };
+		627C5C2118946BDF00409C84 /* scared_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1718946BDF00409C84 /* scared_default.plist */; };
+		627C5C2218946BDF00409C84 /* scared_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1818946BDF00409C84 /* scared_default.png */; };
+		627C5C2518946C1200409C84 /* CCAnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5C2418946C1200409C84 /* CCAnimatedSprite.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -85,6 +98,22 @@
 		627C5BF31893EE5C00409C84 /* happy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happy.mp3; sourceTree = "<group>"; };
 		627C5BF91893FC3800409C84 /* LevelBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelBatchNode.h; path = Source/LevelBatchNode.h; sourceTree = "<group>"; };
 		627C5BFA1893FC3800409C84 /* LevelBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelBatchNode.m; path = Source/LevelBatchNode.m; sourceTree = "<group>"; };
+		627C5C051894676000409C84 /* GroundBlockEight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundBlockEight.h; path = Source/GroundBlockEight.h; sourceTree = "<group>"; };
+		627C5C061894676000409C84 /* GroundBlockEight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroundBlockEight.m; path = Source/GroundBlockEight.m; sourceTree = "<group>"; };
+		627C5C091894677D00409C84 /* GroundBlock64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundBlock64.h; path = Source/GroundBlock64.h; sourceTree = "<group>"; };
+		627C5C0A1894677D00409C84 /* GroundBlock64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroundBlock64.m; path = Source/GroundBlock64.m; sourceTree = "<group>"; };
+		627C5C0F18946BDF00409C84 /* angry_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = angry_default.plist; sourceTree = "<group>"; };
+		627C5C1018946BDF00409C84 /* angry_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry_default.png; sourceTree = "<group>"; };
+		627C5C1118946BDF00409C84 /* happy_default-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "happy_default-hd.plist"; sourceTree = "<group>"; };
+		627C5C1218946BDF00409C84 /* happy_default-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy_default-hd.png"; sourceTree = "<group>"; };
+		627C5C1318946BDF00409C84 /* kaput_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = kaput_default.plist; sourceTree = "<group>"; };
+		627C5C1418946BDF00409C84 /* kaput_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaput_default.png; sourceTree = "<group>"; };
+		627C5C1518946BDF00409C84 /* sad_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sad_default.plist; sourceTree = "<group>"; };
+		627C5C1618946BDF00409C84 /* sad_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad_default.png; sourceTree = "<group>"; };
+		627C5C1718946BDF00409C84 /* scared_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = scared_default.plist; sourceTree = "<group>"; };
+		627C5C1818946BDF00409C84 /* scared_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scared_default.png; sourceTree = "<group>"; };
+		627C5C2318946C1200409C84 /* CCAnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAnimatedSprite.h; path = Source/CCAnimatedSprite.h; sourceTree = "<group>"; };
+		627C5C2418946C1200409C84 /* CCAnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCAnimatedSprite.m; path = Source/CCAnimatedSprite.m; sourceTree = "<group>"; };
 		ACAF7F09189421BB0021FC4C /* Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mask.h; sourceTree = "<group>"; };
 		ACAF7F0A189421BB0021FC4C /* Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mask.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
@@ -164,6 +193,39 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		627C5C0C18946BDF00409C84 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				627C5C0D18946BDF00409C84 /* resources-phone */,
+				627C5C0E18946BDF00409C84 /* resources-phonehd */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		627C5C0D18946BDF00409C84 /* resources-phone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "resources-phone";
+			sourceTree = "<group>";
+		};
+		627C5C0E18946BDF00409C84 /* resources-phonehd */ = {
+			isa = PBXGroup;
+			children = (
+				627C5C0F18946BDF00409C84 /* angry_default.plist */,
+				627C5C1018946BDF00409C84 /* angry_default.png */,
+				627C5C1118946BDF00409C84 /* happy_default-hd.plist */,
+				627C5C1218946BDF00409C84 /* happy_default-hd.png */,
+				627C5C1318946BDF00409C84 /* kaput_default.plist */,
+				627C5C1418946BDF00409C84 /* kaput_default.png */,
+				627C5C1518946BDF00409C84 /* sad_default.plist */,
+				627C5C1618946BDF00409C84 /* sad_default.png */,
+				627C5C1718946BDF00409C84 /* scared_default.plist */,
+				627C5C1818946BDF00409C84 /* scared_default.png */,
+			);
+			path = "resources-phonehd";
+			sourceTree = "<group>";
+		};
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +242,8 @@
 				ACAF7F0A189421BB0021FC4C /* Mask.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
+				627C5C2318946C1200409C84 /* CCAnimatedSprite.h */,
+				627C5C2418946C1200409C84 /* CCAnimatedSprite.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
 				627C5BB31893750300409C84 /* Gameplay.h */,
@@ -194,6 +258,10 @@
 				627C5BC51893B82D00409C84 /* BasicEnemy.m */,
 				627C5BF91893FC3800409C84 /* LevelBatchNode.h */,
 				627C5BFA1893FC3800409C84 /* LevelBatchNode.m */,
+				627C5C051894676000409C84 /* GroundBlockEight.h */,
+				627C5C061894676000409C84 /* GroundBlockEight.m */,
+				627C5C091894677D00409C84 /* GroundBlock64.h */,
+				627C5C0A1894677D00409C84 /* GroundBlock64.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -267,6 +335,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				627C5C0C18946BDF00409C84 /* animation */,
 				627C5BEF1893EE5C00409C84 /* Audio */,
 				B73789911807667A0076A88C /* Icons */,
 				B737893A180761570076A88C /* Published-iOS */,
@@ -363,21 +432,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
+				627C5C2018946BDF00409C84 /* sad_default.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
+				627C5C1918946BDF00409C84 /* angry_default.plist in Resources */,
 				627C5BF61893EE5C00409C84 /* fear.mp3 in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
+				627C5C2118946BDF00409C84 /* scared_default.plist in Resources */,
+				627C5C1B18946BDF00409C84 /* happy_default-hd.plist in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
+				627C5C1E18946BDF00409C84 /* kaput_default.png in Resources */,
 				627C5BF51893EE5C00409C84 /* calm.mp3 in Resources */,
 				627C5BF41893EE5C00409C84 /* angry.mp3 in Resources */,
+				627C5C2218946BDF00409C84 /* scared_default.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
+				627C5C1D18946BDF00409C84 /* kaput_default.plist in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
+				627C5C1C18946BDF00409C84 /* happy_default-hd.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				627C5BF71893EE5C00409C84 /* happy.mp3 in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
+				627C5C1F18946BDF00409C84 /* sad_default.plist in Resources */,
+				627C5C1A18946BDF00409C84 /* angry_default.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
@@ -395,13 +474,16 @@
 				627C5BC01893972600409C84 /* Mood.m in Sources */,
 				627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
+				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
 				627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */,
 				627C5BB51893750300409C84 /* Gameplay.m in Sources */,
 				627C5BB91893873100409C84 /* GroundBlock.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				627C5C0B1894677D00409C84 /* GroundBlock64.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,
 				ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */,
+				627C5C2518946C1200409C84 /* CCAnimatedSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

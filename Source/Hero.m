@@ -8,8 +8,17 @@
 
 #import "Hero.h"
 
-@implementation Hero {
+@implementation Hero
 
+- (id)init {
+    self = [super initWithPlist:@"happy_default.plist"];
+    
+    if (self) {
+        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"happy"];
+        [self runAnimation:@"happy"];
+    }
+    
+    return self;
 }
 
 - (void)didLoadFromCCB {
