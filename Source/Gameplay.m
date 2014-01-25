@@ -12,6 +12,7 @@
 #import "Mood.h"
 #import "BasicEnemy.h"
 #import "Mask.h"
+#import "Hero.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -190,8 +191,11 @@
 }
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero mask:(CCNode *)mask {
+    CGPoint p = CGPointMake(-20, 0);
     Mask *aMask = (Mask*)mask;
     [_masks addObject:aMask];
+    Hero *aHero = (Hero*)hero;
+    aMask.position = ccpAdd(p, aHero.position);
 }
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
@@ -204,9 +208,9 @@
         CGPoint p = CGPointMake(20, 0);
         CGPoint pos = basicEnemy.position;
         [basicEnemy removeFromParentAndCleanup:TRUE];
-        Mask *mask = [[Mask alloc] init];
+        Mask *mask = (Mask*)[CCBReader load:@"Mask"];
         mask.position = ccpAdd(pos, p);
-        [mask addChild:_level];
+        [_level addChild:mask];
     } else {
         [self endGame];
     }

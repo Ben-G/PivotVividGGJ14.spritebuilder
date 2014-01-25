@@ -8,8 +8,6 @@
 		<integer>1</integer>
 	</dict>
 	<key>spriteFrameFiles</key>
-	<array>
-		<string>art.plist</string>
-	</array>
+	<array/>
 </dict>
 </plist>
