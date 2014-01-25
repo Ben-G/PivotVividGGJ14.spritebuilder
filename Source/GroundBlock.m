@@ -18,7 +18,6 @@
 - (void)applyMood:(Mood*)newMood {
     
     NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", newMood.moodPrefix];
-;
     
     if (self.onlyVisibleInMood) {
         if ([newMood.moodPrefix isEqualToString:self.onlyVisibleInMood]) {
