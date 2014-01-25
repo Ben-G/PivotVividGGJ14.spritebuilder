@@ -86,14 +86,6 @@ static const int INITIAL_MASKS = 2;
     
     _masks = [NSMutableArray array];
     
-    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
-    audio.preloadCacheEnabled = TRUE;
-    
-    for (Mood *mood in _moods) {
-        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
-        [audio preloadEffect:filename];
-    }
-    
     Mood *happy = [[Mood alloc] init];
     happy.moodPrefix = @"happy";
     
@@ -107,6 +99,15 @@ static const int INITIAL_MASKS = 2;
     fear.moodPrefix = @"fear";
     
     _moods = @[happy, angry, calm, fear];
+    
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    audio.preloadCacheEnabled = TRUE;
+    
+    for (Mood *mood in _moods) {
+        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
+        [audio preloadEffect:filename];
+    }
+    
     [self switchMood];
     
     [self initializeMask];
@@ -199,7 +200,7 @@ static const int INITIAL_MASKS = 2;
     
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
-//    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
     [audio playEffect:filename loop:TRUE];
     
     for (GroundBlock *block in _blocks) {
