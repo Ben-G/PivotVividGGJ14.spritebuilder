@@ -20,6 +20,8 @@
     CCNode *_level;
     Hero *_hero;
     
+    int updates;
+    
     // array of masks the player has; masks are required for mood changes
     NSMutableArray *_masks;
     
@@ -46,7 +48,7 @@
 }
 
 // distance between masks
-static const float DISTANCE_PER_MASK = 20.f;
+static const CGPoint DISTANCE_PER_MASK = {-20.f,0.f};
 
 // amount of initial masks
 // static const int RAMP = 1;
@@ -175,19 +177,10 @@ static const float BASE_SPEED = 200.f;
     for (int i = 0; i < [_masks count]; i++) {
         Mask *mask = _masks[i];
         CGPoint temp = mask.position;
-        mask.position = ccp(previous.x - DISTANCE_PER_MASK, previous.y);
-        
-        if (i == 0) {
-            CCLOG(@"mask x:%f y:%f", mask.position.x, mask.position.y);
-            CCLOG(@"previous x:%f y:%f", previous.x, previous.y);
-        }
-        
+        mask.position = ccpAdd(previous, DISTANCE_PER_MASK);
         previous = temp;
     }
-    
-    CCLOG(@"HERO x:%f y:%f", _hero.position.x, _hero.position.y);
     _hero.previousPosition = _hero.position;
-    CCLOG(@"HEROprevious x:%f y:%f", _hero.previousPosition.x, _hero.previousPosition.y);
 
     
     CGPoint heroWorldPos = [_physicsNode convertToWorldSpace:_hero.position];
