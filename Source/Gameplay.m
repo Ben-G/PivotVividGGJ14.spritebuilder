@@ -193,8 +193,6 @@
 #pragma mark - Collision Handling
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
-    CCLOG(@"x:%f y:%f", pair.totalImpulse.x, pair.totalImpulse.y);
-
     if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
         _onGround = TRUE;
     }
