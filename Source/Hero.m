@@ -9,11 +9,11 @@
 #import "Hero.h"
 
 @implementation Hero {
-    
+
 }
 
 - (void)didLoadFromCCB {
-    
+    self.previousPosition = self.position;
 }
 
 @end
