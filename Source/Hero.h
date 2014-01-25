@@ -11,6 +11,6 @@
 @interface Hero : CCSprite
 
 @property (nonatomic, assign) CGPoint previousPosition;
-@property (nonatomic, assign) int speed;
+@property (nonatomic, assign) float speed;
 
 @end

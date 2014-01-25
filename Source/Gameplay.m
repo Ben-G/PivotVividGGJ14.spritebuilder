@@ -40,6 +40,9 @@
     
     // stores three version of the scrolling background (to allow endless scrolling)
     NSArray *_backgrounds;
+    
+    // determines the goal position of this level, when this is reached it is consisdered a win!
+    int levelGoal;
 }
 
 // distance between masks
@@ -49,7 +52,7 @@ static const float DISTANCE_PER_MASK = 20.f;
 // static const int RAMP = 1;
 static const int INITIAL_MASKS = 2;
 static const int JUMP_IMPULSE = 60000;
-static const int BASE_SPEED = 5;
+static const float BASE_SPEED = 200.f;
 
 #pragma mark - Init
 
@@ -77,7 +80,9 @@ static const int BASE_SPEED = 5;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level1"];
+    _level = [CCBReader load:@"Level2"];
+    
+    levelGoal = _level.contentSize.width - 300;
     
     // collition type for hero
     _hero.physicsBody.allowsRotation = FALSE;
@@ -90,8 +95,8 @@ static const int BASE_SPEED = 5;
 //    _physicsNode.debugDraw = TRUE;
     
     // setup a camera to follow the hero
-    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
-    [_contentNode runAction:followHero];
+//    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
+//    [_contentNode runAction:followHero];
     
     // activate user interaction to grab touches
     self.userInteractionEnabled = TRUE;
@@ -154,13 +159,16 @@ static const int BASE_SPEED = 5;
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
     
+    // scroll left
+    _contentNode.position = ccp(_contentNode.position.x - 200.f*delta, _contentNode.position.y);
+    
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         // when the hero falls -> game over
         [self endGame];
     }
     
     // add SPEED to position
-    _hero.position = ccp(_hero.position.x + _hero.speed, _hero.position.y);
+    _hero.position = ccp(_hero.position.x + _hero.speed * delta, _hero.position.y);
     
     // make masks follow the player
     CGPoint previous = _hero.previousPosition;
@@ -168,10 +176,30 @@ static const int BASE_SPEED = 5;
         Mask *mask = _masks[i];
         CGPoint temp = mask.position;
         mask.position = ccp(previous.x - DISTANCE_PER_MASK, previous.y);
+        
+        if (i == 0) {
+            CCLOG(@"mask x:%f y:%f", mask.position.x, mask.position.y);
+            CCLOG(@"previous x:%f y:%f", previous.x, previous.y);
+        }
+        
         previous = temp;
     }
     
+    CCLOG(@"HERO x:%f y:%f", _hero.position.x, _hero.position.y);
     _hero.previousPosition = _hero.position;
+    CCLOG(@"HEROprevious x:%f y:%f", _hero.previousPosition.x, _hero.previousPosition.y);
+
+    
+    CGPoint heroWorldPos = [_physicsNode convertToWorldSpace:_hero.position];
+    CGPoint heroOnScreen = [self convertToNodeSpace:heroWorldPos];
+    
+    if (heroOnScreen.x < 0) {
+        [self endGame];
+    }
+    
+    if (_hero.position.x >= levelGoal) {
+        [self winGame];
+    }
     
     // endless scrolling for backgrounds
     for (CCSprite *bg in _backgrounds) {
@@ -180,12 +208,6 @@ static const int BASE_SPEED = 5;
             bg.position = ccp(bg.position.x + (bg.contentSize.width*2)-2, 0);
         }
     }
-}
-
-- (void)endGame {
-    // reload level
-    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -199,11 +221,25 @@ static const int BASE_SPEED = 5;
     if (distance > 20.f) {
         [self switchMood];
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jump) object:nil];
-
     }
     else {
         [self jump];
     }
+}
+
+- (void)removeOneMask {
+    Mask *firstMask = _masks[0];
+    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
+    CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
+        [firstMask removeFromParent];
+    }];
+    
+    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
+    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
+    
+    [firstMask runAction:sequence];
+    [_masks removeObject:firstMask];
+    
 }
 
 - (void)switchMood {
@@ -213,17 +249,7 @@ static const int BASE_SPEED = 5;
     }
     
     // remove one mask
-    Mask *firstMask = _masks[0];
-    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
-    CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
-        [firstMask removeFromParent];
-    }];
-    
-    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
-    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
-
-    [firstMask runAction:sequence];
-    [_masks removeObject:firstMask];
+    [self removeOneMask];
     
     // set the new mood index
     _currentMoodIndex += 1;
@@ -261,7 +287,36 @@ static const int BASE_SPEED = 5;
 - (void)jump {
     if (_onGround) {
         _onGround = FALSE;
-        [_hero.physicsBody applyForce:ccp(0, JUMP_IMPULSE)];
+        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
+    }
+}
+
+#pragma mark - Loose / Win interation
+
+- (void)endGame {
+    // reload level
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
+- (void)winGame {
+    CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"WELL DONE!" fontName:@"Arial"fontSize:40.f];
+    winLabel.color = [CCColor blackColor];
+    winLabel.positionType = CCPositionTypeNormalized;
+    winLabel.position = ccp(0.5f, 0.5f);
+    
+    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
+    particle.positionType = CCPositionTypeNormalized;
+    particle.position = ccp(0.5, 0.5);
+    particle.autoRemoveOnFinish = TRUE;
+    [self addChild:particle];
+    
+    [self addChild:winLabel];
+    
+    [_hero stopAllActions];
+    
+    for (int i = 0; i <= ([_masks count]+1); i++) {
+        [self removeOneMask];
     }
 }
 
