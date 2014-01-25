@@ -77,6 +77,14 @@
         }
     }
     
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    audio.preloadCacheEnabled = TRUE;
+    
+    for (Mood *mood in _moods) {
+        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
+        [audio preloadEffect:filename];
+    }
+    
     Mood *happy = [[Mood alloc] init];
     happy.moodPrefix = @"happy";
     
@@ -145,6 +153,11 @@
     }
     
     Mood *newMood = _moods[_currentMoodIndex];
+    
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    [audio stopAllEffects];
+    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+    [audio playEffect:filename loop:TRUE];
     
     for (GroundBlock *block in _blocks) {
         [block applyMood:newMood];
