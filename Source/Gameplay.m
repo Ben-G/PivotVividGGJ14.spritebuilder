@@ -102,7 +102,7 @@
     for (CCSprite *bg in _backgrounds) {
         bg.position = ccp(bg.position.x - 50*delta, bg.position.y);
         if (bg.position.x < -1 * (bg.contentSize.width)) {
-            bg.position = ccp((bg.contentSize.width*2)-2, 0);
+            bg.position = ccp(bg.position.x + (bg.contentSize.width*2)-2, 0);
         }
     }
 }
