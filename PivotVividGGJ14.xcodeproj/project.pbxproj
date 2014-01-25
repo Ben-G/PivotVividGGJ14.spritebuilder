@@ -10,6 +10,7 @@
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
 		627C5BB91893873100409C84 /* GroundBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB81893873100409C84 /* GroundBlock.m */; };
 		627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BBB18938DAA00409C84 /* CCActionFollowGGJ.m */; };
+		627C5BC01893972600409C84 /* Mood.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BBF1893972600409C84 /* Mood.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
 		B71F5913188484E7003F4D28 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
@@ -64,6 +65,8 @@
 		627C5BB81893873100409C84 /* GroundBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroundBlock.m; path = Source/GroundBlock.m; sourceTree = "<group>"; };
 		627C5BBA18938DAA00409C84 /* CCActionFollowGGJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCActionFollowGGJ.h; path = Source/CCActionFollowGGJ.h; sourceTree = "<group>"; };
 		627C5BBB18938DAA00409C84 /* CCActionFollowGGJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCActionFollowGGJ.m; path = Source/CCActionFollowGGJ.m; sourceTree = "<group>"; };
+		627C5BBE1893972600409C84 /* Mood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mood.h; sourceTree = "<group>"; };
+		627C5BBF1893972600409C84 /* Mood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mood.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -120,6 +123,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		627C5BBD189396F700409C84 /* Moods */ = {
+			isa = PBXGroup;
+			children = (
+				627C5BBE1893972600409C84 /* Mood.h */,
+				627C5BBF1893972600409C84 /* Mood.m */,
+			);
+			name = Moods;
+			path = Source/Moods;
+			sourceTree = "<group>";
+		};
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				627C5BBD189396F700409C84 /* Moods */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
@@ -334,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				627C5BC01893972600409C84 /* Mood.m in Sources */,
 				627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */,
 				627C5BB51893750300409C84 /* Gameplay.m in Sources */,
 				627C5BB91893873100409C84 /* GroundBlock.m in Sources */,
