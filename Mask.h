@@ -10,4 +10,6 @@
 
 @interface Mask : CCSprite
 
+@property (nonatomic, assign) CGPoint previousPosition;
+
 @end

@@ -18,7 +18,9 @@
     CCNode *_contentNode;
     CCPhysicsNode *_physicsNode;
     CCNode *_level;
-    CCNode *_hero;
+    Hero *_hero;
+    
+    int updates;
     
     // array of masks the player has; masks are required for mood changes
     NSMutableArray *_masks;
@@ -40,14 +42,19 @@
     
     // stores three version of the scrolling background (to allow endless scrolling)
     NSArray *_backgrounds;
+    
+    // determines the goal position of this level, when this is reached it is consisdered a win!
+    int levelGoal;
 }
 
 // distance between masks
-static const float DISTANCE_PER_MASK = 28.f;
+static const CGPoint DISTANCE_PER_MASK = {-20.f,0.f};
 
 // amount of initial masks
+// static const int RAMP = 1;
 static const int INITIAL_MASKS = 2;
 static const int JUMP_IMPULSE = 60000;
+static const float BASE_SPEED = 200.f;
 
 #pragma mark - Init
 
@@ -75,25 +82,23 @@ static const int JUMP_IMPULSE = 60000;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level1"];
+    _level = [CCBReader load:@"Level2"];
+    
+    levelGoal = _level.contentSize.width - 300;
     
     // collition type for hero
     _hero.physicsBody.allowsRotation = FALSE;
     _hero.physicsBody.collisionType = @"hero";
+    _hero.speed = BASE_SPEED;
     
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
 //    _physicsNode.debugDraw = TRUE;
     
-    // move hero continously
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(400, 0)];
-    CCActionRepeatForever *repeatMovement = [CCActionRepeatForever actionWithAction:moveBy];
-    [_hero runAction:repeatMovement];
-    
     // setup a camera to follow the hero
-    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
-    [_contentNode runAction:followHero];
+//    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
+//    [_contentNode runAction:followHero];
     
     // activate user interaction to grab touches
     self.userInteractionEnabled = TRUE;
@@ -156,10 +161,37 @@ static const int JUMP_IMPULSE = 60000;
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
     
+    // scroll left
+    _contentNode.position = ccp(_contentNode.position.x - 200.f*delta, _contentNode.position.y);
     
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         // when the hero falls -> game over
         [self endGame];
+    }
+    
+    // add SPEED to position
+    _hero.position = ccp(_hero.position.x + _hero.speed * delta, _hero.position.y);
+    
+    // make masks follow the player
+    CGPoint previous = _hero.previousPosition;
+    for (int i = 0; i < [_masks count]; i++) {
+        Mask *mask = _masks[i];
+        CGPoint temp = mask.position;
+        mask.position = ccpAdd(previous, DISTANCE_PER_MASK);
+        previous = temp;
+    }
+    _hero.previousPosition = _hero.position;
+
+    
+    CGPoint heroWorldPos = [_physicsNode convertToWorldSpace:_hero.position];
+    CGPoint heroOnScreen = [self convertToNodeSpace:heroWorldPos];
+    
+    if (heroOnScreen.x < 0) {
+        [self endGame];
+    }
+    
+    if (_hero.position.x >= levelGoal) {
+        [self winGame];
     }
     
     // endless scrolling for backgrounds
@@ -169,18 +201,6 @@ static const int JUMP_IMPULSE = 60000;
             bg.position = ccp(bg.position.x + (bg.contentSize.width*2)-2, 0);
         }
     }
-    
-    // make masks follow the player
-    for (int i = 0; i < [_masks count]; i++) {
-        Mask *mask = _masks[i];
-        mask.position = ccp(_hero.position.x - (DISTANCE_PER_MASK * (i+1)), _hero.position.y);
-    }
-}
-
-- (void)endGame {
-    // reload level
-    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -194,11 +214,25 @@ static const int JUMP_IMPULSE = 60000;
     if (distance > 20.f) {
         [self switchMood];
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jump) object:nil];
-
     }
     else {
         [self jump];
     }
+}
+
+- (void)removeOneMask {
+    Mask *firstMask = _masks[0];
+    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
+    CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
+        [firstMask removeFromParent];
+    }];
+    
+    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
+    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
+    
+    [firstMask runAction:sequence];
+    [_masks removeObject:firstMask];
+    
 }
 
 - (void)switchMood {
@@ -208,17 +242,7 @@ static const int JUMP_IMPULSE = 60000;
     }
     
     // remove one mask
-    Mask *firstMask = _masks[0];
-    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
-    CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
-        [firstMask removeFromParent];
-    }];
-    
-    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
-    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
-
-    [firstMask runAction:sequence];
-    [_masks removeObject:firstMask];
+    [self removeOneMask];
     
     // set the new mood index
     _currentMoodIndex += 1;
@@ -248,12 +272,44 @@ static const int JUMP_IMPULSE = 60000;
     for (CCSprite *bg in _backgrounds) {
         [bg setSpriteFrame:spriteFrame];
     }
+    
+    //TEST
+    //_hero.speed += RAMP;
 }
 
 - (void)jump {
     if (_onGround) {
         _onGround = FALSE;
-        [_hero.physicsBody applyForce:ccp(0, JUMP_IMPULSE)];
+        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
+    }
+}
+
+#pragma mark - Loose / Win interation
+
+- (void)endGame {
+    // reload level
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
+- (void)winGame {
+    CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"WELL DONE!" fontName:@"Arial"fontSize:40.f];
+    winLabel.color = [CCColor blackColor];
+    winLabel.positionType = CCPositionTypeNormalized;
+    winLabel.position = ccp(0.5f, 0.5f);
+    
+    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
+    particle.positionType = CCPositionTypeNormalized;
+    particle.position = ccp(0.5, 0.5);
+    particle.autoRemoveOnFinish = TRUE;
+    [self addChild:particle];
+    
+    [self addChild:winLabel];
+    
+    [_hero stopAllActions];
+    
+    for (int i = 0; i <= ([_masks count]+1); i++) {
+        [self removeOneMask];
     }
 }
 

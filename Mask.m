@@ -8,6 +8,12 @@
 
 #import "Mask.h"
 
-@implementation Mask
+@implementation Mask {
+    
+}
+
+- (void)didLoadFromCCB {
+    self.previousPosition = self.position;
+}
 
 @end
