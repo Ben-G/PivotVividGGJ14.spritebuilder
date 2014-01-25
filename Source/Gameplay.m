@@ -47,6 +47,7 @@ static const float DISTANCE_PER_MASK = 28.f;
 
 // amount of initial masks
 static const int INITIAL_MASKS = 2;
+static const int JUMP_IMPULSE = 60000;
 
 #pragma mark - Init
 
@@ -252,7 +253,7 @@ static const int INITIAL_MASKS = 2;
 - (void)jump {
     if (_onGround) {
         _onGround = FALSE;
-        [_hero.physicsBody applyForce:ccp(0, 20000)];
+        [_hero.physicsBody applyForce:ccp(0, JUMP_IMPULSE)];
     }
 }
 
