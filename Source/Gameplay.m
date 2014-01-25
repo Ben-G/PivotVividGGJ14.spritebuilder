@@ -40,8 +40,9 @@
     
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
+    _physicsNode.debugDraw = TRUE;
     
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(100, 0)];
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(200, 0)];
     CCActionRepeatForever *repeatMovement = [CCActionRepeatForever actionWithAction:moveBy];
     [_hero runAction:repeatMovement];
     
@@ -132,6 +133,8 @@
 #pragma mark - Collision Handling
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
+    CCLOG(@"x:%f y:%f", pair.totalImpulse.x, pair.totalImpulse.y);
+
     if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
         _onGround = TRUE;
     }
