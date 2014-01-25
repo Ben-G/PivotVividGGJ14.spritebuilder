@@ -64,7 +64,7 @@
     _physicsNode.collisionDelegate = self;
 //    _physicsNode.debugDraw = TRUE;
     
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(200, 0)];
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(400, 0)];
     CCActionRepeatForever *repeatMovement = [CCActionRepeatForever actionWithAction:moveBy];
     [_hero runAction:repeatMovement];
     
@@ -99,7 +99,7 @@
     calm.moodPrefix = @"calm";
     
     Mood *fear = [[Mood alloc] init];
-    calm.moodPrefix = @"fear";
+    fear.moodPrefix = @"fear";
     
     _moods = @[happy, angry, calm, fear];
     [self switchMood];
@@ -161,11 +161,25 @@
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
     NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
-    [audio playEffect:filename loop:TRUE];
+//    [audio playEffect:filename loop:TRUE];
     
     for (GroundBlock *block in _blocks) {
         [block applyMood:newMood];
     }
+    
+    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_background.png", newMood.moodPrefix];
+    CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
+    
+    for (CCSprite *bg in _backgrounds) {
+        [bg setSpriteFrame:spriteFrame];
+    }
+    
+    
+    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
+    particle.positionType = CCPositionTypeNormalized;
+    particle.position = ccp(0.5, 0.5);
+    particle.autoRemoveOnFinish = TRUE;
+    [self addChild:particle];
 }
 
 - (void)jump {
@@ -175,16 +189,14 @@
     }
 }
 
-- (void)dash {
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:.5f position:ccp(25, 0)];
-    [_hero runAction:moveBy];
-}
+//- (void)dash {
+//    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:.5f position:ccp(25, 0)];
+//    [_hero runAction:moveBy];
+//}
 
 #pragma mark - Collision Handling
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
-    CCLOG(@"x:%f y:%f", pair.totalImpulse.x, pair.totalImpulse.y);
-
     if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
         _onGround = TRUE;
     }
