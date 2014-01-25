@@ -114,8 +114,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>218.99996948242188</real>
-							<real>46</real>
+							<real>217.99996948242188</real>
+							<real>77</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -174,7 +174,67 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>367.99996948242188</real>
+							<real>363.99996948242188</real>
+							<real>76</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ccbFile</string>
+						<key>type</key>
+						<string>CCBFile</string>
+						<key>value</key>
+						<string>GroundBlock.ccb</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>baseClass</key>
+				<string>CCBFile</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>CCBFile</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>0</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>512</real>
 							<real>74</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -234,8 +294,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>517</real>
-							<real>135</real>
+							<real>928</real>
+							<real>75</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -294,8 +354,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>663</real>
-							<real>71</real>
+							<real>1071</real>
+							<real>76</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -354,68 +414,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>806</real>
-							<real>72</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>GroundBlock.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>CCBFile</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>949</real>
-							<real>74</real>
+							<real>1214</real>
+							<real>78</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -487,8 +487,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>603.99993896484375</real>
-							<real>350</real>
+							<real>727.99993896484375</real>
+							<real>74</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -524,66 +524,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
-				<key>displayName</key>
-				<string>CCBFile</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
-				<key>properties</key>
+				<key>customProperties</key>
 				<array>
 					<dict>
 						<key>name</key>
-						<string>name</string>
+						<string>moodToKill</string>
+						<key>optimized</key>
+						<false/>
 						<key>type</key>
-						<string>StringSimple</string>
+						<integer>3</integer>
 						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>218.99996948242188</real>
-							<real>147</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>SlopeBlock.ccb</string>
+						<string>calm</string>
 					</dict>
 				</array>
-			</dict>
-			<dict>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
 				<key>displayName</key>
 				<string>CCBFile</string>
 				<key>memberVarAssignmentName</key>
@@ -607,8 +560,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>945.99993896484375</real>
-							<real>160</real>
+							<real>1211</real>
+							<real>164</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>

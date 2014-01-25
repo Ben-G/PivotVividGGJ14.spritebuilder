@@ -16,17 +16,21 @@
 }
 
 - (void)applyMood:(Mood*)newMood {
+    
+    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", newMood.moodPrefix];
+;
+    
     if (self.onlyVisibleInMood) {
         if ([newMood.moodPrefix isEqualToString:self.onlyVisibleInMood]) {
             self.physicsBody.collisionMask = nil;
-            self.visible = TRUE;
+            self.opacity = 1.f;
         } else {
             self.physicsBody.collisionMask = @[];
-            self.visible = FALSE;
+            self.opacity = 0.4f;
+            spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", _onlyVisibleInMood];
         }
     }
     
-    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", newMood.moodPrefix];
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
     
     [self setSpriteFrame:spriteFrame];
