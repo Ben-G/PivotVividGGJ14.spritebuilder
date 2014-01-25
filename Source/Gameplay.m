@@ -29,11 +29,30 @@
     NSArray *_moods;
     
     CGPoint _touchStartPosition;
+    NSArray *_backgrounds;
 }
 
 #pragma mark - Init
 
 - (void)didLoadFromCCB {
+    NSString *spriteFrameName = @"art/sad_background.png";
+    CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
+
+    CCSprite *bg1 = [CCSprite spriteWithSpriteFrame:spriteFrame];
+    CCSprite *bg2 = [CCSprite spriteWithSpriteFrame:spriteFrame];
+    CCSprite *bg3 = [CCSprite spriteWithSpriteFrame:spriteFrame];
+    bg1.anchorPoint = ccp(0, 0);
+    bg1.position = ccp(0, 0);
+    bg2.anchorPoint = ccp(0, 0);
+    bg2.position = ccp(bg1.contentSize.width-1, 0);
+    bg3.anchorPoint = ccp(0, 0);
+    bg3.position = ccp(2*bg1.contentSize.width-1, 0);
+    _backgrounds = @[bg1, bg2, bg3];
+    
+    [self addChild:bg1 z:INT_MIN];
+    [self addChild:bg2 z:INT_MIN];
+    [self addChild:bg3 z:INT_MIN];
+    
     _currentMoodIndex = 0;
     _level = [CCBReader load:@"Level1"];
     
@@ -61,6 +80,14 @@
         }
     }
     
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    audio.preloadCacheEnabled = TRUE;
+    
+    for (Mood *mood in _moods) {
+        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
+        [audio preloadEffect:filename];
+    }
+    
     Mood *happy = [[Mood alloc] init];
     happy.moodPrefix = @"happy";
     
@@ -70,7 +97,10 @@
     Mood *calm = [[Mood alloc] init];
     calm.moodPrefix = @"calm";
     
-    _moods = @[happy, angry, calm];
+    Mood *fear = [[Mood alloc] init];
+    calm.moodPrefix = @"fear";
+    
+    _moods = @[happy, angry, calm, fear];
     [self switchMood];
 }
 
@@ -81,6 +111,13 @@
     _hero.rotation = 0.f;
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         [self endGame];
+    }
+    
+    for (CCSprite *bg in _backgrounds) {
+        bg.position = ccp(bg.position.x - 50*delta, bg.position.y);
+        if (bg.position.x < -1 * (bg.contentSize.width)) {
+            bg.position = ccp(bg.position.x + (bg.contentSize.width*2)-2, 0);
+        }
     }
 }
 
@@ -119,6 +156,11 @@
     }
     
     Mood *newMood = _moods[_currentMoodIndex];
+    
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    [audio stopAllEffects];
+    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+    [audio playEffect:filename loop:TRUE];
     
     for (GroundBlock *block in _blocks) {
         [block applyMood:newMood];
@@ -173,5 +215,6 @@
 -(void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
     _onGround = FALSE;
 }
+
 
 @end

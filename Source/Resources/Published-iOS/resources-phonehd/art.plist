@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>art/angry_block.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1443, 1}, {150, 150}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {150, 150}}</string>
+			<key>sourceSize</key>
+			<string>{150, 150}</string>
+		</dict>
+		<key>art/calm_block.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1139, 1}, {150, 150}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {150, 150}}</string>
+			<key>sourceSize</key>
+			<string>{150, 150}</string>
+		</dict>
+		<key>art/fear_block.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1291, 1}, {150, 150}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {150, 150}}</string>
+			<key>sourceSize</key>
+			<string>{150, 150}</string>
+		</dict>
+		<key>art/happy_block.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1595, 1}, {150, 150}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {150, 150}}</string>
+			<key>sourceSize</key>
+			<string>{150, 150}</string>
+		</dict>
+		<key>art/mario.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1747, 1}, {79, 100}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {79, 100}}</string>
+			<key>sourceSize</key>
+			<string>{80, 100}</string>
+		</dict>
+		<key>art/sad_background.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {1136, 640}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>sourceSize</key>
+			<string>{1136, 640}</string>
+		</dict>
+		<key>art/space-invaders.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1849, 1}, {46, 42}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 9}, {46, 42}}</string>
+			<key>sourceSize</key>
+			<string>{60, 60}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{2048, 2048}</string>
+		<key>textureFileName</key>
+		<string>art.png</string>
+	</dict>
+</dict>
+</plist>

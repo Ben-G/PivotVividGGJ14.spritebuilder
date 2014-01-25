@@ -26,6 +26,19 @@
 		<array/>
 		<key>customClass</key>
 		<string>GroundBlock</string>
+		<key>customProperties</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>onlyVisibleInMood</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>3</integer>
+				<key>value</key>
+				<string>angry</string>
+			</dict>
+		</array>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -57,16 +70,16 @@
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>150</real>
+					<real>73.761688232421875</real>
+					<real>1.50390625</real>
 				</array>
 				<array>
-					<real>150</real>
-					<real>150</real>
+					<real>73.761688232421875</real>
+					<real>74.50390625</real>
 				</array>
 				<array>
-					<real>150</real>
-					<real>0.0</real>
+					<real>1.585906982421875</real>
+					<real>74.546875</real>
 				</array>
 			</array>
 		</dict>
@@ -143,8 +156,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
