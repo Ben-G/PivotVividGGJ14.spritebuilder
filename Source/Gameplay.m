@@ -40,6 +40,9 @@
     
     // stores three version of the scrolling background (to allow endless scrolling)
     NSArray *_backgrounds;
+    
+    // determines the goal position of this level, when this is reached it is consisdered a win!
+    int levelGoal;
 }
 
 // distance between masks
@@ -75,6 +78,8 @@ static const int INITIAL_MASKS = 2;
     
     // load first level
     _level = [CCBReader load:@"Level1"];
+    
+    levelGoal = _level.contentSize.width - 300;
     
     // collition type for hero
     _hero.physicsBody.allowsRotation = FALSE;
@@ -161,6 +166,10 @@ static const int INITIAL_MASKS = 2;
         [self endGame];
     }
     
+    if (_hero.position.x >= levelGoal) {
+        [self winGame];
+    }
+    
     // endless scrolling for backgrounds
     for (CCSprite *bg in _backgrounds) {
         bg.position = ccp(bg.position.x - 50 * delta, bg.position.y);
@@ -176,12 +185,6 @@ static const int INITIAL_MASKS = 2;
     }
 }
 
-- (void)endGame {
-    // reload level
-    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-    [[CCDirector sharedDirector] replaceScene:scene];
-}
-
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     _touchStartPosition = [touch locationInNode:self];
 }
@@ -193,11 +196,25 @@ static const int INITIAL_MASKS = 2;
     if (distance > 20.f) {
         [self switchMood];
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jump) object:nil];
-
     }
     else {
         [self jump];
     }
+}
+
+- (void)removeOneMask {
+    Mask *firstMask = _masks[0];
+    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
+    CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
+        [firstMask removeFromParent];
+    }];
+    
+    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
+    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
+    
+    [firstMask runAction:sequence];
+    [_masks removeObject:firstMask];
+    
 }
 
 - (void)switchMood {
@@ -207,17 +224,7 @@ static const int INITIAL_MASKS = 2;
     }
     
     // remove one mask
-    Mask *firstMask = _masks[0];
-    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
-    CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
-        [firstMask removeFromParent];
-    }];
-    
-    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
-    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
-
-    [firstMask runAction:sequence];
-    [_masks removeObject:firstMask];
+    [self removeOneMask];
     
     // set the new mood index
     _currentMoodIndex += 1;
@@ -254,6 +261,36 @@ static const int INITIAL_MASKS = 2;
         _onGround = FALSE;
         [_hero.physicsBody applyForce:ccp(0, 20000)];
     }
+//    [self winGame];
+}
+
+#pragma mark - Loose / Win interation
+
+- (void)endGame {
+    // reload level
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
+- (void)winGame {
+    CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"WELL DONE!" fontName:@"Arial"fontSize:40.f];
+    winLabel.color = [CCColor blackColor];
+    winLabel.positionType = CCPositionTypeNormalized;
+    winLabel.position = ccp(0.5f, 0.5f);
+    
+    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
+    particle.positionType = CCPositionTypeNormalized;
+    particle.position = ccp(0.5, 0.5);
+    particle.autoRemoveOnFinish = TRUE;
+    [self addChild:particle];
+    
+    [self addChild:winLabel];
+    
+    [_hero stopAllActions];
+    
+//    for (Mask *mask in _masks) {
+//        [self removeOneMask];
+//    }
 }
 
 #pragma mark - Collision Handling
