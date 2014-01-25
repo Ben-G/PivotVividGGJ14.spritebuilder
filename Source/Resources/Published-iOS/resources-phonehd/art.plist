@@ -20,6 +20,19 @@
 		<key>art/calm_block.png</key>
 		<dict>
 			<key>frame</key>
+			<string>{{1139, 1}, {150, 150}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {150, 150}}</string>
+			<key>sourceSize</key>
+			<string>{150, 150}</string>
+		</dict>
+		<key>art/fear_block.png</key>
+		<dict>
+			<key>frame</key>
 			<string>{{1291, 1}, {150, 150}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
@@ -33,7 +46,7 @@
 		<key>art/happy_block.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1139, 1}, {150, 150}}</string>
+			<string>{{1595, 1}, {150, 150}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -46,7 +59,7 @@
 		<key>art/mario.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1595, 1}, {79, 100}}</string>
+			<string>{{1747, 1}, {79, 100}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -72,7 +85,7 @@
 		<key>art/space-invaders.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1697, 1}, {46, 42}}</string>
+			<string>{{1849, 1}, {46, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>

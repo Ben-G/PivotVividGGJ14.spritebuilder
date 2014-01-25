@@ -86,7 +86,10 @@
     Mood *calm = [[Mood alloc] init];
     calm.moodPrefix = @"calm";
     
-    _moods = @[happy, angry, calm];
+    Mood *fear = [[Mood alloc] init];
+    calm.moodPrefix = @"fear";
+    
+    _moods = @[happy, angry, calm, fear];
     [self switchMood];
 }
 
