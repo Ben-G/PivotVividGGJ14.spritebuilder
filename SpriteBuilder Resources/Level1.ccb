@@ -485,7 +485,7 @@
 				<key>value</key>
 				<array>
 					<real>5680</real>
-					<real>384</real>
+					<real>320</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>
@@ -526,7 +526,7 @@
 			<key>ext</key>
 			<string>phone</string>
 			<key>height</key>
-			<integer>384</integer>
+			<integer>320</integer>
 			<key>name</key>
 			<string>Phone</string>
 			<key>scale</key>
@@ -540,7 +540,7 @@
 			<key>ext</key>
 			<string>tablet phonehd</string>
 			<key>height</key>
-			<integer>384</integer>
+			<integer>320</integer>
 			<key>name</key>
 			<string>Tablet</string>
 			<key>scale</key>
