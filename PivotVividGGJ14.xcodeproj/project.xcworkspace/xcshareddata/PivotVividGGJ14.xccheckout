@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BFF76674-3BE2-4833-96CD-748347A0D2D7</string>
+	<string>B1B2FAA0-F17D-497C-959D-C54A40277FBE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PivotVividGGJ14</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1BE64CC9-A848-46BC-8E13-455F7BD1242C</key>
-		<string>https://github.com/Ben-G/PivotVividGGJ14.git</string>
+		<key>73808701-D8D3-492A-B0EE-E009C6A6240F</key>
+		<string>https://github.com/Ben-G/PivotVividGGJ14.spritebuilder.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PivotVividGGJ14.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1BE64CC9-A848-46BC-8E13-455F7BD1242C</key>
+		<key>73808701-D8D3-492A-B0EE-E009C6A6240F</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Ben-G/PivotVividGGJ14.git</string>
+	<string>https://github.com/Ben-G/PivotVividGGJ14.spritebuilder.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1BE64CC9-A848-46BC-8E13-455F7BD1242C</string>
+	<string>73808701-D8D3-492A-B0EE-E009C6A6240F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1BE64CC9-A848-46BC-8E13-455F7BD1242C</string>
+			<string>73808701-D8D3-492A-B0EE-E009C6A6240F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PivotVividGGJ14</string>
 		</dict>

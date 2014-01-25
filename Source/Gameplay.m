@@ -18,8 +18,6 @@
     CCNode *_contentNode;
     
     BOOL _onGround;
-    BOOL _dontJump;
-    BOOL _moodChangePossible;
     
     int _currentMoodIndex;
     
@@ -89,24 +87,24 @@
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     _touchStartPosition = [touch locationInNode:self];
-    [self performSelector:@selector(jump) withObject:nil afterDelay:0.1f];
-    _moodChangePossible = TRUE;
 }
 
-- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
-    if (!_moodChangePossible) {
-        return;
-    }
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
     
     CGPoint currentPos = [touch locationInNode:self];
     CGFloat distance = ccpDistance(currentPos, _touchStartPosition);
-    
-    if (fabs(distance) > 20.f) {
-        _dontJump = TRUE;
+    if (distance > 20.f /*&& (slope < 1 || slope > -1) && _onGround*/) {
         [self switchMood];
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jump) object:nil];
-        _moodChangePossible = FALSE;
+
     }
+    else {
+        [self jump];
+    }
+}
+
+- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
+
 }
 
 - (void)switchMood {
@@ -128,6 +126,11 @@
         _onGround = FALSE;
         [_hero.physicsBody applyForce:ccp(0, 50000)];
     }
+}
+
+- (void)dash {
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:.5f position:ccp(25, 0)];
+    [_hero runAction:moveBy];
 }
 
 #pragma mark - Collision Handling
