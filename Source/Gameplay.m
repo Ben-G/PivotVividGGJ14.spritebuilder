@@ -10,6 +10,7 @@
 #import "CCActionFollowGGJ.h"
 #import "GroundBlock.h"
 #import "Mood.h"
+#import "BasicEnemy.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -140,6 +141,19 @@
 
     if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
         _onGround = TRUE;
+    }
+}
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
+    
+    BasicEnemy *basicEnemy = (BasicEnemy*)enemy;
+    
+    NSString *moodPrefix = [_moods[_currentMoodIndex] moodPrefix];
+    
+    if ([basicEnemy.moodToKill isEqualToString:moodPrefix]) {
+        [basicEnemy removeFromParentAndCleanup:TRUE];
+    } else {
+        [self endGame];
     }
 }
 
