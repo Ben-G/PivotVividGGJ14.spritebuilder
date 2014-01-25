@@ -64,8 +64,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>19.999984741210938</real>
-											<real>99</real>
+											<real>115.99998474121094</real>
+											<real>100</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -172,7 +172,7 @@
 								<key>value</key>
 								<array>
 									<real>0.0</real>
-									<real>-1500</real>
+									<real>-1000</real>
 								</array>
 							</dict>
 							<dict>

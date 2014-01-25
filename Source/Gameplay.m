@@ -78,7 +78,7 @@ static const int JUMP_IMPULSE = 60000;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level1"];
+    _level = [CCBReader load:@"Level2"];
     
     levelGoal = _level.contentSize.width - 300;
     
@@ -97,8 +97,8 @@ static const int JUMP_IMPULSE = 60000;
     [_hero runAction:repeatMovement];
     
     // setup a camera to follow the hero
-    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
-    [_contentNode runAction:followHero];
+//    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
+//    [_contentNode runAction:followHero];
     
     // activate user interaction to grab touches
     self.userInteractionEnabled = TRUE;
@@ -161,9 +161,18 @@ static const int JUMP_IMPULSE = 60000;
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
     
+    // scroll left
+    _contentNode.position = ccp(_contentNode.position.x - 200.f*delta, _contentNode.position.y);
     
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         // when the hero falls -> game over
+        [self endGame];
+    }
+    
+    CGPoint heroWorldPos = [_physicsNode convertToWorldSpace:_hero.position];
+    CGPoint heroOnScreen = [self convertToNodeSpace:heroWorldPos];
+    
+    if (heroOnScreen.x < 0) {
         [self endGame];
     }
     
@@ -260,9 +269,8 @@ static const int JUMP_IMPULSE = 60000;
 - (void)jump {
     if (_onGround) {
         _onGround = FALSE;
-        [_hero.physicsBody applyForce:ccp(0, JUMP_IMPULSE)];
+        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
     }
-//    [self winGame];
 }
 
 #pragma mark - Loose / Win interation
@@ -289,9 +297,9 @@ static const int JUMP_IMPULSE = 60000;
     
     [_hero stopAllActions];
     
-//    for (Mask *mask in _masks) {
-//        [self removeOneMask];
-//    }
+    for (int i = 0; i <= ([_masks count]+1); i++) {
+        [self removeOneMask];
+    }
 }
 
 #pragma mark - Collision Handling
