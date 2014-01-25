@@ -33,6 +33,9 @@
     NSArray *_backgrounds;
 }
 
+static const float DISTANCE_PER_MASK = 28.f;
+static const int INITIAL_MASKS = 2;
+
 #pragma mark - Init
 
 - (void)didLoadFromCCB {
@@ -81,6 +84,8 @@
         }
     }
     
+    _masks = [NSMutableArray array];
+    
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     audio.preloadCacheEnabled = TRUE;
     
@@ -103,6 +108,17 @@
     
     _moods = @[happy, angry, calm, fear];
     [self switchMood];
+    
+    [self initializeMask];
+}
+
+- (void)initializeMask {
+    for (int i = 0; i < INITIAL_MASKS; i++) {
+        Mask *mask = (Mask*)[CCBReader load:@"Mask"];
+        mask.position = _hero.position;
+        [_level addChild:mask];
+        [_masks addObject:mask];
+    }
 }
 
 #pragma mark - Update
@@ -119,6 +135,11 @@
         if (bg.position.x < -1 * (bg.contentSize.width)) {
             bg.position = ccp(bg.position.x + (bg.contentSize.width*2)-2, 0);
         }
+    }
+    
+    for (int i = 0; i < [_masks count]; i++) {
+        Mask *mask = _masks[i];
+        mask.position = ccp(_hero.position.x - (DISTANCE_PER_MASK * (i+1)), _hero.position.y);
     }
 }
 
@@ -150,6 +171,16 @@
 }
 
 - (void)switchMood {
+    if ([_masks count] == 0) {
+        // mood changes are only possible with masks
+        return;
+    }
+    
+    // remove one mask
+    Mask *firstMask = _masks[0];
+    [firstMask removeFromParent];
+    [_masks removeObject:firstMask];
+    
     _currentMoodIndex += 1;
     
     if (_currentMoodIndex >= [_moods count]) {
@@ -174,12 +205,12 @@
         [bg setSpriteFrame:spriteFrame];
     }
     
-    
-    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
-    particle.positionType = CCPositionTypeNormalized;
-    particle.position = ccp(0.5, 0.5);
-    particle.autoRemoveOnFinish = TRUE;
-    [self addChild:particle];
+//    
+//    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
+//    particle.positionType = CCPositionTypeNormalized;
+//    particle.position = ccp(0.5, 0.5);
+//    particle.autoRemoveOnFinish = TRUE;
+//    [self addChild:particle];
 }
 
 - (void)jump {
@@ -202,14 +233,6 @@
     }
 }
 
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero mask:(CCNode *)mask {
-    CGPoint p = CGPointMake(-20, 0);
-    Mask *aMask = (Mask*)mask;
-    [_masks addObject:aMask];
-    Hero *aHero = (Hero*)hero;
-    aMask.position = ccpAdd(p, aHero.position);
-}
-
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
     
     BasicEnemy *basicEnemy = (BasicEnemy*)enemy;
@@ -217,12 +240,18 @@
     NSString *moodPrefix = [_moods[_currentMoodIndex] moodPrefix];
     
     if ([basicEnemy.moodToKill isEqualToString:moodPrefix]) {
-        CGPoint p = CGPointMake(20, 0);
         CGPoint pos = basicEnemy.position;
+        
+        CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"EnemyDies"];
+        particle.position = basicEnemy.position;
+        particle.autoRemoveOnFinish = TRUE;
+        [_physicsNode addChild:particle];
+        
         [basicEnemy removeFromParentAndCleanup:TRUE];
         Mask *mask = (Mask*)[CCBReader load:@"Mask"];
-        mask.position = ccpAdd(pos, p);
+        mask.position = pos;
         [_level addChild:mask];
+        [_masks addObject:mask];
     } else {
         [self endGame];
     }

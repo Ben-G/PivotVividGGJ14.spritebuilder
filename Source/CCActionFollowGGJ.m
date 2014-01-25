@@ -37,7 +37,7 @@
         
 		CGSize s = [[CCDirector sharedDirector] viewSize];
 		_fullScreenSize = CGPointMake(s.width, s.height);
-		_halfScreenSize = ccpMult(_fullScreenSize, .2f);
+		_halfScreenSize = ccpMult(_fullScreenSize, .25f);
 	}
     
 	return self;
@@ -53,7 +53,7 @@
         
 		CGSize winSize = [[CCDirector sharedDirector] viewSize];
 		_fullScreenSize = CGPointMake(winSize.width, winSize.height);
-		_halfScreenSize = ccpMult(_fullScreenSize, .2f);
+		_halfScreenSize = ccpMult(_fullScreenSize, .25f);
         
 		_leftBoundary = -((rect.origin.x+rect.size.width) - _fullScreenSize.x);
 		_rightBoundary = -rect.origin.x ;
