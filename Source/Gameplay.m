@@ -48,12 +48,12 @@
 }
 
 // distance between masks
-static const CGPoint DISTANCE_PER_MASK = {-20.f,0.f};
+static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 
 // amount of initial masks
 // static const int RAMP = 1;
 static const int INITIAL_MASKS = 2;
-static const int JUMP_IMPULSE = 60000;
+static const int JUMP_IMPULSE = 100000;
 static const float BASE_SPEED = 200.f;
 
 #pragma mark - Init
@@ -94,7 +94,7 @@ static const float BASE_SPEED = 200.f;
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
-    _physicsNode.debugDraw = TRUE;
+    _physicsNode.debugDraw = FALSE;
     
     // setup a camera to follow the hero
 //    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
@@ -177,7 +177,7 @@ static const float BASE_SPEED = 200.f;
     for (int i = 0; i < [_masks count]; i++) {
         Mask *mask = _masks[i];
         CGPoint temp = mask.position;
-        mask.position = ccpAdd(previous, DISTANCE_PER_MASK);
+        mask.position = ccp(_hero.position.x - (DISTANCE_PER_MASK.x * -(i+2)), previous.y);
         previous = temp;
     }
     _hero.previousPosition = _hero.position;

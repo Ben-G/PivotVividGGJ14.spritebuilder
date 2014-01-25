@@ -7,7 +7,7 @@
 		<key>art/angertiletextured.PNG</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 495}, {33, 34}}</string>
+			<string>{{965, 459}, {33, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -20,7 +20,7 @@
 		<key>art/angertiletexturedeight.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{929, 404}, {264, 34}}</string>
+			<string>{{929, 309}, {264, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -33,7 +33,7 @@
 		<key>art/angertiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1007, 1}, {33, 8}}</string>
+			<string>{{1007, 101}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>
@@ -59,7 +59,7 @@
 		<key>art/angry_block.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{893, 250}, {75, 75}}</string>
+			<string>{{893, 155}, {75, 75}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -72,7 +72,7 @@
 		<key>art/angry_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 667}, {32, 32}}</string>
+			<string>{{35, 967}, {32, 32}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +98,7 @@
 		<key>art/calm_block.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{893, 173}, {75, 75}}</string>
+			<string>{{893, 78}, {75, 75}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -111,7 +111,7 @@
 		<key>art/calm_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 599}, {32, 32}}</string>
+			<string>{{965, 563}, {32, 32}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -124,7 +124,7 @@
 		<key>art/fear_background.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 701}, {568, 320}}</string>
+			<string>{{1, 645}, {568, 320}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -137,7 +137,7 @@
 		<key>art/fear_block.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{893, 327}, {75, 75}}</string>
+			<string>{{893, 232}, {75, 75}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -150,7 +150,7 @@
 		<key>art/fear_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 633}, {32, 32}}</string>
+			<string>{{1, 967}, {32, 32}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -163,7 +163,7 @@
 		<key>art/feartiletextured.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 530}, {33, 34}}</string>
+			<string>{{965, 494}, {33, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,7 +176,7 @@
 		<key>art/feartiletexturedeight.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{970, 159}, {264, 34}}</string>
+			<string>{{970, 123}, {264, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -189,7 +189,7 @@
 		<key>art/feartiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1007, 36}, {33, 8}}</string>
+			<string>{{1006, 136}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>
@@ -215,7 +215,7 @@
 		<key>art/happy_block.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{893, 96}, {75, 75}}</string>
+			<string>{{893, 1}, {75, 75}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -228,7 +228,7 @@
 		<key>art/happy_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 565}, {32, 32}}</string>
+			<string>{{965, 529}, {32, 32}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -241,7 +241,7 @@
 		<key>art/happytiletextured.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 425}, {33, 34}}</string>
+			<string>{{965, 389}, {33, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -254,7 +254,7 @@
 		<key>art/happytiletexturedeight.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{893, 404}, {264, 34}}</string>
+			<string>{{893, 309}, {264, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -267,7 +267,7 @@
 		<key>art/happytiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1007, 71}, {33, 8}}</string>
+			<string>{{1006, 171}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>
@@ -280,7 +280,7 @@
 		<key>art/mario.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{970, 118}, {39, 49}}</string>
+			<string>{{970, 1}, {39, 49}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -293,7 +293,7 @@
 		<key>art/mask.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{970, 96}, {20, 35}}</string>
+			<string>{{970, 101}, {20, 35}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -306,20 +306,20 @@
 		<key>art/sad0015.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{893, 1}, {112, 93}}</string>
+			<string>{{970, 42}, {57, 47}}</string>
 			<key>offset</key>
-			<string>{0, 12}</string>
+			<string>{0, 6}</string>
 			<key>rotated</key>
-			<false/>
+			<true/>
 			<key>sourceColorRect</key>
-			<string>{{17, 10}, {112, 93}}</string>
+			<string>{{8, 5}, {57, 47}}</string>
 			<key>sourceSize</key>
-			<string>{147, 139}</string>
+			<string>{74, 70}</string>
 		</dict>
 		<key>art/sorrowtiletextured.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{965, 460}, {33, 34}}</string>
+			<string>{{965, 424}, {33, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -332,7 +332,7 @@
 		<key>art/sorrowtiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1006, 159}, {33, 8}}</string>
+			<string>{{1006, 206}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>
@@ -345,7 +345,7 @@
 		<key>art/space-invaders.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1001, 425}, {22, 20}}</string>
+			<string>{{1001, 389}, {22, 20}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
