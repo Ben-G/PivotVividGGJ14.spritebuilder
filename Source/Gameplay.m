@@ -11,12 +11,15 @@
 #import "GroundBlock.h"
 #import "Mood.h"
 #import "BasicEnemy.h"
+#import "Mask.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
     CCNode *_level;
     CCNode *_hero;
     CCNode *_contentNode;
+    
+    NSMutableArray *_masks;
     
     BOOL _onGround;
     
@@ -144,6 +147,11 @@
     }
 }
 
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero mask:(CCNode *)mask {
+    Mask *aMask = (Mask*)mask;
+    [_masks addObject:aMask];
+}
+
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
     
     BasicEnemy *basicEnemy = (BasicEnemy*)enemy;
@@ -151,7 +159,12 @@
     NSString *moodPrefix = [_moods[_currentMoodIndex] moodPrefix];
     
     if ([basicEnemy.moodToKill isEqualToString:moodPrefix]) {
+        CGPoint p = CGPointMake(20, 0);
+        CGPoint pos = basicEnemy.position;
         [basicEnemy removeFromParentAndCleanup:TRUE];
+        Mask *mask = [[Mask alloc] init];
+        mask.position = ccpAdd(pos, p);
+        [mask addChild:_level];
     } else {
         [self endGame];
     }
