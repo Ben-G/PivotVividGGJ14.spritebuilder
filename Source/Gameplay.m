@@ -82,7 +82,7 @@ static const float BASE_SPEED = 200.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level2"];
+    _level = [CCBReader load:@"Level1"];
     
     levelGoal = _level.contentSize.width - 300;
     

@@ -4,14 +4,53 @@
 <dict>
 	<key>frames</key>
 	<dict>
-		<key>art/angry_background.png</key>
+		<key>art/angertiletextured.PNG</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 643}, {1136, 640}}</string>
+			<string>{{1921, 790}, {66, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
-			<false/>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {66, 68}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
+		</dict>
+		<key>art/angertiletexturedeight.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1851, 609}, {528, 68}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {528, 68}}</string>
+			<key>sourceSize</key>
+			<string>{528, 68}</string>
+		</dict>
+		<key>art/angertiletop.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2006, 82}, {66, 16}}</string>
+			<key>offset</key>
+			<string>{0, -26}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 52}, {66, 16}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
+		</dict>
+		<key>art/angry_background.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1139, 1}, {1136, 640}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {1136, 640}}</string>
 			<key>sourceSize</key>
@@ -33,11 +72,11 @@
 		<key>art/calm_background.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1139, 1}, {1136, 640}}</string>
+			<string>{{1, 643}, {1136, 640}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
-			<true/>
+			<false/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {1136, 640}}</string>
 			<key>sourceSize</key>
@@ -59,7 +98,7 @@
 		<key>art/fear_background.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1}, {1136, 640}}</string>
+			<string>{{1, 1285}, {1136, 640}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -72,7 +111,7 @@
 		<key>art/fear_block.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1781, 1}, {150, 150}}</string>
+			<string>{{1781, 457}, {150, 150}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -82,10 +121,49 @@
 			<key>sourceSize</key>
 			<string>{150, 150}</string>
 		</dict>
+		<key>art/feartiletextured.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1921, 858}, {66, 68}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {66, 68}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
+		</dict>
+		<key>art/feartiletexturedeight.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1933, 124}, {528, 68}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {528, 68}}</string>
+			<key>sourceSize</key>
+			<string>{528, 68}</string>
+		</dict>
+		<key>art/feartiletop.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2024, 82}, {66, 16}}</string>
+			<key>offset</key>
+			<string>{0, -26}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 52}, {66, 16}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
+		</dict>
 		<key>art/happy_background.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1285}, {1136, 640}}</string>
+			<string>{{1, 1}, {1136, 640}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +176,7 @@
 		<key>art/happy_block.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1781, 457}, {150, 150}}</string>
+			<string>{{1781, 1}, {150, 150}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -107,6 +185,45 @@
 			<string>{{0, 0}, {150, 150}}</string>
 			<key>sourceSize</key>
 			<string>{150, 150}</string>
+		</dict>
+		<key>art/happytiletextured.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1921, 654}, {66, 68}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {66, 68}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
+		</dict>
+		<key>art/happytiletexturedeight.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1781, 609}, {528, 68}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {528, 68}}</string>
+			<key>sourceSize</key>
+			<string>{528, 68}</string>
+		</dict>
+		<key>art/happytiletop.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2003, 198}, {66, 16}}</string>
+			<key>offset</key>
+			<string>{0, -26}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 52}, {66, 16}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
 		</dict>
 		<key>art/mario.png</key>
 		<dict>
@@ -134,14 +251,40 @@
 			<key>sourceSize</key>
 			<string>{40, 71}</string>
 		</dict>
-		<key>art/space-invaders.png</key>
+		<key>art/sorrowtiletextured.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1933, 124}, {46, 42}}</string>
+			<string>{{1921, 722}, {66, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
-			<false/>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {66, 68}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
+		</dict>
+		<key>art/sorrowtiletop.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2021, 198}, {66, 16}}</string>
+			<key>offset</key>
+			<string>{0, -26}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 52}, {66, 16}}</string>
+			<key>sourceSize</key>
+			<string>{66, 68}</string>
+		</dict>
+		<key>art/space-invaders.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2003, 150}, {46, 42}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
 			<key>sourceColorRect</key>
 			<string>{{7, 9}, {46, 42}}</string>
 			<key>sourceSize</key>
