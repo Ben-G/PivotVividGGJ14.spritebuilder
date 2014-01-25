@@ -18,7 +18,7 @@
     CCNode *_contentNode;
     CCPhysicsNode *_physicsNode;
     CCNode *_level;
-    CCNode *_hero;
+    Hero *_hero;
     
     // array of masks the player has; masks are required for mood changes
     NSMutableArray *_masks;
@@ -43,11 +43,13 @@
 }
 
 // distance between masks
-static const float DISTANCE_PER_MASK = 28.f;
+static const float DISTANCE_PER_MASK = 20.f;
 
 // amount of initial masks
+// static const int RAMP = 1;
 static const int INITIAL_MASKS = 2;
 static const int JUMP_IMPULSE = 60000;
+static const int BASE_SPEED = 5;
 
 #pragma mark - Init
 
@@ -80,16 +82,12 @@ static const int JUMP_IMPULSE = 60000;
     // collition type for hero
     _hero.physicsBody.allowsRotation = FALSE;
     _hero.physicsBody.collisionType = @"hero";
+    _hero.speed = BASE_SPEED;
     
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
 //    _physicsNode.debugDraw = TRUE;
-    
-    // move hero continously
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(400, 0)];
-    CCActionRepeatForever *repeatMovement = [CCActionRepeatForever actionWithAction:moveBy];
-    [_hero runAction:repeatMovement];
     
     // setup a camera to follow the hero
     CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
@@ -156,11 +154,24 @@ static const int JUMP_IMPULSE = 60000;
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
     
-    
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         // when the hero falls -> game over
         [self endGame];
     }
+    
+    // add SPEED to position
+    _hero.position = ccp(_hero.position.x + _hero.speed, _hero.position.y);
+    
+    // make masks follow the player
+    CGPoint previous = _hero.previousPosition;
+    for (int i = 0; i < [_masks count]; i++) {
+        Mask *mask = _masks[i];
+        CGPoint temp = mask.position;
+        mask.position = ccp(previous.x - DISTANCE_PER_MASK, previous.y);
+        previous = temp;
+    }
+    
+    _hero.previousPosition = _hero.position;
     
     // endless scrolling for backgrounds
     for (CCSprite *bg in _backgrounds) {
@@ -168,12 +179,6 @@ static const int JUMP_IMPULSE = 60000;
         if (bg.position.x < -1 * (bg.contentSize.width)) {
             bg.position = ccp(bg.position.x + (bg.contentSize.width*2)-2, 0);
         }
-    }
-    
-    // make masks follow the player
-    for (int i = 0; i < [_masks count]; i++) {
-        Mask *mask = _masks[i];
-        mask.position = ccp(_hero.position.x - (DISTANCE_PER_MASK * (i+1)), _hero.position.y);
     }
 }
 
@@ -248,6 +253,9 @@ static const int JUMP_IMPULSE = 60000;
     for (CCSprite *bg in _backgrounds) {
         [bg setSpriteFrame:spriteFrame];
     }
+    
+    //TEST
+    //_hero.speed += RAMP;
 }
 
 - (void)jump {
