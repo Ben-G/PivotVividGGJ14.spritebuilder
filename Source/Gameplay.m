@@ -7,6 +7,7 @@
 //
 
 #import "Gameplay.h"
+#import "CCActionFollowGGJ.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -32,7 +33,7 @@
     CCActionRepeatForever *repeatMovement = [CCActionRepeatForever actionWithAction:moveBy];
     [_hero runAction:repeatMovement];
     
-    CCActionFollow *followHero = [CCActionFollow actionWithTarget:_hero worldBoundary:_level.boundingBox];
+    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
     [_contentNode runAction:followHero];
     
     self.userInteractionEnabled = TRUE;
