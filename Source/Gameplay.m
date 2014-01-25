@@ -179,9 +179,14 @@ static const int INITIAL_MASKS = 2;
     // remove one mask
     Mask *firstMask = _masks[0];
     CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
+    CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
+        [firstMask removeFromParent];
+    }];
+    
     CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
-    [firstMask runAction:bounceOut];
-//    [firstMask removeFromParent];
+    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
+
+    [firstMask runAction:sequence];
     [_masks removeObject:firstMask];
     
     _currentMoodIndex += 1;
@@ -194,8 +199,8 @@ static const int INITIAL_MASKS = 2;
     
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
-    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
-//    [audio playEffect:filename loop:TRUE];
+//    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+    [audio playEffect:filename loop:TRUE];
     
     for (GroundBlock *block in _blocks) {
         [block applyMood:newMood];
