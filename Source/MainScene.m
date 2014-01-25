@@ -10,4 +10,9 @@
 
 @implementation MainScene
 
+- (void)startButtonPressed {
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
 @end
