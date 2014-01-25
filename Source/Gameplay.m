@@ -185,7 +185,7 @@
 - (void)jump {
     if (_onGround) {
         _onGround = FALSE;
-        [_hero.physicsBody applyForce:ccp(0, 50000)];
+        [_hero.physicsBody applyForce:ccp(0, 20000)];
     }
 }
 
