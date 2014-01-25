@@ -68,6 +68,7 @@
     calm.moodPrefix = @"calm";
     
     _moods = @[happy, angry, calm];
+    [self switchMood];
 }
 
 #pragma mark - Update
@@ -75,6 +76,14 @@
 - (void)update:(CCTime)delta {
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
+    if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
+        [self endGame];
+    }
+}
+
+- (void)endGame {
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -108,11 +117,8 @@
     
     Mood *newMood = _moods[_currentMoodIndex];
     
-    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", newMood.moodPrefix];
-    CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
-
     for (GroundBlock *block in _blocks) {
-        [block setSpriteFrame:spriteFrame];
+        [block applyMood:newMood];
     }
 }
 

@@ -8,6 +8,12 @@
 
 #import "CCNode.h"
 
+@class Mood;
+
 @interface GroundBlock : CCSprite
+
+- (void)applyMood:(Mood*)mood;
+
+@property (nonatomic, strong) NSString *onlyVisibleInMood;
 
 @end
