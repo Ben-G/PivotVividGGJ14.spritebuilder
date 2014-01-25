@@ -8,6 +8,7 @@
 
 #import "Gameplay.h"
 #import "CCActionFollowGGJ.h"
+#import "GroundBlock.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -16,6 +17,11 @@
     CCNode *_contentNode;
     
     BOOL _onGround;
+    BOOL _dontJump;
+    
+    NSMutableArray *_blocks;
+    
+    CGPoint _touchStartPosition;
 }
 
 #pragma mark - Init
@@ -37,6 +43,14 @@
     [_contentNode runAction:followHero];
     
     self.userInteractionEnabled = TRUE;
+    
+    _blocks = [NSMutableArray array];
+    
+    for (CCNode *child in _level.children) {
+        if ([child isKindOfClass:[GroundBlock class]]) {
+            [_blocks addObject:child];
+        }
+    }
 }
 
 #pragma mark - Update
@@ -47,8 +61,27 @@
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
-//    CGPoint position = [touch locationInNode:_level];
-    [self jump];
+    _touchStartPosition = [touch locationInNode:self];
+    [self performSelector:@selector(jump) withObject:nil afterDelay:0.05f];
+}
+
+- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
+    CGPoint currentPos = [touch locationInNode:self];
+    CGFloat distance = ccpDistance(currentPos, _touchStartPosition);
+    
+    if (fabs(distance) > 20.f) {
+        _dontJump = TRUE;
+        [self switchMood];
+        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jump) object:nil];
+    }
+}
+
+- (void)switchMood {
+    CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:@"art/block_2.png"];
+
+    for (GroundBlock *block in _blocks) {
+        [block setSpriteFrame:spriteFrame];
+    }
 }
 
 - (void)jump {
