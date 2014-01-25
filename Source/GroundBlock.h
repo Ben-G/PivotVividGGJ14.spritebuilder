@@ -1,5 +1,5 @@
 //
-//  Gameplay.h
+//  GroundBlock.h
 //  PivotVividGGJ14
 //
 //  Created by Benjamin Encz on 24/01/14.
@@ -8,6 +8,6 @@
 
 #import "CCNode.h"
 
-@interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
+@interface GroundBlock : CCSprite
 
 @end

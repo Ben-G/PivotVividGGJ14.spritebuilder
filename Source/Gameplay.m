@@ -13,14 +13,20 @@
     CCNode *_level;
     CCNode *_hero;
     CCNode *_contentNode;
+    
+    BOOL _onGround;
 }
+
+#pragma mark - Init
 
 - (void)didLoadFromCCB {
     _level = [CCBReader load:@"Level1"];
     
     _hero.physicsBody.allowsRotation = FALSE;
+    _hero.physicsBody.collisionType = @"hero";
     
     [_physicsNode addChild:_level];
+    _physicsNode.collisionDelegate = self;
     
     CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:2.f position:ccp(100, 0)];
     CCActionRepeatForever *repeatMovement = [CCActionRepeatForever actionWithAction:moveBy];
@@ -31,6 +37,8 @@
     
     self.userInteractionEnabled = TRUE;
 }
+
+#pragma mark - Update
 
 - (void)update:(CCTime)delta {
     _hero.physicsBody.angularVelocity = 0.f;
@@ -43,7 +51,22 @@
 }
 
 - (void)jump {
-    [_hero.physicsBody applyForce:ccp(0, 50000)];
+    if (_onGround) {
+        _onGround = FALSE;
+        [_hero.physicsBody applyForce:ccp(0, 50000)];
+    }
+}
+
+#pragma mark - Collision Handling
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
+    if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
+        _onGround = TRUE;
+    }
+}
+
+-(void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
+    _onGround = FALSE;
 }
 
 @end
