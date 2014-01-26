@@ -107,6 +107,7 @@ static const int JUMP_IMPULSE = 100000;
     
     // determines how the camera shall follow the player (where in the camera image the hero will be positioned)
     playerPositionX = 150;
+    _hero.position = ccp(playerPositionX, _hero.position.y);
     
     levelGoal = _level.contentSize.width - 300;
     
@@ -118,7 +119,6 @@ static const int JUMP_IMPULSE = 100000;
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
-    _physicsNode.debugDraw = TRUE;
     
     // setup a camera to follow the hero
 //    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
