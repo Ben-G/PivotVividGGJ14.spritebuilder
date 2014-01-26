@@ -362,11 +362,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>524</real>
-							<real>163</real>
+							<real>0.85387325286865234</real>
+							<real>0.52499997615814209</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -411,8 +411,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>40</real>
-							<real>40</real>
+							<real>150</real>
+							<real>150</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -457,7 +457,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>arrowR.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -468,7 +468,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>arrowR.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -670,11 +670,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>47</real>
-							<real>163</real>
+							<real>0.14612674713134766</real>
+							<real>0.52812498807907104</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -719,8 +719,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>40</real>
-							<real>40</real>
+							<real>150</real>
+							<real>150</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -765,7 +765,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>arrowL.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -776,7 +776,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>arrowL.png</string>
 						</array>
 					</dict>
 					<dict>

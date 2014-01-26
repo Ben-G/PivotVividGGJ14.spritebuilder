@@ -60,16 +60,17 @@
     // slide to left, place other node right
     int other = (_onScreen + 1) % 2;
     CCNode *currentNode = _nodes[_onScreen];
+    
     LevelDetails *otherNode = _nodes[other];
     [otherNode setLevel:_levels[_selectedLevel]];
-    otherNode.position = ccp(_screenSize.width, 0);
+    otherNode.position = ccp(-_screenSize.width, 0);
     
     
     CCActionMoveTo *moveBy = [CCActionMoveTo actionWithDuration:0.25f position:ccp(0, 0)];
     [otherNode runAction:moveBy];
     
-    CCActionMoveTo *moveLeft = [CCActionMoveTo actionWithDuration:0.25f position:ccp(-_screenSize.width, 0)];
-    [currentNode runAction:moveLeft];
+    CCActionMoveTo *moveRight = [CCActionMoveTo actionWithDuration:0.25f position:ccp(+_screenSize.width, 0)];
+    [currentNode runAction:moveRight];
     
     _onScreen = other;
     
@@ -98,14 +99,14 @@
     
     LevelDetails *otherNode = _nodes[other];
     [otherNode setLevel:_levels[_selectedLevel]];
-    otherNode.position = ccp(-_screenSize.width, 0);
-    
+    otherNode.position = ccp(_screenSize.width, 0);
     
     CCActionMoveTo *moveBy = [CCActionMoveTo actionWithDuration:0.25f position:ccp(0, 0)];
     [otherNode runAction:moveBy];
     
-    CCActionMoveTo *moveRight = [CCActionMoveTo actionWithDuration:0.25f position:ccp(+_screenSize.width, 0)];
-    [currentNode runAction:moveRight];
+    CCActionMoveTo *moveLeft = [CCActionMoveTo actionWithDuration:0.25f position:ccp(-_screenSize.width, 0)];
+    [currentNode runAction:moveLeft];
+
     
     _onScreen = other;
     

@@ -228,7 +228,7 @@ static const int JUMP_IMPULSE = 100000;
     }
     
     // make masks follow the player
-    CGPoint previous = _hero.previousPosition;
+    CGPoint previous = ccp(_hero.previousPosition.x, _hero.previousPosition.y-8);
     for (int i = 0; i < [_masks count]; i++) {
         Mask *mask = _masks[i];
         CGPoint temp = mask.position;
