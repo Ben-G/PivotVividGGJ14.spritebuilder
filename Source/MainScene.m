@@ -117,6 +117,7 @@
     
     NSDictionary *levelInfo = _levels[_selectedLevel];
     [[GameState sharedInstance] setCurrentLevel:levelInfo[@"levelName"]];
+    [[GameState sharedInstance] setCurrentLevelIndex:_selectedLevel];
 
     CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:scene];
