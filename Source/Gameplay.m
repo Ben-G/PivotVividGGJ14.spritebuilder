@@ -163,6 +163,8 @@ static const int JUMP_IMPULSE = 100000;
     // initialize mood & mask
     [self setMood:_currentMoodIndex];
     [self initializeMask];
+    
+    _hero.physicsBody.velocity = ccp(400,  _hero.physicsBody.velocity.y);
 }
 
 - (void)initializeMask {
@@ -228,7 +230,11 @@ static const int JUMP_IMPULSE = 100000;
     }
     
     // add SPEED to position
-    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
+//    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
+    
+    if (_hero.physicsBody.velocity.x < _baseSpeed) {
+        [_hero.physicsBody applyForce:ccp(10000.f, _hero.physicsBody.force.y)];
+    }
     
     // make masks follow the player
     CGPoint previous = _hero.previousPosition;
@@ -348,10 +354,8 @@ static const int JUMP_IMPULSE = 100000;
         _onGround = onGround;
         
         if (_onGround) {
-            CCLOG(@"on ground");
             [_hero runAnimationIfNotRunning:[_moods[_currentMoodIndex] moodPrefix]];
         } else {
-            CCLOG(@"NOT on ground");
             [_hero stopAnimation];
         }
     }

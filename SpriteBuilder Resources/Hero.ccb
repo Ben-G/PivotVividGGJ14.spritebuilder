@@ -49,24 +49,24 @@
 			<key>elasticity</key>
 			<real>0.20000000298023224</real>
 			<key>friction</key>
-			<real>0.30000001192092896</real>
+			<real>1</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>14.808563232421875</real>
-					<real>-0.04296875</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 				<array>
-					<real>73.953094482421875</real>
-					<real>-0.11328125</real>
+					<real>0.0</real>
+					<real>70</real>
 				</array>
 				<array>
-					<real>73.999969482421875</real>
-					<real>69.88671875</real>
+					<real>74</real>
+					<real>70</real>
 				</array>
 				<array>
-					<real>14.882781982421875</real>
-					<real>69.95703125</real>
+					<real>74</real>
+					<real>0.0</real>
 				</array>
 			</array>
 		</dict>

@@ -123,4 +123,8 @@
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
+- (void)backButtonPressed {
+    [[CCDirector sharedDirector] popScene];
+}
+
 @end

@@ -35,6 +35,9 @@
     if (self) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"Levels" ofType:@"plist"];
         _levels = [NSArray arrayWithContentsOfFile:path];
+        
+        self.currentLevelIndex = -1;
+        [self loadNextLevel];
     }
     
     return self;
