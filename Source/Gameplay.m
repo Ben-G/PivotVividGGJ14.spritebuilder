@@ -226,7 +226,8 @@ static const int JUMP_IMPULSE = 100000;
     }
     
     // add SPEED to position
-    _hero.position = ccp(_hero.position.x + _hero.speed * delta, _hero.position.y);
+    //_hero.position = ccp(_hero.position.x + _hero.speed * delta, _hero.position.y);
+    _hero.physicsBody.velocity = ccp(_baseSpeed, _hero.physicsBody.velocity.y);
     
     // make masks follow the player
     CGPoint previous = _hero.previousPosition;
