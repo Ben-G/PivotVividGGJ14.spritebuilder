@@ -43,6 +43,9 @@
     
     // determines the goal position of this level, when this is reached it is consisdered a win!
     int levelGoal;
+    
+    // the position of the player on the screen
+    int playerPositionX;
 }
 
 // distance between masks
@@ -52,7 +55,7 @@ static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 // static const int RAMP = 1;
 static const int INITIAL_MASKS = 5;
 static const int JUMP_IMPULSE = 100000;
-static const float BASE_SPEED = 190.f;
+static const float BASE_SPEED = 200.f;
 
 #pragma mark - Init
 
@@ -80,7 +83,11 @@ static const float BASE_SPEED = 190.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level1"];
+    _level = [CCBReader load:@"Level10"];
+    
+    CGPoint playerPosWorld = [_physicsNode convertToWorldSpace:_hero.position];
+    CGPoint heroOnScreen = [self convertToNodeSpace:playerPosWorld];
+    playerPositionX = heroOnScreen.x;
     
     levelGoal = _level.contentSize.width - 300;
     
@@ -134,7 +141,7 @@ static const float BASE_SPEED = 190.f;
 //        [audio preloadEffect:filename];
 //    }
     
-    // initialize mood & maksk
+    // initialize mood & mask
     [self setMood:_currentMoodIndex];
     [self initializeMask];
 }
@@ -167,8 +174,25 @@ static const float BASE_SPEED = 190.f;
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
     
+    CGPoint heroWorldPos = [_physicsNode convertToWorldSpace:_hero.position];
+    CGPoint heroOnScreen = [self convertToNodeSpace:heroWorldPos];
+    
+    if (heroOnScreen.x < 0) {
+        [self endGame];
+    }
+    
+    if (_hero.position.x >= levelGoal) {
+        [self winGame];
+    }
+    
     // scroll left
-    _contentNode.position = ccp(_contentNode.position.x - 190.f*delta, _contentNode.position.y);
+    if (heroOnScreen.x >= (playerPositionX*1.05f)) {
+        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta*1.1f, _contentNode.position.y);
+    } else if (heroOnScreen.x < (playerPositionX*0.95f)) {
+        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta*0.9f, _contentNode.position.y);
+    } else {
+        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta, _contentNode.position.y);
+    }
     
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         // when the hero falls -> game over
@@ -188,18 +212,6 @@ static const float BASE_SPEED = 190.f;
     }
     _hero.previousPosition = _hero.position;
 
-    
-    CGPoint heroWorldPos = [_physicsNode convertToWorldSpace:_hero.position];
-    CGPoint heroOnScreen = [self convertToNodeSpace:heroWorldPos];
-    
-    if (heroOnScreen.x < 0) {
-        [self endGame];
-    }
-    
-    if (_hero.position.x >= levelGoal) {
-        [self winGame];
-    }
-    
     // endless scrolling for backgrounds
     for (CCSprite *bg in _backgrounds) {
         bg.position = ccp(bg.position.x - 50 * delta, bg.position.y);
@@ -331,10 +343,6 @@ static const float BASE_SPEED = 190.f;
     [self addChild:winLabel];
     
     [_hero stopAllActions];
-    
-    for (int i = 0; i <= ([_masks count]+1); i++) {
-        [self removeOneMask];
-    }
 }
 
 #pragma mark - Collision Handling

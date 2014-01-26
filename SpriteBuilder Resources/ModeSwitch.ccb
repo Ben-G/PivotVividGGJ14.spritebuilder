@@ -121,7 +121,7 @@
 				<key>type</key>
 				<string>Integer</string>
 				<key>value</key>
-				<integer>300</integer>
+				<integer>40</integer>
 			</dict>
 			<dict>
 				<key>name</key>
