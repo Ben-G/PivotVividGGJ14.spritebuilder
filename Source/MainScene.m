@@ -124,7 +124,8 @@
 }
 
 - (void)backButtonPressed {
-    [[CCDirector sharedDirector] popScene];
+    CCScene *scene = [CCBReader loadAsScene:@"Startscreen"];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 @end

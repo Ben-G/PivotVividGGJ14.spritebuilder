@@ -10,6 +10,7 @@
 
 @implementation Startscreen {
     CCLabelTTF *_label;
+    CCNode *_backgroundImage;
 }
 
 - (void)didLoadFromCCB {
@@ -34,6 +35,12 @@
 
 - (void)loadCompleted {
     _label.string = @"#GGJ14";
+    
+    CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:0.4f];
+    [_label runAction:fadeOut];
+    
+    CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:0.4f];
+    [_backgroundImage runAction:fadeIn];
 }
 
 - (void)startNow {
@@ -43,7 +50,7 @@
 
 - (void)levelSelect {
     CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
-    [[CCDirector sharedDirector] pushScene:scene];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 @end
