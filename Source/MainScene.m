@@ -123,4 +123,9 @@
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
+- (void)backButtonPressed {
+    CCScene *scene = [CCBReader loadAsScene:@"Startscreen"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
 @end

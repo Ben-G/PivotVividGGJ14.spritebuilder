@@ -149,20 +149,12 @@ static const int JUMP_IMPULSE = 100000;
     fear.moodPrefix = @"fear";
     
     _moods = @[happy, angry, calm, fear];
-    
-
-    // preload audio
-//    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
-//    audio.preloadCacheEnabled = TRUE;
-//    
-//    for (Mood *mood in _moods) {
-//        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
-//        [audio preloadEffect:filename];
-//    }
-    
+        
     // initialize mood & mask
     [self setMood:_currentMoodIndex];
     [self initializeMask];
+    
+    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
 }
 
 - (void)initializeMask {
@@ -228,7 +220,11 @@ static const int JUMP_IMPULSE = 100000;
     }
     
     // add SPEED to position
-    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
+//    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
+    
+    if (_hero.physicsBody.velocity.x < _baseSpeed) {
+        [_hero.physicsBody applyForce:ccp(10000.f, _hero.physicsBody.force.y)];
+    }
     
     // make masks follow the player
     CGPoint previous = _hero.previousPosition;
@@ -294,8 +290,8 @@ static const int JUMP_IMPULSE = 100000;
     // play new song for this mood
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
-    //    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
-    //    [audio playEffect:filename loop:TRUE];
+    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+    [audio playEffect:filename loop:TRUE];
     
     [_hero applyMood:newMood];
     
@@ -348,10 +344,8 @@ static const int JUMP_IMPULSE = 100000;
         _onGround = onGround;
         
         if (_onGround) {
-            CCLOG(@"on ground");
             [_hero runAnimationIfNotRunning:[_moods[_currentMoodIndex] moodPrefix]];
         } else {
-            CCLOG(@"NOT on ground");
             [_hero stopAnimation];
         }
     }
@@ -360,6 +354,10 @@ static const int JUMP_IMPULSE = 100000;
 #pragma mark - Loose / Win interation
 
 - (void)endGame {
+    if (_gameOver) {
+        return;
+    }
+    
     [_hero runDeathAnimation];
     
     CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"YOU LOSE!" fontName:@"Arial"fontSize:40.f];
