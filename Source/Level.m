@@ -10,8 +10,11 @@
 
 static const int INITIAL_MASKS = 5;
 static const float BASE_SPEED = 200.f;
+static const CGPoint START_POS = {150, 200};
 
-@implementation Level
+@implementation Level {
+    CCNode *_startPositionNode;
+}
 
 - (id)init {
     self = [super init];
@@ -23,6 +26,12 @@ static const float BASE_SPEED = 200.f;
     }
     
     return self;
+}
+
+- (void)didLoadFromCCB {
+    if (_startPositionNode) {
+        self.startPosition = _startPositionNode.position;
+    }
 }
 
 @end

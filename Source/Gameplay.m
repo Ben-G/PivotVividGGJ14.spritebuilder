@@ -97,14 +97,14 @@ static const int JUMP_IMPULSE = 100000;
     NSString *levelName = [[GameState sharedInstance] currentLevel];
     _level = (Level*) [CCBReader load:levelName];
     
+    _hero.position = _level.startPosition;
+    
     // read custom level properties
     _initialMasks = _level.initialMasks;
     _baseSpeed = _level.levelSpeed;
     
-    
-    CGPoint playerPosWorld = [_physicsNode convertToWorldSpace:_hero.position];
-    CGPoint heroOnScreen = [self convertToNodeSpace:playerPosWorld];
-    playerPositionX = heroOnScreen.x;
+    // determines how the camera shall follow the player (where in the camera image the hero will be positioned)
+    playerPositionX = 150;
     
     levelGoal = _level.contentSize.width - 300;
     
