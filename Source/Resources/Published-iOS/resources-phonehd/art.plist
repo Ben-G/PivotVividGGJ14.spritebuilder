@@ -20,7 +20,7 @@
 		<key>art/HappyEnemy.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{537, 1285}, {63, 61}}</string>
+			<string>{{537, 1927}, {63, 61}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -30,10 +30,23 @@
 			<key>sourceSize</key>
 			<string>{63, 61}</string>
 		</dict>
+		<key>art/SadEnemy.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1933, 102}, {85, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {85, 106}}</string>
+			<key>sourceSize</key>
+			<string>{85, 106}</string>
+		</dict>
 		<key>art/angertiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2006, 326}, {66, 16}}</string>
+			<string>{{2006, 413}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -72,7 +85,7 @@
 		<key>art/angry_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{405, 1285}, {64, 64}}</string>
+			<string>{{405, 1927}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -85,7 +98,7 @@
 		<key>art/angry_blocklong.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1921, 873}, {528, 68}}</string>
+			<string>{{1921, 960}, {528, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +111,7 @@
 		<key>art/angry_blocksmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{137, 1285}, {66, 68}}</string>
+			<string>{{137, 1927}, {66, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -137,7 +150,7 @@
 		<key>art/calm_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{273, 1285}, {64, 64}}</string>
+			<string>{{273, 1927}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -163,7 +176,7 @@
 		<key>art/calm_blocksmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1285}, {66, 68}}</string>
+			<string>{{1, 1927}, {66, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,7 +189,7 @@
 		<key>art/fear_background.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1403}, {1136, 640}}</string>
+			<string>{{1, 1285}, {1136, 640}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -202,7 +215,7 @@
 		<key>art/fear_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{339, 1285}, {64, 64}}</string>
+			<string>{{339, 1927}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -228,7 +241,7 @@
 		<key>art/fear_blocksmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{205, 1285}, {66, 68}}</string>
+			<string>{{205, 1927}, {66, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -241,7 +254,7 @@
 		<key>art/feartiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2024, 326}, {66, 16}}</string>
+			<string>{{2024, 413}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -280,7 +293,7 @@
 		<key>art/happy_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{471, 1285}, {64, 64}}</string>
+			<string>{{471, 1927}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -293,7 +306,7 @@
 		<key>art/happy_blocklong.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1933, 343}, {528, 68}}</string>
+			<string>{{1933, 430}, {528, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -306,7 +319,7 @@
 		<key>art/happy_blocksmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{69, 1285}, {66, 68}}</string>
+			<string>{{69, 1927}, {66, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -319,7 +332,7 @@
 		<key>art/happytiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2003, 442}, {66, 16}}</string>
+			<string>{{2003, 529}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -332,7 +345,7 @@
 		<key>art/icepartical.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2006, 301}, {23, 32}}</string>
+			<string>{{2006, 388}, {23, 32}}</string>
 			<key>offset</key>
 			<string>{-2, 0}</string>
 			<key>rotated</key>
@@ -345,7 +358,7 @@
 		<key>art/mario.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1933, 102}, {79, 100}}</string>
+			<string>{{1933, 189}, {79, 100}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -358,7 +371,7 @@
 		<key>art/mask.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1933, 301}, {40, 71}}</string>
+			<string>{{1933, 388}, {40, 71}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -371,7 +384,7 @@
 		<key>art/sad0015.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1933, 183}, {116, 98}}</string>
+			<string>{{1933, 270}, {116, 98}}</string>
 			<key>offset</key>
 			<string>{-1, 13}</string>
 			<key>rotated</key>
@@ -384,7 +397,7 @@
 		<key>art/sorrowtiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2021, 442}, {66, 16}}</string>
+			<string>{{2021, 529}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -397,7 +410,7 @@
 		<key>art/space-invaders.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2003, 394}, {46, 42}}</string>
+			<string>{{2003, 481}, {46, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
