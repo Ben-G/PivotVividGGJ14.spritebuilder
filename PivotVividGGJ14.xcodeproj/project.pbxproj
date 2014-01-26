@@ -32,6 +32,8 @@
 		627C5C2218946BDF00409C84 /* scared_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1818946BDF00409C84 /* scared_default.png */; };
 		627C5C2518946C1200409C84 /* CCAnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5C2418946C1200409C84 /* CCAnimatedSprite.m */; };
 		62A0B8DA1894F51D0037B7E4 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62A0B8D91894F51D0037B7E4 /* Levels.plist */; };
+		62A0B8E0189505B20037B7E4 /* LevelDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8DF189505B20037B7E4 /* LevelDetails.m */; };
+		62A0B8E318950D890037B7E4 /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8E218950D890037B7E4 /* GameState.m */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
@@ -118,6 +120,10 @@
 		627C5C2318946C1200409C84 /* CCAnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAnimatedSprite.h; path = Source/CCAnimatedSprite.h; sourceTree = "<group>"; };
 		627C5C2418946C1200409C84 /* CCAnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCAnimatedSprite.m; path = Source/CCAnimatedSprite.m; sourceTree = "<group>"; };
 		62A0B8D91894F51D0037B7E4 /* Levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+		62A0B8DE189505B20037B7E4 /* LevelDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelDetails.h; path = Source/LevelDetails.h; sourceTree = "<group>"; };
+		62A0B8DF189505B20037B7E4 /* LevelDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelDetails.m; path = Source/LevelDetails.m; sourceTree = "<group>"; };
+		62A0B8E118950D890037B7E4 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameState.h; path = Source/GameState.h; sourceTree = "<group>"; };
+		62A0B8E218950D890037B7E4 /* GameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameState.m; path = Source/GameState.m; sourceTree = "<group>"; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
 		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		AC0C8C8C1894B9DC00080A19 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Source/Enemy.h; sourceTree = "<group>"; };
@@ -282,6 +288,10 @@
 				62F4177E1894923400663BDD /* Block.m */,
 				AC0C8C8C1894B9DC00080A19 /* Enemy.h */,
 				AC0C8C8D1894B9DC00080A19 /* Enemy.m */,
+				62A0B8DE189505B20037B7E4 /* LevelDetails.h */,
+				62A0B8DF189505B20037B7E4 /* LevelDetails.m */,
+				62A0B8E118950D890037B7E4 /* GameState.h */,
+				62A0B8E218950D890037B7E4 /* GameState.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -493,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */,
+				62A0B8E318950D890037B7E4 /* GameState.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				627C5BC01893972600409C84 /* Mood.m in Sources */,
 				627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */,
@@ -504,6 +515,7 @@
 				627C5BB91893873100409C84 /* GroundBlock.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				627C5C0B1894677D00409C84 /* GroundBlock64.m in Sources */,
+				62A0B8E0189505B20037B7E4 /* LevelDetails.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,
 				ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */,

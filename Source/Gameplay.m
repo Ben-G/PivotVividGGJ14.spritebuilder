@@ -14,6 +14,7 @@
 #import "Mask.h"
 #import "Hero.h"
 #import "Block.h"
+#import "GameState.h"
 
 @implementation Gameplay {
     CCNode *_contentNode;
@@ -64,6 +65,10 @@ static const float BASE_SPEED = 200.f;
 
 #pragma mark - Init
 
+- (void)loadLevel:(NSString *)level {
+    
+}
+
 - (void)didLoadFromCCB {
     _progressBar.opacity = 0.f;
     
@@ -90,7 +95,8 @@ static const float BASE_SPEED = 200.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level1"];
+    NSString *levelName = [[GameState sharedInstance] currentLevel];
+    _level = [CCBReader load:levelName];
     
     CGPoint playerPosWorld = [_physicsNode convertToWorldSpace:_hero.position];
     CGPoint heroOnScreen = [self convertToNodeSpace:playerPosWorld];
