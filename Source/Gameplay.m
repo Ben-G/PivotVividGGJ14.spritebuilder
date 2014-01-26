@@ -52,7 +52,7 @@ static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 // static const int RAMP = 1;
 static const int INITIAL_MASKS = 5;
 static const int JUMP_IMPULSE = 100000;
-static const float BASE_SPEED = 200.f;
+static const float BASE_SPEED = 190.f;
 
 #pragma mark - Init
 
@@ -80,7 +80,7 @@ static const float BASE_SPEED = 200.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level10"];
+    _level = [CCBReader load:@"Level1"];
     
     levelGoal = _level.contentSize.width - 300;
     
@@ -168,7 +168,7 @@ static const float BASE_SPEED = 200.f;
     _hero.rotation = 0.f;
     
     // scroll left
-    _contentNode.position = ccp(_contentNode.position.x - 200.f*delta, _contentNode.position.y);
+    _contentNode.position = ccp(_contentNode.position.x - 190.f*delta, _contentNode.position.y);
     
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         // when the hero falls -> game over
