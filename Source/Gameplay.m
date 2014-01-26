@@ -17,6 +17,7 @@
 
 @implementation Gameplay {
     CCNode *_contentNode;
+    CCNode *_progressBar;
     CCPhysicsNode *_physicsNode;
     CCNode *_level;
     Hero *_hero;
@@ -64,6 +65,8 @@ static const float BASE_SPEED = 200.f;
 #pragma mark - Init
 
 - (void)didLoadFromCCB {
+    _progressBar.opacity = 0.f;
+    
     // load initial background
     NSString *spriteFrameName = @"art/sad_background.png";
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
@@ -87,7 +90,7 @@ static const float BASE_SPEED = 200.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level10"];
+    _level = [CCBReader load:@"Level1"];
     
     CGPoint playerPosWorld = [_physicsNode convertToWorldSpace:_hero.position];
     CGPoint heroOnScreen = [self convertToNodeSpace:playerPosWorld];
@@ -195,6 +198,8 @@ static const float BASE_SPEED = 200.f;
     if (_hero.position.x >= levelGoal) {
         [self winGame];
     }
+    
+    _progressBar.scaleX = (_hero.position.x / (levelGoal  * 1.f));
     
     // scroll left
     if (heroOnScreen.x >= (playerPositionX*1.05f)) {
@@ -343,9 +348,40 @@ static const float BASE_SPEED = 200.f;
 #pragma mark - Loose / Win interation
 
 - (void)endGame {
-    // reload level
-    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-    [[CCDirector sharedDirector] replaceScene:scene];
+    CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"YOU LOSE!" fontName:@"Arial"fontSize:40.f];
+    winLabel.color = [CCColor blackColor];
+    winLabel.positionType = CCPositionTypeNormalized;
+    winLabel.position = ccp(0.5f, 0.5f);
+    
+    [self addChild:winLabel];
+    
+    CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
+    [_progressBar runAction:fadeIn];
+    
+    CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:1.f];
+    _level.cascadeOpacityEnabled = TRUE;
+    [_level runAction:fadeOut];
+    
+    CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
+    [_hero runAction:fadeOutHero];
+    [_hero removeFromParent];
+    
+    int n = [_masks count];
+    
+    for (int i = 0; i < n; i++) {
+        [self removeOneMask];
+    }
+    
+    _gameOver = TRUE;
+    
+    // Delay execution of my block for 2 seconds.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // reload level
+            CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+            [[CCDirector sharedDirector] replaceScene:scene];
+        });
+    });
 }
 
 - (void)nextLevel {

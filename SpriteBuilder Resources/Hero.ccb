@@ -126,7 +126,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/sad0015.png</string>
+					<string></string>
 				</array>
 			</dict>
 			<dict>
@@ -140,6 +140,17 @@
 					<real>1</real>
 					<real>1</real>
 					<real>1</real>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>blendFunc</string>
+				<key>type</key>
+				<string>Blendmode</string>
+				<key>value</key>
+				<array>
+					<integer>770</integer>
+					<integer>771</integer>
 				</array>
 			</dict>
 		</array>
