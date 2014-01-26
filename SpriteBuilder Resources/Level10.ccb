@@ -868,8 +868,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>675.99993896484375</real>
-							<real>157</real>
+							<real>308.99993896484375</real>
+							<real>67</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -894,7 +894,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>blocks/DefaultCube.ccb</string>
+						<string>blocks/OnlyAngerCube.ccb</string>
 					</dict>
 				</array>
 			</dict>

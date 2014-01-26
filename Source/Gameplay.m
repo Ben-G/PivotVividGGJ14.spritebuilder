@@ -135,7 +135,7 @@ static const float BASE_SPEED = 190.f;
 //    }
     
     // initialize mood & maksk
-    [self switchMood];
+    [self setMood:_currentMoodIndex];
     [self initializeMask];
 }
 
@@ -241,29 +241,14 @@ static const float BASE_SPEED = 190.f;
     
 }
 
-- (void)switchMood {
-    if ([_masks count] == 0) {
-        // mood changes are only possible with masks
-        return;
-    }
-    
-    // remove one mask
-    [self removeOneMask];
-    
-    // set the new mood index
-    _currentMoodIndex += 1;
-    
-    if (_currentMoodIndex >= [_moods count]) {
-        _currentMoodIndex = 0;
-    }
-    
+- (void)setMood:(int)newMoodIndex {
     Mood *newMood = _moods[_currentMoodIndex];
     
     // play new song for this mood
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
-//    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
-//    [audio playEffect:filename loop:TRUE];
+    //    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+    //    [audio playEffect:filename loop:TRUE];
     
     
     // apply new mood to all blocks
@@ -281,6 +266,25 @@ static const float BASE_SPEED = 190.f;
     
     //TEST
     //_hero.speed += RAMP;
+}
+
+- (void)switchMood {
+    if ([_masks count] == 0) {
+        // mood changes are only possible with masks
+        return;
+    }
+    
+    // remove one mask
+    [self removeOneMask];
+    
+    // set the new mood index
+    _currentMoodIndex += 1;
+    
+    if (_currentMoodIndex >= [_moods count]) {
+        _currentMoodIndex = 0;
+    }
+    
+    [self setMood:_currentMoodIndex];
 }
 
 - (void)jump {

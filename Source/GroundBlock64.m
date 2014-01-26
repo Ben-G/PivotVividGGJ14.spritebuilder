@@ -32,6 +32,10 @@
     
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
     
+    if (spriteFrame == nil) {
+        CCLOG(@"Test");
+    }
+    
     [self setSpriteFrame:spriteFrame];
 }
 
