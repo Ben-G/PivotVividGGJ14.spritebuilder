@@ -239,13 +239,13 @@ static const float BASE_SPEED = 200.f;
 }
 
 - (void)removeOneMask {
-    Mask *firstMask = _masks[0];
-    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
+    Mask *firstMask = [_masks lastObject];
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:3.f position:ccp(600, 800)];
     CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
         [firstMask removeFromParent];
     }];
     
-    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
+    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveBy];
     CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
     
     [firstMask runAction:sequence];
