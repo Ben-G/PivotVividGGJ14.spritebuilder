@@ -20,56 +20,12 @@
 	<false/>
 	<key>nodeGraph</key>
 	<dict>
-		<key>animatedProperties</key>
-		<dict>
-			<key>0</key>
-			<dict>
-				<key>opacity</key>
-				<dict>
-					<key>keyframes</key>
-					<array>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>1</integer>
-							</dict>
-							<key>name</key>
-							<string>opacity</string>
-							<key>time</key>
-							<real>0.0</real>
-							<key>type</key>
-							<integer>10</integer>
-							<key>value</key>
-							<real>1</real>
-						</dict>
-					</array>
-					<key>name</key>
-					<string>opacity</string>
-					<key>type</key>
-					<integer>10</integer>
-				</dict>
-			</dict>
-		</dict>
 		<key>baseClass</key>
 		<string>CCSprite</string>
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>GroundBlock</string>
-		<key>customProperties</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>onlyVisibleInMood</string>
-				<key>optimized</key>
-				<false/>
-				<key>type</key>
-				<integer>3</integer>
-				<key>value</key>
-				<string>angry</string>
-			</dict>
-		</array>
+		<string>BasicEnemy</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -83,9 +39,9 @@
 			<key>allowsRotation</key>
 			<true/>
 			<key>bodyShape</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>cornerRadius</key>
-			<real>0.0</real>
+			<real>16</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -97,20 +53,8 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<array>
-					<real>0.0</real>
-					<real>34</real>
-				</array>
-				<array>
-					<real>33</real>
-					<real>34</real>
-				</array>
-				<array>
-					<real>33</real>
-					<real>0.0</real>
+					<real>15</real>
+					<real>15</real>
 				</array>
 			</array>
 		</dict>
@@ -170,18 +114,8 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/angry_blocksmall.PNG</string>
+					<string>art/space-invaders.png</string>
 				</array>
-			</dict>
-			<dict>
-				<key>baseValue</key>
-				<real>1</real>
-				<key>name</key>
-				<string>opacity</string>
-				<key>type</key>
-				<string>Float</string>
-				<key>value</key>
-				<real>1</real>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -198,8 +132,6 @@
 			</dict>
 		</array>
 		<key>selected</key>
-		<true/>
-		<key>seqExpanded</key>
 		<true/>
 	</dict>
 	<key>notes</key>
