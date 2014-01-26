@@ -8,10 +8,17 @@
 
 #import "Startscreen.h"
 
-@implementation Startscreen
+@implementation Startscreen {
+    CCLabelTTF *_label;
+}
 
 - (void)didLoadFromCCB {
     // preload audio
+    _label.string = @"Loading Resources ...";
+    [self performSelectorInBackground:@selector(preloadAudio) withObject:nil];
+}
+
+- (void)preloadAudio {
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     audio.preloadCacheEnabled = TRUE;
     
@@ -21,6 +28,12 @@
         NSString *filename = [NSString stringWithFormat:@"%@.mp3", title];
         [audio preloadEffect:filename];
     }
+    
+    [self performSelectorOnMainThread:@selector(loadCompleted) withObject:nil waitUntilDone:FALSE];
+}
+
+- (void)loadCompleted {
+    _label.string = @"#GGJ14";
 }
 
 - (void)startNow {
