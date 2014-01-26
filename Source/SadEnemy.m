@@ -17,7 +17,7 @@
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"sadmask"];
         [self setFrame:@"sadmask0001.png"];
         [self runAnimation:@"sadmask"];
-        self.moodToKill = @"sad";
+        self.moodToKill = @"calm";
     }
     
     return self;
