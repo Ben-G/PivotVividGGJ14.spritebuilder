@@ -4,6 +4,14 @@
 <array>
 	<dict>
 		<key>levelTitle</key>
+		<string>Level2</string>
+		<key>levelName</key>
+		<string>Level_tutorial</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>levelTitle</key>
 		<string>Level4: Blah blah</string>
 		<key>levelName</key>
 		<string>Level4</string>
