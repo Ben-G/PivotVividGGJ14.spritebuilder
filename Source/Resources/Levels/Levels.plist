@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>levelTitle</key>
-		<string>Level5:</string>
+		<string>Level1: A new world</string>
 		<key>levelName</key>
-		<string>Level5</string>
+		<string>Level10</string>
 		<key>levelDescription</key>
 		<string></string>
 	</dict>
@@ -31,14 +31,6 @@
 		<string>Tutorial</string>
 		<key>levelName</key>
 		<string>Level_2</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level1: A new world</string>
-		<key>levelName</key>
-		<string>Level10</string>
 		<key>levelDescription</key>
 		<string></string>
 	</dict>

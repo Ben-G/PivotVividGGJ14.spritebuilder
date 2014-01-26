@@ -69,6 +69,8 @@ static const int JUMP_IMPULSE = 100000;
 #pragma mark - Init
 
 - (void)didLoadFromCCB {
+    _physicsNode.sleepTimeThreshold = 10.f;
+    
     _progressBar.opacity = 0.f;
     
     // load initial background
@@ -226,8 +228,7 @@ static const int JUMP_IMPULSE = 100000;
     }
     
     // add SPEED to position
-    //_hero.position = ccp(_hero.position.x + _hero.speed * delta, _hero.position.y);
-    _hero.physicsBody.velocity = ccp(_baseSpeed, _hero.physicsBody.velocity.y);
+    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
     
     // make masks follow the player
     CGPoint previous = _hero.previousPosition;
@@ -397,19 +398,35 @@ static const int JUMP_IMPULSE = 100000;
 
 - (void)nextLevel {
     // reload level
+    [[GameState sharedInstance] loadNextLevel];
+    
     CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)winGame {
+    if (_gameOver) {
+        return;
+    }
+    
+    _gameOver = TRUE;
+
     _nextLevelButton.visible = TRUE;
 
     CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"WELL DONE!" fontName:@"Arial"fontSize:40.f];
     winLabel.color = [CCColor blackColor];
     winLabel.positionType = CCPositionTypeNormalized;
     winLabel.position = ccp(0.5f, 0.5f);
-    
     [self addChild:winLabel];
+    
+    NSDictionary *nextLevel = [[GameState sharedInstance] nextLevelInfo];
+    NSString *levelName = nextLevel[@"levelTitle"];
+    
+    CCLabelTTF *nextLevelLabel = [CCLabelTTF labelWithString:levelName fontName:@"Arial"fontSize:40.f];
+    nextLevelLabel.color = [CCColor blackColor];
+    nextLevelLabel.positionType = CCPositionTypeNormalized;
+    nextLevelLabel.position = ccp(0.5f, 0.2f);
+    [self addChild:nextLevelLabel];
 
     CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:1.f];
     _level.cascadeOpacityEnabled = TRUE;
@@ -417,8 +434,6 @@ static const int JUMP_IMPULSE = 100000;
     
     CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
     [_hero runAction:fadeOutHero];
-    
-    _gameOver = TRUE;
 }
 
 #pragma mark - Collision Handling
@@ -430,8 +445,17 @@ static const int JUMP_IMPULSE = 100000;
     }
 }
 
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
     [self winGame];
+    
+    // particle effect for death
+    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"EnemyDies"];
+    particle.position = goal.position;
+    particle.autoRemoveOnFinish = TRUE;
+    [goal removeFromParentAndCleanup:TRUE];
+    [_physicsNode addChild:particle];
+
+    return TRUE;
 }
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {

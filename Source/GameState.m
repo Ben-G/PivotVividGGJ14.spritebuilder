@@ -8,7 +8,9 @@
 
 #import "GameState.h"
 
-@implementation GameState
+@implementation GameState {
+    NSArray *_levels;
+}
 
 + (id)sharedInstance
 {
@@ -25,6 +27,29 @@
     
     // returns the same object each time
     return _sharedObject;
+}
+
+- (id)init {
+    self = [super init];
+    
+    if (self) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Levels" ofType:@"plist"];
+        _levels = [NSArray arrayWithContentsOfFile:path];
+    }
+    
+    return self;
+}
+
+- (NSDictionary *)nextLevelInfo {
+    NSDictionary *nextLevel = _levels[self.currentLevelIndex+1];
+    
+    return nextLevel;
+}
+
+- (void)loadNextLevel {
+    NSDictionary *nextLevel = _levels[self.currentLevelIndex+1];
+    self.currentLevel = nextLevel[@"levelName"];
+    self.currentLevelIndex = self.currentLevelIndex + 1;
 }
 
 @end
