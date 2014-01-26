@@ -10,4 +10,6 @@
 
 @interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
 
+@property (nonatomic, assign) BOOL onGround;
+
 @end
