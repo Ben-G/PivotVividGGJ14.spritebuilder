@@ -31,6 +31,7 @@
 		627C5C2118946BDF00409C84 /* scared_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1718946BDF00409C84 /* scared_default.plist */; };
 		627C5C2218946BDF00409C84 /* scared_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C5C1818946BDF00409C84 /* scared_default.png */; };
 		627C5C2518946C1200409C84 /* CCAnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5C2418946C1200409C84 /* CCAnimatedSprite.m */; };
+		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -114,6 +115,8 @@
 		627C5C1818946BDF00409C84 /* scared_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scared_default.png; sourceTree = "<group>"; };
 		627C5C2318946C1200409C84 /* CCAnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAnimatedSprite.h; path = Source/CCAnimatedSprite.h; sourceTree = "<group>"; };
 		627C5C2418946C1200409C84 /* CCAnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCAnimatedSprite.m; path = Source/CCAnimatedSprite.m; sourceTree = "<group>"; };
+		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
+		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		ACAF7F09189421BB0021FC4C /* Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mask.h; sourceTree = "<group>"; };
 		ACAF7F0A189421BB0021FC4C /* Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mask.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 				627C5C061894676000409C84 /* GroundBlockEight.m */,
 				627C5C091894677D00409C84 /* GroundBlock64.h */,
 				627C5C0A1894677D00409C84 /* GroundBlock64.m */,
+				62F4177D1894923400663BDD /* Block.h */,
+				62F4177E1894923400663BDD /* Block.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				627C5BC01893972600409C84 /* Mood.m in Sources */,
 				627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */,
+				62F4177F1894923400663BDD /* Block.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
 				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
 				627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */,

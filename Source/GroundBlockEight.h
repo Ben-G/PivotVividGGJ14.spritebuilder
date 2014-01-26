@@ -7,10 +7,11 @@
 //
 
 #import "CCSpriteBatchNode.h"
+#import "Block.h"
 
 @class Mood;
 
-@interface GroundBlockEight : CCSprite
+@interface GroundBlockEight : Block
 
 - (void)applyMood:(Mood*)mood;
 

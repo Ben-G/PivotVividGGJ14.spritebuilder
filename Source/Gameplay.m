@@ -13,6 +13,7 @@
 #import "BasicEnemy.h"
 #import "Mask.h"
 #import "Hero.h"
+#import "Block.h"
 
 @implementation Gameplay {
     CCNode *_contentNode;
@@ -52,7 +53,7 @@ static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 
 // amount of initial masks
 // static const int RAMP = 1;
-static const int INITIAL_MASKS = 2;
+static const int INITIAL_MASKS = 5;
 static const int JUMP_IMPULSE = 100000;
 static const float BASE_SPEED = 200.f;
 
@@ -108,7 +109,7 @@ static const float BASE_SPEED = 200.f;
     _blocks = [NSMutableArray array];
     
     for (CCNode *child in _level.children) {
-        if ([child isKindOfClass:[GroundBlock class]]) {
+        if ([child isKindOfClass:[Block class]]) {
             [_blocks addObject:child];
         }
     }

@@ -17,7 +17,7 @@
 
 - (void)applyMood:(Mood*)newMood {
     
-    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", newMood.moodPrefix];
+    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_blocksmall.png", newMood.moodPrefix];
     
     if (self.onlyVisibleInMood) {
         if ([newMood.moodPrefix isEqualToString:self.onlyVisibleInMood]) {
@@ -26,7 +26,7 @@
         } else {
             self.physicsBody.collisionMask = @[];
             self.opacity = 0.4f;
-            spriteFrameName = [NSString stringWithFormat:@"art/%@_block.png", _onlyVisibleInMood];
+            spriteFrameName = [NSString stringWithFormat:@"art/%@_blocksmall.png", _onlyVisibleInMood];
         }
     }
     

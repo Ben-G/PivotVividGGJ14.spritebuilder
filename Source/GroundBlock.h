@@ -7,10 +7,11 @@
 //
 
 #import "CCNode.h"
+#import "Block.h"
 
 @class Mood;
 
-@interface GroundBlock : CCSprite
+@interface GroundBlock : Block
 
 - (void)applyMood:(Mood*)mood;
 
