@@ -94,6 +94,16 @@ static NSMutableArray *chachedSprites;
     self.currentAnimation = repeatingAnimation;
 }
 
+- (void)runAnimationOnce:(NSString *)animationName {
+    if (self.currentAnimation) {
+        [self stopAnimation];
+    }
+    
+    CCActionAnimate *animationAction = self.animations[animationName];
+    [self runAction:animationAction];
+    self.currentAnimation = animationAction;
+}
+
 - (void)runAnimationIfNotRunning:(NSString*)animationName {
     // dummy impl. needs to be extended, currently checks against any animation not only same name one
     if (self.currentAnimation) {

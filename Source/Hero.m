@@ -18,6 +18,7 @@
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"angry"];
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"calm"];
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"fear"];
+        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"kaput"];
         [self setFrame:@"happy0001.png"];
     }
     
@@ -30,6 +31,10 @@
 
 - (void)applyMood:(Mood*)mood {
     [self runAnimation:mood.moodPrefix];
+}
+
+- (void)runDeathAnimation {
+    [self runAnimationOnce:@"kaput"];
 }
 
 @end

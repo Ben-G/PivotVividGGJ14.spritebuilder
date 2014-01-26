@@ -34,6 +34,9 @@
  */
 - (void)runAnimation:(NSString*)animationName;
 
+
+- (void)runAnimationOnce:(NSString*)animationName;
+
 /**
  Stops the current animation.
  */
