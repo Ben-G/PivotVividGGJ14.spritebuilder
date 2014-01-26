@@ -18,7 +18,7 @@
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"angry"];
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"calm"];
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"fear"];
-        [self setFrame:@"happy-sd0001.png"];
+        [self setFrame:@"happy0001.png"];
     }
     
     return self;

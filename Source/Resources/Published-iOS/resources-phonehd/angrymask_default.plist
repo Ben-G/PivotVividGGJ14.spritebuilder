@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>angrymask0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 6}, {140, 150}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 150}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 626}, {140, 150}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 6}, {140, 150}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 150}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{426, 622}, {140, 150}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{710, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{852, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1278, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{568, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1136, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{994, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1562, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{994, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{710, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{284, 468}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{852, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{142, 470}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 314}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0016.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1562, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0017.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{142, 314}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0018.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1278, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0019.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{284, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0020.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1562, 0}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0021.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 158}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0022.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1420, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0023.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1136, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0024.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{852, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0025.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{142, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0026.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 0}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 6}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{568, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0027.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 0}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 6}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{710, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0028.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 0}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 6}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0029.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{426, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0030.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{994, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0031.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{284, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0032.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 1}, {140, 156}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 156}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1278, 0}, {140, 156}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0033.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1562, 156}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0034.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1136, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0035.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 470}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0036.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{568, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0037.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 2}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 5}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{142, 158}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0038.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{710, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0039.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{426, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0040.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{994, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0041.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 3}, {140, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1420, 312}, {140, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0042.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1278, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0043.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1136, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0044.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1420, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0045.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1420, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0046.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 4}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{568, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0047.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{852, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0048.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{284, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0049.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{426, 468}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>angrymask0050.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{16, 5}, {140, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 3}</string>
+			<key>spriteSize</key>
+			<string>{140, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 168}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{426, 158}, {140, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.6.0</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{2048, 1024}</string>
+		<key>name</key>
+		<string>angrymask</string>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>angrymask_default</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>angrymask_default</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

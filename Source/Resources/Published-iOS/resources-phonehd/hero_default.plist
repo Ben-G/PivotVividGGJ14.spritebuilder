@@ -4,7 +4,7 @@
 <dict>
 	<key>frames</key>
 	<dict>
-		<key>angry-sd0001.png</key>
+		<key>angry0001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -23,7 +23,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0002.png</key>
+		<key>angry0002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -42,7 +42,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0003.png</key>
+		<key>angry0003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -61,7 +61,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0004.png</key>
+		<key>angry0004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -80,7 +80,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0005.png</key>
+		<key>angry0005.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -99,7 +99,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0006.png</key>
+		<key>angry0006.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -118,7 +118,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0007.png</key>
+		<key>angry0007.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -137,7 +137,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0008.png</key>
+		<key>angry0008.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -156,7 +156,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0009.png</key>
+		<key>angry0009.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -175,7 +175,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0010.png</key>
+		<key>angry0010.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -194,7 +194,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0011.png</key>
+		<key>angry0011.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -213,7 +213,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0012.png</key>
+		<key>angry0012.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -232,7 +232,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0013.png</key>
+		<key>angry0013.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -251,7 +251,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0014.png</key>
+		<key>angry0014.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -270,7 +270,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0015.png</key>
+		<key>angry0015.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -289,7 +289,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0016.png</key>
+		<key>angry0016.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -308,7 +308,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0017.png</key>
+		<key>angry0017.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -327,7 +327,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>angry-sd0018.png</key>
+		<key>angry0018.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -346,7 +346,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0001.png</key>
+		<key>happy0001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -365,7 +365,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0002.png</key>
+		<key>happy0002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -384,7 +384,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0003.png</key>
+		<key>happy0003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -403,7 +403,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0004.png</key>
+		<key>happy0004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -422,7 +422,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0005.png</key>
+		<key>happy0005.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -441,7 +441,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0006.png</key>
+		<key>happy0006.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -460,7 +460,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0007.png</key>
+		<key>happy0007.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -479,7 +479,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0008.png</key>
+		<key>happy0008.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -498,7 +498,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0009.png</key>
+		<key>happy0009.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -517,7 +517,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0010.png</key>
+		<key>happy0010.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -536,7 +536,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0011.png</key>
+		<key>happy0011.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -555,7 +555,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0012.png</key>
+		<key>happy0012.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -574,7 +574,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0013.png</key>
+		<key>happy0013.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -593,7 +593,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0014.png</key>
+		<key>happy0014.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -612,7 +612,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0015.png</key>
+		<key>happy0015.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -631,7 +631,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0016.png</key>
+		<key>happy0016.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -650,7 +650,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0017.png</key>
+		<key>happy0017.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -669,7 +669,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>happy-sd0018.png</key>
+		<key>happy0018.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -688,7 +688,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0001.png</key>
+		<key>kaput0001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -707,7 +707,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0002.png</key>
+		<key>kaput0002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -726,7 +726,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0003.png</key>
+		<key>kaput0003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -745,7 +745,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0004.png</key>
+		<key>kaput0004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -764,7 +764,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0005.png</key>
+		<key>kaput0005.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -783,7 +783,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0006.png</key>
+		<key>kaput0006.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -802,7 +802,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0007.png</key>
+		<key>kaput0007.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -821,7 +821,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0008.png</key>
+		<key>kaput0008.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -840,7 +840,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0009.png</key>
+		<key>kaput0009.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -859,7 +859,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0010.png</key>
+		<key>kaput0010.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -878,7 +878,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0011.png</key>
+		<key>kaput0011.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -897,7 +897,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0012.png</key>
+		<key>kaput0012.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -916,7 +916,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0013.png</key>
+		<key>kaput0013.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -935,7 +935,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0014.png</key>
+		<key>kaput0014.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -954,7 +954,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0015.png</key>
+		<key>kaput0015.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -973,7 +973,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0016.png</key>
+		<key>kaput0016.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -992,7 +992,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0017.png</key>
+		<key>kaput0017.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1011,7 +1011,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0018.png</key>
+		<key>kaput0018.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1030,7 +1030,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0019.png</key>
+		<key>kaput0019.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1049,7 +1049,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0020.png</key>
+		<key>kaput0020.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1068,7 +1068,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0021.png</key>
+		<key>kaput0021.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1087,7 +1087,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0022.png</key>
+		<key>kaput0022.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1106,7 +1106,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0023.png</key>
+		<key>kaput0023.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1125,7 +1125,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0024.png</key>
+		<key>kaput0024.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1144,7 +1144,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0025.png</key>
+		<key>kaput0025.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1163,7 +1163,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0026.png</key>
+		<key>kaput0026.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1182,7 +1182,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0027.png</key>
+		<key>kaput0027.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1201,7 +1201,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0028.png</key>
+		<key>kaput0028.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1220,7 +1220,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0029.png</key>
+		<key>kaput0029.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1239,7 +1239,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0030.png</key>
+		<key>kaput0030.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1258,7 +1258,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0031.png</key>
+		<key>kaput0031.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1277,7 +1277,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0032.png</key>
+		<key>kaput0032.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1296,7 +1296,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0033.png</key>
+		<key>kaput0033.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1315,7 +1315,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0034.png</key>
+		<key>kaput0034.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1334,7 +1334,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0035.png</key>
+		<key>kaput0035.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1353,7 +1353,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0036.png</key>
+		<key>kaput0036.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1372,7 +1372,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0037.png</key>
+		<key>kaput0037.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1391,7 +1391,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0038.png</key>
+		<key>kaput0038.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1410,7 +1410,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0039.png</key>
+		<key>kaput0039.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1429,7 +1429,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0040.png</key>
+		<key>kaput0040.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1448,7 +1448,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0041.png</key>
+		<key>kaput0041.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1467,7 +1467,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0042.png</key>
+		<key>kaput0042.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1486,7 +1486,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0043.png</key>
+		<key>kaput0043.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1505,7 +1505,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0044.png</key>
+		<key>kaput0044.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1524,7 +1524,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>kaput-sd0045.png</key>
+		<key>kaput0045.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1543,7 +1543,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0001.png</key>
+		<key>calm0001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1562,7 +1562,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0002.png</key>
+		<key>calm0002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1581,7 +1581,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0003.png</key>
+		<key>calm0003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1600,7 +1600,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0004.png</key>
+		<key>calm0004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1619,7 +1619,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0005.png</key>
+		<key>calm0005.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1638,7 +1638,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0006.png</key>
+		<key>calm0006.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1657,7 +1657,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0007.png</key>
+		<key>calm0007.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1676,7 +1676,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0008.png</key>
+		<key>calm0008.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1695,7 +1695,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0009.png</key>
+		<key>calm0009.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1714,7 +1714,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0010.png</key>
+		<key>calm0010.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1733,7 +1733,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0011.png</key>
+		<key>calm0011.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1752,7 +1752,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0012.png</key>
+		<key>calm0012.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1771,7 +1771,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0013.png</key>
+		<key>calm0013.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1790,7 +1790,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0014.png</key>
+		<key>calm0014.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1809,7 +1809,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0015.png</key>
+		<key>calm0015.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1828,7 +1828,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0016.png</key>
+		<key>calm0016.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1847,7 +1847,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0017.png</key>
+		<key>calm0017.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1866,7 +1866,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>calm-sd0018.png</key>
+		<key>calm0018.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1885,7 +1885,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0001.png</key>
+		<key>fear0001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1904,7 +1904,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0002.png</key>
+		<key>fear0002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1923,7 +1923,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0003.png</key>
+		<key>fear0003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1942,7 +1942,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0004.png</key>
+		<key>fear0004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1961,7 +1961,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0005.png</key>
+		<key>fear0005.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1980,7 +1980,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0006.png</key>
+		<key>fear0006.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -1999,7 +1999,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0007.png</key>
+		<key>fear0007.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2018,7 +2018,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0008.png</key>
+		<key>fear0008.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2037,7 +2037,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0009.png</key>
+		<key>fear0009.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2056,7 +2056,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0010.png</key>
+		<key>fear0010.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2075,7 +2075,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0011.png</key>
+		<key>fear0011.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2094,7 +2094,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0012.png</key>
+		<key>fear0012.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2113,7 +2113,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0013.png</key>
+		<key>fear0013.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2132,7 +2132,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0014.png</key>
+		<key>fear0014.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2151,7 +2151,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0015.png</key>
+		<key>fear0015.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2170,7 +2170,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0016.png</key>
+		<key>fear0016.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2189,7 +2189,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0017.png</key>
+		<key>fear0017.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -2208,7 +2208,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>fear-sd0018.png</key>
+		<key>fear0018.png</key>
 		<dict>
 			<key>aliases</key>
 			<array/>

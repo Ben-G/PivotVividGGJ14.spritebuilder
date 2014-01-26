@@ -7,8 +7,9 @@
 //
 
 #import "CCSprite.h"
+#import "CCAnimatedSprite.h"
 
-@interface Enemy : CCSprite
+@interface Enemy : CCAnimatedSprite
 
 @property (nonatomic, strong) NSString *moodToKill;
 

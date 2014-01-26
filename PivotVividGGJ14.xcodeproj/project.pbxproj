@@ -94,7 +94,7 @@
 		627C5BBE1893972600409C84 /* Mood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mood.h; sourceTree = "<group>"; };
 		627C5BBF1893972600409C84 /* Mood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mood.m; sourceTree = "<group>"; };
 		627C5BC118939D5300409C84 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = Source/Hero.h; sourceTree = "<group>"; };
-		627C5BC218939D5300409C84 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hero.m; path = Source/Hero.m; sourceTree = "<group>"; };
+		627C5BC218939D5300409C84 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Hero.m; path = Source/Hero.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		627C5BC41893B82D00409C84 /* BasicEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicEnemy.h; path = Source/BasicEnemy.h; sourceTree = "<group>"; };
 		627C5BC51893B82D00409C84 /* BasicEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicEnemy.m; path = Source/BasicEnemy.m; sourceTree = "<group>"; };
 		627C5BF01893EE5C00409C84 /* angry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = angry.mp3; sourceTree = "<group>"; };
