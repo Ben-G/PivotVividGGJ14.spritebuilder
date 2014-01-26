@@ -105,11 +105,7 @@ static const float BASE_SPEED = 200.f;
     // collect all blocks in blocks array
     _blocks = [NSMutableArray array];
     
-    for (CCNode *child in _level.children) {
-        if ([child isKindOfClass:[Block class]]) {
-            [_blocks addObject:child];
-        }
-    }
+    [self findBlocks:_level];
     
     _masks = [NSMutableArray array];
     
@@ -149,6 +145,18 @@ static const float BASE_SPEED = 200.f;
         mask.position = _hero.position;
         [_level addChild:mask];
         [_masks addObject:mask];
+    }
+}
+
+- (void)findBlocks:(CCNode *)node {
+    for (int i = 0; i < node.children.count; i++) {
+        CCNode *child = node.children[i];
+        
+        if ([child children] > 0) {
+            [self findBlocks:(CCNode *)child];
+        } else if ([child isKindOfClass:[Block class]]) {
+            [_blocks addObject:child];
+        }
     }
 }
 

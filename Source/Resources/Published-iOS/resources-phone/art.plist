@@ -69,10 +69,10 @@
 			<key>sourceSize</key>
 			<string>{264, 34}</string>
 		</dict>
-		<key>art/angry_blocksmall.PNG</key>
+		<key>art/angry_blocksmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{106, 977}, {33, 34}}</string>
+			<string>{{71, 977}, {33, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -202,7 +202,7 @@
 		<key>art/fear_blocksmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{71, 977}, {33, 34}}</string>
+			<string>{{106, 977}, {33, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
