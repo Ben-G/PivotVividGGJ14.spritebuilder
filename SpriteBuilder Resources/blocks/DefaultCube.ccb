@@ -31,6 +31,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>angry</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>GroundBlock64</string>
 				<key>memberVarAssignmentName</key>
@@ -91,6 +104,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>angry</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>GroundBlock64</string>
 				<key>memberVarAssignmentName</key>
@@ -151,6 +177,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>angry</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>GroundBlock64</string>
 				<key>memberVarAssignmentName</key>
@@ -211,6 +250,19 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>onlyVisibleInMood</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>angry</string>
+					</dict>
+				</array>
 				<key>displayName</key>
 				<string>GroundBlock64</string>
 				<key>memberVarAssignmentName</key>

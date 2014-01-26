@@ -56,20 +56,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>GroundBlock</string>
-		<key>customProperties</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>onlyVisibleInMood</string>
-				<key>optimized</key>
-				<false/>
-				<key>type</key>
-				<integer>3</integer>
-				<key>value</key>
-				<string>angry</string>
-			</dict>
-		</array>
+		<string>GroundBlock64</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -170,7 +157,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/angry_blocksmall.PNG</string>
+					<string>art/angry_blocksmall.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -197,8 +184,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 		<key>seqExpanded</key>
 		<true/>
 	</dict>
