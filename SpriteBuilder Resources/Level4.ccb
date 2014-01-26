@@ -4442,8 +4442,6 @@
 						<string>StartPosition.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
@@ -4718,8 +4716,21 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
+				<key>customProperties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>moodToKill</string>
+						<key>optimized</key>
+						<false/>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<string>angry</string>
+					</dict>
+				</array>
 				<key>displayName</key>
-				<string>CCBFile</string>
+				<string>AngryEnemy</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -4741,8 +4752,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>557</real>
-							<real>100</real>
+							<real>571.99993896484375</real>
+							<real>267</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -4767,7 +4778,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>blocks/OnlyAngerCube.ccb</string>
+						<string>AngerEnemy.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -4782,7 +4793,7 @@
 				<array>
 					<dict>
 						<key>name</key>
-						<string>onlyVisibleInMood</string>
+						<string>moodToKill</string>
 						<key>optimized</key>
 						<false/>
 						<key>type</key>
@@ -4792,7 +4803,7 @@
 					</dict>
 				</array>
 				<key>displayName</key>
-				<string>GroundBlock64</string>
+				<string>AngryEnemy</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -4814,8 +4825,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>606</real>
-							<real>116</real>
+							<real>521.99993896484375</real>
+							<real>267</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -4840,7 +4851,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>blocks/OnlyAngry64.ccb</string>
+						<string>AngerEnemy.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -4855,7 +4866,7 @@
 				<array>
 					<dict>
 						<key>name</key>
-						<string>onlyVisibleInMood</string>
+						<string>moodToKill</string>
 						<key>optimized</key>
 						<false/>
 						<key>type</key>
@@ -4865,7 +4876,7 @@
 					</dict>
 				</array>
 				<key>displayName</key>
-				<string>GroundBlock64</string>
+				<string>AngryEnemy</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -4887,8 +4898,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>606</real>
-							<real>85</real>
+							<real>621.99993896484375</real>
+							<real>266</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -4913,7 +4924,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>blocks/OnlyAngry64.ccb</string>
+						<string>AngerEnemy.ccb</string>
 					</dict>
 				</array>
 			</dict>

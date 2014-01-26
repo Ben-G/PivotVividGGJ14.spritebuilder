@@ -69,6 +69,8 @@ static const int JUMP_IMPULSE = 100000;
 #pragma mark - Init
 
 - (void)didLoadFromCCB {
+    _physicsNode.sleepTimeThreshold = 10.f;
+    
     _progressBar.opacity = 0.f;
     
     // load initial background
@@ -445,8 +447,17 @@ static const int JUMP_IMPULSE = 100000;
     }
 }
 
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
     [self winGame];
+    
+    // particle effect for death
+    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"EnemyDies"];
+    particle.position = goal.position;
+    particle.autoRemoveOnFinish = TRUE;
+    [goal removeFromParentAndCleanup:TRUE];
+    [_physicsNode addChild:particle];
+
+    return TRUE;
 }
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {

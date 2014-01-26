@@ -11,6 +11,7 @@
 @implementation GoalPosition
 
 - (void)didLoadFromCCB {
+    self.physicsBody.sensor = TRUE;
     self.physicsBody.collisionType = @"goal";
 }
 
