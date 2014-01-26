@@ -343,7 +343,7 @@ static const float BASE_SPEED = 200.f;
         
         if (_onGround) {
             CCLOG(@"on ground");
-            [_hero runAnimation:[_moods[_currentMoodIndex] moodPrefix]];
+            [_hero runAnimationIfNotRunning:[_moods[_currentMoodIndex] moodPrefix]];
         } else {
             CCLOG(@"NOT on ground");
             [_hero stopAnimation];
@@ -449,6 +449,11 @@ static const float BASE_SPEED = 200.f;
         // if enemy does not die -> player dies
         [self endGame];
     }
+}
+
+-(void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
+    // once we're in the air, we're not on the ground anymore and cannot jump
+    _onGround = FALSE;
 }
 
 @end
