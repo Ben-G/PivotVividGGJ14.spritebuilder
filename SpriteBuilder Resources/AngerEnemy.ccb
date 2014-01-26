@@ -25,7 +25,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Enemy</string>
+		<string>AngryEnemy</string>
 		<key>customProperties</key>
 		<array>
 			<dict>
@@ -139,7 +139,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/space-invaders.png</string>
+					<string>art/AngryEnemy.png</string>
 				</array>
 			</dict>
 			<dict>

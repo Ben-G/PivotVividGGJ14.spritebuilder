@@ -8,8 +8,11 @@
 
 #import "CCNode.h"
 #import "CCAnimatedSprite.h"
+#import "Mood.h"
 
 @interface Hero : CCAnimatedSprite
+
+- (void)applyMood:(Mood*)mood;
 
 @property (nonatomic, assign) CGPoint previousPosition;
 @property (nonatomic, assign) float speed;

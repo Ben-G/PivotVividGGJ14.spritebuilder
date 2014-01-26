@@ -9,10 +9,18 @@
 #import "GroundBlock64.h"
 #import "Mood.h"
 
-@implementation GroundBlock64
+@implementation GroundBlock64 {
+}
 
 - (void)didLoadFromCCB {
     self.physicsBody.collisionType = @"ground";
+    
+//    CC
+//    
+//    CCActionFadeTo *fade = [CCActionFadeTo actionWithDuration:0.1f opacity:0.7f];
+//    CCActionReverse *reverse = [CCActionReverse actionWithAction:fade];
+//    CCActionSequence *seq = [CCActionSequence actions:fade, reverse, nil];
+//    _warn = [CCActionRepeatForever actionWithAction:seq];
 }
 
 - (void)applyMood:(Mood*)newMood {
@@ -31,10 +39,6 @@
     }
     
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
-    
-    if (spriteFrame == nil) {
-        CCLOG(@"Test");
-    }
     
     [self setSpriteFrame:spriteFrame];
 }

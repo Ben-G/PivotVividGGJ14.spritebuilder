@@ -14,11 +14,14 @@
 #import "Mask.h"
 #import "Hero.h"
 #import "Block.h"
+#import "GameState.h"
+#import "Level.h"
 
 @implementation Gameplay {
     CCNode *_contentNode;
+    CCNode *_progressBar;
     CCPhysicsNode *_physicsNode;
-    CCNode *_level;
+    Level *_level;
     Hero *_hero;
     
     int updates;
@@ -46,6 +49,13 @@
     
     // the position of the player on the screen
     int playerPositionX;
+    
+    BOOL _gameOver;
+    
+    CCButton *_nextLevelButton;
+    
+    CGFloat _baseSpeed;
+    int _initialMasks;
 }
 
 // distance between masks
@@ -53,13 +63,14 @@ static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 
 // amount of initial masks
 // static const int RAMP = 1;
-static const int INITIAL_MASKS = 5;
+
 static const int JUMP_IMPULSE = 100000;
-static const float BASE_SPEED = 175.f;
 
 #pragma mark - Init
 
 - (void)didLoadFromCCB {
+    _progressBar.opacity = 0.f;
+    
     // load initial background
     NSString *spriteFrameName = @"art/sad_background.png";
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
@@ -83,18 +94,24 @@ static const float BASE_SPEED = 175.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level4"];
+    NSString *levelName = [[GameState sharedInstance] currentLevel];
+    _level = (Level*) [CCBReader load:levelName];
     
-    CGPoint playerPosWorld = [_physicsNode convertToWorldSpace:_hero.position];
-    CGPoint heroOnScreen = [self convertToNodeSpace:playerPosWorld];
-    playerPositionX = heroOnScreen.x;
+    _hero.position = _level.startPosition;
+    
+    // read custom level properties
+    _initialMasks = _level.initialMasks;
+    _baseSpeed = _level.levelSpeed;
+    
+    // determines how the camera shall follow the player (where in the camera image the hero will be positioned)
+    playerPositionX = 150;
     
     levelGoal = _level.contentSize.width - 300;
     
     // collition type for hero
     _hero.physicsBody.allowsRotation = FALSE;
     _hero.physicsBody.collisionType = @"hero";
-    _hero.speed = BASE_SPEED;
+    _hero.speed = _baseSpeed;
     
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
@@ -147,7 +164,7 @@ static const float BASE_SPEED = 175.f;
 }
 
 - (void)initializeMask {
-    for (int i = 0; i < INITIAL_MASKS; i++) {
+    for (int i = 0; i < _initialMasks; i++) {
         Mask *mask = (Mask*)[CCBReader load:@"Mask"];
         mask.position = _hero.position;
         [_level addChild:mask];
@@ -156,6 +173,8 @@ static const float BASE_SPEED = 175.f;
 }
 
 - (void)findBlocks:(CCNode *)node {
+    node.cascadeOpacityEnabled = TRUE;
+    
     for (int i = 0; i < node.children.count; i++) {
         CCNode *child = node.children[i];
         
@@ -170,6 +189,11 @@ static const float BASE_SPEED = 175.f;
 #pragma mark - Update
 
 - (void)update:(CCTime)delta {
+    
+    if (_gameOver) {
+        return;
+    }
+    
     // GJ hack, to forbid rotation
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
@@ -185,13 +209,15 @@ static const float BASE_SPEED = 175.f;
         [self winGame];
     }
     
+    _progressBar.scaleX = (_hero.position.x / (levelGoal  * 1.f));
+    
     // scroll left
     if (heroOnScreen.x >= (playerPositionX*1.05f)) {
-        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta*1.1f, _contentNode.position.y);
+        _contentNode.position = ccp(_contentNode.position.x - _baseSpeed *delta*1.1f, _contentNode.position.y);
     } else if (heroOnScreen.x < (playerPositionX*0.95f)) {
-        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta*0.9f, _contentNode.position.y);
+        _contentNode.position = ccp(_contentNode.position.x - _baseSpeed*delta*0.9f, _contentNode.position.y);
     } else {
-        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta, _contentNode.position.y);
+        _contentNode.position = ccp(_contentNode.position.x - _baseSpeed*delta, _contentNode.position.y);
     }
     
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
@@ -222,10 +248,18 @@ static const float BASE_SPEED = 175.f;
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    if (_gameOver) {
+        return;
+    }
+    
     _touchStartPosition = [touch locationInNode:self];
 }
 
 - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
+    if (_gameOver) {
+        return;
+    }
+    
     CGPoint currentPos = [touch locationInNode:self];
     CGFloat distance = ccpDistance(currentPos, _touchStartPosition);
     
@@ -239,18 +273,17 @@ static const float BASE_SPEED = 175.f;
 }
 
 - (void)removeOneMask {
-    Mask *firstMask = _masks[0];
-    CCActionMoveTo *moveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-100, 400)];
+    Mask *firstMask = [_masks lastObject];
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:3.f position:ccp(600, 800)];
     CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
         [firstMask removeFromParent];
     }];
     
-    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveTo];
+    CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveBy];
     CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
     
     [firstMask runAction:sequence];
     [_masks removeObject:firstMask];
-    
 }
 
 - (void)setMood:(int)newMoodIndex {
@@ -262,6 +295,7 @@ static const float BASE_SPEED = 175.f;
     //    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
     //    [audio playEffect:filename loop:TRUE];
     
+    [_hero applyMood:newMood];
     
     // apply new mood to all blocks
     for (GroundBlock *block in _blocks) {
@@ -302,7 +336,8 @@ static const float BASE_SPEED = 175.f;
 - (void)jump {
     if (self.onGround) {
         self.onGround = FALSE;
-        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
+//        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
+        [_hero.physicsBody setVelocity:ccp(_hero.physicsBody.velocity.x, 500.f)];
     }
 }
 
@@ -312,7 +347,7 @@ static const float BASE_SPEED = 175.f;
         
         if (_onGround) {
             CCLOG(@"on ground");
-            [_hero runAnimation:@"happy"];
+            [_hero runAnimationIfNotRunning:[_moods[_currentMoodIndex] moodPrefix]];
         } else {
             CCLOG(@"NOT on ground");
             [_hero stopAnimation];
@@ -323,26 +358,66 @@ static const float BASE_SPEED = 175.f;
 #pragma mark - Loose / Win interation
 
 - (void)endGame {
+    CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"YOU LOSE!" fontName:@"Arial"fontSize:40.f];
+    winLabel.color = [CCColor blackColor];
+    winLabel.positionType = CCPositionTypeNormalized;
+    winLabel.position = ccp(0.5f, 0.5f);
+    
+    [self addChild:winLabel];
+    
+    CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
+    [_progressBar runAction:fadeIn];
+    
+    CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:1.f];
+    _level.cascadeOpacityEnabled = TRUE;
+    [_level runAction:fadeOut];
+    
+    CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
+    [_hero runAction:fadeOutHero];
+    [_hero removeFromParent];
+    
+    int n = [_masks count];
+    
+    for (int i = 0; i < n; i++) {
+        [self removeOneMask];
+    }
+    
+    _gameOver = TRUE;
+    
+    // Delay execution of my block for 2 seconds.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // reload level
+            CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+            [[CCDirector sharedDirector] replaceScene:scene];
+        });
+    });
+}
+
+- (void)nextLevel {
     // reload level
     CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)winGame {
+    _nextLevelButton.visible = TRUE;
+
     CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"WELL DONE!" fontName:@"Arial"fontSize:40.f];
     winLabel.color = [CCColor blackColor];
     winLabel.positionType = CCPositionTypeNormalized;
     winLabel.position = ccp(0.5f, 0.5f);
     
-    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
-    particle.positionType = CCPositionTypeNormalized;
-    particle.position = ccp(0.5, 0.5);
-    particle.autoRemoveOnFinish = TRUE;
-    [self addChild:particle];
-    
     [self addChild:winLabel];
+
+    CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:1.f];
+    _level.cascadeOpacityEnabled = TRUE;
+    [_level runAction:fadeOut];
     
-    [_hero stopAllActions];
+    CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
+    [_hero runAction:fadeOutHero];
+    
+    _gameOver = TRUE;
 }
 
 #pragma mark - Collision Handling
@@ -352,6 +427,10 @@ static const float BASE_SPEED = 175.f;
         // allow jump when we are on ground
         self.onGround = TRUE;
     }
+}
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
+    [self winGame];
 }
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
@@ -378,6 +457,11 @@ static const float BASE_SPEED = 175.f;
         // if enemy does not die -> player dies
         [self endGame];
     }
+}
+
+-(void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
+    // once we're in the air, we're not on the ground anymore and cannot jump
+    _onGround = FALSE;
 }
 
 @end

@@ -39,6 +39,14 @@
  */
 - (void)stopAnimation;
 
+/**
+ Runs an animation in a loop, if it's not already running.
+ 
+ @param animationName this name is used to reference an animation that has been created earlier
+ */
+- (void)runAnimationIfNotRunning:(NSString*)animationName;
+
+
 /** 
  Manually sets a frame. Does not stop any running animation.
  
