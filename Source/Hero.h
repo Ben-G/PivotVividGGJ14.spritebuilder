@@ -13,6 +13,7 @@
 @interface Hero : CCAnimatedSprite
 
 - (void)applyMood:(Mood*)mood;
+- (void)runDeathAnimation;
 
 @property (nonatomic, assign) CGPoint previousPosition;
 @property (nonatomic, assign) float speed;

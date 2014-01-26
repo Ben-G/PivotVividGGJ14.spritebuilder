@@ -118,7 +118,7 @@ static const int JUMP_IMPULSE = 100000;
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
-    _physicsNode.debugDraw = FALSE;
+//    _physicsNode.debugDraw = TRUE;
     
     // setup a camera to follow the hero
 //    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
@@ -360,6 +360,8 @@ static const int JUMP_IMPULSE = 100000;
 #pragma mark - Loose / Win interation
 
 - (void)endGame {
+    [_hero runDeathAnimation];
+    
     CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"YOU LOSE!" fontName:@"Arial"fontSize:40.f];
     winLabel.color = [CCColor blackColor];
     winLabel.positionType = CCPositionTypeNormalized;
@@ -376,7 +378,7 @@ static const int JUMP_IMPULSE = 100000;
     
     CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
     [_hero runAction:fadeOutHero];
-    [_hero removeFromParent];
+//    [_hero removeFromParent];
     
     int n = [_masks count];
     
@@ -409,6 +411,8 @@ static const int JUMP_IMPULSE = 100000;
         return;
     }
     
+    [_hero stopAllActions];
+    
     _gameOver = TRUE;
 
     _nextLevelButton.visible = TRUE;
@@ -420,7 +424,7 @@ static const int JUMP_IMPULSE = 100000;
     [self addChild:winLabel];
     
     NSDictionary *nextLevel = [[GameState sharedInstance] nextLevelInfo];
-    NSString *levelName = nextLevel[@"levelTitle"];
+    NSString *levelName = [NSString stringWithFormat:@"next: %@",nextLevel[@"levelTitle"]];
     
     CCLabelTTF *nextLevelLabel = [CCLabelTTF labelWithString:levelName fontName:@"Arial"fontSize:40.f];
     nextLevelLabel.color = [CCColor blackColor];

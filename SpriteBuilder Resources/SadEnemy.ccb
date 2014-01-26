@@ -53,20 +53,28 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>2.585906982421875</real>
+					<real>95.00390625</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>53</real>
+					<real>4.585906982421875</real>
+					<real>11.00390625</real>
 				</array>
 				<array>
-					<real>42</real>
-					<real>53</real>
+					<real>32.585906982421875</real>
+					<real>4.00390625</real>
 				</array>
 				<array>
-					<real>42</real>
-					<real>0.0</real>
+					<real>60.585906982421875</real>
+					<real>11.00390625</real>
+				</array>
+				<array>
+					<real>70.585906982421875</real>
+					<real>95.00390625</real>
+				</array>
+				<array>
+					<real>43.628875732421875</real>
+					<real>106.7109375</real>
 				</array>
 			</array>
 		</dict>
