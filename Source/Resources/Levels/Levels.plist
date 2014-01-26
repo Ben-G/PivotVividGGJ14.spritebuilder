@@ -12,7 +12,7 @@
 	</dict>
 	<dict>
 		<key>levelTitle</key>
-		<string>Level 2</string>
+		<string>Level 1</string>
 		<key>levelName</key>
 		<string>Level_tutorial</string>
 		<key>levelDescription</key>
@@ -20,7 +20,7 @@
 	</dict>
 	<dict>
 		<key>levelTitle</key>
-		<string>Level 3</string>
+		<string>Level 2</string>
 		<key>levelName</key>
 		<string>Level1</string>
 		<key>levelDescription</key>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>levelTitle</key>
-		<string>Level 4</string>
+		<string>Level 3</string>
 		<key>levelName</key>
 		<string>Level4</string>
 		<key>levelDescription</key>
@@ -36,7 +36,7 @@
 	</dict>
 	<dict>
 		<key>levelTitle</key>
-		<string>Level 5</string>
+		<string>Level 4</string>
 		<key>levelName</key>
 		<string>Level5</string>
 		<key>levelDescription</key>
