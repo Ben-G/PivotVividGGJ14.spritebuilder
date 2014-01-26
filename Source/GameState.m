@@ -44,15 +44,27 @@
 }
 
 - (NSDictionary *)nextLevelInfo {
-    NSDictionary *nextLevel = _levels[self.currentLevelIndex+1];
+    NSDictionary *nextLevel = nil;
+    
+    if (self.currentLevelIndex+1 >= _levels.count) {
+        nextLevel = _levels[0];
+    } else {
+        nextLevel = _levels[self.currentLevelIndex+1];
+    }
     
     return nextLevel;
 }
 
 - (void)loadNextLevel {
-    NSDictionary *nextLevel = _levels[self.currentLevelIndex+1];
+    int nextIndex = self.currentLevelIndex + 1;
+    
+    if (self.currentLevelIndex+1 >= _levels.count) {
+        nextIndex = 0;
+    }
+    
+    NSDictionary *nextLevel = _levels[nextIndex];
     self.currentLevel = nextLevel[@"levelName"];
-    self.currentLevelIndex = self.currentLevelIndex + 1;
+    self.currentLevelIndex = nextIndex;
 }
 
 @end

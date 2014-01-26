@@ -53,6 +53,7 @@
     BOOL _gameOver;
     
     CCButton *_nextLevelButton;
+    CCButton *_levelSelectionButton;
     
     CGFloat _baseSpeed;
     int _initialMasks;
@@ -284,6 +285,11 @@ static const int JUMP_IMPULSE = 100000;
     [_masks removeObject:firstMask];
 }
 
+- (void)stopMusic {
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    [audio stopAllEffects];
+}
+
 - (void)setMood:(int)newMoodIndex {
     Mood *newMood = _moods[_currentMoodIndex];
     
@@ -358,6 +364,8 @@ static const int JUMP_IMPULSE = 100000;
         return;
     }
     
+    _levelSelectionButton.visible = TRUE;
+    
     [_hero runDeathAnimation];
     
     CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"YOU LOSE!" fontName:@"Arial"fontSize:40.f];
@@ -386,20 +394,30 @@ static const int JUMP_IMPULSE = 100000;
     
     _gameOver = TRUE;
     
-    // Delay execution of my block for 2 seconds.
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // reload level
-            CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-            [[CCDirector sharedDirector] replaceScene:scene];
-        });
-    });
+    // Delay execution of my block for couple seconds.
+    [self performSelector:@selector(restartLevel) withObject:nil afterDelay:3.f];
+}
+
+- (void)restartLevel {
+    // reload level
+    [self stopMusic];
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
+- (void)levelSelectionButtonPressed {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(restartLevel) object:nil];
+
+    [self stopMusic];
+    CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)nextLevel {
     // reload level
     [[GameState sharedInstance] loadNextLevel];
     
+    [self stopMusic];
     CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
