@@ -53,12 +53,12 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>-3.04296875</real>
+					<real>-3.0517578125e-05</real>
+					<real>-0.04296875</real>
 				</array>
 				<array>
 					<real>74</real>
-					<real>-3.04296875</real>
+					<real>-0.04296875</real>
 				</array>
 				<array>
 					<real>74</real>
@@ -126,7 +126,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string></string>
+					<string>art/sad0015.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -140,17 +140,6 @@
 					<real>1</real>
 					<real>1</real>
 					<real>1</real>
-				</array>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>blendFunc</string>
-				<key>type</key>
-				<string>Blendmode</string>
-				<key>value</key>
-				<array>
-					<integer>770</integer>
-					<integer>771</integer>
 				</array>
 			</dict>
 		</array>

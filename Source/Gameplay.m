@@ -418,7 +418,6 @@ static const int JUMP_IMPULSE = 100000;
     winLabel.positionType = CCPositionTypeNormalized;
     winLabel.position = ccp(0.5f, 0.5f);
     [self addChild:winLabel];
-
     
     NSDictionary *nextLevel = [[GameState sharedInstance] nextLevelInfo];
     NSString *levelName = nextLevel[@"levelTitle"];
@@ -435,7 +434,6 @@ static const int JUMP_IMPULSE = 100000;
     
     CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
     [_hero runAction:fadeOutHero];
-    
 }
 
 #pragma mark - Collision Handling
