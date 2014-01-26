@@ -11,11 +11,14 @@
 @implementation Hero
 
 - (id)init {
-    self = [super initWithPlist:@"happy_default.plist"];
+    self = [super initWithPlist:@"hero_default.plist"];
     
     if (self) {
         [self addAnimationwithDelayBetweenFrames:1/30.f name:@"happy"];
-        [self runAnimation:@"happy"];
+        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"angry"];
+        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"calm"];
+        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"fear"];
+        [self setFrame:@"happy-sd0001.png"];
     }
     
     return self;
@@ -23,6 +26,10 @@
 
 - (void)didLoadFromCCB {
     self.previousPosition = self.position;
+}
+
+- (void)applyMood:(Mood*)mood {
+    [self runAnimation:mood.moodPrefix];
 }
 
 @end

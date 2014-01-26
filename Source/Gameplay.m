@@ -262,6 +262,7 @@ static const float BASE_SPEED = 200.f;
     //    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
     //    [audio playEffect:filename loop:TRUE];
     
+    [_hero applyMood:newMood];
     
     // apply new mood to all blocks
     for (GroundBlock *block in _blocks) {
@@ -302,7 +303,8 @@ static const float BASE_SPEED = 200.f;
 - (void)jump {
     if (self.onGround) {
         self.onGround = FALSE;
-        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
+//        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
+        [_hero.physicsBody setVelocity:ccp(_hero.physicsBody.velocity.x, 500.f)];
     }
 }
 
@@ -312,7 +314,7 @@ static const float BASE_SPEED = 200.f;
         
         if (_onGround) {
             CCLOG(@"on ground");
-            [_hero runAnimation:@"happy"];
+            [_hero runAnimation:[_moods[_currentMoodIndex] moodPrefix]];
         } else {
             CCLOG(@"NOT on ground");
             [_hero stopAnimation];

@@ -65,7 +65,7 @@ static NSMutableArray *chachedSprites;
     
     for(int i = 1; i <= INT_MAX; ++i)
     {
-        CCSpriteFrame *spriteFrame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName: [NSString stringWithFormat:@"%@%04d.png",animationName, i]]; // angry0001
+        CCSpriteFrame *spriteFrame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName: [NSString stringWithFormat:@"%@-sd%04d.png",animationName, i]]; // angry0001
         if (spriteFrame != nil) {
             [animationFrames addObject:spriteFrame];
         } else {
