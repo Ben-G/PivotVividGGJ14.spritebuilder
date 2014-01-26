@@ -206,7 +206,7 @@ static const int JUMP_IMPULSE = 100000;
     }
     
     if (_hero.position.x >= levelGoal) {
-        [self winGame];
+        //[self winGame];
     }
     
     _progressBar.scaleX = (_hero.position.x / (levelGoal  * 1.f));
