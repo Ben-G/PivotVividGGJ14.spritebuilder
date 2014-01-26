@@ -429,6 +429,10 @@ static const int JUMP_IMPULSE = 100000;
     }
 }
 
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
+    [self winGame];
+}
+
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
     BasicEnemy *basicEnemy = (BasicEnemy*)enemy;
     NSString *moodPrefix = [_moods[_currentMoodIndex] moodPrefix];

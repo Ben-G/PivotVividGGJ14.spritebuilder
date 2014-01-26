@@ -39,6 +39,7 @@
 		62A0B8EC18954DF00037B7E4 /* SadEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8EB18954DF00037B7E4 /* SadEnemy.m */; };
 		62A0B8EF189551D90037B7E4 /* ScaredEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8EE189551D90037B7E4 /* ScaredEnemy.m */; };
 		62A0B8F21895581D0037B7E4 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8F11895581D0037B7E4 /* Level.m */; };
+		62A0B8F51895644B0037B7E4 /* GoalPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8F41895644A0037B7E4 /* GoalPosition.m */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
@@ -139,6 +140,8 @@
 		62A0B8EE189551D90037B7E4 /* ScaredEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScaredEnemy.m; path = Source/ScaredEnemy.m; sourceTree = "<group>"; };
 		62A0B8F01895581D0037B7E4 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = Source/Level.h; sourceTree = SOURCE_ROOT; };
 		62A0B8F11895581D0037B7E4 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = Source/Level.m; sourceTree = SOURCE_ROOT; };
+		62A0B8F31895644A0037B7E4 /* GoalPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoalPosition.h; path = Source/GoalPosition.h; sourceTree = "<group>"; };
+		62A0B8F41895644A0037B7E4 /* GoalPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoalPosition.m; path = Source/GoalPosition.m; sourceTree = "<group>"; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
 		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		AC0C8C8C1894B9DC00080A19 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Source/Enemy.h; sourceTree = "<group>"; };
@@ -317,6 +320,8 @@
 				62A0B8DF189505B20037B7E4 /* LevelDetails.m */,
 				62A0B8E118950D890037B7E4 /* GameState.h */,
 				62A0B8E218950D890037B7E4 /* GameState.m */,
+				62A0B8F31895644A0037B7E4 /* GoalPosition.h */,
+				62A0B8F41895644A0037B7E4 /* GoalPosition.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 				62A0B8F21895581D0037B7E4 /* Level.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
 				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
+				62A0B8F51895644B0037B7E4 /* GoalPosition.m in Sources */,
 				62A0B8E61895274E0037B7E4 /* HappyEnemy.m in Sources */,
 				627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */,
 				62A0B8EC18954DF00037B7E4 /* SadEnemy.m in Sources */,
