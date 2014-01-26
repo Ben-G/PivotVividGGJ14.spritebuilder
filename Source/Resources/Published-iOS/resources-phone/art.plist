@@ -98,7 +98,7 @@
 		<key>art/angry_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{975, 741}, {32, 32}}</string>
+			<string>{{975, 759}, {32, 32}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -189,7 +189,7 @@
 		<key>art/calm_blocksmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{982, 706}, {33, 34}}</string>
+			<string>{{982, 724}, {33, 34}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -276,6 +276,19 @@
 			<string>{{0, 26}, {33, 8}}</string>
 			<key>sourceSize</key>
 			<string>{33, 34}</string>
+		</dict>
+		<key>art/followmask.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1000, 658}, {18, 29}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{6, 2}, {18, 29}}</string>
+			<key>sourceSize</key>
+			<string>{32, 32}</string>
 		</dict>
 		<key>art/happy_background.png</key>
 		<dict>
@@ -410,7 +423,7 @@
 		<key>art/sorrowtiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1000, 658}, {33, 8}}</string>
+			<string>{{1000, 689}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>

@@ -20,11 +20,11 @@
 		<key>art/HappyEnemy.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1937, 1493}, {63, 61}}</string>
+			<string>{{1967, 1421}, {63, 61}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
-			<false/>
+			<true/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {63, 61}}</string>
 			<key>sourceSize</key>
@@ -98,7 +98,7 @@
 		<key>art/angry_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1871, 1451}, {64, 64}}</string>
+			<string>{{1937, 1486}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -163,7 +163,7 @@
 		<key>art/calm_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1967, 1427}, {64, 64}}</string>
+			<string>{{1739, 1415}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -228,7 +228,7 @@
 		<key>art/fear_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1739, 1415}, {64, 64}}</string>
+			<string>{{1805, 1415}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -277,6 +277,19 @@
 			<key>sourceSize</key>
 			<string>{66, 68}</string>
 		</dict>
+		<key>art/followmask.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1990, 1359}, {39, 60}}</string>
+			<key>offset</key>
+			<string>{-1, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{11, 3}, {39, 60}}</string>
+			<key>sourceSize</key>
+			<string>{64, 64}</string>
+		</dict>
 		<key>art/happy_background.png</key>
 		<dict>
 			<key>frame</key>
@@ -306,7 +319,7 @@
 		<key>art/happy_block_64.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1805, 1415}, {64, 64}}</string>
+			<string>{{1871, 1451}, {64, 64}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -410,7 +423,7 @@
 		<key>art/sorrowtiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1990, 1359}, {66, 16}}</string>
+			<string>{{2031, 1359}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>

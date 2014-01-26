@@ -354,6 +354,10 @@ static const int JUMP_IMPULSE = 100000;
 #pragma mark - Loose / Win interation
 
 - (void)endGame {
+    if (_gameOver) {
+        return;
+    }
+    
     [_hero runDeathAnimation];
     
     CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"YOU LOSE!" fontName:@"Arial"fontSize:40.f];
