@@ -55,7 +55,7 @@ static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 // static const int RAMP = 1;
 static const int INITIAL_MASKS = 5;
 static const int JUMP_IMPULSE = 100000;
-static const float BASE_SPEED = 200.f;
+static const float BASE_SPEED = 175.f;
 
 #pragma mark - Init
 
@@ -83,7 +83,7 @@ static const float BASE_SPEED = 200.f;
     _currentMoodIndex = 0;
     
     // load first level
-    _level = [CCBReader load:@"Level10"];
+    _level = [CCBReader load:@"Level4"];
     
     CGPoint playerPosWorld = [_physicsNode convertToWorldSpace:_hero.position];
     CGPoint heroOnScreen = [self convertToNodeSpace:playerPosWorld];
