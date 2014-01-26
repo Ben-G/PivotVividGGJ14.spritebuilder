@@ -12,6 +12,4 @@
 
 @property (nonatomic, assign) BOOL onGround;
 
-- (void)loadLevel:(NSString *)level;
-
 @end

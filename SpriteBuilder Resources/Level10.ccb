@@ -2748,7 +2748,30 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>HappyEnemy</string>
+		<string>Level</string>
+		<key>customProperties</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>levelSpeed</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>1</integer>
+				<key>value</key>
+				<string>150.000000</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>initialMasks</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>1</string>
+			</dict>
+		</array>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

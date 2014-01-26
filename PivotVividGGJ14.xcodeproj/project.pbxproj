@@ -38,6 +38,7 @@
 		62A0B8E91895278F0037B7E4 /* AngryEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8E81895278F0037B7E4 /* AngryEnemy.m */; };
 		62A0B8EC18954DF00037B7E4 /* SadEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8EB18954DF00037B7E4 /* SadEnemy.m */; };
 		62A0B8EF189551D90037B7E4 /* ScaredEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8EE189551D90037B7E4 /* ScaredEnemy.m */; };
+		62A0B8F21895581D0037B7E4 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8F11895581D0037B7E4 /* Level.m */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
@@ -136,6 +137,8 @@
 		62A0B8EB18954DF00037B7E4 /* SadEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SadEnemy.m; path = Source/SadEnemy.m; sourceTree = "<group>"; };
 		62A0B8ED189551D90037B7E4 /* ScaredEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScaredEnemy.h; path = Source/ScaredEnemy.h; sourceTree = "<group>"; };
 		62A0B8EE189551D90037B7E4 /* ScaredEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScaredEnemy.m; path = Source/ScaredEnemy.m; sourceTree = "<group>"; };
+		62A0B8F01895581D0037B7E4 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = Source/Level.h; sourceTree = SOURCE_ROOT; };
+		62A0B8F11895581D0037B7E4 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = Source/Level.m; sourceTree = SOURCE_ROOT; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
 		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		AC0C8C8C1894B9DC00080A19 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Source/Enemy.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				627C5BBD189396F700409C84 /* Moods */,
 				ACAF7F09189421BB0021FC4C /* Mask.h */,
 				ACAF7F0A189421BB0021FC4C /* Mask.m */,
+				62A0B8F01895581D0037B7E4 /* Level.h */,
+				62A0B8F11895581D0037B7E4 /* Level.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				627C5C2318946C1200409C84 /* CCAnimatedSprite.h */,
@@ -528,6 +533,7 @@
 				627C5BC01893972600409C84 /* Mood.m in Sources */,
 				627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */,
 				62F4177F1894923400663BDD /* Block.m in Sources */,
+				62A0B8F21895581D0037B7E4 /* Level.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
 				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
 				62A0B8E61895274E0037B7E4 /* HappyEnemy.m in Sources */,

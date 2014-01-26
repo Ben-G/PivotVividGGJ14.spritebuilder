@@ -15,12 +15,13 @@
 #import "Hero.h"
 #import "Block.h"
 #import "GameState.h"
+#import "Level.h"
 
 @implementation Gameplay {
     CCNode *_contentNode;
     CCNode *_progressBar;
     CCPhysicsNode *_physicsNode;
-    CCNode *_level;
+    Level *_level;
     Hero *_hero;
     
     int updates;
@@ -52,6 +53,9 @@
     BOOL _gameOver;
     
     CCButton *_nextLevelButton;
+    
+    CGFloat _baseSpeed;
+    int _initialMasks;
 }
 
 // distance between masks
@@ -59,15 +63,10 @@ static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 
 // amount of initial masks
 // static const int RAMP = 1;
-static const int INITIAL_MASKS = 5;
+
 static const int JUMP_IMPULSE = 100000;
-static const float BASE_SPEED = 200.f;
 
 #pragma mark - Init
-
-- (void)loadLevel:(NSString *)level {
-    
-}
 
 - (void)didLoadFromCCB {
     _progressBar.opacity = 0.f;
@@ -96,7 +95,12 @@ static const float BASE_SPEED = 200.f;
     
     // load first level
     NSString *levelName = [[GameState sharedInstance] currentLevel];
-    _level = [CCBReader load:levelName];
+    _level = (Level*) [CCBReader load:levelName];
+    
+    // read custom level properties
+    _initialMasks = _level.initialMasks;
+    _baseSpeed = _level.levelSpeed;
+    
     
     CGPoint playerPosWorld = [_physicsNode convertToWorldSpace:_hero.position];
     CGPoint heroOnScreen = [self convertToNodeSpace:playerPosWorld];
@@ -107,7 +111,7 @@ static const float BASE_SPEED = 200.f;
     // collition type for hero
     _hero.physicsBody.allowsRotation = FALSE;
     _hero.physicsBody.collisionType = @"hero";
-    _hero.speed = BASE_SPEED;
+    _hero.speed = _baseSpeed;
     
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
@@ -160,7 +164,7 @@ static const float BASE_SPEED = 200.f;
 }
 
 - (void)initializeMask {
-    for (int i = 0; i < INITIAL_MASKS; i++) {
+    for (int i = 0; i < _initialMasks; i++) {
         Mask *mask = (Mask*)[CCBReader load:@"Mask"];
         mask.position = _hero.position;
         [_level addChild:mask];
@@ -209,11 +213,11 @@ static const float BASE_SPEED = 200.f;
     
     // scroll left
     if (heroOnScreen.x >= (playerPositionX*1.05f)) {
-        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta*1.1f, _contentNode.position.y);
+        _contentNode.position = ccp(_contentNode.position.x - _baseSpeed *delta*1.1f, _contentNode.position.y);
     } else if (heroOnScreen.x < (playerPositionX*0.95f)) {
-        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta*0.9f, _contentNode.position.y);
+        _contentNode.position = ccp(_contentNode.position.x - _baseSpeed*delta*0.9f, _contentNode.position.y);
     } else {
-        _contentNode.position = ccp(_contentNode.position.x - BASE_SPEED*delta, _contentNode.position.y);
+        _contentNode.position = ccp(_contentNode.position.x - _baseSpeed*delta, _contentNode.position.y);
     }
     
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {

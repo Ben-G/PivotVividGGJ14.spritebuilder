@@ -59,7 +59,7 @@
 		<key>art/angertiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2024, 413}, {66, 16}}</string>
+			<string>{{2030, 413}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -111,7 +111,7 @@
 		<key>art/angry_blocklong.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1933, 430}, {528, 68}}</string>
+			<string>{{1933, 556}, {528, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,7 +176,7 @@
 		<key>art/calm_blocklong.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1851, 745}, {528, 68}}</string>
+			<string>{{1851, 678}, {528, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -241,7 +241,7 @@
 		<key>art/fear_blocklong.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1921, 960}, {528, 68}}</string>
+			<string>{{1921, 1086}, {528, 68}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -267,7 +267,7 @@
 		<key>art/feartiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2006, 413}, {66, 16}}</string>
+			<string>{{2012, 413}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -345,7 +345,7 @@
 		<key>art/happytiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1905, 609}, {66, 16}}</string>
+			<string>{{2008, 481}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -358,7 +358,7 @@
 		<key>art/icepartical.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2006, 388}, {23, 32}}</string>
+			<string>{{2012, 388}, {23, 32}}</string>
 			<key>offset</key>
 			<string>{-2, 0}</string>
 			<key>rotated</key>
@@ -384,11 +384,11 @@
 		<key>art/mask.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1933, 388}, {40, 71}}</string>
+			<string>{{2007, 549}, {40, 71}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
-			<true/>
+			<false/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {40, 71}}</string>
 			<key>sourceSize</key>
@@ -410,7 +410,7 @@
 		<key>art/sorrowtiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1905, 677}, {66, 16}}</string>
+			<string>{{2026, 481}, {66, 16}}</string>
 			<key>offset</key>
 			<string>{0, -26}</string>
 			<key>rotated</key>
@@ -423,7 +423,7 @@
 		<key>art/space-invaders.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{2003, 481}, {46, 42}}</string>
+			<string>{{2003, 622}, {46, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -432,6 +432,58 @@
 			<string>{{7, 9}, {46, 42}}</string>
 			<key>sourceSize</key>
 			<string>{60, 60}</string>
+		</dict>
+		<key>art/tinymask_angry.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1933, 388}, {77, 52}}</string>
+			<key>offset</key>
+			<string>{-1, 6}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 8}, {77, 52}}</string>
+			<key>sourceSize</key>
+			<string>{80, 80}</string>
+		</dict>
+		<key>art/tinymask_calm.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1991, 1086}, {68, 50}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{6, 16}, {68, 50}}</string>
+			<key>sourceSize</key>
+			<string>{80, 80}</string>
+		</dict>
+		<key>art/tinymask_happy.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1933, 504}, {50, 72}}</string>
+			<key>offset</key>
+			<string>{-4, 3}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{11, 1}, {50, 72}}</string>
+			<key>sourceSize</key>
+			<string>{80, 80}</string>
+		</dict>
+		<key>art/tinymask_scared.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1933, 442}, {60, 73}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{10, 5}, {60, 73}}</string>
+			<key>sourceSize</key>
+			<string>{80, 80}</string>
 		</dict>
 	</dict>
 	<key>metadata</key>
