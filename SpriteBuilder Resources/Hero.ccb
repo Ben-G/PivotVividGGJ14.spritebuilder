@@ -57,16 +57,16 @@
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>70</real>
-				</array>
-				<array>
-					<real>74</real>
-					<real>70</real>
-				</array>
-				<array>
 					<real>74</real>
 					<real>0.0</real>
+				</array>
+				<array>
+					<real>74.04296875</real>
+					<real>58.984375</real>
+				</array>
+				<array>
+					<real>0.04296875</real>
+					<real>58.984375</real>
 				</array>
 			</array>
 		</dict>
@@ -143,8 +143,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
