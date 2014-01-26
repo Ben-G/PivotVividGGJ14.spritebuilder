@@ -13,8 +13,8 @@
 - (void)didLoadFromCCB {
     self.physicsBody.collisionType = @"enemy";
     
-    CCActionMoveBy *moveDown = [CCActionMoveBy actionWithDuration:2.f position:ccp(0.f, -200.f)];
-    CCActionMoveBy *moveUp = [CCActionMoveBy actionWithDuration:2.f position:ccp(0.f, 200.f)];
+    CCActionMoveBy *moveDown = [CCActionMoveBy actionWithDuration:1.f position:ccp(0.f, -50.f)];
+    CCActionMoveBy *moveUp = [CCActionMoveBy actionWithDuration:1.f position:ccp(0.f, 50.f)];
     
     CCActionSequence *moveSequence = [CCActionSequence actions:moveUp, moveDown, nil];
     CCActionRepeatForever *repeat = [CCActionRepeatForever actionWithAction:moveSequence];
