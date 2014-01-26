@@ -46,6 +46,10 @@
     
     // the position of the player on the screen
     int playerPositionX;
+    
+    BOOL _gameOver;
+    
+    CCButton *_nextLevelButton;
 }
 
 // distance between masks
@@ -156,6 +160,8 @@ static const float BASE_SPEED = 200.f;
 }
 
 - (void)findBlocks:(CCNode *)node {
+    node.cascadeOpacityEnabled = TRUE;
+    
     for (int i = 0; i < node.children.count; i++) {
         CCNode *child = node.children[i];
         
@@ -170,6 +176,11 @@ static const float BASE_SPEED = 200.f;
 #pragma mark - Update
 
 - (void)update:(CCTime)delta {
+    
+    if (_gameOver) {
+        return;
+    }
+    
     // GJ hack, to forbid rotation
     _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
@@ -222,10 +233,18 @@ static const float BASE_SPEED = 200.f;
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    if (_gameOver) {
+        return;
+    }
+    
     _touchStartPosition = [touch locationInNode:self];
 }
 
 - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
+    if (_gameOver) {
+        return;
+    }
+    
     CGPoint currentPos = [touch locationInNode:self];
     CGFloat distance = ccpDistance(currentPos, _touchStartPosition);
     
@@ -250,7 +269,6 @@ static const float BASE_SPEED = 200.f;
     
     [firstMask runAction:sequence];
     [_masks removeObject:firstMask];
-    
 }
 
 - (void)setMood:(int)newMoodIndex {
@@ -330,21 +348,30 @@ static const float BASE_SPEED = 200.f;
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
+- (void)nextLevel {
+    // reload level
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
 - (void)winGame {
+    _nextLevelButton.visible = TRUE;
+
     CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"WELL DONE!" fontName:@"Arial"fontSize:40.f];
     winLabel.color = [CCColor blackColor];
     winLabel.positionType = CCPositionTypeNormalized;
     winLabel.position = ccp(0.5f, 0.5f);
     
-    CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"ModeSwitch"];
-    particle.positionType = CCPositionTypeNormalized;
-    particle.position = ccp(0.5, 0.5);
-    particle.autoRemoveOnFinish = TRUE;
-    [self addChild:particle];
-    
     [self addChild:winLabel];
+
+    CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:1.f];
+    _level.cascadeOpacityEnabled = TRUE;
+    [_level runAction:fadeOut];
     
-    [_hero stopAllActions];
+    CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
+    [_hero runAction:fadeOutHero];
+    
+    _gameOver = TRUE;
 }
 
 #pragma mark - Collision Handling

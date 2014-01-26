@@ -93,8 +93,6 @@
 										<string>Hero.ccb</string>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -269,11 +267,19 @@
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_nextLevelButton</string>
 				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>properties</key>
 				<array>
+					<dict>
+						<key>name</key>
+						<string>visible</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
 					<dict>
 						<key>name</key>
 						<string>name</string>
@@ -289,11 +295,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>56.999969482421875</real>
-							<real>287</real>
+							<real>0.5</real>
+							<real>0.78750002384185791</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -327,8 +333,8 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string></string>
-							<integer>0</integer>
+							<string>nextLevel</string>
+							<integer>1</integer>
 						</array>
 					</dict>
 					<dict>
@@ -372,7 +378,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Pause</string>
+							<string>Next Level!</string>
 							<false/>
 						</array>
 					</dict>
