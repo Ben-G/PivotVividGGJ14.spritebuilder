@@ -83,6 +83,8 @@
 						<string>StartPosition.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
@@ -779,66 +781,6 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>2074</real>
-									<real>34</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>blocks/DefaultGround.ccb</string>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>CCBFile</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
 									<real>1709</real>
 									<real>32</real>
 									<integer>0</integer>
@@ -1104,7 +1046,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>544</real>
+							<real>829</real>
 							<real>101</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1141,21 +1083,8 @@
 				<array/>
 				<key>customClass</key>
 				<string></string>
-				<key>customProperties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>moodToKill</string>
-						<key>optimized</key>
-						<false/>
-						<key>type</key>
-						<integer>3</integer>
-						<key>value</key>
-						<string>angry</string>
-					</dict>
-				</array>
 				<key>displayName</key>
-				<string>Enemy</string>
+				<string>HappyEnemy</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -1177,8 +1106,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>829</real>
-							<real>101</real>
+							<real>579</real>
+							<real>90</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1203,7 +1132,67 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>AngerEnemy.ccb</string>
+						<string>HappyEnemy.ccb</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>baseClass</key>
+				<string>CCBFile</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>GoalPosition</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>0</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>1889</real>
+							<real>169</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ccbFile</string>
+						<key>type</key>
+						<string>CCBFile</string>
+						<key>value</key>
+						<string>GoalPosition.ccb</string>
 					</dict>
 				</array>
 			</dict>
