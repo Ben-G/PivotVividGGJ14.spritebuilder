@@ -53,12 +53,12 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-0.089874267578125</real>
-					<real>18</real>
+					<real>0.0</real>
+					<real>-3.04296875</real>
 				</array>
 				<array>
 					<real>74</real>
-					<real>18</real>
+					<real>-3.04296875</real>
 				</array>
 				<array>
 					<real>74</real>
@@ -154,8 +154,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
