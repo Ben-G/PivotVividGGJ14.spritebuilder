@@ -25,7 +25,20 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>BasicEnemy</string>
+		<string>Enemy</string>
+		<key>customProperties</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>moodToKill</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>3</integer>
+				<key>value</key>
+				<string>angry</string>
+			</dict>
+		</array>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -39,9 +52,9 @@
 			<key>allowsRotation</key>
 			<true/>
 			<key>bodyShape</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>cornerRadius</key>
-			<real>16</real>
+			<real>0.0</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -53,8 +66,20 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>15</real>
-					<real>15</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<array>
+					<real>0.0</real>
+					<real>30</real>
+				</array>
+				<array>
+					<real>30</real>
+					<real>30</real>
+				</array>
+				<array>
+					<real>30</real>
+					<real>0.0</real>
 				</array>
 			</array>
 		</dict>
