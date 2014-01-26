@@ -4,38 +4,6 @@
 <array>
 	<dict>
 		<key>levelTitle</key>
-		<string>Level5:</string>
-		<key>levelName</key>
-		<string>Level5</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level1: A new world</string>
-		<key>levelName</key>
-		<string>Level10</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level2</string>
-		<key>levelName</key>
-		<string>Level_tutorial</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level4: Blah blah</string>
-		<key>levelName</key>
-		<string>Level4</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
 		<string>Tutorial</string>
 		<key>levelName</key>
 		<string>Level_2</string>
@@ -44,9 +12,33 @@
 	</dict>
 	<dict>
 		<key>levelTitle</key>
-		<string>Level2: A mysterious Quest</string>
+		<string>Level 2</string>
+		<key>levelName</key>
+		<string>Level_tutorial</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>levelTitle</key>
+		<string>Level 3</string>
 		<key>levelName</key>
 		<string>Level1</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>levelTitle</key>
+		<string>Level 4</string>
+		<key>levelName</key>
+		<string>Level4</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>levelTitle</key>
+		<string>Level 5</string>
+		<key>levelName</key>
+		<string>Level5</string>
 		<key>levelDescription</key>
 		<string></string>
 	</dict>
