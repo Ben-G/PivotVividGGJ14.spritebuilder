@@ -25,7 +25,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>AngryEnemy</string>
+		<string>Enemy</string>
 		<key>customProperties</key>
 		<array>
 			<dict>
@@ -36,7 +36,7 @@
 				<key>type</key>
 				<integer>3</integer>
 				<key>value</key>
-				<string>angry</string>
+				<string>happy</string>
 			</dict>
 		</array>
 		<key>displayName</key>
@@ -58,7 +58,7 @@
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
-			<false/>
+			<true/>
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
@@ -70,16 +70,16 @@
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>95.675750732421875</real>
-					<real>1.78125</real>
+					<real>0.0</real>
+					<real>32</real>
 				</array>
 				<array>
-					<real>75.675750732421875</real>
-					<real>106.78125</real>
+					<real>32</real>
+					<real>32</real>
 				</array>
 				<array>
-					<real>18.675750732421875</real>
-					<real>105.78125</real>
+					<real>32</real>
+					<real>0.0</real>
 				</array>
 			</array>
 		</dict>
@@ -139,7 +139,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/AngryEnemy.png</string>
+					<string>art/HappyEnemy.png</string>
 				</array>
 			</dict>
 			<dict>

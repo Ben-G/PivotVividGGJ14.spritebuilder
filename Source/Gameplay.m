@@ -149,22 +149,12 @@ static const int JUMP_IMPULSE = 100000;
     fear.moodPrefix = @"fear";
     
     _moods = @[happy, angry, calm, fear];
-    
-
-    // preload audio
-//    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
-//    audio.preloadCacheEnabled = TRUE;
-//    
-//    for (Mood *mood in _moods) {
-//        NSString *filename = [NSString stringWithFormat:@"%@.mp3", mood.moodPrefix];
-//        [audio preloadEffect:filename];
-//    }
-    
+        
     // initialize mood & mask
     [self setMood:_currentMoodIndex];
     [self initializeMask];
     
-    _hero.physicsBody.velocity = ccp(400,  _hero.physicsBody.velocity.y);
+    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
 }
 
 - (void)initializeMask {
@@ -300,8 +290,8 @@ static const int JUMP_IMPULSE = 100000;
     // play new song for this mood
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
-    //    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
-    //    [audio playEffect:filename loop:TRUE];
+    NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
+    [audio playEffect:filename loop:TRUE];
     
     [_hero applyMood:newMood];
     
