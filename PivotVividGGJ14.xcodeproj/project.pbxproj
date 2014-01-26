@@ -34,6 +34,8 @@
 		62A0B8DA1894F51D0037B7E4 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62A0B8D91894F51D0037B7E4 /* Levels.plist */; };
 		62A0B8E0189505B20037B7E4 /* LevelDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8DF189505B20037B7E4 /* LevelDetails.m */; };
 		62A0B8E318950D890037B7E4 /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8E218950D890037B7E4 /* GameState.m */; };
+		62A0B8E61895274E0037B7E4 /* HappyEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8E51895274E0037B7E4 /* HappyEnemy.m */; };
+		62A0B8E91895278F0037B7E4 /* AngryEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8E81895278F0037B7E4 /* AngryEnemy.m */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
@@ -124,6 +126,10 @@
 		62A0B8DF189505B20037B7E4 /* LevelDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelDetails.m; path = Source/LevelDetails.m; sourceTree = "<group>"; };
 		62A0B8E118950D890037B7E4 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameState.h; path = Source/GameState.h; sourceTree = "<group>"; };
 		62A0B8E218950D890037B7E4 /* GameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameState.m; path = Source/GameState.m; sourceTree = "<group>"; };
+		62A0B8E41895274E0037B7E4 /* HappyEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HappyEnemy.h; path = Source/HappyEnemy.h; sourceTree = "<group>"; };
+		62A0B8E51895274E0037B7E4 /* HappyEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HappyEnemy.m; path = Source/HappyEnemy.m; sourceTree = "<group>"; };
+		62A0B8E71895278F0037B7E4 /* AngryEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AngryEnemy.h; path = Source/AngryEnemy.h; sourceTree = "<group>"; };
+		62A0B8E81895278F0037B7E4 /* AngryEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AngryEnemy.m; path = Source/AngryEnemy.m; sourceTree = "<group>"; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
 		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		AC0C8C8C1894B9DC00080A19 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Source/Enemy.h; sourceTree = "<group>"; };
@@ -286,8 +292,12 @@
 				627C5C0A1894677D00409C84 /* GroundBlock64.m */,
 				62F4177D1894923400663BDD /* Block.h */,
 				62F4177E1894923400663BDD /* Block.m */,
+				62A0B8E71895278F0037B7E4 /* AngryEnemy.h */,
+				62A0B8E81895278F0037B7E4 /* AngryEnemy.m */,
 				AC0C8C8C1894B9DC00080A19 /* Enemy.h */,
 				AC0C8C8D1894B9DC00080A19 /* Enemy.m */,
+				62A0B8E41895274E0037B7E4 /* HappyEnemy.h */,
+				62A0B8E51895274E0037B7E4 /* HappyEnemy.m */,
 				62A0B8DE189505B20037B7E4 /* LevelDetails.h */,
 				62A0B8DF189505B20037B7E4 /* LevelDetails.m */,
 				62A0B8E118950D890037B7E4 /* GameState.h */,
@@ -510,6 +520,7 @@
 				62F4177F1894923400663BDD /* Block.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
 				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
+				62A0B8E61895274E0037B7E4 /* HappyEnemy.m in Sources */,
 				627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */,
 				627C5BB51893750300409C84 /* Gameplay.m in Sources */,
 				627C5BB91893873100409C84 /* GroundBlock.m in Sources */,
@@ -519,6 +530,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,
 				ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */,
+				62A0B8E91895278F0037B7E4 /* AngryEnemy.m in Sources */,
 				627C5C2518946C1200409C84 /* CCAnimatedSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

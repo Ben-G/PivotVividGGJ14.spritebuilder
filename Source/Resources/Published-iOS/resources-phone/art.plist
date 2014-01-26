@@ -17,6 +17,19 @@
 			<key>sourceSize</key>
 			<string>{49, 56}</string>
 		</dict>
+		<key>art/HappyEnemy.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{277, 967}, {31, 30}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {31, 30}}</string>
+			<key>sourceSize</key>
+			<string>{31, 30}</string>
+		</dict>
 		<key>art/angertiletop.png</key>
 		<dict>
 			<key>frame</key>
