@@ -25,7 +25,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Hero</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -45,28 +45,28 @@
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
-			<true/>
+			<false/>
 			<key>elasticity</key>
-			<real>0.80000001192092896</real>
+			<real>0.30000001192092896</real>
 			<key>friction</key>
 			<real>0.30000001192092896</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>14.03515625</real>
-					<real>61.238265991210938</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 				<array>
-					<real>14.808563232421875</real>
-					<real>-0.04296875</real>
+					<real>0.0</real>
+					<real>32</real>
 				</array>
 				<array>
-					<real>73.953094482421875</real>
-					<real>-0.11328125</real>
+					<real>32</real>
+					<real>32</real>
 				</array>
 				<array>
-					<real>74.33203125</real>
-					<real>61.160140991210938</real>
+					<real>32</real>
+					<real>0.0</real>
 				</array>
 			</array>
 		</dict>
@@ -126,7 +126,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/sad0015.png</string>
+					<string>art/HappyEnemy.png</string>
 				</array>
 			</dict>
 			<dict>

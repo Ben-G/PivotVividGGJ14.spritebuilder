@@ -118,7 +118,7 @@ static const int JUMP_IMPULSE = 100000;
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
     _physicsNode.collisionDelegate = self;
-//    _physicsNode.debugDraw = TRUE;
+    _physicsNode.debugDraw = TRUE;
     
     // setup a camera to follow the hero
 //    CCActionFollowGGJ *followHero = [CCActionFollowGGJ actionWithTarget:_hero worldBoundary:_level.boundingBox];
