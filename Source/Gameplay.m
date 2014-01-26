@@ -24,10 +24,7 @@
     
     // array of masks the player has; masks are required for mood changes
     NSMutableArray *_masks;
-    
-    // determines if player can jump
-    BOOL _onGround;
-    
+        
     // current mood
     int _currentMoodIndex;
     
@@ -211,7 +208,7 @@ static const float BASE_SPEED = 200.f;
     CGPoint currentPos = [touch locationInNode:self];
     CGFloat distance = ccpDistance(currentPos, _touchStartPosition);
     
-    if (distance > 20.f) {
+    if (distance > 30.f) {
         [self switchMood];
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jump) object:nil];
     }
@@ -278,9 +275,23 @@ static const float BASE_SPEED = 200.f;
 }
 
 - (void)jump {
-    if (_onGround) {
-        _onGround = FALSE;
+    if (self.onGround) {
+        self.onGround = FALSE;
         [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
+    }
+}
+
+- (void)setOnGround:(BOOL)onGround {
+    if (_onGround != onGround) {
+        _onGround = onGround;
+        
+        if (_onGround) {
+            CCLOG(@"on ground");
+            [_hero runAnimation:@"happy"];
+        } else {
+            CCLOG(@"NOT on ground");
+            [_hero stopAnimation];
+        }
     }
 }
 
@@ -318,7 +329,7 @@ static const float BASE_SPEED = 200.f;
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
     if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
         // allow jump when we are on ground
-        _onGround = TRUE;
+        self.onGround = TRUE;
     }
 }
 
@@ -346,11 +357,6 @@ static const float BASE_SPEED = 200.f;
         // if enemy does not die -> player dies
         [self endGame];
     }
-}
-
--(void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
-    // once we're in the air, we're not on the ground anymore and cannot jump
-    _onGround = FALSE;
 }
 
 @end
