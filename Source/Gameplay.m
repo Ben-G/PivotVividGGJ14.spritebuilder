@@ -173,9 +173,14 @@ static const int JUMP_IMPULSE = 100000;
     } else {
         Mask *lastMask = [_masks lastObject];
         Mood *lastMaskMood = lastMask.mood;
-        int lastMaskMoodIndex = [_moods indexOfObject:lastMaskMood];
         
-        moodForMask = _moods[lastMaskMoodIndex+1];
+        int lastMaskMoodIndex = [_moods indexOfObject:lastMaskMood];
+        int nextMaskMoodIndex = lastMaskMoodIndex + 1;
+        
+        if (nextMaskMoodIndex >= [_moods count]) {
+            nextMaskMoodIndex = 0;
+        }
+        moodForMask = _moods[nextMaskMoodIndex];
     }
     
     
@@ -291,7 +296,7 @@ static const int JUMP_IMPULSE = 100000;
 }
 
 - (void)removeOneMask {
-    Mask *firstMask = [_masks lastObject];
+    Mask *firstMask = [_masks firstObject];
     CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:3.f position:ccp(600, 800)];
     CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
         [firstMask removeFromParent];
