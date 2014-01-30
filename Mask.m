@@ -7,13 +7,17 @@
 //
 
 #import "Mask.h"
+#import "Mood.h"
 
-@implementation Mask {
-    
-}
+@implementation Mask
 
 - (void)didLoadFromCCB {
     self.previousPosition = self.position;
+}
+
+- (void)setMood:(Mood *)mood {
+    _mood = mood;
+    self.color = mood.moodColor;
 }
 
 @end

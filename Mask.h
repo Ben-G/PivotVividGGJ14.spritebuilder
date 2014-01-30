@@ -7,9 +7,11 @@
 //
 
 #import "CCSprite.h"
+@class Mood;
 
 @interface Mask : CCSprite
 
+@property (nonatomic, assign) Mood *mood;
 @property (nonatomic, assign) CGPoint previousPosition;
 
 @end

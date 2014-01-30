@@ -10,6 +10,7 @@
 
 @interface Mood : NSObject
 
-@property (nonatomic, strong) NSString* moodPrefix;
+@property (nonatomic, strong) NSString *moodPrefix;
+@property (nonatomic, strong) CCColor *moodColor;
 
 @end

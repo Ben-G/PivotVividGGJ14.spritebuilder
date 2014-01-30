@@ -139,32 +139,51 @@ static const int JUMP_IMPULSE = 100000;
     // setup all moods
     Mood *happy = [[Mood alloc] init];
     happy.moodPrefix = @"happy";
+    happy.moodColor = [CCColor purpleColor];
     
     Mood *angry = [[Mood alloc] init];
     angry.moodPrefix = @"angry";
+    angry.moodColor = [CCColor redColor];
     
     Mood *calm = [[Mood alloc] init];
     calm.moodPrefix = @"calm";
+    calm.moodColor = [CCColor blueColor];
     
     Mood *fear = [[Mood alloc] init];
     fear.moodPrefix = @"fear";
+    fear.moodColor = [CCColor yellowColor];
     
     _moods = @[happy, angry, calm, fear];
         
     // initialize mood & mask
     [self setMood:_currentMoodIndex];
-    [self initializeMask];
+    
+    for (int i = 0; i < _initialMasks; i++) {
+        [self addMaskAtPosition:_hero.position];
+    }
     
     _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
 }
 
-- (void)initializeMask {
-    for (int i = 0; i < _initialMasks; i++) {
-        Mask *mask = (Mask*)[CCBReader load:@"Mask"];
-        mask.position = _hero.position;
-        [_level addChild:mask];
-        [_masks addObject:mask];
+- (void)addMaskAtPosition:(CGPoint)pos {
+    Mood *moodForMask = nil;
+    
+    if ([_masks count] == 0) {
+        moodForMask = _moods[_currentMoodIndex+1];
+    } else {
+        Mask *lastMask = [_masks lastObject];
+        Mood *lastMaskMood = lastMask.mood;
+        int lastMaskMoodIndex = [_moods indexOfObject:lastMaskMood];
+        
+        moodForMask = _moods[lastMaskMoodIndex+1];
     }
+    
+    
+    Mask *mask = (Mask*)[CCBReader load:@"Mask"];
+    mask.mood = moodForMask;
+    mask.position = pos;
+    [_level addChild:mask];
+    [_masks addObject:mask];
 }
 
 - (void)findBlocks:(CCNode *)node {
@@ -494,10 +513,7 @@ static const int JUMP_IMPULSE = 100000;
         
         // add a mask
         [basicEnemy removeFromParentAndCleanup:TRUE];
-        Mask *mask = (Mask*)[CCBReader load:@"Mask"];
-        mask.position = pos;
-        [_level addChild:mask];
-        [_masks addObject:mask];
+        [self addMaskAtPosition:pos];
     } else {
         // if enemy does not die -> player dies
         [self endGame];
