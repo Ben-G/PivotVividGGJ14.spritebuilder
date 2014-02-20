@@ -16,6 +16,7 @@
 #import "Block.h"
 #import "GameState.h"
 #import "Level.h"
+#import "CCNode_Private.h"
 
 @implementation Gameplay {
     CCNode *_contentNode;
@@ -70,6 +71,7 @@ static const int JUMP_IMPULSE = 100000;
 #pragma mark - Init
 
 - (void)didLoadFromCCB {
+    [self registerShader];
     _physicsNode.sleepTimeThreshold = 10.f;
     
     _progressBar.opacity = 0.f;
@@ -203,6 +205,22 @@ static const int JUMP_IMPULSE = 100000;
             [_blocks addObject:child];
         }
     }
+}
+
+#pragma mark - Shaders
+
+-(void)registerShader
+{
+	CCGLProgram *program = [[CCGLProgram alloc] initWithVertexShaderFilename:@"grayshader.vsh"
+													  fragmentShaderFilename:@"grayshader.fsh"];
+	
+	[program addAttribute:kCCAttributeNamePosition index:kCCVertexAttrib_Position];
+	[program addAttribute:kCCAttributeNameTexCoord index:kCCVertexAttrib_TexCoords];
+	
+	[program link];
+	[program updateUniforms];
+	
+	[[CCShaderCache sharedShaderCache] addProgram:program forKey:@"grayShader"];
 }
 
 #pragma mark - Update
@@ -387,6 +405,16 @@ static const int JUMP_IMPULSE = 100000;
     if (_gameOver) {
         return;
     }
+    
+    CCNodeColor *grayLayer = [CCNodeColor nodeWithColor:[CCColor whiteColor]];
+    grayLayer.shaderProgram = [[CCShaderCache sharedShaderCache] programForKey:@"grayShader"];
+    grayLayer.contentSizeType = CCSizeTypeNormalized;
+    grayLayer.contentSize = CGSizeMake(1.f, 1.f);
+    grayLayer.positionType = CCPositionTypeNormalized;
+    grayLayer.anchorPoint = ccp(0.5f, 0.5f);
+    grayLayer.position = ccp(0.5f, 0.5f);
+    grayLayer.opacity = 1.f;
+    [self addChild:grayLayer];
     
     _levelSelectionButton.visible = TRUE;
     
