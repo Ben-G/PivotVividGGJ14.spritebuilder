@@ -120,8 +120,13 @@
     [[GameState sharedInstance] setCurrentLevel:levelInfo[@"levelName"]];
     [[GameState sharedInstance] setCurrentLevelIndex:_selectedLevel];
 
-    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-    [[CCDirector sharedDirector] replaceScene:scene];
+    if (levelInfo[@"isTutorial"] == [NSNumber numberWithBool:TRUE]) {
+        CCScene *scene = [CCBReader loadAsScene:@"TutorialGameplay"];
+        [[CCDirector sharedDirector] replaceScene:scene];
+    } else {
+        CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+        [[CCDirector sharedDirector] replaceScene:scene];
+    }
 }
 
 - (void)backButtonPressed {

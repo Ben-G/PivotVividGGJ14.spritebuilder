@@ -15,13 +15,11 @@
 #import "Hero.h"
 #import "Block.h"
 #import "GameState.h"
-#import "Level.h"
 
 @implementation Gameplay {
     CCNode *_contentNode;
     CCNode *_progressBar;
     CCPhysicsNode *_physicsNode;
-    Level *_level;
     Hero *_hero;
     
     int updates;
@@ -243,9 +241,6 @@ static const int JUMP_IMPULSE = 100000;
         // when the hero falls -> game over
         [self endGame];
     }
-    
-    // add SPEED to position
-//    _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
     
     if (_hero.physicsBody.velocity.x < _baseSpeed) {
         [_hero.physicsBody applyForce:ccp(10000.f, _hero.physicsBody.force.y)];
