@@ -69,6 +69,7 @@ static const int JUMP_IMPULSE = 100000;
 
 - (void)didLoadFromCCB {
     _physicsNode.sleepTimeThreshold = 10.f;
+    _physicsNode.debugDraw= TRUE;
     
     _progressBar.opacity = 0.f;
     

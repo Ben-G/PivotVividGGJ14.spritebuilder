@@ -17,5 +17,6 @@
 - (void)didLoadFromCCB;
 - (void)restartLevel;
 - (void)stopMusic;
+- (void)findBlocks:(CCNode *)node;
 
 @end
