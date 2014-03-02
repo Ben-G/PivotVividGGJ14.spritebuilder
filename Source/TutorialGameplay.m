@@ -45,27 +45,38 @@ static int _currentFragmentIndex;
 - (void)loadCurrentTutorialFragment {
     NSString *fragmentCCBFile = [self currentFragmentCCBName];
     
-    TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
-    [self.level addChild:tutorialFragment1];
-    self.delegate = tutorialFragment1;
-    
-    TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
-    tutorialFragment2.position = ccp(tutorialFragment1.contentSize.width, 0);
-    [self.level addChild:tutorialFragment2];
-    
-    _tutorialFragments = [@[tutorialFragment1, tutorialFragment2] mutableCopy];
-    
-    // update instruction
-    _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
-    
-    [super findBlocks:self.level];
+    if (_currentFragmentIndex == 0) {
+        TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
+        [self.level addChild:tutorialFragment1];
+        self.delegate = tutorialFragment1;
+        
+        TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
+        tutorialFragment2.position = ccp(tutorialFragment1.contentSize.width, 0);
+        [self.level addChild:tutorialFragment2];
+        
+        _tutorialFragments = [@[tutorialFragment1, tutorialFragment2] mutableCopy];
+        
+        // update instruction
+        _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
+        
+        [super findBlocks:self.level];
+    } else {
+        int replaceFragmentIndex = ((CCNode *)_tutorialFragments[0]).position.x > ((CCNode *)_tutorialFragments[1]).position.x ? 0 : 1;
+        
+        CGPoint oldPosition = ((CCNode *)_tutorialFragments[replaceFragmentIndex]).position;
+        [_tutorialFragments[replaceFragmentIndex] removeFromParent];
+        _tutorialFragments[replaceFragmentIndex] = [CCBReader load:[self currentFragmentCCBName]];
+        ((CCNode *)_tutorialFragments[replaceFragmentIndex]).position = oldPosition;
+        [self.level addChild:_tutorialFragments[replaceFragmentIndex]];
+    }
 }
 
-#pragma mark - Next Tutorial Step 
+#pragma mark - Next Tutorial Step
 
 - (void)nextTutorialStep {
     if (_currentFragmentIndex < [_fragmentNames count]) {
         _currentFragmentIndex++;
+        //TODO: only replace off-screen fragment
         [self loadCurrentTutorialFragment];
     }
 }
