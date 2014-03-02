@@ -11,6 +11,7 @@
 #import "Level.h"
 #import "GameState.h"
 
+// TODO: this can only be used for prototype
 static int _currentFragmentIndex;
 
 @implementation TutorialGameplay {
