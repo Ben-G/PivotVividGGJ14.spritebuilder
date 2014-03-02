@@ -15,6 +15,7 @@
 #import "Hero.h"
 #import "Block.h"
 #import "GameState.h"
+#define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
@@ -73,6 +74,8 @@ static const int JUMP_IMPULSE = 100000;
 //    _physicsNode.debugDraw= TRUE;
     
     _progressBar.opacity = 0.f;
+    
+//    _hero.physicsBody.body.body->velocity_func = nil;
     
     // load initial background
     NSString *spriteFrameName = @"art/sad_background.png";

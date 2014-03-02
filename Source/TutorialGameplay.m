@@ -60,25 +60,16 @@ static int _currentFragmentIndex;
         _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
         
         [super findBlocks:self.level];
-    } else {
-        int replaceFragmentIndex = ((CCNode *)_tutorialFragments[0]).position.x > ((CCNode *)_tutorialFragments[1]).position.x ? 0 : 1;
-        
-        CGPoint oldPosition = ((CCNode *)_tutorialFragments[replaceFragmentIndex]).position;
-        [_tutorialFragments[replaceFragmentIndex] removeFromParent];
-        _tutorialFragments[replaceFragmentIndex] = [CCBReader load:[self currentFragmentCCBName]];
-        ((CCNode *)_tutorialFragments[replaceFragmentIndex]).position = oldPosition;
-        [self.level addChild:_tutorialFragments[replaceFragmentIndex]];
     }
 }
 
 #pragma mark - Next Tutorial Step
 
 - (void)nextTutorialStep {
-    if (_currentFragmentIndex < [_fragmentNames count]) {
+    if ((_currentFragmentIndex+1) < [_fragmentNames count]) {
         _currentFragmentIndex++;
-        //TODO: only replace off-screen fragment
-        [self loadCurrentTutorialFragment];
     }
+    _instructionLabel.string = @"Well done!";
 }
 
 #pragma mark - Inform Delegate
@@ -129,16 +120,20 @@ static int _currentFragmentIndex;
             // workaround for compound static physics objects not beeing movable
             CCNode *parent = fragment.parent;
             CGPoint fragmentPosition = fragment.position;
+            CGSize fragmentSize = fragment.contentSize;
             [fragment removeFromParent];
             
             if ([fragment respondsToSelector:@selector(tutorialGameplayCompletedFragment:)]) {
                 [fragment tutorialGameplayCompletedFragment:self];
             }
             
+            TutorialFragment *otherFragment = (i == 0) ? _tutorialFragments[1] : _tutorialFragments[0];
+            
             fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:[self currentFragmentCCBName]];
-            fragment.position = ccp(fragmentPosition.x + 2 * fragment.contentSize.width, fragmentPosition.y);
+            fragment.position = ccp(otherFragment.position.x + otherFragment.contentSize.width, fragmentPosition.y);
             [parent addChild:fragment];
             self.delegate = fragment;
+            _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
             
             [super findBlocks:fragment];
         }

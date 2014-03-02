@@ -100,28 +100,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/Gameplay.m"
-            timestampString = "415419713.334383"
+            timestampString = "415446559.266379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "492"
-            endingLineNumber = "492"
+            startingLineNumber = "495"
+            endingLineNumber = "495"
             landmarkName = "-ccPhysicsCollisionPostSolve:hero:ground:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/TutorialGameplay.m"
-            timestampString = "415423839.30184"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "-loadCurrentTutorialFragment"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
