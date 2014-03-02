@@ -15,6 +15,7 @@
 #import "Hero.h"
 #import "Block.h"
 #import "GameState.h"
+#import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
     CCNode *_contentNode;
@@ -97,7 +98,10 @@ static const int JUMP_IMPULSE = 100000;
     
     // load first level
     NSString *levelName = [[GameState sharedInstance] currentLevel];
-    _level = (Level*) [CCBReader load:levelName];
+    
+    if ( ([[GameState sharedInstance] currentLevelInfo]) [@"isTutorial"] == [NSNumber numberWithBool:FALSE] ) {
+        _level = (Level*) [CCBReader load:levelName];
+    }
     
     _hero.position = _level.startPosition;
     
@@ -200,6 +204,7 @@ static const int JUMP_IMPULSE = 100000;
             [self findBlocks:(CCNode *)child];
         } else if ([child isKindOfClass:[Block class]]) {
             [_blocks addObject:child];
+            [((GroundBlock *) child) applyMood:_moods[_currentMoodIndex]];
         }
     }
 }
@@ -317,7 +322,7 @@ static const int JUMP_IMPULSE = 100000;
     OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
     [audio stopAllEffects];
     NSString *filename = [NSString stringWithFormat:@"%@.mp3", newMood.moodPrefix];
-    [audio playEffect:filename loop:TRUE];
+//    [audio playEffect:filename loop:TRUE];
     
     [_hero applyMood:newMood];
     
@@ -358,11 +363,16 @@ static const int JUMP_IMPULSE = 100000;
 }
 
 - (void)jump {
-    if (self.onGround) {
-        self.onGround = FALSE;
-//        [_hero.physicsBody applyForce:ccp(_hero.physicsBody.force.x, JUMP_IMPULSE)];
-        [_hero.physicsBody setVelocity:ccp(_hero.physicsBody.velocity.x, 500.f)];
-    }
+    //TODO: needs to be improved, need to check that arbiter actually is the ground
+    __block BOOL jumped = FALSE;
+    
+    [_hero.physicsBody.chipmunkObjects[0] eachArbiter:^(cpArbiter *arbiter) {
+        if (!jumped) {
+            [_hero.physicsBody setVelocity:ccp(_hero.physicsBody.velocity.x, 500.f)];
+            jumped = TRUE;
+            self.onGround = FALSE;
+        }
+    }];
 }
 
 - (void)setOnGround:(BOOL)onGround {
@@ -479,10 +489,7 @@ static const int JUMP_IMPULSE = 100000;
 #pragma mark - Collision Handling
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
-    if (pair.totalImpulse.y > fabs(pair.totalImpulse.x)) {
-        // allow jump when we are on ground
-        self.onGround = TRUE;
-    }
+    self.onGround = TRUE;
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
@@ -519,11 +526,6 @@ static const int JUMP_IMPULSE = 100000;
         // if enemy does not die -> player dies
         [self endGame];
     }
-}
-
--(void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
-    // once we're in the air, we're not on the ground anymore and cannot jump
-    _onGround = FALSE;
 }
 
 @end

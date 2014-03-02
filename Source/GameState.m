@@ -55,6 +55,10 @@
     return nextLevel;
 }
 
+- (NSDictionary *)currentLevelInfo {
+    return _levels[self.currentLevelIndex];;
+}
+
 - (void)loadNextLevel {
     int nextIndex = self.currentLevelIndex + 1;
     

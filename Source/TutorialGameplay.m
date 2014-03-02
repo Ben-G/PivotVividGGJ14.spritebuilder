@@ -7,27 +7,41 @@
 //
 
 #import "TutorialGameplay.h"
+#import "TutorialFragment.h"
+#import "Level.h"
 
 @implementation TutorialGameplay {
-    NSArray *_tutorialFragments;
+    NSMutableArray *_tutorialFragments;
+    CCLabelTTF *_instructionLabel;
 }
 
 - (void)didLoadFromCCB {
-    [super didLoadFromCCB];
-        
-    [self.level removeAllChildren];
+    self.level = [[Level alloc] init];
     
-    CCNode *tutorialFragment1 = [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
+    [super didLoadFromCCB];
+    
+    [self loadNextTutorialFragment];
+}
+
+#pragma mark - Load Tutorial Fragement
+
+- (void)loadNextTutorialFragment {
+    TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
     [self.level addChild:tutorialFragment1];
     
-    CCNode *tutorialFragment2 = [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
+    TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
     tutorialFragment2.position = ccp(tutorialFragment1.contentSize.width, 0);
     [self.level addChild:tutorialFragment2];
     
-    _tutorialFragments = @[tutorialFragment1, tutorialFragment2];
+    _tutorialFragments = [@[tutorialFragment1, tutorialFragment2] mutableCopy];
+    
+    // update instruction
+    _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
     
     [super findBlocks:self.level];
 }
+
+#pragma mark - Overriden Gameplay Methods
 
 - (void)restartLevel {
     // reload level
@@ -52,9 +66,13 @@
         if (fragmentScreenPosition.x <= (-1 * fragment.contentSize.width)) {
             // workaround for compound static physics objects not beeing movable
             CCNode *parent = fragment.parent;
+            CGPoint fragmentPosition = fragment.position;
             [fragment removeFromParent];
-            fragment.position = ccp(fragment.position.x + 2 * fragment.contentSize.width, fragment.position.y);
+            fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
+            fragment.position = ccp(fragmentPosition.x + 2 * fragment.contentSize.width, fragmentPosition.y);
             [parent addChild:fragment];
+            
+            [super findBlocks:fragment];
         }
     }
 }

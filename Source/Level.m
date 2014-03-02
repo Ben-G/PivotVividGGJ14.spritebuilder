@@ -23,6 +23,7 @@ static const CGPoint START_POS = {150, 200};
         // initialize with defaults - SpriteBuilder properties of level may override these settings
         self.initialMasks = INITIAL_MASKS;
         self.levelSpeed = BASE_SPEED;
+        self.startPosition = START_POS;
     }
     
     return self;

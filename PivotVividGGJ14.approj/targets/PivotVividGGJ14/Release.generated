@@ -1,0 +1,620 @@
+{
+    "assets": [
+        {
+            "asset": "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist", 
+            "target": "ResourceRules.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/Settings.png", 
+            "target": "Settings.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/sad_default.png", 
+            "target": "sad_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Default@2x.png", 
+            "target": "Default@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/angry_default.plist", 
+            "target": "angry_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/fear.mp3", 
+            "target": "fear.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad@2x.png", 
+            "target": "iPad@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad.png", 
+            "target": "iPad.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad-old@2x.png", 
+            "target": "iPad-old@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/scared_default.plist", 
+            "target": "scared_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/happy_default-hd.plist", 
+            "target": "happy_default-hd.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone-old@2x.png", 
+            "target": "iPhone-old@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Levels/Levels.plist", 
+            "target": "Levels.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS", 
+            "target": "Published-iOS"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/Settings@2x.png", 
+            "target": "Settings@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/kaput_default.png", 
+            "target": "kaput_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/calm.mp3", 
+            "target": "calm.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/angry.mp3", 
+            "target": "angry.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/scared_default.png", 
+            "target": "scared_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Default-Landscape~ipad.png", 
+            "target": "Default-Landscape~ipad.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/kaput_default.plist", 
+            "target": "kaput_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone-old.png", 
+            "target": "iPhone-old.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/happy_default-hd.png", 
+            "target": "happy_default-hd.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone.png", 
+            "target": "iPhone.png"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/happy.mp3", 
+            "target": "happy.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/Default-568h@2x.png", 
+            "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/sad_default.plist", 
+            "target": "sad_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/angry_default.png", 
+            "target": "angry_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone@2x.png", 
+            "target": "iPhone@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Default.png", 
+            "target": "Default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad-old.png", 
+            "target": "iPad-old.png"
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "PivotVividGGJ14", 
+        "APPLICATION_IDENTIFIER": "com.apportable.PivotVividGGJ14", 
+        "APPLICATION_NAME": "PivotVividGGJ14", 
+        "LONG_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "PivotVividGGJ14", 
+            "PRODUCT_NAME": "PivotVividGGJ14"
+        }
+    }, 
+    "defines": {
+        "NDEBUG": 1, 
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000
+    }, 
+    "deps": [
+        "UIKit", 
+        "QuartzCore", 
+        "OpenGLES", 
+        "OpenAL", 
+        "AudioToolbox", 
+        "AVFoundation", 
+        "UIKit", 
+        "Foundation", 
+        "CoreGraphics", 
+        "CoreText"
+    ], 
+    "flags": [
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wno-deprecated-declarations", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "PivotVividGGJ14-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "PivotVividGGJ14-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "PivotVividGGJ14-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "PivotVividGGJ14-project-headers.hmap", 
+            "hmap": {
+                "AngryEnemy.h": {
+                    "key": "AngryEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "AngryEnemy.h"
+                }, 
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Source/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "BasicEnemy.h": {
+                    "key": "BasicEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "BasicEnemy.h"
+                }, 
+                "Block.h": {
+                    "key": "Block.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Block.h"
+                }, 
+                "CCActionFollowGGJ.h": {
+                    "key": "CCActionFollowGGJ.h", 
+                    "prefix": "Source/", 
+                    "suffix": "CCActionFollowGGJ.h"
+                }, 
+                "CCAnimatedSprite.h": {
+                    "key": "CCAnimatedSprite.h", 
+                    "prefix": "Source/", 
+                    "suffix": "CCAnimatedSprite.h"
+                }, 
+                "Enemy.h": {
+                    "key": "Enemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Enemy.h"
+                }, 
+                "GameState.h": {
+                    "key": "GameState.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GameState.h"
+                }, 
+                "Gameplay.h": {
+                    "key": "Gameplay.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Gameplay.h"
+                }, 
+                "GoalPosition.h": {
+                    "key": "GoalPosition.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GoalPosition.h"
+                }, 
+                "GroundBlock.h": {
+                    "key": "GroundBlock.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GroundBlock.h"
+                }, 
+                "GroundBlock64.h": {
+                    "key": "GroundBlock64.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GroundBlock64.h"
+                }, 
+                "GroundBlockEight.h": {
+                    "key": "GroundBlockEight.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GroundBlockEight.h"
+                }, 
+                "HappyEnemy.h": {
+                    "key": "HappyEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "HappyEnemy.h"
+                }, 
+                "Hero.h": {
+                    "key": "Hero.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Hero.h"
+                }, 
+                "Level.h": {
+                    "key": "Level.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Level.h"
+                }, 
+                "LevelBatchNode.h": {
+                    "key": "LevelBatchNode.h", 
+                    "prefix": "Source/", 
+                    "suffix": "LevelBatchNode.h"
+                }, 
+                "LevelDetails.h": {
+                    "key": "LevelDetails.h", 
+                    "prefix": "Source/", 
+                    "suffix": "LevelDetails.h"
+                }, 
+                "MainScene.h": {
+                    "key": "MainScene.h", 
+                    "prefix": "Source/", 
+                    "suffix": "MainScene.h"
+                }, 
+                "Mask.h": {
+                    "key": "Mask.h", 
+                    "prefix": "./", 
+                    "suffix": "Mask.h"
+                }, 
+                "Mood.h": {
+                    "key": "Mood.h", 
+                    "prefix": "Source/Moods/", 
+                    "suffix": "Mood.h"
+                }, 
+                "Prefix.pch": {
+                    "key": "Prefix.pch", 
+                    "prefix": "Source/", 
+                    "suffix": "Prefix.pch"
+                }, 
+                "SadEnemy.h": {
+                    "key": "SadEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "SadEnemy.h"
+                }, 
+                "ScaredEnemy.h": {
+                    "key": "ScaredEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "ScaredEnemy.h"
+                }, 
+                "Startscreen.h": {
+                    "key": "Startscreen.h", 
+                    "prefix": "./", 
+                    "suffix": "Startscreen.h"
+                }, 
+                "TutorialGameplay.h": {
+                    "key": "TutorialGameplay.h", 
+                    "prefix": "Source/", 
+                    "suffix": "TutorialGameplay.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include/kazmath", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include/kazmath/GL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Support", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/Chipmunk/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d-ui", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Session", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Support", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./Source/Resources/Info.plist"
+    ], 
+    "libs": [
+        "z", 
+        "sqlite3"
+    ], 
+    "modules": [
+        {
+            "build_cwd": "Source/libs/cocos2d-iphone", 
+            "project": "cocos2d-ios", 
+            "project_config": "Release", 
+            "target": "cocos2d"
+        }, 
+        {
+            "build_cwd": "Source/libs/cocos2d-iphone", 
+            "project": "Chipmunk7-ios", 
+            "project_config": "Release", 
+            "target": "ObjectiveChipmunk-iPhone"
+        }
+    ], 
+    "pchs": [
+        "./Source/Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Mask.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/AngryEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/BasicEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Block.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/CCActionFollowGGJ.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/CCAnimatedSprite.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Enemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GameState.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Gameplay.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GoalPosition.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GroundBlock.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GroundBlock64.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GroundBlockEight.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/HappyEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Hero.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Level.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/LevelBatchNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/LevelDetails.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/MainScene.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Moods/Mood.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/SadEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/ScaredEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/TutorialGameplay.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/main.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Startscreen.m"
+        }
+    ], 
+    "type": "app", 
+    "version": "1", 
+    "xcode_project": "PivotVividGGJ14.xcodeproj"
+}

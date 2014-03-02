@@ -15,6 +15,7 @@
 
 + (id)sharedInstance;
 - (NSDictionary *)nextLevelInfo;
+- (NSDictionary *)currentLevelInfo;
 - (void)loadNextLevel;
 
 @end

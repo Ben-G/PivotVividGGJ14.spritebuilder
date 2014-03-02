@@ -1,0 +1,1093 @@
+{
+    "assets": [
+        {
+            "asset": "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist", 
+            "target": "ResourceRules.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/Settings.png", 
+            "target": "Settings.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/sad_default.png", 
+            "target": "sad_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Default@2x.png", 
+            "target": "Default@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/angry_default.plist", 
+            "target": "angry_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/fear.mp3", 
+            "target": "fear.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad@2x.png", 
+            "target": "iPad@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad.png", 
+            "target": "iPad.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad-old@2x.png", 
+            "target": "iPad-old@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/scared_default.plist", 
+            "target": "scared_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/happy_default-hd.plist", 
+            "target": "happy_default-hd.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone-old@2x.png", 
+            "target": "iPhone-old@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Levels/Levels.plist", 
+            "target": "Levels.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/AngerEnemy.ccbi", 
+            "target": "Published-iOS/AngerEnemy.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/BigMask.ccbi", 
+            "target": "Published-iOS/BigMask.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/CalmParticle.ccbi", 
+            "target": "Published-iOS/CalmParticle.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/configCocos2d.plist", 
+            "target": "Published-iOS/configCocos2d.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/EnemyDies.ccbi", 
+            "target": "Published-iOS/EnemyDies.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/fileLookup.plist", 
+            "target": "Published-iOS/fileLookup.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Gameplay.ccbi", 
+            "target": "Published-iOS/Gameplay.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/GoalPosition.ccbi", 
+            "target": "Published-iOS/GoalPosition.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/GroundBlock.ccbi", 
+            "target": "Published-iOS/GroundBlock.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/HappyEnemy.ccbi", 
+            "target": "Published-iOS/HappyEnemy.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/HappyEnemyDynamic.ccbi", 
+            "target": "Published-iOS/HappyEnemyDynamic.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Hero.ccbi", 
+            "target": "Published-iOS/Hero.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/HeroBatchNode.ccbi", 
+            "target": "Published-iOS/HeroBatchNode.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Level1.ccbi", 
+            "target": "Published-iOS/Level1.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Level10.ccbi", 
+            "target": "Published-iOS/Level10.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Level3.ccbi", 
+            "target": "Published-iOS/Level3.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Level4.ccbi", 
+            "target": "Published-iOS/Level4.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Level5.ccbi", 
+            "target": "Published-iOS/Level5.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Level_2.ccbi", 
+            "target": "Published-iOS/Level_2.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Level_tutorial.ccbi", 
+            "target": "Published-iOS/Level_tutorial.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/LevelDetails.ccbi", 
+            "target": "Published-iOS/LevelDetails.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/MainScene.ccbi", 
+            "target": "Published-iOS/MainScene.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Mask.ccbi", 
+            "target": "Published-iOS/Mask.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ModeSwitch.ccbi", 
+            "target": "Published-iOS/ModeSwitch.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/SadEnemy.ccbi", 
+            "target": "Published-iOS/SadEnemy.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ScaredEnemy.ccbi", 
+            "target": "Published-iOS/ScaredEnemy.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/spriteFrameFileList.plist", 
+            "target": "Published-iOS/spriteFrameFileList.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/StartPosition.ccbi", 
+            "target": "Published-iOS/StartPosition.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Startscreen.ccbi", 
+            "target": "Published-iOS/Startscreen.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Strings.ccbLang", 
+            "target": "Published-iOS/Strings.ccbLang"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/TutorialGameplay.ccbi", 
+            "target": "Published-iOS/TutorialGameplay.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/DefaultCube.ccbi", 
+            "target": "Published-iOS/blocks/DefaultCube.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/DefaultGround.ccbi", 
+            "target": "Published-iOS/blocks/DefaultGround.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/GroundBlock64.ccbi", 
+            "target": "Published-iOS/blocks/GroundBlock64.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/GroundBlockEight.ccbi", 
+            "target": "Published-iOS/blocks/GroundBlockEight.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyAngerCube.ccbi", 
+            "target": "Published-iOS/blocks/OnlyAngerCube.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyAngry64.ccbi", 
+            "target": "Published-iOS/blocks/OnlyAngry64.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyAngryGroundBlock.ccbi", 
+            "target": "Published-iOS/blocks/OnlyAngryGroundBlock.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyCalm64.ccbi", 
+            "target": "Published-iOS/blocks/OnlyCalm64.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyCalmBlock.ccbi", 
+            "target": "Published-iOS/blocks/OnlyCalmBlock.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyCalmCube.ccbi", 
+            "target": "Published-iOS/blocks/OnlyCalmCube.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyFear64.ccbi", 
+            "target": "Published-iOS/blocks/OnlyFear64.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyFearCube.ccbi", 
+            "target": "Published-iOS/blocks/OnlyFearCube.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyFearGroundBlock.ccbi", 
+            "target": "Published-iOS/blocks/OnlyFearGroundBlock.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyHappy64.ccbi", 
+            "target": "Published-iOS/blocks/OnlyHappy64.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyHappyCube.ccbi", 
+            "target": "Published-iOS/blocks/OnlyHappyCube.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/OnlyHappyGroundBlock.ccbi", 
+            "target": "Published-iOS/blocks/OnlyHappyGroundBlock.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/blocks/SlopeBlock.ccbi", 
+            "target": "Published-iOS/blocks/SlopeBlock.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/arrowL.png", 
+            "target": "Published-iOS/resources-phone/arrowL.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/arrowR.png", 
+            "target": "Published-iOS/resources-phone/arrowR.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/art.plist", 
+            "target": "Published-iOS/resources-phone/art.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/art.png", 
+            "target": "Published-iOS/resources-phone/art.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/menuscreen.png", 
+            "target": "Published-iOS/resources-phone/menuscreen.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/START_MENU_DONE.png", 
+            "target": "Published-iOS/resources-phone/START_MENU_DONE.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/arrowL.png", 
+            "target": "Published-iOS/resources-phonehd/arrowL.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/arrowR.png", 
+            "target": "Published-iOS/resources-phonehd/arrowR.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/art.plist", 
+            "target": "Published-iOS/resources-phonehd/art.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/art.png", 
+            "target": "Published-iOS/resources-phonehd/art.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/menuscreen.png", 
+            "target": "Published-iOS/resources-phonehd/menuscreen.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/START_MENU_DONE.png", 
+            "target": "Published-iOS/resources-phonehd/START_MENU_DONE.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/arrowL.png", 
+            "target": "Published-iOS/resources-tablet/arrowL.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/arrowR.png", 
+            "target": "Published-iOS/resources-tablet/arrowR.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/art.plist", 
+            "target": "Published-iOS/resources-tablet/art.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/art.png", 
+            "target": "Published-iOS/resources-tablet/art.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/menuscreen.png", 
+            "target": "Published-iOS/resources-tablet/menuscreen.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/START_MENU_DONE.png", 
+            "target": "Published-iOS/resources-tablet/START_MENU_DONE.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/arrowL.png", 
+            "target": "Published-iOS/resources-tablethd/arrowL.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/arrowR.png", 
+            "target": "Published-iOS/resources-tablethd/arrowR.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/art.plist", 
+            "target": "Published-iOS/resources-tablethd/art.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/art.png", 
+            "target": "Published-iOS/resources-tablethd/art.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/menuscreen.png", 
+            "target": "Published-iOS/resources-tablethd/menuscreen.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/START_MENU_DONE.png", 
+            "target": "Published-iOS/resources-tablethd/START_MENU_DONE.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Tutorials/Tutorial1/Tutorial1_0.ccbi", 
+            "target": "Published-iOS/Tutorials/Tutorial1/Tutorial1_0.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/Settings@2x.png", 
+            "target": "Settings@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/kaput_default.png", 
+            "target": "kaput_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/calm.mp3", 
+            "target": "calm.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/angry.mp3", 
+            "target": "angry.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/scared_default.png", 
+            "target": "scared_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Default-Landscape~ipad.png", 
+            "target": "Default-Landscape~ipad.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/kaput_default.plist", 
+            "target": "kaput_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone-old.png", 
+            "target": "iPhone-old.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/happy_default-hd.png", 
+            "target": "happy_default-hd.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone.png", 
+            "target": "iPhone.png"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/happy.mp3", 
+            "target": "happy.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/Default-568h@2x.png", 
+            "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/sad_default.plist", 
+            "target": "sad_default.plist"
+        }, 
+        {
+            "asset": "Source/Resources/animation/resources-phonehd/angry_default.png", 
+            "target": "angry_default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone@2x.png", 
+            "target": "iPhone@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Default.png", 
+            "target": "Default.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad-old.png", 
+            "target": "iPad-old.png"
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "PivotVividGGJ14", 
+        "APPLICATION_IDENTIFIER": "com.apportable.PivotVividGGJ14", 
+        "APPLICATION_NAME": "PivotVividGGJ14", 
+        "FEATURES": [
+            "opengles2"
+        ], 
+        "ICU_CONFIG": "normal", 
+        "LONG_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "PivotVividGGJ14", 
+            "PRODUCT_NAME": "PivotVividGGJ14"
+        }
+    }, 
+    "defines": {
+        "NDEBUG": 1, 
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000
+    }, 
+    "deps": [
+        "UIKit", 
+        "QuartzCore", 
+        "OpenGLES", 
+        "OpenAL", 
+        "AudioToolbox", 
+        "AVFoundation", 
+        "UIKit", 
+        "Foundation", 
+        "CoreGraphics", 
+        "CoreText"
+    ], 
+    "flags": [
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wno-deprecated-declarations", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "PivotVividGGJ14-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "PivotVividGGJ14-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "PivotVividGGJ14-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "PivotVividGGJ14-project-headers.hmap", 
+            "hmap": {
+                "AngryEnemy.h": {
+                    "key": "AngryEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "AngryEnemy.h"
+                }, 
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Source/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "BasicEnemy.h": {
+                    "key": "BasicEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "BasicEnemy.h"
+                }, 
+                "Block.h": {
+                    "key": "Block.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Block.h"
+                }, 
+                "CCActionFollowGGJ.h": {
+                    "key": "CCActionFollowGGJ.h", 
+                    "prefix": "Source/", 
+                    "suffix": "CCActionFollowGGJ.h"
+                }, 
+                "CCAnimatedSprite.h": {
+                    "key": "CCAnimatedSprite.h", 
+                    "prefix": "Source/", 
+                    "suffix": "CCAnimatedSprite.h"
+                }, 
+                "Enemy.h": {
+                    "key": "Enemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Enemy.h"
+                }, 
+                "GameState.h": {
+                    "key": "GameState.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GameState.h"
+                }, 
+                "Gameplay.h": {
+                    "key": "Gameplay.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Gameplay.h"
+                }, 
+                "GoalPosition.h": {
+                    "key": "GoalPosition.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GoalPosition.h"
+                }, 
+                "GroundBlock.h": {
+                    "key": "GroundBlock.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GroundBlock.h"
+                }, 
+                "GroundBlock64.h": {
+                    "key": "GroundBlock64.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GroundBlock64.h"
+                }, 
+                "GroundBlockEight.h": {
+                    "key": "GroundBlockEight.h", 
+                    "prefix": "Source/", 
+                    "suffix": "GroundBlockEight.h"
+                }, 
+                "HappyEnemy.h": {
+                    "key": "HappyEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "HappyEnemy.h"
+                }, 
+                "Hero.h": {
+                    "key": "Hero.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Hero.h"
+                }, 
+                "Level.h": {
+                    "key": "Level.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Level.h"
+                }, 
+                "LevelBatchNode.h": {
+                    "key": "LevelBatchNode.h", 
+                    "prefix": "Source/", 
+                    "suffix": "LevelBatchNode.h"
+                }, 
+                "LevelDetails.h": {
+                    "key": "LevelDetails.h", 
+                    "prefix": "Source/", 
+                    "suffix": "LevelDetails.h"
+                }, 
+                "MainScene.h": {
+                    "key": "MainScene.h", 
+                    "prefix": "Source/", 
+                    "suffix": "MainScene.h"
+                }, 
+                "Mask.h": {
+                    "key": "Mask.h", 
+                    "prefix": "./", 
+                    "suffix": "Mask.h"
+                }, 
+                "Mood.h": {
+                    "key": "Mood.h", 
+                    "prefix": "Source/Moods/", 
+                    "suffix": "Mood.h"
+                }, 
+                "Prefix.pch": {
+                    "key": "Prefix.pch", 
+                    "prefix": "Source/", 
+                    "suffix": "Prefix.pch"
+                }, 
+                "SadEnemy.h": {
+                    "key": "SadEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "SadEnemy.h"
+                }, 
+                "ScaredEnemy.h": {
+                    "key": "ScaredEnemy.h", 
+                    "prefix": "Source/", 
+                    "suffix": "ScaredEnemy.h"
+                }, 
+                "Startscreen.h": {
+                    "key": "Startscreen.h", 
+                    "prefix": "./", 
+                    "suffix": "Startscreen.h"
+                }, 
+                "TutorialGameplay.h": {
+                    "key": "TutorialGameplay.h", 
+                    "prefix": "Source/", 
+                    "suffix": "TutorialGameplay.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include/kazmath", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include/kazmath/GL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Support", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/Chipmunk/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d-ui", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Session", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Support", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./Source/Resources/Info.plist"
+    ], 
+    "java_libs": [], 
+    "java_res_dirs": [], 
+    "java_sourcepaths": [], 
+    "java_sources": [], 
+    "libs": [
+        "z", 
+        "sqlite3"
+    ], 
+    "link_flags": [], 
+    "modules": [
+        {
+            "build_cwd": "Source/libs/cocos2d-iphone", 
+            "project": "Chipmunk7-ios", 
+            "project_config": "Release", 
+            "target": "ObjectiveChipmunk-iPhone"
+        }, 
+        {
+            "build_cwd": "Source/libs/cocos2d-iphone", 
+            "project": "cocos2d-ios", 
+            "project_config": "Release", 
+            "target": "cocos2d"
+        }
+    ], 
+    "pchs": [
+        "./Source/Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Mask.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/AngryEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/BasicEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Block.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/CCActionFollowGGJ.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/CCAnimatedSprite.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Enemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GameState.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Gameplay.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GoalPosition.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GroundBlock.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GroundBlock64.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/GroundBlockEight.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/HappyEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Hero.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Level.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/LevelBatchNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/LevelDetails.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/MainScene.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Moods/Mood.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/SadEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/ScaredEnemy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/TutorialGameplay.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/main.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Startscreen.m"
+        }
+    ], 
+    "type": "app", 
+    "version": "1", 
+    "xcode_project": "PivotVividGGJ14.xcodeproj"
+}
