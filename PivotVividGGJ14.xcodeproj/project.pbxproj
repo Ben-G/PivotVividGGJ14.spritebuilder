@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6273BBA618C2D1930006C979 /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */; };
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
 		627C5BB91893873100409C84 /* GroundBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB81893873100409C84 /* GroundBlock.m */; };
 		627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BBB18938DAA00409C84 /* CCActionFollowGGJ.m */; };
@@ -95,6 +96,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6273BBA418C2D1930006C979 /* TutorialFragment1_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_0.h; sourceTree = "<group>"; };
+		6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_0.m; sourceTree = "<group>"; };
 		627C5BB31893750300409C84 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		627C5BB41893750300409C84 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		627C5BB71893873100409C84 /* GroundBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundBlock.h; path = Source/GroundBlock.h; sourceTree = "<group>"; };
@@ -152,8 +155,8 @@
 		62CB016818BC239C00EC8097 /* TutorialGameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialGameplay.m; path = Source/TutorialGameplay.m; sourceTree = "<group>"; };
 		62CB016F18C29C1F00EC8097 /* TutorialFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment.h; sourceTree = "<group>"; };
 		62CB017018C29C1F00EC8097 /* TutorialFragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment.m; sourceTree = "<group>"; };
-		62CB017518C2A00800EC8097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		62CB017718C2A00C00EC8097 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62CB017518C2A00800EC8097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62CB017718C2A00C00EC8097 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
 		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		AC0C8C8C1894B9DC00080A19 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Source/Enemy.h; sourceTree = "<group>"; };
@@ -216,6 +219,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6273BBA218C2D15D0006C979 /* Tutorial1 */ = {
+			isa = PBXGroup;
+			children = (
+				6273BBA418C2D1930006C979 /* TutorialFragment1_0.h */,
+				6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */,
+			);
+			path = Tutorial1;
+			sourceTree = "<group>";
+		};
 		627C5BBD189396F700409C84 /* Moods */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +293,7 @@
 		62CB016D18C29C0500EC8097 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				6273BBA218C2D15D0006C979 /* Tutorial1 */,
 				62CB016F18C29C1F00EC8097 /* TutorialFragment.h */,
 				62CB017018C29C1F00EC8097 /* TutorialFragment.m */,
 			);
@@ -569,6 +582,7 @@
 				62F4177F1894923400663BDD /* Block.m in Sources */,
 				62A0B8F21895581D0037B7E4 /* Level.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
+				6273BBA618C2D1930006C979 /* TutorialFragment1_0.m in Sources */,
 				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
 				62A0B8F51895644B0037B7E4 /* GoalPosition.m in Sources */,
 				62A0B8E61895274E0037B7E4 /* HappyEnemy.m in Sources */,

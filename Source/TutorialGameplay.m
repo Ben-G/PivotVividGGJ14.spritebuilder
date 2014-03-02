@@ -9,10 +9,15 @@
 #import "TutorialGameplay.h"
 #import "TutorialFragment.h"
 #import "Level.h"
+#import "GameState.h"
+
+static int _currentFragmentIndex;
 
 @implementation TutorialGameplay {
     NSMutableArray *_tutorialFragments;
     CCLabelTTF *_instructionLabel;
+    NSString *_tutorialName;
+    NSArray *_fragmentNames;
 }
 
 - (void)didLoadFromCCB {
@@ -20,16 +25,30 @@
     
     [super didLoadFromCCB];
     
-    [self loadNextTutorialFragment];
+    NSDictionary *tutorialInfo = [[GameState sharedInstance] currentLevelInfo];
+    _tutorialName = tutorialInfo[@"levelName"];
+    _fragmentNames = tutorialInfo[@"tutorialFragments"];
+    
+    [self loadCurrentTutorialFragment];
 }
 
 #pragma mark - Load Tutorial Fragement
 
-- (void)loadNextTutorialFragment {
-    TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
-    [self.level addChild:tutorialFragment1];
+- (NSString *)currentFragmentCCBName {
+    NSString *currentFragmentName = _fragmentNames[_currentFragmentIndex];
+    NSString *fragmentCCBFile = [NSString stringWithFormat:@"Tutorials/%@/%@", _tutorialName, currentFragmentName];
     
-    TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
+    return fragmentCCBFile;
+}
+
+- (void)loadCurrentTutorialFragment {
+    NSString *fragmentCCBFile = [self currentFragmentCCBName];
+    
+    TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
+    [self.level addChild:tutorialFragment1];
+    self.delegate = tutorialFragment1;
+    
+    TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
     tutorialFragment2.position = ccp(tutorialFragment1.contentSize.width, 0);
     [self.level addChild:tutorialFragment2];
     
@@ -41,7 +60,38 @@
     [super findBlocks:self.level];
 }
 
+#pragma mark - Next Tutorial Step 
+
+- (void)nextTutorialStep {
+    if (_currentFragmentIndex < [_fragmentNames count]) {
+        _currentFragmentIndex++;
+        [self loadCurrentTutorialFragment];
+    }
+}
+
+#pragma mark - Inform Delegate
+
+- (void)jump {
+    [super jump];
+    
+    if ([self.delegate respondsToSelector:@selector(tutorialGameplayJumped:)]) {
+        [self.delegate tutorialGameplayJumped:self];
+    }
+}
+
+- (void)switchMood {
+    [super switchMood];
+    
+    if ([self.delegate respondsToSelector:@selector(tutorialGameplayChangedMood:)]) {
+        [self.delegate tutorialGameplayChangedMood:self];
+    }
+}
+
 #pragma mark - Overriden Gameplay Methods
+
+- (void)endGame {
+    [self restartLevel];
+}
 
 - (void)restartLevel {
     // reload level
@@ -55,7 +105,7 @@
     
     // loop tutorial fragments
     for (int i = 0; i < [_tutorialFragments count]; i++) {
-        CCNode *fragment = _tutorialFragments[i];
+        TutorialFragment *fragment = _tutorialFragments[i];
         
         // get the world position of the fragment
         CGPoint fragmentWorldPosition = [self.level convertToWorldSpace:fragment.position];
@@ -68,9 +118,10 @@
             CCNode *parent = fragment.parent;
             CGPoint fragmentPosition = fragment.position;
             [fragment removeFromParent];
-            fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:@"Tutorials/Tutorial1/Tutorial1_0"];
+            fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:[self currentFragmentCCBName]];
             fragment.position = ccp(fragmentPosition.x + 2 * fragment.contentSize.width, fragmentPosition.y);
             [parent addChild:fragment];
+            self.delegate = fragment;
             
             [super findBlocks:fragment];
         }

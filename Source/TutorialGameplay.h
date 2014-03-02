@@ -8,6 +8,22 @@
 
 #import "Gameplay.h"
 
+@class TutorialGameplay;
+
+@protocol TutorialGameplayDelegate <NSObject>
+
+@optional
+
+- (void)tutorialGameplayChangedMood:(TutorialGameplay *)tutorialGameplay;
+- (void)tutorialGameplayJumped:(TutorialGameplay *)tutorialGameplay;
+
+@end
+
+
 @interface TutorialGameplay : Gameplay
+
+@property (nonatomic, weak) id<TutorialGameplayDelegate> delegate;
+
+- (void)nextTutorialStep;
 
 @end

@@ -7,8 +7,9 @@
 //
 
 #import "CCNode.h"
+#import "TutorialGameplay.h"
 
-@interface TutorialFragment : CCNode
+@interface TutorialFragment : CCNode <TutorialGameplayDelegate>
 
 @property (nonatomic, strong) NSString *instruction;
 

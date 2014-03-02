@@ -3,12 +3,17 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>levelName</key>
+		<string>Tutorial1</string>
+		<key>tutorialFragments</key>
+		<array>
+			<string>Tutorial1_0</string>
+			<string>Tutorial1_1</string>
+		</array>
 		<key>isTutorial</key>
 		<true/>
 		<key>levelTitle</key>
 		<string>Tutorial</string>
-		<key>levelName</key>
-		<string>Level_2</string>
 		<key>levelDescription</key>
 		<string></string>
 	</dict>
