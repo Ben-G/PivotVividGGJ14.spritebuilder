@@ -24,6 +24,9 @@
 }
 
 - (void)applyMood:(Mood*)newMood {
+    if (!newMood) {
+        return;
+    }
     
     NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_blocksmall.png", newMood.moodPrefix];
     

@@ -65,9 +65,30 @@ static const CGPoint DISTANCE_PER_MASK = {-25.f,0.f};
 // amount of initial masks
 // static const int RAMP = 1;
 
+static CGFloat baseSpeed = 0;
+
 static const int JUMP_IMPULSE = 100000;
 
 #pragma mark - Init
+
+
+static void
+playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
+{
+    cpAssertSoft(body->m > 0.0f && body->i > 0.0f, "Body's mass and moment must be positive to simulate. (Mass: %f Moment: %f)", body->m, body->i);
+	
+	body->v = cpvadd(cpvmult(body->v, damping), cpvmult(cpvadd(gravity, cpvmult(body->f, body->m_inv)), dt));
+	body->w = body->w*damping + body->t*body->i_inv*dt;
+	
+	// Reset forces.
+	body->f = cpvzero;
+	body->t = 0.0f;
+	
+	body->v.x = baseSpeed;
+
+	cpAssertSaneBody(body);
+}
+
 
 - (void)didLoadFromCCB {
     _physicsNode.sleepTimeThreshold = 10.f;
@@ -75,7 +96,7 @@ static const int JUMP_IMPULSE = 100000;
     
     _progressBar.opacity = 0.f;
     
-//    _hero.physicsBody.body.body->velocity_func = nil;
+    _hero.physicsBody.body.body->velocity_func = playerUpdateVelocity;
     
     // load initial background
     NSString *spriteFrameName = @"art/sad_background.png";
@@ -102,7 +123,9 @@ static const int JUMP_IMPULSE = 100000;
     // load first level
     NSString *levelName = [[GameState sharedInstance] currentLevel];
     
-    if ( ([[GameState sharedInstance] currentLevelInfo]) [@"isTutorial"] == [NSNumber numberWithBool:FALSE] ) {
+    NSNumber *isTutorial = ([[GameState sharedInstance] currentLevelInfo]) [@"isTutorial"];
+    
+    if (![isTutorial isEqualToNumber:[NSNumber numberWithBool:TRUE]]) {
         _level = (Level*) [CCBReader load:levelName];
     }
     
@@ -110,7 +133,8 @@ static const int JUMP_IMPULSE = 100000;
     
     // read custom level properties
     _initialMasks = _level.initialMasks;
-    _baseSpeed = _level.levelSpeed;
+    baseSpeed = _baseSpeed = _level.levelSpeed;
+    
     
     // determines how the camera shall follow the player (where in the camera image the hero will be positioned)
     playerPositionX = 150;
@@ -251,9 +275,9 @@ static const int JUMP_IMPULSE = 100000;
         [self endGame];
     }
     
-    if (_hero.physicsBody.velocity.x < _baseSpeed) {
-        [_hero.physicsBody applyForce:ccp(10000.f, _hero.physicsBody.force.y)];
-    }
+//    if (_hero.physicsBody.velocity.x < _baseSpeed) {
+//        [_hero.physicsBody applyForce:ccp(10000.f, _hero.physicsBody.force.y)];
+//    }
     
     // make masks follow the player
     CGPoint previous = ccp(_hero.previousPosition.x, _hero.previousPosition.y-8);
