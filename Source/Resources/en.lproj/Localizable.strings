@@ -7,4 +7,6 @@
 */
 
 "tutorial1_0" = "Swipe in any direction to switch between the 4 different moods";
-"tutorial1_1" = "Touch and release the touch to jump";
+"tutorial1_1" = "Jump to avoid the upcoming obstacles!";
+
+"tutorial1_2" = "Touch and release the touch to jump";

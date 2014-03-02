@@ -119,6 +119,11 @@ static int _currentFragmentIndex;
             CCNode *parent = fragment.parent;
             CGPoint fragmentPosition = fragment.position;
             [fragment removeFromParent];
+            
+            if ([fragment respondsToSelector:@selector(tutorialGameplayCompletedFragment:)]) {
+                [fragment tutorialGameplayCompletedFragment:self];
+            }
+            
             fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:[self currentFragmentCCBName]];
             fragment.position = ccp(fragmentPosition.x + 2 * fragment.contentSize.width, fragmentPosition.y);
             [parent addChild:fragment];

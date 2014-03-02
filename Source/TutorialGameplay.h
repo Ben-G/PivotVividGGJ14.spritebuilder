@@ -16,6 +16,7 @@
 
 - (void)tutorialGameplayChangedMood:(TutorialGameplay *)tutorialGameplay;
 - (void)tutorialGameplayJumped:(TutorialGameplay *)tutorialGameplay;
+- (void)tutorialGameplayCompletedFragment:(TutorialGameplay *)tutorialGameplay;
 
 @end
 

@@ -470,7 +470,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>TutorialFragment</string>
+		<string>TutorialFragment1_1</string>
 		<key>customProperties</key>
 		<array>
 			<dict>
@@ -552,6 +552,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
