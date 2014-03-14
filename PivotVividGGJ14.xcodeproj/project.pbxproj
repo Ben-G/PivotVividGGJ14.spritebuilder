@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622BE81218D2BBC8009178AF /* hero_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622BE81018D2BBC8009178AF /* hero_default.plist */; };
+		622BE81318D2BBC8009178AF /* hero_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 622BE81118D2BBC8009178AF /* hero_default.png */; };
+		622BE81718D2BBD2009178AF /* hero_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622BE81518D2BBD2009178AF /* hero_default.plist */; };
+		622BE81818D2BBD2009178AF /* hero_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 622BE81618D2BBD2009178AF /* hero_default.png */; };
 		6273BBA618C2D1930006C979 /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */; };
 		6273BBA918C2D9910006C979 /* TutorialFragment1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6273BBA818C2D9910006C979 /* TutorialFragment1_1.m */; };
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
@@ -97,6 +101,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		622BE81018D2BBC8009178AF /* hero_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hero_default.plist; sourceTree = "<group>"; };
+		622BE81118D2BBC8009178AF /* hero_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_default.png; sourceTree = "<group>"; };
+		622BE81518D2BBD2009178AF /* hero_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hero_default.plist; sourceTree = "<group>"; };
+		622BE81618D2BBD2009178AF /* hero_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_default.png; sourceTree = "<group>"; };
 		6273BBA418C2D1930006C979 /* TutorialFragment1_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_0.h; sourceTree = "<group>"; };
 		6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_0.m; sourceTree = "<group>"; };
 		6273BBA718C2D9910006C979 /* TutorialFragment1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_1.h; sourceTree = "<group>"; };
@@ -266,6 +274,8 @@
 		627C5C0D18946BDF00409C84 /* resources-phone */ = {
 			isa = PBXGroup;
 			children = (
+				622BE81018D2BBC8009178AF /* hero_default.plist */,
+				622BE81118D2BBC8009178AF /* hero_default.png */,
 			);
 			path = "resources-phone";
 			sourceTree = "<group>";
@@ -273,6 +283,8 @@
 		627C5C0E18946BDF00409C84 /* resources-phonehd */ = {
 			isa = PBXGroup;
 			children = (
+				622BE81518D2BBD2009178AF /* hero_default.plist */,
+				622BE81618D2BBD2009178AF /* hero_default.png */,
 				627C5C0F18946BDF00409C84 /* angry_default.plist */,
 				627C5C1018946BDF00409C84 /* angry_default.png */,
 				627C5C1118946BDF00409C84 /* happy_default-hd.plist */,
@@ -542,6 +554,7 @@
 				627C5C2018946BDF00409C84 /* sad_default.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				627C5C1918946BDF00409C84 /* angry_default.plist in Resources */,
+				622BE81718D2BBD2009178AF /* hero_default.plist in Resources */,
 				627C5BF61893EE5C00409C84 /* fear.mp3 in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
@@ -549,9 +562,11 @@
 				627C5C2118946BDF00409C84 /* scared_default.plist in Resources */,
 				627C5C1B18946BDF00409C84 /* happy_default-hd.plist in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
+				622BE81818D2BBD2009178AF /* hero_default.png in Resources */,
 				62A0B8DA1894F51D0037B7E4 /* Levels.plist in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
+				622BE81318D2BBC8009178AF /* hero_default.png in Resources */,
 				627C5C1E18946BDF00409C84 /* kaput_default.png in Resources */,
 				627C5BF51893EE5C00409C84 /* calm.mp3 in Resources */,
 				62CB017418C2A00800EC8097 /* Localizable.strings in Resources */,
@@ -568,6 +583,7 @@
 				627C5C1A18946BDF00409C84 /* angry_default.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
+				622BE81218D2BBC8009178AF /* hero_default.plist in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
