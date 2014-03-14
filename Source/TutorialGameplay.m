@@ -45,22 +45,20 @@ static int _currentFragmentIndex;
 - (void)loadCurrentTutorialFragment {
     NSString *fragmentCCBFile = [self currentFragmentCCBName];
     
-    if (_currentFragmentIndex == 0) {
-        TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
-        [self.level addChild:tutorialFragment1];
-        self.delegate = tutorialFragment1;
-        
-        TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
-        tutorialFragment2.position = ccp(tutorialFragment1.contentSize.width, 0);
-        [self.level addChild:tutorialFragment2];
-        
-        _tutorialFragments = [@[tutorialFragment1, tutorialFragment2] mutableCopy];
-        
-        // update instruction
-        _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
-        
-        [super findBlocks:self.level];
-    }
+    TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
+    [self.level addChild:tutorialFragment1];
+    self.delegate = tutorialFragment1;
+    
+    TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
+    tutorialFragment2.position = ccp(tutorialFragment1.contentSize.width, 0);
+    [self.level addChild:tutorialFragment2];
+    
+    _tutorialFragments = [@[tutorialFragment1, tutorialFragment2] mutableCopy];
+    
+    // update instruction
+    _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
+    
+    [super findBlocks:self.level];
 }
 
 #pragma mark - Next Tutorial Step

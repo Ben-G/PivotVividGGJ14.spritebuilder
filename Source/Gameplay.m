@@ -99,7 +99,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     _hero.physicsBody.body.body->velocity_func = playerUpdateVelocity;
     
     // load initial background
-    NSString *spriteFrameName = @"art/sad_background.png";
+    NSString *spriteFrameName = @"art/calm_background.png";
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
 
     // position backgrounds
