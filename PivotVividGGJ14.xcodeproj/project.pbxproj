@@ -11,8 +11,8 @@
 		622BE81318D2BBC8009178AF /* hero_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 622BE81118D2BBC8009178AF /* hero_default.png */; };
 		622BE81718D2BBD2009178AF /* hero_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 622BE81518D2BBD2009178AF /* hero_default.plist */; };
 		622BE81818D2BBD2009178AF /* hero_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 622BE81618D2BBD2009178AF /* hero_default.png */; };
-		6273BBA618C2D1930006C979 /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */; };
-		6273BBA918C2D9910006C979 /* TutorialFragment1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6273BBA818C2D9910006C979 /* TutorialFragment1_1.m */; };
+		622BE81D18D2BCB9009178AF /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */; };
+		622BE81E18D2BCB9009178AF /* TutorialFragment1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */; };
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
 		627C5BB91893873100409C84 /* GroundBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB81893873100409C84 /* GroundBlock.m */; };
 		627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BBB18938DAA00409C84 /* CCActionFollowGGJ.m */; };
@@ -105,10 +105,10 @@
 		622BE81118D2BBC8009178AF /* hero_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_default.png; sourceTree = "<group>"; };
 		622BE81518D2BBD2009178AF /* hero_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hero_default.plist; sourceTree = "<group>"; };
 		622BE81618D2BBD2009178AF /* hero_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_default.png; sourceTree = "<group>"; };
-		6273BBA418C2D1930006C979 /* TutorialFragment1_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_0.h; sourceTree = "<group>"; };
-		6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_0.m; sourceTree = "<group>"; };
-		6273BBA718C2D9910006C979 /* TutorialFragment1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_1.h; sourceTree = "<group>"; };
-		6273BBA818C2D9910006C979 /* TutorialFragment1_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_1.m; sourceTree = "<group>"; };
+		622BE81918D2BCB9009178AF /* TutorialFragment1_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_0.h; sourceTree = "<group>"; };
+		622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_0.m; sourceTree = "<group>"; };
+		622BE81B18D2BCB9009178AF /* TutorialFragment1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_1.h; sourceTree = "<group>"; };
+		622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_1.m; sourceTree = "<group>"; };
 		627C5BB31893750300409C84 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		627C5BB41893750300409C84 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		627C5BB71893873100409C84 /* GroundBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundBlock.h; path = Source/GroundBlock.h; sourceTree = "<group>"; };
@@ -233,10 +233,10 @@
 		6273BBA218C2D15D0006C979 /* Tutorial1 */ = {
 			isa = PBXGroup;
 			children = (
-				6273BBA418C2D1930006C979 /* TutorialFragment1_0.h */,
-				6273BBA518C2D1930006C979 /* TutorialFragment1_0.m */,
-				6273BBA718C2D9910006C979 /* TutorialFragment1_1.h */,
-				6273BBA818C2D9910006C979 /* TutorialFragment1_1.m */,
+				622BE81918D2BCB9009178AF /* TutorialFragment1_0.h */,
+				622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */,
+				622BE81B18D2BCB9009178AF /* TutorialFragment1_1.h */,
+				622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */,
 			);
 			path = Tutorial1;
 			sourceTree = "<group>";
@@ -603,12 +603,12 @@
 				62F4177F1894923400663BDD /* Block.m in Sources */,
 				62A0B8F21895581D0037B7E4 /* Level.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
-				6273BBA618C2D1930006C979 /* TutorialFragment1_0.m in Sources */,
+				622BE81D18D2BCB9009178AF /* TutorialFragment1_0.m in Sources */,
 				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
 				62A0B8F51895644B0037B7E4 /* GoalPosition.m in Sources */,
 				62A0B8E61895274E0037B7E4 /* HappyEnemy.m in Sources */,
 				627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */,
-				6273BBA918C2D9910006C979 /* TutorialFragment1_1.m in Sources */,
+				622BE81E18D2BCB9009178AF /* TutorialFragment1_1.m in Sources */,
 				62CB017118C29C1F00EC8097 /* TutorialFragment.m in Sources */,
 				62A0B8EC18954DF00037B7E4 /* SadEnemy.m in Sources */,
 				627C5BB51893750300409C84 /* Gameplay.m in Sources */,
