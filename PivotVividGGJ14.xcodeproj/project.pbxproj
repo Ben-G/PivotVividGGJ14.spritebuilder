@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		622671FE18E794740094A8B9 /* Additional-Resources in Resources */ = {isa = PBXBuildFile; fileRef = 622671FD18E794740094A8B9 /* Additional-Resources */; };
+		6226720118E8990C0094A8B9 /* TutorialFragment1_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */; };
 		622BE81D18D2BCB9009178AF /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */; };
 		622BE81E18D2BCB9009178AF /* TutorialFragment1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */; };
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
@@ -89,6 +90,8 @@
 
 /* Begin PBXFileReference section */
 		622671FD18E794740094A8B9 /* Additional-Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Additional-Resources"; sourceTree = "<group>"; };
+		622671FF18E8990C0094A8B9 /* TutorialFragment1_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_2.h; sourceTree = "<group>"; };
+		6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_2.m; sourceTree = "<group>"; };
 		622BE81918D2BCB9009178AF /* TutorialFragment1_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_0.h; sourceTree = "<group>"; };
 		622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_0.m; sourceTree = "<group>"; };
 		622BE81B18D2BCB9009178AF /* TutorialFragment1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_1.h; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 				622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */,
 				622BE81B18D2BCB9009178AF /* TutorialFragment1_1.h */,
 				622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */,
+				622671FF18E8990C0094A8B9 /* TutorialFragment1_2.h */,
+				6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */,
 			);
 			path = Tutorial1;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6226720118E8990C0094A8B9 /* TutorialFragment1_2.m in Sources */,
 				AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */,
 				62A0B8E318950D890037B7E4 /* GameState.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,

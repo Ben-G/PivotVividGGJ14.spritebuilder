@@ -26,5 +26,6 @@
 @property (nonatomic, weak) id<TutorialGameplayDelegate> delegate;
 
 - (void)nextTutorialStep;
+- (void)winTutorial;
 
 @end

@@ -21,5 +21,6 @@
 - (void)jump;
 - (void)switchMood;
 - (void)endGame;
+- (void)winGame;
 
 @end

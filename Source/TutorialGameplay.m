@@ -19,6 +19,7 @@ static int _currentFragmentIndex;
     CCLabelTTF *_instructionLabel;
     NSString *_tutorialName;
     NSArray *_fragmentNames;
+    BOOL _newFragmentLoaded;
 }
 
 - (void)didLoadFromCCB {
@@ -48,7 +49,7 @@ static int _currentFragmentIndex;
     NSString *fragmentCCBFile = [self currentFragmentCCBName];
     
     // add a little blank level before the tutorial fragment so player can prepare
-    CCNode *tutorialPreplay = (TutorialFragment *) [CCBReader load:@"Fragments/Tutorial_blank"];
+    CCNode *tutorialPreplay = [CCBReader load:@"Fragments/Tutorial_blank"];
     [self.level addChild:tutorialPreplay];
     
     //TODO: instead of looping fragment twice add blank space afterwards?
@@ -76,8 +77,13 @@ static int _currentFragmentIndex;
 - (void)nextTutorialStep {
     if ((_currentFragmentIndex+1) < [_fragmentNames count]) {
         _currentFragmentIndex++;
+        _newFragmentLoaded = FALSE;
     }
     _instructionLabel.string = @"Well done!";
+}
+
+- (void)winTutorial {
+    [super winGame];
 }
 
 #pragma mark - Inform Delegate
@@ -128,7 +134,6 @@ static int _currentFragmentIndex;
             // workaround for compound static physics objects not beeing movable
             CCNode *parent = fragment.parent;
             CGPoint fragmentPosition = fragment.position;
-            CGSize fragmentSize = fragment.contentSize;
             [fragment removeFromParent];
             
             if ([fragment respondsToSelector:@selector(tutorialGameplayCompletedFragment:)]) {
@@ -136,12 +141,16 @@ static int _currentFragmentIndex;
             }
             
             TutorialFragment *otherFragment = (i == 0) ? _tutorialFragments[1] : _tutorialFragments[0];
-            
-            fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:[self currentFragmentCCBName]];
+            if (!_newFragmentLoaded) {
+                fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:[self currentFragmentCCBName]];
+                _newFragmentLoaded = TRUE;
+                _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
+                self.delegate = fragment;
+            } else {
+                fragment = _tutorialFragments[i] = [CCBReader load:@"Fragments/Tutorial_blank"];
+            }
             fragment.position = ccp(otherFragment.position.x + otherFragment.contentSize.width, fragmentPosition.y);
             [parent addChild:fragment];
-            self.delegate = fragment;
-            _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
             
             [super findBlocks:fragment];
         }
