@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>happy0001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{9, 118}, {254, 157}}</string>
+			<key>spriteOffset</key>
+			<string>{-49, -15}</string>
+			<key>spriteSize</key>
+			<string>{254, 157}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 157}, {254, 157}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{10, 121}, {256, 155}}</string>
+			<key>spriteOffset</key>
+			<string>{-47, -17}</string>
+			<key>spriteSize</key>
+			<string>{256, 155}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {256, 155}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{15, 124}, {252, 157}}</string>
+			<key>spriteOffset</key>
+			<string>{-44, -21}</string>
+			<key>spriteSize</key>
+			<string>{252, 157}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 316}, {252, 157}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{25, 126}, {248, 155}}</string>
+			<key>spriteOffset</key>
+			<string>{-36, -22}</string>
+			<key>spriteSize</key>
+			<string>{248, 155}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{254, 380}, {248, 155}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{23, 123}, {252, 157}}</string>
+			<key>spriteOffset</key>
+			<string>{-36, -20}</string>
+			<key>spriteSize</key>
+			<string>{252, 157}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{256, 221}, {252, 157}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{24, 107}, {236, 171}}</string>
+			<key>spriteOffset</key>
+			<string>{-43, -11}</string>
+			<key>spriteSize</key>
+			<string>{236, 171}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 664}, {236, 171}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{26, 81}, {218, 193}}</string>
+			<key>spriteOffset</key>
+			<string>{-50, 4}</string>
+			<key>spriteSize</key>
+			<string>{218, 193}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{908, 249}, {218, 193}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{28, 66}, {202, 213}}</string>
+			<key>spriteOffset</key>
+			<string>{-56, 9}</string>
+			<key>spriteSize</key>
+			<string>{202, 213}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{478, 0}, {202, 213}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{30, 45}, {196, 233}}</string>
+			<key>spriteOffset</key>
+			<string>{-57, 20}</string>
+			<key>spriteSize</key>
+			<string>{196, 233}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{744, 452}, {196, 233}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{31, 27}, {190, 247}}</string>
+			<key>spriteOffset</key>
+			<string>{-59, 31}</string>
+			<key>spriteSize</key>
+			<string>{190, 247}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{912, 0}, {190, 247}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{31, 21}, {192, 249}}</string>
+			<key>spriteOffset</key>
+			<string>{-58, 36}</string>
+			<key>spriteSize</key>
+			<string>{192, 249}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{510, 215}, {192, 249}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{26, 18}, {202, 237}}</string>
+			<key>spriteOffset</key>
+			<string>{-58, 45}</string>
+			<key>spriteSize</key>
+			<string>{202, 237}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{704, 213}, {202, 237}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{25, 15}, {210, 225}}</string>
+			<key>spriteOffset</key>
+			<string>{-55, 54}</string>
+			<key>spriteSize</key>
+			<string>{210, 225}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1104, 0}, {210, 225}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{28, 5}, {218, 219}}</string>
+			<key>spriteOffset</key>
+			<string>{-48, 67}</string>
+			<key>spriteSize</key>
+			<string>{218, 219}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{258, 0}, {218, 219}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{20, 22}, {228, 211}}</string>
+			<key>spriteOffset</key>
+			<string>{-51, 54}</string>
+			<key>spriteSize</key>
+			<string>{228, 211}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{682, 0}, {228, 211}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0016.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{13, 43}, {238, 201}}</string>
+			<key>spriteOffset</key>
+			<string>{-53, 38}</string>
+			<key>spriteSize</key>
+			<string>{238, 201}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{504, 466}, {238, 201}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0017.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{7, 66}, {244, 187}}</string>
+			<key>spriteOffset</key>
+			<string>{-56, 22}</string>
+			<key>spriteSize</key>
+			<string>{244, 187}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 475}, {244, 187}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>happy0018.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{14, 94}, {236, 169}}</string>
+			<key>spriteOffset</key>
+			<string>{-53, 3}</string>
+			<key>spriteSize</key>
+			<string>{236, 169}</string>
+			<key>spriteSourceSize</key>
+			<string>{370, 363}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{238, 664}, {236, 169}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.6.0</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{2048, 1024}</string>
+		<key>name</key>
+		<string>happy</string>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>happy_default</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>happy_default</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>
