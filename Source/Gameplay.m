@@ -542,7 +542,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         
         // particle effect for death
         CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"EnemyDies"];
-        particle.position = basicEnemy.position;
+        CGPoint enemyWorldPosition = [basicEnemy.parent convertToWorldSpace:basicEnemy.position];
+        particle.position = [_physicsNode convertToNodeSpace:enemyWorldPosition];
         particle.autoRemoveOnFinish = TRUE;
         [_physicsNode addChild:particle];
         
