@@ -26,11 +26,13 @@ static int _currentFragmentIndex;
     
     [super didLoadFromCCB];
     
+    
+    /* Load the last active tutorial step. If a player doesn't pass a tutorial step he will have to repeat it*/
     NSDictionary *tutorialInfo = [[GameState sharedInstance] currentLevelInfo];
     _tutorialName = tutorialInfo[@"levelName"];
     _fragmentNames = tutorialInfo[@"tutorialFragments"];
     
-    [self loadCurrentTutorialFragment];
+    [self restoreCurrentTutorialFragment];
 }
 
 #pragma mark - Load Tutorial Fragement
@@ -42,15 +44,21 @@ static int _currentFragmentIndex;
     return fragmentCCBFile;
 }
 
-- (void)loadCurrentTutorialFragment {
+- (void)restoreCurrentTutorialFragment {
     NSString *fragmentCCBFile = [self currentFragmentCCBName];
     
+    // add a little blank level before the tutorial fragment so player can prepare
+    CCNode *tutorialPreplay = (TutorialFragment *) [CCBReader load:@"Fragments/Tutorial_blank"];
+    [self.level addChild:tutorialPreplay];
+    
+    //TODO: instead of looping fragment twice add blank space afterwards?
     TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
+    tutorialFragment1.position = ccp(tutorialPreplay.contentSize.width, 0);
     [self.level addChild:tutorialFragment1];
     self.delegate = tutorialFragment1;
     
     TutorialFragment *tutorialFragment2 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];
-    tutorialFragment2.position = ccp(tutorialFragment1.contentSize.width, 0);
+    tutorialFragment2.position = ccp(tutorialFragment1.position.x + tutorialFragment1.contentSize.width, 0);
     [self.level addChild:tutorialFragment2];
     
     _tutorialFragments = [@[tutorialFragment1, tutorialFragment2] mutableCopy];
@@ -58,6 +66,8 @@ static int _currentFragmentIndex;
     // update instruction
     _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
     
+    /* since we dynamically loaded new blocks to the world we need to call findBlocks again to collect these new blocks.
+     The game needs to know about all blocks to be able to apply moods, etc. */
     [super findBlocks:self.level];
 }
 
