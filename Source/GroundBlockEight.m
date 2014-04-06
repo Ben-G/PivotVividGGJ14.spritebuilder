@@ -26,7 +26,14 @@
         if ([newMood.moodPrefix isEqualToString:self.onlyVisibleInMood]) {
             self.physicsBody.collisionMask = nil;
             self.opacity = 1.f;
+            CCColor *originalColor = self.color;
+            CCActionTintTo *tintToWhite = [CCActionTintTo actionWithDuration:0.5f color:[CCColor grayColor]];
+            CCActionTintTo *tintToBlack = [CCActionTintTo actionWithDuration:0.5f color:originalColor];
+            CCActionSequence *sequence = [CCActionSequence actionWithArray:@[tintToWhite, tintToBlack]];
+            CCActionRepeatForever *repeat = [CCActionRepeatForever actionWithAction:sequence];
+            [self runAction:repeat];
         } else {
+            [self stopAllActions];
             self.physicsBody.collisionMask = @[];
             self.opacity = 0.4f;
             spriteFrameName = [NSString stringWithFormat:@"art/%@_blocklong.png", _onlyVisibleInMood];
