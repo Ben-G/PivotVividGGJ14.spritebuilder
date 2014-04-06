@@ -20,14 +20,14 @@ static int _currentFragmentIndex;
     NSString *_tutorialName;
     NSArray *_fragmentNames;
     BOOL _newFragmentLoaded;
+    UITouch *_resumeTouch;
 }
 
 - (void)didLoadFromCCB {
     self.level = [[Level alloc] init];
-    
+    self.level.levelSpeed = 200.f;
     [super didLoadFromCCB];
-    
-    
+
     /* Load the last active tutorial step. If a player doesn't pass a tutorial step he will have to repeat it*/
     NSDictionary *tutorialInfo = [[GameState sharedInstance] currentLevelInfo];
     _tutorialName = tutorialInfo[@"levelName"];
@@ -66,10 +66,28 @@ static int _currentFragmentIndex;
     
     // update instruction
     _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
+    [[CCDirector sharedDirector] pause];
     
     /* since we dynamically loaded new blocks to the world we need to call findBlocks again to collect these new blocks.
      The game needs to know about all blocks to be able to apply moods, etc. */
     [super findBlocks:self.level];
+}
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    if ([[CCDirector sharedDirector] isPaused]) {
+        [[CCDirector sharedDirector] resume];
+        _resumeTouch = touch;
+    } else {
+        [super touchBegan:touch withEvent:event];
+    }
+}
+
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
+    if (touch == _resumeTouch) {
+        _resumeTouch = nil;
+    } else {
+        [super touchEnded:touch withEvent:event];
+    }
 }
 
 #pragma mark - Next Tutorial Step
@@ -144,7 +162,14 @@ static int _currentFragmentIndex;
             if (!_newFragmentLoaded) {
                 fragment = _tutorialFragments[i] = (TutorialFragment *) [CCBReader load:[self currentFragmentCCBName]];
                 _newFragmentLoaded = TRUE;
-                _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
+//                _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
+                
+                if (![_instructionLabel.string isEqualToString:fragment.instruction]) {
+                    // update instruction
+                    _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
+                    [[CCDirector sharedDirector] pause];
+                }
+                
                 self.delegate = fragment;
             } else {
                 fragment = _tutorialFragments[i] = [CCBReader load:@"Fragments/Tutorial_blank"];
