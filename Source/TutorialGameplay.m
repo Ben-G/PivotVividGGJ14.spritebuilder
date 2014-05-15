@@ -21,6 +21,8 @@ static int _currentFragmentIndex;
     NSArray *_fragmentNames;
     BOOL _newFragmentLoaded;
     UITouch *_resumeTouch;
+    CCNode *_instructionBox;
+    CCNode *_tutorialInstructionPopup;
 }
 
 - (void)didLoadFromCCB {
@@ -34,6 +36,11 @@ static int _currentFragmentIndex;
     _fragmentNames = tutorialInfo[@"tutorialFragments"];
     
     [self restoreCurrentTutorialFragment];
+    
+    _tutorialInstructionPopup = [CCBReader load:@"TutorialInstructionPopup"];
+    [self addChild:_tutorialInstructionPopup];
+    _tutorialInstructionPopup.positionType = CCPositionTypeNormalized;
+    _tutorialInstructionPopup.position = ccp(0.5f, 0.5f);
 }
 
 #pragma mark - Load Tutorial Fragement
@@ -76,6 +83,8 @@ static int _currentFragmentIndex;
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     if ([[CCDirector sharedDirector] isPaused]) {
         [[CCDirector sharedDirector] resume];
+        _instructionBox.visible = TRUE;
+        _tutorialInstructionPopup.visible = FALSE;
         _resumeTouch = touch;
     } else {
         [super touchBegan:touch withEvent:event];
@@ -98,6 +107,13 @@ static int _currentFragmentIndex;
         _newFragmentLoaded = FALSE;
     }
     _instructionLabel.string = @"Well done!";
+}
+
+- (void)activateNextTutorialStep:(TutorialFragment *)fragment {
+    _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
+    [[CCDirector sharedDirector] pause];
+    _instructionBox.visible = FALSE;
+    _tutorialInstructionPopup.visible = TRUE;
 }
 
 - (void)winTutorial {
@@ -166,8 +182,7 @@ static int _currentFragmentIndex;
                 
                 if (![_instructionLabel.string isEqualToString:fragment.instruction]) {
                     // update instruction
-                    _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
-                    [[CCDirector sharedDirector] pause];
+                    [self activateNextTutorialStep:fragment];
                 }
                 
                 self.delegate = fragment;
@@ -181,5 +196,8 @@ static int _currentFragmentIndex;
         }
     }
 }
+
+
+
 
 @end
