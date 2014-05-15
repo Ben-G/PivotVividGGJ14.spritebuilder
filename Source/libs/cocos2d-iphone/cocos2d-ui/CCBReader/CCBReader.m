@@ -72,7 +72,6 @@
     sharedFileUtils.searchPath =
     [NSArray arrayWithObjects:
      [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"],
-     [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Additional-Resources"],
      [[NSBundle mainBundle] resourcePath],
      nil];
     

@@ -46,6 +46,13 @@
     // Configure CCFileUtils to work with SpriteBuilder
     [CCBReader configureCCFileUtils];
     
+    CCFileUtils *sharedFileUtils = [CCFileUtils sharedFileUtils];
+    
+    // Add our path for custom resources
+    NSMutableArray *searchPaths = [NSMutableArray arrayWithArray:sharedFileUtils.searchPath];
+    [searchPaths addObject:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Additional-Resources"]];
+    sharedFileUtils.searchPath = searchPaths;
+    
     // Do any extra configuration of Cocos2d here (the example line changes the pixel format for faster rendering, but with less colors)
     //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
     
