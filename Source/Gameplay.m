@@ -241,7 +241,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
 - (void)update:(CCTime)delta {
     
-    if (_gameOver) {
+    if (_gameOver || self.contentNode.paused) {
         return;
     }
     
