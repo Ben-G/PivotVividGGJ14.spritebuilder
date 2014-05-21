@@ -19,7 +19,6 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
-    CCNode *_contentNode;
     CCNode *_progressBar;
     CCPhysicsNode *_physicsNode;
     Hero *_hero;

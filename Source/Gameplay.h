@@ -13,6 +13,7 @@
 
 @property (nonatomic, assign) BOOL onGround;
 @property (nonatomic, strong) Level *level;
+@property (nonatomic, strong) CCPhysicsNode *contentNode;
 
 - (void)didLoadFromCCB;
 - (void)restartLevel;

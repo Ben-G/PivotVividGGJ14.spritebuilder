@@ -74,8 +74,7 @@ static int _currentFragmentIndex;
     
     // update instruction
     _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
-    [[CCDirector sharedDirector] pause];
-    // test     self.paused = TRUE; instead
+    self.paused = TRUE;
     
     /* since we dynamically loaded new blocks to the world we need to call findBlocks again to collect these new blocks.
      The game needs to know about all blocks to be able to apply moods, etc. */
@@ -83,8 +82,8 @@ static int _currentFragmentIndex;
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
-    if ([[CCDirector sharedDirector] isPaused]) {
-        [[CCDirector sharedDirector] resume];
+    if (self.paused) {
+        self.paused = FALSE;
         _instructionBox.visible = TRUE;
         _tutorialInstructionPopup.visible = FALSE;
         _resumeTouch = touch;
@@ -113,9 +112,9 @@ static int _currentFragmentIndex;
 
 - (void)activateNextTutorialStep:(TutorialFragment *)fragment {
     _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
-    [[CCDirector sharedDirector] pause];
     _instructionBox.visible = FALSE;
     _tutorialInstructionPopup.visible = TRUE;
+    self.paused = TRUE;
 }
 
 - (void)winTutorial {
