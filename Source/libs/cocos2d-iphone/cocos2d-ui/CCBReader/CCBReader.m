@@ -131,23 +131,6 @@ static inline NSString *readUTF8(CCBReader *self)
     return str;
 }
 
-static inline BOOL getBit(CCBReader *self)
-{
-    BOOL bit;
-    unsigned char byte = *(self->bytes+self->currentByte);
-    if (byte & (1 << self->currentBit)) bit = YES;
-    else bit = NO;
-    
-    self->currentBit++;
-    if (self->currentBit >= 8)
-    {
-        self->currentBit = 0;
-        self->currentByte++;
-    }
-    
-    return bit;
-}
-
 static inline void alignBits(CCBReader *self)
 {
     if (self->currentBit)
@@ -656,7 +639,8 @@ static inline float readFloat(CCBReader *self)
                     
                     void (^block)(id sender);
                     block = ^(id sender) {
-                        objc_msgSend(t, selector, sender);
+                        typedef void (*Func)(id, SEL, id);
+                        ((Func)objc_msgSend)(t, selector, sender);
                     };
                     
                     NSString* setSelectorName = [NSString stringWithFormat:@"set%@:",[name capitalizedString]];
@@ -664,7 +648,8 @@ static inline float readFloat(CCBReader *self)
                     
                     if ([node respondsToSelector:setSelector])
                     {
-                        objc_msgSend(node, setSelector, block);
+                        typedef void (*Func)(id, SEL, id);
+                        ((Func)objc_msgSend)(node, setSelector, block);
                     }
                     else
                     {
@@ -883,7 +868,8 @@ static inline float readFloat(CCBReader *self)
         embeddedNode.positionType = ccbFileNode.positionType;
         //embeddedNode.anchorPoint = ccbFileNode.anchorPoint;
         embeddedNode.rotation = ccbFileNode.rotation;
-        embeddedNode.scale = ccbFileNode.scale;
+        embeddedNode.scaleX = ccbFileNode.scaleX;
+        embeddedNode.scaleY = ccbFileNode.scaleY;
         embeddedNode.name = ccbFileNode.name;
         embeddedNode.visible = YES;
         //embeddedNode.ignoreAnchorPointForPosition = ccbFileNode.ignoreAnchorPointForPosition;

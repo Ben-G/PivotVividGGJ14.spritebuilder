@@ -1,14 +1,14 @@
 dependencies: \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d-ui/CCBReader/CCBAnimationManager.m \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d-ui/CCBReader/CCBAnimationManager.m \
   cocos2d-ui/CCBReader/CCBAnimationManager.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/cocos2d.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/cocos2d.h \
   cocos2d/ccConfig.h cocos2d/CCAction.h cocos2d/ccTypes.h \
   cocos2d/ccMacros.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/Support/CGPointExtension.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/Support/CGPointExtension.h \
   cocos2d/Platforms/CCGL.h cocos2d/Platforms/Mac/CCGLView.h \
   cocos2d/CCActionCatmullRom.h cocos2d/CCActionInterval.h \
   cocos2d/CCNode.h cocos2d/CCProtocols.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/Support/CCColor.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/Support/CCColor.h \
   cocos2d/ccGLStateCache.h external/kazmath/include/kazmath/kazmath.h \
   external/kazmath/include/kazmath/vec2.h \
   external/kazmath/include/kazmath/vec3.h \
@@ -40,21 +40,21 @@ dependencies: \
   cocos2d/CCGLProgram.h cocos2d/ccShaders.h cocos2d/CCShaderCache.h \
   cocos2d/CCPhysicsBody.h cocos2d/CCPhysicsJoint.h \
   cocos2d/CCPhysicsNode.h cocos2d/CCPhysicsShape.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OALSimpleAudio.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Support/SynthesizeSingleton.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALDevice.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OALSimpleAudio.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Support/SynthesizeSingleton.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALDevice.h \
   external/ObjectAL/OpenAL/ALContext.h \
   external/ObjectAL/OpenAL/ALListener.h \
   external/ObjectAL/OpenAL/ALTypes.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Session/OALSuspendHandler.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Session/OALSuspendHandler.h \
   external/ObjectAL/OpenAL/ALSource.h \
   external/ObjectAL/OpenAL/ALSoundSource.h \
   external/ObjectAL/OpenAL/ALBuffer.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Actions/OALAction.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectALConfig.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALChannelSource.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Actions/OALAction.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectALConfig.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALChannelSource.h \
   external/ObjectAL/OpenAL/ALSoundSourcePool.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/OALAudioTrack.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/OALAudioTrack.h \
   external/ObjectAL/AudioTrack/OALAudioTrackNotifications.h \
   cocos2d/Platforms/Mac/CCDirectorMac.h cocos2d/Platforms/Mac/CCWindow.h \
   cocos2d/Platforms/Mac/NSEvent+CC.h cocos2d/Support/CCFileUtils.h \
@@ -64,6 +64,6 @@ dependencies: \
   cocos2d-ui/CCBReader/CCBSequence.h \
   cocos2d-ui/CCBReader/CCBSequenceProperty.h \
   cocos2d-ui/CCBReader/CCBReader.h cocos2d-ui/CCBReader/CCBKeyframe.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/CCDirector_Private.h \
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/CCDirector_Private.h \
   cocos2d-ui/CCBReader/CCBReader_Private.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/CCActionManager.h
+  /Users/viktor/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/CCActionManager.h

@@ -9,7 +9,6 @@
 
 #import "HelloWorldScene.h"
 #import "IntroScene.h"
-#import "NewtonScene.h"
 
 // -----------------------------------------------------------------------
 #pragma mark - HelloWorldScene
@@ -82,7 +81,7 @@
     
     // In pre-v3, touch enable and scheduleUpdate was called here
     // In v3, touch is enabled by setting userInterActionEnabled for the individual nodes
-    // Pr frame update is automatically enabled, if update is overridden
+    // Per frame update is automatically enabled, if update is overridden
     
 }
 
@@ -118,11 +117,6 @@
     // back to intro scene with transition
     [[CCDirector sharedDirector] replaceScene:[IntroScene scene]
                                withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
-}
-
-- (void)onNewtonClicked:(id)sender
-{
-    [[CCDirector sharedDirector] pushScene:[NewtonScene scene] withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:1.0f]];
 }
 
 // -----------------------------------------------------------------------

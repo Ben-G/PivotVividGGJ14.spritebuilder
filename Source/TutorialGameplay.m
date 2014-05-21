@@ -71,9 +71,11 @@ static int _currentFragmentIndex;
     
     _tutorialFragments = [@[tutorialFragment1, tutorialFragment2] mutableCopy];
     
+    
     // update instruction
     _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
     [[CCDirector sharedDirector] pause];
+    // test     self.paused = TRUE; instead
     
     /* since we dynamically loaded new blocks to the world we need to call findBlocks again to collect these new blocks.
      The game needs to know about all blocks to be able to apply moods, etc. */
@@ -192,7 +194,9 @@ static int _currentFragmentIndex;
             fragment.position = ccp(otherFragment.position.x + otherFragment.contentSize.width, fragmentPosition.y);
             [parent addChild:fragment];
             
-            [super findBlocks:fragment];
+#pragma message "Use smarter solution in future"
+            [super removeAllBlocks];
+            [super findBlocks:self.level];
         }
     }
 }

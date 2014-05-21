@@ -18,6 +18,7 @@
 - (void)restartLevel;
 - (void)stopMusic;
 - (void)findBlocks:(CCNode *)node;
+- (void)removeAllBlocks;
 - (void)jump;
 - (void)switchMood;
 - (void)endGame;

@@ -35,6 +35,8 @@
 #import "kazmath/kazmath.h"
 #import "kazmath/GL/matrix.h"
 
+#import "OALSimpleAudio.h"
+
 NSString* const CCSetupPixelFormat = @"CCSetupPixelFormat";
 NSString* const CCSetupScreenMode = @"CCSetupScreenMode";
 NSString* const CCSetupScreenOrientation = @"CCSetupScreenOrientation";
@@ -42,6 +44,11 @@ NSString* const CCSetupAnimationInterval = @"CCSetupAnimationInterval";
 NSString* const CCSetupFixedUpdateInterval = @"CCSetupFixedUpdateInterval";
 NSString* const CCSetupShowDebugStats = @"CCSetupShowDebugStats";
 NSString* const CCSetupTabletScale2X = @"CCSetupTabletScale2X";
+
+NSString* const CCSetupDepthFormat = @"CCSetupDepthFormat";
+NSString* const CCSetupPreserveBackbuffer = @"CCSetupPreserveBackbuffer";
+NSString* const CCSetupMultiSampling = @"CCSetupMultiSampling";
+NSString* const CCSetupNumberOfSamples = @"CCSetupNumberOfSamples";
 
 NSString* const CCScreenOrientationLandscape = @"CCScreenOrientationLandscape";
 NSString* const CCScreenOrientationPortrait = @"CCScreenOrientationPortrait";
@@ -77,7 +84,7 @@ const CGSize FIXED_SIZE = {568, 384};
     }
     else
     {
-        return UIInterfaceOrientationMaskPortrait;
+        return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
     }
 }
 
@@ -175,11 +182,11 @@ FindPOTScale(CGFloat size, CGFloat fixedSize)
 	CCGLView *glView = [CCGLView
 		viewWithFrame:[window_ bounds]
 		pixelFormat:config[CCSetupPixelFormat] ?: kEAGLColorFormatRGBA8
-		depthFormat:0
-		preserveBackbuffer:NO
+        depthFormat:[config[CCSetupDepthFormat] unsignedIntValue]
+		preserveBackbuffer:[config[CCSetupPreserveBackbuffer] boolValue]
 		sharegroup:nil
-		multiSampling:NO
-		numberOfSamples:0
+		multiSampling:[config[CCSetupMultiSampling] boolValue]
+		numberOfSamples:[config[CCSetupNumberOfSamples] unsignedIntValue]
 	];
 	
 	CCDirectorIOS* director = (CCDirectorIOS*) [CCDirector sharedDirector];
@@ -242,6 +249,9 @@ FindPOTScale(CGFloat size, CGFloat fixedSize)
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
 	// You can change this setting at any time.
 	[CCTexture setDefaultAlphaPixelFormat:CCTexturePixelFormat_RGBA8888];
+    
+    // Initialise OpenAL
+    [OALSimpleAudio sharedInstance];
 	
 	// Create a Navigation Controller with the Director
 	navController_ = [[CCNavigationController alloc] initWithRootViewController:director];

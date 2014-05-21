@@ -85,8 +85,6 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 	body->t = 0.0f;
 	
 	body->v.x = baseSpeed;
-
-	cpAssertSaneBody(body);
 }
 
 
@@ -221,6 +219,10 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [_masks addObject:mask];
 }
 
+- (void)removeAllBlocks {
+    _blocks = [NSMutableArray array];
+}
+
 - (void)findBlocks:(CCNode *)node {
     node.cascadeOpacityEnabled = TRUE;
     
@@ -245,7 +247,6 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     }
     
     // GJ hack, to forbid rotation
-    _hero.physicsBody.angularVelocity = 0.f;
     _hero.rotation = 0.f;
     
     CGPoint heroWorldPos = [_physicsNode convertToWorldSpace:_hero.position];
