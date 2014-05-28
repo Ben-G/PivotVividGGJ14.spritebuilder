@@ -196,7 +196,7 @@ static int _currentFragmentIndex;
                 }
                 
                 self.delegate = fragment;
-            } else {
+            } else if (![_instructionLabel.string isEqualToString:NSLocalizedString(fragment.instruction, nil)]) {
                 fragment = _tutorialFragments[i] = [CCBReader load:@"Fragments/Tutorial_blank"];
             }
             fragment.position = ccp(otherFragment.position.x + otherFragment.contentSize.width, fragmentPosition.y);
