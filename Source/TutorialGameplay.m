@@ -10,6 +10,7 @@
 #import "TutorialFragment.h"
 #import "Level.h"
 #import "GameState.h"
+#import "TutorialInstructionPopup.h"
 
 // TODO: this can only be used for prototype
 static int _currentFragmentIndex;
@@ -22,7 +23,9 @@ static int _currentFragmentIndex;
     BOOL _newFragmentLoaded;
     UITouch *_resumeTouch;
     CCNode *_instructionBox;
-    CCNode *_tutorialInstructionPopup;
+    TutorialInstructionPopup *_tutorialInstructionPopup;
+    
+    NSString *_lastInstruction;
 }
 
 - (void)didLoadFromCCB {
@@ -35,12 +38,13 @@ static int _currentFragmentIndex;
     _tutorialName = tutorialInfo[@"levelName"];
     _fragmentNames = tutorialInfo[@"tutorialFragments"];
     
-    [self restoreCurrentTutorialFragment];
-    
-    _tutorialInstructionPopup = [CCBReader load:@"TutorialInstructionPopup"];
+    _tutorialInstructionPopup = (TutorialInstructionPopup *)[CCBReader load:@"TutorialInstructionPopup"];
+    _tutorialInstructionPopup.visible = FALSE;
     [self addChild:_tutorialInstructionPopup];
     _tutorialInstructionPopup.positionType = CCPositionTypeNormalized;
     _tutorialInstructionPopup.position = ccp(0.5f, 0.5f);
+
+    [self restoreCurrentTutorialFragment];
 }
 
 #pragma mark - Load Tutorial Fragement
@@ -74,6 +78,10 @@ static int _currentFragmentIndex;
     
     // update instruction
     _instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
+    _instructionBox.visible = FALSE;
+    
+    _tutorialInstructionPopup.instructionLabel.string = NSLocalizedString(tutorialFragment1.instruction, nil);
+    _tutorialInstructionPopup.visible = TRUE;
     self.contentNode.paused = TRUE;
     
     /* since we dynamically loaded new blocks to the world we need to call findBlocks again to collect these new blocks.
@@ -113,6 +121,7 @@ static int _currentFragmentIndex;
 - (void)activateNextTutorialStep:(TutorialFragment *)fragment {
     _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
     _instructionBox.visible = FALSE;
+    _tutorialInstructionPopup.instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
     _tutorialInstructionPopup.visible = TRUE;
     self.contentNode.paused = TRUE;
 }
@@ -181,7 +190,7 @@ static int _currentFragmentIndex;
                 _newFragmentLoaded = TRUE;
 //                _instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
                 
-                if (![_instructionLabel.string isEqualToString:fragment.instruction]) {
+                if (![_instructionLabel.string isEqualToString:NSLocalizedString(fragment.instruction, nil)]) {
                     // update instruction
                     [self activateNextTutorialStep:fragment];
                 }

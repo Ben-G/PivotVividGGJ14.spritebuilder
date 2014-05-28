@@ -11,6 +11,7 @@
 		6226720118E8990C0094A8B9 /* TutorialFragment1_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */; };
 		622BE81D18D2BCB9009178AF /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */; };
 		622BE81E18D2BCB9009178AF /* TutorialFragment1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */; };
+		624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 624462181935A18000895F2D /* TutorialInstructionPopup.m */; };
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
 		627C5BB91893873100409C84 /* GroundBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB81893873100409C84 /* GroundBlock.m */; };
 		627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BBB18938DAA00409C84 /* CCActionFollowGGJ.m */; };
@@ -96,6 +97,8 @@
 		622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_0.m; sourceTree = "<group>"; };
 		622BE81B18D2BCB9009178AF /* TutorialFragment1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_1.h; sourceTree = "<group>"; };
 		622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_1.m; sourceTree = "<group>"; };
+		624462171935A18000895F2D /* TutorialInstructionPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialInstructionPopup.h; path = Source/TutorialInstructionPopup.h; sourceTree = "<group>"; };
+		624462181935A18000895F2D /* TutorialInstructionPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialInstructionPopup.m; path = Source/TutorialInstructionPopup.m; sourceTree = "<group>"; };
 		627C5BB31893750300409C84 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		627C5BB41893750300409C84 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		627C5BB71893873100409C84 /* GroundBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundBlock.h; path = Source/GroundBlock.h; sourceTree = "<group>"; };
@@ -321,6 +324,8 @@
 				62A0B8F41895644A0037B7E4 /* GoalPosition.m */,
 				62CB016718BC239C00EC8097 /* TutorialGameplay.h */,
 				62CB016818BC239C00EC8097 /* TutorialGameplay.m */,
+				624462171935A18000895F2D /* TutorialInstructionPopup.h */,
+				624462181935A18000895F2D /* TutorialInstructionPopup.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -549,6 +554,7 @@
 				627C5C0B1894677D00409C84 /* GroundBlock64.m in Sources */,
 				62A0B8E0189505B20037B7E4 /* LevelDetails.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,
 				62A0B8EF189551D90037B7E4 /* ScaredEnemy.m in Sources */,
 				ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */,
