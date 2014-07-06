@@ -32,6 +32,8 @@ static const CGPoint START_POS = {150, 200};
 - (void)didLoadFromCCB {
     if (_startPositionNode) {
         self.startPosition = _startPositionNode.position;
+    } else {
+        CCLOG(@"Warning, no start position for level");
     }
 }
 

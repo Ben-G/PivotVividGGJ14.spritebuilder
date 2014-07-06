@@ -53,7 +53,10 @@
     
     CCButton *_nextLevelButton;
     CCButton *_levelSelectionButton;
-    
+  
+    // stores start position
+    CCNode *_startPositionNode;
+  
     CGFloat _baseSpeed;
     int _initialMasks;
 }
@@ -89,7 +92,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
 - (void)didLoadFromCCB {
     _physicsNode.sleepTimeThreshold = 10.f;
-    _physicsNode.debugDraw= TRUE;
+//    _physicsNode.debugDraw= TRUE;
   
     _progressBar.opacity = 0.f;
     
@@ -123,10 +126,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     NSNumber *isTutorial = ([[GameState sharedInstance] currentLevelInfo]) [@"isTutorial"];
     
     if (![isTutorial isEqualToNumber:[NSNumber numberWithBool:TRUE]]) {
-        _level = (Level*) [CCBReader load:levelName];
+      // if this isn't a tutorial, load the level
+      _level = (Level*) [CCBReader load:levelName owner:self];
     }
     
     _hero.position = _level.startPosition;
+    // initialize previous position for mask following
+    _hero.previousPosition = _hero.position;
     
     // read custom level properties
     _initialMasks = _level.initialMasks;
@@ -213,7 +219,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     Mask *mask = (Mask*)[CCBReader load:@"Mask"];
     mask.mood = moodForMask;
-    mask.position = pos;
+    mask.position = ccp(-1000, 1000);
     [_level addChild:mask];
     [_masks addObject:mask];
 }
