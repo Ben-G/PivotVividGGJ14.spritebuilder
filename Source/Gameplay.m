@@ -490,6 +490,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         return;
     }
     
+    baseSpeed = 10;
+    
     [_hero stopAllActions];
     
     _gameOver = TRUE;
