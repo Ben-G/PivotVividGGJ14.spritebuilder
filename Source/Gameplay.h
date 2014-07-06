@@ -9,10 +9,14 @@
 #import "CCNode.h"
 #import "Level.h"
 
+@class Hero;
+
 @interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
 
 @property (nonatomic, assign) BOOL onGround;
 @property (nonatomic, strong) Level *level;
+@property (nonatomic, strong) Hero *hero;
+
 @property (nonatomic, strong) CCPhysicsNode *contentNode;
 
 - (void)didLoadFromCCB;

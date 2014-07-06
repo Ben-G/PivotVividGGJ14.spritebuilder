@@ -30,6 +30,7 @@
 }
 
 - (void)applyMood:(Mood*)mood {
+    [self setFrame:[NSString stringWithFormat:@"%@0001.png", mood.moodPrefix]];
     [self runAnimation:mood.moodPrefix];
 }
 

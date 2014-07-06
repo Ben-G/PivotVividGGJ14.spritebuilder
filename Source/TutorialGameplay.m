@@ -11,6 +11,7 @@
 #import "Level.h"
 #import "GameState.h"
 #import "TutorialInstructionPopup.h"
+#import "Hero.h"
 
 // TODO: this can only be used for prototype
 static int _currentFragmentIndex;
@@ -24,6 +25,8 @@ static int _currentFragmentIndex;
     UITouch *_resumeTouch;
     CCNode *_instructionBox;
     TutorialInstructionPopup *_tutorialInstructionPopup;
+    
+    CCNode *_startPositionNode;
     
     NSString *_lastInstruction;
 }
@@ -60,8 +63,10 @@ static int _currentFragmentIndex;
     NSString *fragmentCCBFile = [self currentFragmentCCBName];
     
     // add a little blank level before the tutorial fragment so player can prepare
-    CCNode *tutorialPreplay = [CCBReader load:@"Fragments/Tutorial_blank"];
+    CCNode *tutorialPreplay = [CCBReader load:@"Fragments/Tutorial_blank" owner:self];
     [self.level addChild:tutorialPreplay];
+    
+    self.hero.position = _startPositionNode.position;
     
     //TODO: instead of looping fragment twice add blank space afterwards?
     TutorialFragment *tutorialFragment1 = (TutorialFragment *) [CCBReader load:fragmentCCBFile];

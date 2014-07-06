@@ -21,7 +21,6 @@
 @implementation Gameplay {
     CCNode *_progressBar;
     CCPhysicsNode *_physicsNode;
-    Hero *_hero;
     
     int updates;
     
