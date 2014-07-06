@@ -11,16 +11,14 @@
 @implementation HappyEnemy
 
 - (id)init {
-    self = [super initWithPlist:@"happymask_default.plist"];
-    
-    if (self) {
-        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"happymask"];
-        [self setFrame:@"happymask0001.png"];
-        [self runAnimation:@"happymask"];
-        self.moodToKill = @"happy";
-    }
-    
-    return self;
+    return [super initWithPlist:@"happymask_default.plist"];
+}
+
+- (void)didLoadFromCCB {  
+  [self addAnimationwithDelayBetweenFrames:1/30.f name:@"happymask"];
+  [self setFrame:@"happymask0001.png"];
+  [self runAnimation:@"happymask"];
+  self.moodToKill = @"happy";
 }
 
 @end

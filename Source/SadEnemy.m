@@ -11,16 +11,14 @@
 @implementation SadEnemy
 
 - (id)init {
-    self = [super initWithPlist:@"sadmask_default.plist"];
-    
-    if (self) {
-        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"sadmask"];
-        [self setFrame:@"sadmask0001.png"];
-        [self runAnimation:@"sadmask"];
-        self.moodToKill = @"calm";
-    }
-    
-    return self;
+    return [super initWithPlist:@"sadmask_default.plist"];
+}
+
+- (void)didLoadFromCCB {
+  [self addAnimationwithDelayBetweenFrames:1/30.f name:@"sadmask"];
+  [self setFrame:@"sadmask0001.png"];
+  [self runAnimation:@"sadmask"];
+  self.moodToKill = @"calm";
 }
 
 @end

@@ -89,8 +89,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
 - (void)didLoadFromCCB {
     _physicsNode.sleepTimeThreshold = 10.f;
-//    _physicsNode.debugDraw= TRUE;
-    
+    _physicsNode.debugDraw= TRUE;
+  
     _progressBar.opacity = 0.f;
     
     _hero.physicsBody.body.body->velocity_func = playerUpdateVelocity;

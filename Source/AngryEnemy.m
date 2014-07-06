@@ -11,16 +11,14 @@
 @implementation AngryEnemy
 
 - (id)init {
-    self = [super initWithPlist:@"angrymask_default.plist"];
-    
-    if (self) {
-        [self addAnimationwithDelayBetweenFrames:1/30.f name:@"angrymask"];
-        [self setFrame:@"angrymask0001.png"];
-        [self runAnimation:@"angrymask"];
-        self.moodToKill = @"angry";
-    }
-    
-    return self;
+    return [super initWithPlist:@"angrymask_default.plist"];
+}
+
+- (void)didLoadFromCCB {
+  [self addAnimationwithDelayBetweenFrames:1/30.f name:@"angrymask"];
+  [self setFrame:@"angrymask0001.png"];
+  [self runAnimation:@"angrymask"];
+  self.moodToKill = @"angry";
 }
 
 @end
