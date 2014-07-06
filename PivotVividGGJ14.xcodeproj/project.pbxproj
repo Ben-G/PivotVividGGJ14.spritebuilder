@@ -12,6 +12,7 @@
 		622BE81D18D2BCB9009178AF /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */; };
 		622BE81E18D2BCB9009178AF /* TutorialFragment1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */; };
 		623468FE1969A8CE0030AC0A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623468FD1969A8CE0030AC0A /* GLKit.framework */; };
+		623469051969C5AB0030AC0A /* TutorialFragment1_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 623469041969C5AB0030AC0A /* TutorialFragment1_3.m */; };
 		624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 624462181935A18000895F2D /* TutorialInstructionPopup.m */; };
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
 		627C5BB91893873100409C84 /* GroundBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB81893873100409C84 /* GroundBlock.m */; };
@@ -99,6 +100,8 @@
 		622BE81B18D2BCB9009178AF /* TutorialFragment1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_1.h; sourceTree = "<group>"; };
 		622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_1.m; sourceTree = "<group>"; };
 		623468FD1969A8CE0030AC0A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		623469031969C5AB0030AC0A /* TutorialFragment1_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_3.h; sourceTree = "<group>"; };
+		623469041969C5AB0030AC0A /* TutorialFragment1_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_3.m; sourceTree = "<group>"; };
 		624462171935A18000895F2D /* TutorialInstructionPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialInstructionPopup.h; path = Source/TutorialInstructionPopup.h; sourceTree = "<group>"; };
 		624462181935A18000895F2D /* TutorialInstructionPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialInstructionPopup.m; path = Source/TutorialInstructionPopup.m; sourceTree = "<group>"; };
 		627C5BB31893750300409C84 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				622BE81C18D2BCB9009178AF /* TutorialFragment1_1.m */,
 				622671FF18E8990C0094A8B9 /* TutorialFragment1_2.h */,
 				6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */,
+				623469031969C5AB0030AC0A /* TutorialFragment1_3.h */,
+				623469041969C5AB0030AC0A /* TutorialFragment1_3.m */,
 			);
 			path = Tutorial1;
 			sourceTree = "<group>";
@@ -454,7 +459,7 @@
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					B77F1B2D17B978D7009739AE = {
-						DevelopmentTeam = SBVP8ED765;
+						DevelopmentTeam = UBXY3JK49V;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -560,6 +565,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,
+				623469051969C5AB0030AC0A /* TutorialFragment1_3.m in Sources */,
 				62A0B8EF189551D90037B7E4 /* ScaredEnemy.m in Sources */,
 				ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */,
 				62A0B8E91895278F0037B7E4 /* AngryEnemy.m in Sources */,
@@ -659,7 +665,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = PivotVividGGJ14;
-				PROVISIONING_PROFILE = "18D84403-392D-4C50-BA7D-C45F153D06AB";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -670,8 +676,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
@@ -691,7 +697,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = PivotVividGGJ14;
-				PROVISIONING_PROFILE = "18D84403-392D-4C50-BA7D-C45F153D06AB";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
