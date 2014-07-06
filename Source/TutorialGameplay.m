@@ -116,6 +116,9 @@ static int _currentFragmentIndex;
 #pragma mark - Next Tutorial Step
 
 - (void)nextTutorialStep {
+    // reset delegate
+    self.delegate = nil;
+    
     if ((_currentFragmentIndex+1) < [_fragmentNames count]) {
         _currentFragmentIndex++;
         _newFragmentLoaded = FALSE;
@@ -129,6 +132,10 @@ static int _currentFragmentIndex;
     _tutorialInstructionPopup.instructionLabel.string = NSLocalizedString(fragment.instruction, nil);
     _tutorialInstructionPopup.visible = TRUE;
     self.contentNode.paused = TRUE;
+    
+    while ([self.masks count] < fragment.masks) {
+        [self addMaskAtPosition:self.hero.position];
+    }
 }
 
 - (void)winTutorial {

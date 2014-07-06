@@ -8,5 +8,7 @@
 
 "tutorial1_0" = "Swipe in any direction to switch between the 4 different moods";
 "tutorial1_1" = "Jump (Touch and Release) to avoid the upcoming obstacles!";
-"tutorial1_2" = "Switch to the right mood to kill the enemy!";
-"tutorial1_3" = "Some blocks are only available in the right mood. Switch moods to be able to jump ont the blocks.";
+"tutorial1_2" = "Switch to the color of the enemy to kill it!";
+"tutorial1_3" = "Some blocks are only available in the right mood.\nSwitch moods to be able to jump on the blocks.";
+"tutorial1_4" = "Blocks only available in the current mood blink.\nSometimes you will need to switch moods to pass through blocks.";
+"tutorial1_5" = "Collect the Talisman at the end of each level to win.";

@@ -529,6 +529,16 @@
 				<key>value</key>
 				<string>tutorial1_2</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>masks</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>4</string>
+			</dict>
 		</array>
 		<key>displayName</key>
 		<string>CCNode</string>
@@ -598,6 +608,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

@@ -12,5 +12,6 @@
 @interface TutorialFragment : CCNode <TutorialGameplayDelegate>
 
 @property (nonatomic, strong) NSString *instruction;
+@property (nonatomic, assign) NSInteger masks;
 
 @end

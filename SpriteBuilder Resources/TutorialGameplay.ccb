@@ -116,8 +116,6 @@
 										<string>Hero.ccb</string>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -1100,10 +1098,10 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.5</real>
+									<real>4</real>
 									<integer>1</integer>
 									<integer>2</integer>
-									<integer>2</integer>
+									<integer>0</integer>
 								</array>
 							</dict>
 							<dict>
@@ -1114,7 +1112,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.5</real>
+									<real>1</real>
 								</array>
 							</dict>
 							<dict>
@@ -1137,7 +1135,8 @@
 								<string>Text</string>
 								<key>value</key>
 								<array>
-									<string>Tutorial Instruction</string>
+									<string>Some blocks are only available in the right mood. 
+Switch moods to be able to jump on the blocks.</string>
 									<false/>
 								</array>
 							</dict>
@@ -1176,7 +1175,7 @@
 								<key>value</key>
 								<array>
 									<real>480</real>
-									<real>24</real>
+									<real>50</real>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
@@ -1315,7 +1314,7 @@
 						<key>value</key>
 						<array>
 							<real>1</real>
-							<real>24</real>
+							<real>58</real>
 							<integer>2</integer>
 							<integer>0</integer>
 						</array>

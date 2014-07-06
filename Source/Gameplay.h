@@ -16,7 +16,8 @@
 @property (nonatomic, assign) BOOL onGround;
 @property (nonatomic, strong) Level *level;
 @property (nonatomic, strong) Hero *hero;
-
+// array of masks the player has; masks are required for mood changes
+@property (nonatomic, strong) NSMutableArray *masks;
 @property (nonatomic, strong) CCPhysicsNode *contentNode;
 
 - (void)didLoadFromCCB;
@@ -28,5 +29,6 @@
 - (void)switchMood;
 - (void)endGame;
 - (void)winGame;
+- (void)addMaskAtPosition:(CGPoint)pos;
 
 @end

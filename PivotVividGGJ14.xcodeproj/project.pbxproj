@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62095C1F196A0E9300FCEC78 /* TutorialFragment1_4.m in Sources */ = {isa = PBXBuildFile; fileRef = 62095C1E196A0E9300FCEC78 /* TutorialFragment1_4.m */; };
 		622671FE18E794740094A8B9 /* Additional-Resources in Resources */ = {isa = PBXBuildFile; fileRef = 622671FD18E794740094A8B9 /* Additional-Resources */; };
 		6226720118E8990C0094A8B9 /* TutorialFragment1_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */; };
 		622BE81D18D2BCB9009178AF /* TutorialFragment1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 622BE81A18D2BCB9009178AF /* TutorialFragment1_0.m */; };
@@ -92,6 +93,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62095C1D196A0E9300FCEC78 /* TutorialFragment1_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_4.h; sourceTree = "<group>"; };
+		62095C1E196A0E9300FCEC78 /* TutorialFragment1_4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_4.m; sourceTree = "<group>"; };
 		622671FD18E794740094A8B9 /* Additional-Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Additional-Resources"; sourceTree = "<group>"; };
 		622671FF18E8990C0094A8B9 /* TutorialFragment1_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_2.h; sourceTree = "<group>"; };
 		6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_2.m; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 				6226720018E8990C0094A8B9 /* TutorialFragment1_2.m */,
 				623469031969C5AB0030AC0A /* TutorialFragment1_3.h */,
 				623469041969C5AB0030AC0A /* TutorialFragment1_3.m */,
+				62095C1D196A0E9300FCEC78 /* TutorialFragment1_4.h */,
+				62095C1E196A0E9300FCEC78 /* TutorialFragment1_4.m */,
 			);
 			path = Tutorial1;
 			sourceTree = "<group>";
@@ -553,6 +558,7 @@
 				62A0B8E61895274E0037B7E4 /* HappyEnemy.m in Sources */,
 				627C5BC61893B82D00409C84 /* BasicEnemy.m in Sources */,
 				622BE81E18D2BCB9009178AF /* TutorialFragment1_1.m in Sources */,
+				62095C1F196A0E9300FCEC78 /* TutorialFragment1_4.m in Sources */,
 				62CB017118C29C1F00EC8097 /* TutorialFragment.m in Sources */,
 				62A0B8EC18954DF00037B7E4 /* SadEnemy.m in Sources */,
 				627C5BB51893750300409C84 /* Gameplay.m in Sources */,

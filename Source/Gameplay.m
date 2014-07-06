@@ -24,9 +24,6 @@
     
     int updates;
     
-    // array of masks the player has; masks are required for mood changes
-    NSMutableArray *_masks;
-        
     // current mood
     int _currentMoodIndex;
     
@@ -166,7 +163,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     [self findBlocks:_level];
     
-    _masks = [NSMutableArray array];
+    self.masks = [NSMutableArray array];
     
     // setup all moods
     Mood *happy = [[Mood alloc] init];
@@ -214,8 +211,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         }
         moodForMask = _moods[nextMaskMoodIndex];
     }
-    
-    
+
     Mask *mask = (Mask*)[CCBReader load:@"Mask"];
     mask.mood = moodForMask;
     mask.position = ccp(-1000, 1000);
@@ -437,6 +433,11 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     [self addChild:winLabel];
     
+    for (CCNode *block in _blocks) {
+        // stop blinking of blocks, because we will fade out now
+        [block stopAllActions];
+    }
+    
     CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
     [_progressBar runAction:fadeIn];
     
@@ -510,6 +511,11 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     nextLevelLabel.position = ccp(0.5f, 0.2f);
     [self addChild:nextLevelLabel];
 
+    for (CCNode *block in _blocks) {
+        // stop blinking of blocks, because we will fade out now
+        [block stopAllActions];
+    }
+    
     CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:1.f];
     _level.cascadeOpacityEnabled = TRUE;
     [_level runAction:fadeOut];
