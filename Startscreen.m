@@ -7,6 +7,7 @@
 //
 
 #import "Startscreen.h"
+#import "UIUtils.h"
 
 @implementation Startscreen {
     CCLabelTTF *_label;
@@ -44,8 +45,7 @@
 }
 
 - (void)startNow {
-    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-    [[CCDirector sharedDirector] replaceScene:scene];
+    presentGameplaySceneWithCurrentLevel();
 }
 
 - (void)levelSelect {

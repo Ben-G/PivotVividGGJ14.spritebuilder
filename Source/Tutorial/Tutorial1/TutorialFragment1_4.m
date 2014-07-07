@@ -11,7 +11,7 @@
 @implementation TutorialFragment1_4
 
 - (void)tutorialGameplayCompletedFragment:(TutorialGameplay *)tutorialGameplay {
-    [tutorialGameplay winTutorial];
+    [tutorialGameplay nextTutorialStep];
 }
 
 @end
