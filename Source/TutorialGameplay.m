@@ -193,7 +193,9 @@ static int _currentFragmentIndex;
             [fragment removeFromParent];
             
             if ([fragment respondsToSelector:@selector(tutorialGameplayCompletedFragment:)]) {
-                [fragment tutorialGameplayCompletedFragment:self];
+                if (self.delegate == fragment) {
+                    [fragment tutorialGameplayCompletedFragment:self];
+                }
             }
             
             TutorialFragment *otherFragment = (i == 0) ? _tutorialFragments[1] : _tutorialFragments[0];
