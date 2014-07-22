@@ -11,6 +11,10 @@
 #import "LevelDetails.h"
 #import "GameState.h"
 
+static const NSInteger GRID_WIDTH = 4;
+static const NSInteger VERTICAL_MARGIN = 12;
+
+
 @implementation MainScene {
     NSArray *_nodes;
     int _onScreen;
@@ -18,6 +22,8 @@
     NSArray *_levels;
     
     CGSize _screenSize;
+    
+    CCScrollView *_scrollView;
 }
 
 - (void)didLoadFromCCB {
@@ -28,22 +34,55 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Levels" ofType:@"plist"];
     _levels = [NSArray arrayWithContentsOfFile:path];
     
-    _onScreen = 1;
-    
-    LevelDetails *node1 = (LevelDetails*) [CCBReader load:@"LevelDetails"];
-    node1.anchorPoint = ccp(0,0);
-    node1.position = ccp(0, 0);
-    
-    LevelDetails *node2 = (LevelDetails*) [CCBReader load:@"LevelDetails"];
-    node2.anchorPoint = ccp(0, 0);
-    [node2 setLevel:_levels[0]];
-    
-    [self addChild:node1 z:INT_MIN];
-    [self addChild:node2 z:INT_MIN];
-    
-    _nodes = @[node1, node2];
+    CCNode *contentNode = [CCNode node];
+    contentNode.anchorPoint = ccp(0,0);
+    contentNode.position = ccp(0,0);
+    _scrollView.contentNode = contentNode;
+    _scrollView.horizontalScrollEnabled = NO;
     
     self.userInteractionEnabled = TRUE;
+}
+
+- (void)onEnter {
+    [super onEnter];
+    
+    int elementsPerRow = 4;
+    int amountOfRows = (int) [_levels count] / elementsPerRow;
+    
+    if (([_levels count] % elementsPerRow) > 0) {
+        amountOfRows++;
+    }
+    
+    CCNode *tile = [CCBReader load:@"LevelTile"];
+    CGFloat columnWidth = tile.contentSizeInPoints.width;
+    CGFloat columnHeight = tile.contentSizeInPoints.height;
+    
+    // this hotfix is needed because of issue #638 in Cocos2D 3.1 / SB 1.1 (https://github.com/spritebuilder/SpriteBuilder/issues/638)
+    [tile performSelector:@selector(cleanup)];
+    
+    // calculate the margin by subtracting the tile sizes from the grid size
+    CGFloat tileMarginHorizontal = (self.contentSizeInPoints.width - (GRID_WIDTH * columnWidth)) / (GRID_WIDTH+1);
+    CGFloat tileMarginVertical = VERTICAL_MARGIN;
+    
+    CGFloat x = tileMarginHorizontal;
+    CGFloat y = tileMarginVertical;
+    
+    for (int row = 0; row < amountOfRows; row++) {
+        x = tileMarginHorizontal;
+        
+        for (int column = 0; column < elementsPerRow; column++) {
+            CCNode *levelTile = [CCBReader load:@"LevelTile"];
+            levelTile.positionType = CCPositionTypeMake(CCPositionUnitPoints, CCPositionUnitPoints, CCPositionReferenceCornerTopLeft);
+            levelTile.position = ccp(x, y);
+            [_scrollView.contentNode addChild:levelTile];
+            
+            x += columnWidth + tileMarginHorizontal;
+        }
+        
+        y += columnHeight + tileMarginVertical;
+    }
+    
+    _scrollView.contentNode.contentSize = CGSizeMake(self.contentSizeInPoints.width, y + columnHeight);
 }
 
 
