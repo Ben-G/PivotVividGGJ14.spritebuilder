@@ -11,5 +11,8 @@
 @interface LevelTile : CCNode
 
 @property CCLabelTTF *levelNumber;
+@property NSInteger levelIndex;
+
+@property (nonatomic, copy) void (^levelSelectionBlock)();
 
 @end

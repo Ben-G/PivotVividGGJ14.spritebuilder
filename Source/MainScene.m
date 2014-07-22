@@ -81,6 +81,13 @@ static const NSInteger VERTICAL_MARGIN = 12;
             
             int selectedLevel = row * elementsPerRow + column;
             levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel];
+            levelTile.levelIndex = selectedLevel;
+            
+            __weak LevelTile *weakLevelTile = levelTile;
+            
+            levelTile.levelSelectionBlock = ^{
+                [self selectedLevel:weakLevelTile.levelIndex];
+            };
             
             if (row * elementsPerRow + column == [_levels count]-1) {
                 break;
@@ -93,18 +100,11 @@ static const NSInteger VERTICAL_MARGIN = 12;
     _scrollView.contentNode.contentSize = CGSizeMake(self.contentSizeInPoints.width, y + columnHeight);
 }
 
-- (void)reactivateInteraction {
-    self.userInteractionEnabled = TRUE;
-}
-
-
-- (void)startButtonPressed {
-    self.userInteractionEnabled = FALSE;
-    
-    NSDictionary *levelInfo = _levels[_selectedLevel];
+- (void)selectedLevel:(NSInteger)levelIndex {
+    NSDictionary *levelInfo = _levels[levelIndex];
     [[GameState sharedInstance] setCurrentLevel:levelInfo[@"levelName"]];
     [[GameState sharedInstance] setCurrentLevelIndex:_selectedLevel];
-
+    
     if (levelInfo[@"isTutorial"] == [NSNumber numberWithBool:TRUE]) {
         CCScene *scene = [CCBReader loadAsScene:@"TutorialGameplay"];
         [[CCDirector sharedDirector] replaceScene:scene];
@@ -112,6 +112,10 @@ static const NSInteger VERTICAL_MARGIN = 12;
         CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
         [[CCDirector sharedDirector] replaceScene:scene];
     }
+}
+
+- (void)reactivateInteraction {
+    self.userInteractionEnabled = TRUE;
 }
 
 - (void)backButtonPressed {

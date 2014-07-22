@@ -10,4 +10,18 @@
 
 @implementation LevelTile
 
+- (void)onEnter {
+    [super onEnter];
+    
+    self.userInteractionEnabled = YES;
+}
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    
+}
+
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
+    self.levelSelectionBlock();
+}
+
 @end
