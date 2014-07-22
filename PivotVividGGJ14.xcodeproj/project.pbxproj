@@ -43,6 +43,7 @@
 		62CB016918BC239C00EC8097 /* TutorialGameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB016818BC239C00EC8097 /* TutorialGameplay.m */; };
 		62CB017118C29C1F00EC8097 /* TutorialFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB017018C29C1F00EC8097 /* TutorialFragment.m */; };
 		62CB017418C2A00800EC8097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62CB017618C2A00800EC8097 /* Localizable.strings */; };
+		62D3F310197E044A001C51F8 /* LevelTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D3F30F197E044A001C51F8 /* LevelTile.m */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
@@ -159,6 +160,8 @@
 		62CB017018C29C1F00EC8097 /* TutorialFragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment.m; sourceTree = "<group>"; };
 		62CB017518C2A00800EC8097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62CB017718C2A00C00EC8097 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62D3F30E197E044A001C51F8 /* LevelTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTile.h; sourceTree = "<group>"; };
+		62D3F30F197E044A001C51F8 /* LevelTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTile.m; sourceTree = "<group>"; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
 		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		AC0C8C8C1894B9DC00080A19 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Source/Enemy.h; sourceTree = "<group>"; };
@@ -289,6 +292,16 @@
 			path = Source/Tutorial;
 			sourceTree = "<group>";
 		};
+		62D3F30C197E03D3001C51F8 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				62D3F30E197E044A001C51F8 /* LevelTile.h */,
+				62D3F30F197E044A001C51F8 /* LevelTile.m */,
+			);
+			name = UIElements;
+			path = Source/UIElements;
+			sourceTree = "<group>";
+		};
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +313,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				62D3F30C197E03D3001C51F8 /* UIElements */,
 				62095C23196A18AD00FCEC78 /* UIUtils */,
 				62CB016D18C29C0500EC8097 /* Tutorial */,
 				627C5BBD189396F700409C84 /* Moods */,
@@ -562,6 +576,7 @@
 				62A0B8E318950D890037B7E4 /* GameState.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				627C5BC01893972600409C84 /* Mood.m in Sources */,
+				62D3F310197E044A001C51F8 /* LevelTile.m in Sources */,
 				627C5BBC18938DAA00409C84 /* CCActionFollowGGJ.m in Sources */,
 				62F4177F1894923400663BDD /* Block.m in Sources */,
 				62A0B8F21895581D0037B7E4 /* Level.m in Sources */,

@@ -10,6 +10,7 @@
 #import "CCAnimatedSprite.h"
 #import "LevelDetails.h"
 #import "GameState.h"
+#import "LevelTile.h"
 
 static const NSInteger GRID_WIDTH = 4;
 static const NSInteger VERTICAL_MARGIN = 12;
@@ -71,12 +72,19 @@ static const NSInteger VERTICAL_MARGIN = 12;
         x = tileMarginHorizontal;
         
         for (int column = 0; column < elementsPerRow; column++) {
-            CCNode *levelTile = [CCBReader load:@"LevelTile"];
+            LevelTile *levelTile = (LevelTile *) [CCBReader load:@"LevelTile"];
             levelTile.positionType = CCPositionTypeMake(CCPositionUnitPoints, CCPositionUnitPoints, CCPositionReferenceCornerTopLeft);
             levelTile.position = ccp(x, y);
             [_scrollView.contentNode addChild:levelTile];
             
             x += columnWidth + tileMarginHorizontal;
+            
+            int selectedLevel = row * elementsPerRow + column;
+            levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel];
+            
+            if (row * elementsPerRow + column == [_levels count]-1) {
+                break;
+            }
         }
         
         y += columnHeight + tileMarginVertical;
@@ -85,72 +93,10 @@ static const NSInteger VERTICAL_MARGIN = 12;
     _scrollView.contentNode.contentSize = CGSizeMake(self.contentSizeInPoints.width, y + columnHeight);
 }
 
-
-- (void)prev {
-    if (!self.userInteractionEnabled) {
-        return;
-    }
-    
-    _selectedLevel --;
-    if (_selectedLevel < 0) {
-        _selectedLevel = [_levels count]-1;
-    }
-    
-    // slide to left, place other node right
-    int other = (_onScreen + 1) % 2;
-    CCNode *currentNode = _nodes[_onScreen];
-    
-    LevelDetails *otherNode = _nodes[other];
-    [otherNode setLevel:_levels[_selectedLevel]];
-    otherNode.position = ccp(-_screenSize.width, 0);
-    
-    
-    CCActionMoveTo *moveBy = [CCActionMoveTo actionWithDuration:0.25f position:ccp(0, 0)];
-    [otherNode runAction:moveBy];
-    
-    CCActionMoveTo *moveRight = [CCActionMoveTo actionWithDuration:0.25f position:ccp(+_screenSize.width, 0)];
-    [currentNode runAction:moveRight];
-    
-    _onScreen = other;
-    
-    [self performSelector:@selector(reactivateInteraction) withObject:nil afterDelay:0.25f];
-}
-
 - (void)reactivateInteraction {
     self.userInteractionEnabled = TRUE;
 }
 
-- (void)next {
-    if (!self.userInteractionEnabled) {
-        return;
-    }
-    
-    _selectedLevel ++;
-    if (_selectedLevel >= [_levels count]) {
-        _selectedLevel = 0;
-    }
-    
-    self.userInteractionEnabled = FALSE;
-    
-    // slide to left, place other node right
-    int other = (_onScreen + 1) % 2;
-    CCNode *currentNode = _nodes[_onScreen];
-    
-    LevelDetails *otherNode = _nodes[other];
-    [otherNode setLevel:_levels[_selectedLevel]];
-    otherNode.position = ccp(_screenSize.width, 0);
-    
-    CCActionMoveTo *moveBy = [CCActionMoveTo actionWithDuration:0.25f position:ccp(0, 0)];
-    [otherNode runAction:moveBy];
-    
-    CCActionMoveTo *moveLeft = [CCActionMoveTo actionWithDuration:0.25f position:ccp(-_screenSize.width, 0)];
-    [currentNode runAction:moveLeft];
-
-    
-    _onScreen = other;
-    
-    [self performSelector:@selector(reactivateInteraction) withObject:nil afterDelay:0.25f];
-}
 
 - (void)startButtonPressed {
     self.userInteractionEnabled = FALSE;
