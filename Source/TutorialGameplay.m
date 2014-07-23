@@ -173,8 +173,8 @@ static int _currentFragmentIndex;
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
-- (void)update:(CCTime)delta {
-    [super update:delta];
+- (void)fixedUpdate:(CCTime)delta {
+    [super fixedUpdate:delta];
     
     // loop tutorial fragments
     for (int i = 0; i < [_tutorialFragments count]; i++) {
@@ -213,6 +213,7 @@ static int _currentFragmentIndex;
             } else if (![_instructionLabel.string isEqualToString:NSLocalizedString(fragment.instruction, nil)]) {
                 fragment = _tutorialFragments[i] = [CCBReader load:@"Fragments/Tutorial_blank"];
             }
+            
             fragment.position = ccp(otherFragment.position.x + otherFragment.contentSize.width, fragmentPosition.y);
             [parent addChild:fragment];
             

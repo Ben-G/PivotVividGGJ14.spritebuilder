@@ -73,14 +73,7 @@ static const int JUMP_IMPULSE = 100000;
 static void
 playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 {
-    cpAssertSoft(body->m > 0.0f && body->i > 0.0f, "Body's mass and moment must be positive to simulate. (Mass: %f Moment: %f)", body->m, body->i);
-	
-	body->v = cpvadd(cpvmult(body->v, damping), cpvmult(cpvadd(gravity, cpvmult(body->f, body->m_inv)), dt));
-	body->w = body->w*damping + body->t*body->i_inv*dt;
-	
-	// Reset forces.
-	body->f = cpvzero;
-	body->t = 0.0f;
+    cpBodyUpdateVelocity(body, gravity, damping, dt);
 	
 	body->v.x = baseSpeed;
 }
@@ -240,7 +233,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
 #pragma mark - Update
 
-- (void)update:(CCTime)delta {
+- (void)fixedUpdate:(CCTime)delta {
     
     if (_gameOver || self.contentNode.paused) {
         return;
@@ -298,6 +291,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         }
     }
 }
+
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     if (_gameOver) {
