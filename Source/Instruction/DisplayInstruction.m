@@ -10,4 +10,11 @@
 
 @implementation DisplayInstruction
 
+- (void)completeInstruction {
+    [self.animationManager runAnimationsForSequenceNamed:@"Complete"];
+    [self.animationManager setCompletedAnimationCallbackBlock:^(id sender) {
+        [self removeFromParent];
+    }];
+}
+
 @end

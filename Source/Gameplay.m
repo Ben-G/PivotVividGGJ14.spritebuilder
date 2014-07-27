@@ -65,6 +65,7 @@
     int _initialMasks;
     
     DisplayInstruction *_activeDisplayInstruction;
+    NSMutableArray *_levelInstructions;
 }
 
 // distance between masks
@@ -127,6 +128,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     if (![isTutorial isEqualToNumber:[NSNumber numberWithBool:TRUE]]) {
       // if this isn't a tutorial, load the level
       _level = (Level*) [CCBReader load:levelName owner:self];
+        _levelInstructions = [_level.instructions mutableCopy];
     }
     
     _hero.position = _level.startPosition;
@@ -307,7 +309,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     NSRange heroRange = NSMakeRange(CGRectGetMinX(_hero.boundingBox), CGRectGetWidth(_hero.boundingBox));
     
     if (!self.activeInstruction) {
-        for (Instruction *instruction in _level.instructions) {
+        for (Instruction *instruction in _levelInstructions) {
             NSRange intersectionRange = NSIntersectionRange(heroRange, instruction.instructionRange);
             
             if (intersectionRange.length != 0) {
@@ -399,6 +401,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (void)switchMood {
+    if (_activeInstruction) {
+        BOOL completed = [_activeInstruction switched];
+        if (completed) {
+            self.activeInstruction = nil;
+        }
+    }
+    
     if ([_masks count] == 0) {
         // mood changes are only possible with masks
         return;
@@ -418,6 +427,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (void)jump {
+    if (_activeInstruction) {
+        BOOL completed = [_activeInstruction jumped];
+        if (completed) {
+            self.activeInstruction = nil;
+        }
+    }
+    
     //TODO: needs to be improved, need to check that arbiter actually is the ground
     __block BOOL jumped = FALSE;
     
@@ -605,7 +621,9 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 - (void)setActiveInstruction:(Instruction *)activeInstruction {
     if (activeInstruction == nil) {
         // hide old instruction
-        [_activeDisplayInstruction removeFromParent];
+        [_activeDisplayInstruction completeInstruction];
+        // remove old instruction from instruction list
+        [_levelInstructions removeObject:_activeInstruction];
     } else {
         // show new instruction
         DisplayInstruction *instruction = (DisplayInstruction *)[CCBReader load:@"Instructions/DisplayInstruction"];
@@ -615,6 +633,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         [self addChild:_activeDisplayInstruction];
         _activeDisplayInstruction.instructionLabel.string = activeInstruction.instructionText;
     }
+    
     _activeInstruction = activeInstruction;
 }
 

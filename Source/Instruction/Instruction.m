@@ -18,4 +18,12 @@
     _instructionText = _instructionLabel.string;
 }
 
+- (BOOL)jumped {
+    return (self.instructionType == InstructionTypeJump);
+}
+
+- (BOOL)switched {
+    return (self.instructionType == InstructionTypeSwitch);
+}
+
 @end

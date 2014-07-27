@@ -70,7 +70,7 @@
 			<key>dynamic</key>
 			<true/>
 			<key>elasticity</key>
-			<real>0.20000000298023224</real>
+			<real>0.0</real>
 			<key>friction</key>
 			<real>0.0</real>
 			<key>points</key>
@@ -156,6 +156,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

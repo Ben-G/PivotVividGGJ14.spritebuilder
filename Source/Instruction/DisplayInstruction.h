@@ -12,4 +12,6 @@
 
 @property (nonatomic, readonly) CCLabelTTF *instructionLabel;
 
+- (void)completeInstruction;
+
 @end
