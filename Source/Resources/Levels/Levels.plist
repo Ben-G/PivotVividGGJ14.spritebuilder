@@ -4,9 +4,17 @@
 <array>
 	<dict>
 		<key>levelTitle</key>
-		<string></string>
+		<string>A new World (I)</string>
 		<key>levelName</key>
 		<string>Levels/Level_0</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>levelTitle</key>
+		<string>A new World (II)</string>
+		<key>levelName</key>
+		<string>Levels/Level_1</string>
 		<key>levelDescription</key>
 		<string></string>
 	</dict>
