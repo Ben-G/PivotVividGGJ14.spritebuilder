@@ -15,8 +15,16 @@
 #import "Hero.h"
 #import "Block.h"
 #import "GameState.h"
+#import "Instruction.h"
+#import "DisplayInstruction.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
+
+@interface Gameplay()
+
+@property (nonatomic, weak) Instruction *activeInstruction;
+
+@end
 
 @implementation Gameplay {
     CCNode *_progressBar;
@@ -55,6 +63,8 @@
   
     CGFloat _baseSpeed;
     int _initialMasks;
+    
+    DisplayInstruction *_activeDisplayInstruction;
 }
 
 // distance between masks
@@ -185,6 +195,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     }
     
     _hero.physicsBody.velocity = ccp(_baseSpeed,  _hero.physicsBody.velocity.y);
+
+    // set up level instructions
 }
 
 - (void)addMaskAtPosition:(CGPoint)pos {
@@ -288,6 +300,27 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         bg.position = ccp(bg.position.x - 50 * delta, bg.position.y);
         if (bg.position.x < -1 * (bg.contentSize.width)) {
             bg.position = ccp(bg.position.x + (bg.contentSize.width*2)-2, 0);
+        }
+    }
+    
+    // check for instructions
+    NSRange heroRange = NSMakeRange(CGRectGetMinX(_hero.boundingBox), CGRectGetWidth(_hero.boundingBox));
+    
+    if (!self.activeInstruction) {
+        for (Instruction *instruction in _level.instructions) {
+            NSRange intersectionRange = NSIntersectionRange(heroRange, instruction.instructionRange);
+            
+            if (intersectionRange.length != 0) {
+                self.activeInstruction = instruction;
+                // only one instruction can be shown at a time
+                break;
+            }
+        }
+    } else {
+        NSRange intersectionRange = NSIntersectionRange(heroRange, self.activeInstruction.instructionRange);
+        
+        if (intersectionRange.length == 0) {
+            self.activeInstruction = nil;
         }
     }
 }
@@ -416,6 +449,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         return;
     }
     
+    self.activeInstruction = nil;
+    
     _levelSelectionButton.visible = TRUE;
     
     [_hero runDeathAnimation];
@@ -483,6 +518,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     if (_gameOver) {
         return;
     }
+    
+    self.activeInstruction = nil;
     
     baseSpeed = 10;
     
@@ -561,6 +598,24 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         // if enemy does not die -> player dies
         [self endGame];
     }
+}
+
+#pragma mark - Instructions
+
+- (void)setActiveInstruction:(Instruction *)activeInstruction {
+    if (activeInstruction == nil) {
+        // hide old instruction
+        [_activeDisplayInstruction removeFromParent];
+    } else {
+        // show new instruction
+        DisplayInstruction *instruction = (DisplayInstruction *)[CCBReader load:@"Instructions/DisplayInstruction"];
+        instruction.positionType = CCPositionTypeNormalized;
+        instruction.position = ccp(0.5f, 0.5f);
+        _activeDisplayInstruction = instruction;
+        [self addChild:_activeDisplayInstruction];
+        _activeDisplayInstruction.instructionLabel.string = activeInstruction.instructionText;
+    }
+    _activeInstruction = activeInstruction;
 }
 
 @end

@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>50</integer>
+	<integer>53</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -2589,8 +2589,6 @@
 						<string>StartPosition.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -3114,9 +3112,9 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>1.7020831108093262</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>6.2333331108093262</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

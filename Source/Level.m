@@ -7,6 +7,7 @@
 //
 
 #import "Level.h"
+#import "Instruction.h"
 
 static const int INITIAL_MASKS = 5;
 static const float BASE_SPEED = 200.f;
@@ -14,6 +15,7 @@ static const CGPoint START_POS = {150, 200};
 
 @implementation Level {
     CCNode *_startPositionNode;
+    CCNode *_instructionNodes;
 }
 
 - (id)init {
@@ -35,6 +37,8 @@ static const CGPoint START_POS = {150, 200};
     } else {
         CCLOG(@"Warning, no start position for level");
     }
+    
+    self.instructions = _instructionNodes.children;
 }
 
 @end

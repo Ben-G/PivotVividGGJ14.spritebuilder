@@ -13,5 +13,6 @@
 @property (nonatomic, assign) CGFloat levelSpeed;
 @property (nonatomic, assign) int initialMasks;
 @property (nonatomic, assign) CGPoint startPosition;
+@property (nonatomic, strong) NSArray *instructions;
 
 @end

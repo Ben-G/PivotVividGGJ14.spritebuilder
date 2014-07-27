@@ -10,12 +10,13 @@
 
 @interface GameState : NSObject
 
-@property (nonatomic, strong) NSString *currentLevel;
-@property (nonatomic, assign) int currentLevelIndex;
+@property (nonatomic, readonly) NSString *currentLevel;
+@property (nonatomic, readonly) int currentLevelIndex;
 
 + (id)sharedInstance;
 - (NSDictionary *)nextLevelInfo;
 - (NSDictionary *)currentLevelInfo;
 - (void)loadNextLevel;
+- (void)loadLevel:(NSInteger)levelIndex;
 
 @end

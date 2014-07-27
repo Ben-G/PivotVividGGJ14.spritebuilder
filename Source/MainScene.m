@@ -100,10 +100,9 @@ static const NSInteger VERTICAL_MARGIN = 12;
     _scrollView.contentNode.contentSize = CGSizeMake(self.contentSizeInPoints.width, y + columnHeight);
 }
 
-- (void)selectedLevel:(NSInteger)levelIndex {
-    NSDictionary *levelInfo = _levels[levelIndex];
-    [[GameState sharedInstance] setCurrentLevel:levelInfo[@"levelName"]];
-    [[GameState sharedInstance] setCurrentLevelIndex:_selectedLevel];
+- (void)selectedLevel:(NSInteger)levelIndex {    
+    [[GameState sharedInstance] loadLevel:levelIndex];
+    NSDictionary *levelInfo = [[GameState sharedInstance] currentLevelInfo];
     
     if (levelInfo[@"isTutorial"] == [NSNumber numberWithBool:TRUE]) {
         CCScene *scene = [CCBReader loadAsScene:@"TutorialGameplay"];

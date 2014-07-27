@@ -36,7 +36,7 @@
         NSString *path = [[NSBundle mainBundle] pathForResource:@"Levels" ofType:@"plist"];
         _levels = [NSArray arrayWithContentsOfFile:path];
         
-        self.currentLevelIndex = -1;
+        _currentLevelIndex = -1;
         [self loadNextLevel];
     }
     
@@ -66,9 +66,13 @@
         nextIndex = 0;
     }
     
-    NSDictionary *nextLevel = _levels[nextIndex];
-    self.currentLevel = nextLevel[@"levelName"];
-    self.currentLevelIndex = nextIndex;
+    [self loadLevel:nextIndex];
+}
+
+- (void)loadLevel:(NSInteger)levelIndex {
+    NSDictionary *nextLevel = _levels[levelIndex];
+    _currentLevel = nextLevel[@"levelName"];
+    _currentLevelIndex = levelIndex;
 }
 
 @end
