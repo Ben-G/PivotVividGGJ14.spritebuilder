@@ -66,6 +66,8 @@
     
     DisplayInstruction *_activeDisplayInstruction;
     NSMutableArray *_levelInstructions;
+    
+    id _pauseKey;
 }
 
 // distance between masks
@@ -321,8 +323,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     } else {
         NSRange intersectionRange = NSIntersectionRange(heroRange, self.activeInstruction.instructionRange);
         
+        // if a player missed an instruction, check if the instruction is forgiving
         if (intersectionRange.length == 0) {
-            self.activeInstruction = nil;
+            if (self.activeInstruction.forgiving) {
+                [self pauseWithKey:self.activeInstruction];
+            } else {
+                self.activeInstruction = nil;
+            }
         }
     }
 }
@@ -404,6 +411,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     if (_activeInstruction) {
         BOOL completed = [_activeInstruction switched];
         if (completed) {
+            [self resumeWithKey:self.activeInstruction];
             self.activeInstruction = nil;
         }
     }
@@ -430,6 +438,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     if (_activeInstruction) {
         BOOL completed = [_activeInstruction jumped];
         if (completed) {
+            [self resumeWithKey:self.activeInstruction];
             self.activeInstruction = nil;
         }
     }
@@ -635,6 +644,21 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     }
     
     _activeInstruction = activeInstruction;
+}
+
+#pragma mark - Pause / Resume
+
+- (void)pauseWithKey:(id)pauseKey {
+    if (self.contentNode.paused == NO) {
+        _pauseKey = pauseKey;
+        self.contentNode.paused = YES;
+    }
+}
+
+- (void)resumeWithKey:(id)pauseKey {
+    if (pauseKey == _pauseKey) {
+        self.contentNode.paused = NO;
+    }
 }
 
 @end

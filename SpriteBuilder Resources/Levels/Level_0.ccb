@@ -660,8 +660,6 @@
 						<string>blocks/DefaultGround.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -952,6 +950,16 @@
 								<key>value</key>
 								<string>0</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>forgiving</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>2</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -976,8 +984,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>730</real>
-									<real>179</real>
+									<real>615.475830078125</real>
+									<real>177</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -990,7 +998,7 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
+									<real>0.69999998807907104</real>
 									<real>1</real>
 									<false/>
 									<integer>0</integer>
@@ -1027,6 +1035,16 @@
 								<key>value</key>
 								<string>0</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>forgiving</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>2</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -1051,8 +1069,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>1111</real>
-									<real>182</real>
+									<real>1066.680908203125</real>
+									<real>177</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1080,6 +1098,8 @@
 								<string>Instructions/Instruction_Switch.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>

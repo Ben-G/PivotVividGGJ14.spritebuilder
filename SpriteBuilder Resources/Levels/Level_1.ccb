@@ -950,6 +950,16 @@
 								<key>value</key>
 								<string>0</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>forgiving</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>2</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -974,7 +984,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>679</real>
+									<real>660</real>
 									<real>167</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1025,6 +1035,16 @@
 								<key>value</key>
 								<string>0</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>forgiving</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>2</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -1049,8 +1069,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>1007</real>
-									<real>182</real>
+									<real>1015.5</real>
+									<real>180</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1063,7 +1083,7 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
+									<real>0.5</real>
 									<real>1</real>
 									<false/>
 									<integer>0</integer>
@@ -1097,6 +1117,16 @@
 								<false/>
 								<key>type</key>
 								<integer>0</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>forgiving</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>2</integer>
 								<key>value</key>
 								<string>1</string>
 							</dict>
@@ -1177,6 +1207,16 @@
 								<key>value</key>
 								<string>1</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>forgiving</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>2</integer>
+								<key>value</key>
+								<string>1</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -1201,7 +1241,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>1175</real>
+									<real>1114.5</real>
 									<real>180</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1215,7 +1255,7 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
+									<real>0.5</real>
 									<real>1</real>
 									<false/>
 									<integer>0</integer>
