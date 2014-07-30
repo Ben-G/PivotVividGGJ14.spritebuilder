@@ -7,6 +7,7 @@
 //
 
 #import "Instruction.h"
+#import "Mood.h"
 
 @implementation Instruction {
     CCLabelTTF *_instructionLabel;
@@ -22,8 +23,8 @@
     return (self.instructionType == InstructionTypeJump);
 }
 
-- (BOOL)switched {
-    return (self.instructionType == InstructionTypeSwitch);
+- (BOOL)switchedMood:(Mood*)mood {
+    return (self.instructionType == InstructionTypeSwitch && [mood.moodPrefix isEqualToString:self.targetMood]);
 }
 
 @end

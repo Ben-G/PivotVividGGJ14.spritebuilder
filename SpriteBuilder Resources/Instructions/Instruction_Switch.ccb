@@ -271,6 +271,16 @@
 				<key>value</key>
 				<string>1</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>targetMood</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>3</integer>
+				<key>value</key>
+				<string>angry</string>
+			</dict>
 		</array>
 		<key>displayName</key>
 		<string>CCNode</string>

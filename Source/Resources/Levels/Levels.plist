@@ -19,25 +19,6 @@
 		<string></string>
 	</dict>
 	<dict>
-		<key>levelName</key>
-		<string>Tutorial1</string>
-		<key>tutorialFragments</key>
-		<array>
-			<string>Tutorial1_0</string>
-			<string>Tutorial1_1</string>
-			<string>Tutorial1_2</string>
-			<string>Tutorial1_3</string>
-			<string>Tutorial1_4</string>
-			<string>Tutorial1_5</string>
-		</array>
-		<key>isTutorial</key>
-		<true/>
-		<key>levelTitle</key>
-		<string>Tutorial</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
 		<key>levelTitle</key>
 		<string>Level 0</string>
 		<key>levelName</key>

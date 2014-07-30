@@ -2560,8 +2560,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>29</real>
-							<real>99</real>
+							<real>49</real>
+							<real>104</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2589,6 +2589,8 @@
 						<string>StartPosition.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

@@ -8,6 +8,8 @@
 
 #import "CCNode.h"
 
+@class Mood;
+
 typedef NS_ENUM(NSInteger, InstructionType) {
     InstructionTypeSwitch,
     InstructionTypeJump
@@ -23,7 +25,9 @@ typedef NS_ENUM(NSInteger, InstructionType) {
 // forgiving instructions will pause the game if not fullfilled
 @property (nonatomic, readonly) BOOL forgiving;
 
+@property (nonatomic, readonly) NSString *targetMood;
+
 - (BOOL)jumped;
-- (BOOL)switched;
+- (BOOL)switchedMood:(Mood*)mood;
 
 @end

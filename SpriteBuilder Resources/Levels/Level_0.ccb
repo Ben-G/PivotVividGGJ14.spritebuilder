@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>31</integer>
+	<integer>32</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -105,68 +105,6 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>6</integer>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>2</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>132</real>
-							<real>32</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>blocks/DefaultGround.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>UUID</key>
 				<integer>5</integer>
 				<key>baseClass</key>
 				<string>CCBFile</string>
@@ -197,8 +135,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>394</real>
-							<real>32</real>
+							<real>132</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -259,8 +197,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>658</real>
-							<real>32</real>
+							<real>396</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -321,8 +259,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>820</real>
-							<real>32</real>
+							<real>558</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -383,8 +321,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>884</real>
-							<real>32</real>
+							<real>622</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -445,8 +383,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1212</real>
-							<real>32</real>
+							<real>950</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -507,8 +445,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1276</real>
-							<real>32</real>
+							<real>1014</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -569,8 +507,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1440</real>
-							<real>32</real>
+							<real>1178</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -631,8 +569,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1704</real>
-							<real>32</real>
+							<real>1442</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -693,8 +631,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1048</real>
-							<real>32</real>
+							<real>786</real>
+							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -768,8 +706,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>829</real>
-							<real>101</real>
+							<real>567</real>
+							<real>102</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -830,8 +768,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1800</real>
-							<real>108</real>
+							<real>1538</real>
+							<real>109</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -960,6 +898,16 @@
 								<key>value</key>
 								<string>1</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>targetMood</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>3</integer>
+								<key>value</key>
+								<string>angry</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -984,8 +932,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>615.475830078125</real>
-									<real>177</real>
+									<real>395.475830078125</real>
+									<real>161</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1045,6 +993,16 @@
 								<key>value</key>
 								<string>1</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>targetMood</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>3</integer>
+								<key>value</key>
+								<string>calm</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -1069,8 +1027,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>1066.680908203125</real>
-									<real>177</real>
+									<real>799.680908203125</real>
+									<real>159</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1098,8 +1056,6 @@
 								<string>Instructions/Instruction_Switch.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1186,7 +1142,7 @@
 				<key>type</key>
 				<integer>1</integer>
 				<key>value</key>
-				<string>60.000000</string>
+				<string>80.000000</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -1196,7 +1152,7 @@
 				<key>type</key>
 				<integer>0</integer>
 				<key>value</key>
-				<string>2</string>
+				<string>12</string>
 			</dict>
 		</array>
 		<key>displayName</key>

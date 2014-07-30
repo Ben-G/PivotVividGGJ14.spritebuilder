@@ -960,6 +960,16 @@
 								<key>value</key>
 								<string>1</string>
 							</dict>
+							<dict>
+								<key>name</key>
+								<string>targetMood</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>3</integer>
+								<key>value</key>
+								<string>angry</string>
+							</dict>
 						</array>
 						<key>displayName</key>
 						<string>Instruction</string>
@@ -1044,6 +1054,16 @@
 								<integer>2</integer>
 								<key>value</key>
 								<string>1</string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>targetMood</string>
+								<key>optimized</key>
+								<false/>
+								<key>type</key>
+								<integer>3</integer>
+								<key>value</key>
+								<string>calm</string>
 							</dict>
 						</array>
 						<key>displayName</key>
@@ -1183,8 +1203,6 @@
 								<string>Instructions/Instruction_Jump.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1418,7 +1436,7 @@
 				<key>type</key>
 				<integer>1</integer>
 				<key>value</key>
-				<string>60.000000</string>
+				<string>80.000000</string>
 			</dict>
 			<dict>
 				<key>name</key>

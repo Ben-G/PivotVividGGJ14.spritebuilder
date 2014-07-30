@@ -17,6 +17,7 @@
 #import "GameState.h"
 #import "Instruction.h"
 #import "DisplayInstruction.h"
+#import "CCDirector_Private.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
 
@@ -57,6 +58,7 @@
     
     CCButton *_nextLevelButton;
     CCButton *_levelSelectionButton;
+    CCButton *_restartButton;
   
     // stores start position
     CCNode *_startPositionNode;
@@ -207,7 +209,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     Mood *moodForMask = nil;
     
     if ([_masks count] == 0) {
-        moodForMask = _moods[_currentMoodIndex+1];
+        NSInteger nextMood  = _currentMoodIndex + 1;
+        
+        if (nextMood >= [_moods count]) {
+            nextMood = 0;
+        }
+        
+        moodForMask = _moods[nextMood];
     } else {
         Mask *lastMask = [_masks lastObject];
         Mood *lastMaskMood = lastMask.mood;
@@ -315,8 +323,16 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
             NSRange intersectionRange = NSIntersectionRange(heroRange, instruction.instructionRange);
             
             if (intersectionRange.length != 0) {
-                self.activeInstruction = instruction;
-                // only one instruction can be shown at a time
+                // check if the instruction might already be fullfilled, before displaying it
+                BOOL fullfilled = [instruction switchedMood:_moods[_currentMoodIndex]];
+                
+                if (!fullfilled) {
+                    if (instruction.instructionType == InstructionTypeSwitch && [_masks count] > 0) {
+                        self.activeInstruction = instruction;
+                    }
+                }
+                
+                // only one instruction can be shown at a time, so break here and don't check other instructions
                 break;
             }
         }
@@ -408,14 +424,6 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (void)switchMood {
-    if (_activeInstruction) {
-        BOOL completed = [_activeInstruction switched];
-        if (completed) {
-            [self resumeWithKey:self.activeInstruction];
-            self.activeInstruction = nil;
-        }
-    }
-    
     if ([_masks count] == 0) {
         // mood changes are only possible with masks
         return;
@@ -432,6 +440,15 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     }
     
     [self setMood:_currentMoodIndex];
+    
+    if (_activeInstruction) {
+        BOOL completed = [_activeInstruction switchedMood:_moods[_currentMoodIndex]];
+        if (completed) {
+            [self resumeWithKey:self.activeInstruction];
+            self.activeInstruction = nil;
+        }
+    }
+//    [[[CCDirector sharedDirector] scheduler] setTimeScale:0.5f];
 }
 
 - (void)jump {
@@ -477,6 +494,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     self.activeInstruction = nil;
     
     _levelSelectionButton.visible = TRUE;
+    _restartButton.visible = TRUE;
     
     [_hero runDeathAnimation];
     
@@ -510,9 +528,6 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     }
     
     _gameOver = TRUE;
-    
-    // Delay execution of my block for couple seconds.
-    [self performSelector:@selector(restartLevel) withObject:nil afterDelay:3.f];
 }
 
 - (void)restartLevel {
@@ -523,11 +538,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (void)levelSelectionButtonPressed {
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(restartLevel) object:nil];
-
     [self stopMusic];
     CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:scene];
+}
+
+- (void)restartPressed {
+    [self restartLevel];
 }
 
 - (void)nextLevel {
