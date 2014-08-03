@@ -1,0 +1,4278 @@
+{
+    "assets": [], 
+    "config": {
+        "ICU_CONFIG": "normal"
+    }, 
+    "defines": {
+        "NDEBUG": 1, 
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000
+    }, 
+    "deps": [
+        "UIKit", 
+        "AVFoundation"
+    ], 
+    "flags": [
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Werror-implicit-function-declaration", 
+        "-Wshorten-64-to-32", 
+        "-Wno-deprecated-declarations", 
+        "-Wmissing-field-initializers", 
+        "-Wnewline-eof", 
+        "-Wmissing-prototypes", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wmissing-braces", 
+        "-Wparentheses", 
+        "-Wshadow", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-value", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Woverloaded-virtual", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "cocos2d-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "cocos2d-own-target-headers.hmap", 
+            "hmap": {
+                "ALBuffer.h": {
+                    "key": "ALBuffer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALBuffer.h"
+                }, 
+                "ALCaptureDevice.h": {
+                    "key": "ALCaptureDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALCaptureDevice.h"
+                }, 
+                "ALChannelSource.h": {
+                    "key": "ALChannelSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALChannelSource.h"
+                }, 
+                "ALContext.h": {
+                    "key": "ALContext.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALContext.h"
+                }, 
+                "ALDevice.h": {
+                    "key": "ALDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALDevice.h"
+                }, 
+                "ALListener.h": {
+                    "key": "ALListener.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALListener.h"
+                }, 
+                "ALSoundSource.h": {
+                    "key": "ALSoundSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSource.h"
+                }, 
+                "ALSoundSourcePool.h": {
+                    "key": "ALSoundSourcePool.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSourcePool.h"
+                }, 
+                "ALSource.h": {
+                    "key": "ALSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSource.h"
+                }, 
+                "ALTypes.h": {
+                    "key": "ALTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALTypes.h"
+                }, 
+                "ALWrapper.h": {
+                    "key": "ALWrapper.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALWrapper.h"
+                }, 
+                "ARCSafe_MemMgmt.h": {
+                    "key": "ARCSafe_MemMgmt.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ARCSafe_MemMgmt.h"
+                }, 
+                "CCAction.h": {
+                    "key": "CCAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAction.h"
+                }, 
+                "CCActionCatmullRom.h": {
+                    "key": "CCActionCatmullRom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionCatmullRom.h"
+                }, 
+                "CCActionEase.h": {
+                    "key": "CCActionEase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionEase.h"
+                }, 
+                "CCActionInstant.h": {
+                    "key": "CCActionInstant.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInstant.h"
+                }, 
+                "CCActionInterval.h": {
+                    "key": "CCActionInterval.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInterval.h"
+                }, 
+                "CCActionManager.h": {
+                    "key": "CCActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionManager.h"
+                }, 
+                "CCActionProgressTimer.h": {
+                    "key": "CCActionProgressTimer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionProgressTimer.h"
+                }, 
+                "CCActionTween.h": {
+                    "key": "CCActionTween.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionTween.h"
+                }, 
+                "CCAnimation.h": {
+                    "key": "CCAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimation.h"
+                }, 
+                "CCAnimationCache.h": {
+                    "key": "CCAnimationCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimationCache.h"
+                }, 
+                "CCAnimationManager+FrameAnimation.h": {
+                    "key": "CCAnimationManager+FrameAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager+FrameAnimation.h"
+                }, 
+                "CCAnimationManager.h": {
+                    "key": "CCAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager.h"
+                }, 
+                "CCAnimationManager_Private.h": {
+                    "key": "CCAnimationManager_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager_Private.h"
+                }, 
+                "CCAppDelegate.h": {
+                    "key": "CCAppDelegate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCAppDelegate.h"
+                }, 
+                "CCBAnimationManager.h": {
+                    "key": "CCBAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBAnimationManager.h"
+                }, 
+                "CCBKeyframe.h": {
+                    "key": "CCBKeyframe.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBKeyframe.h"
+                }, 
+                "CCBLocalizationManager.h": {
+                    "key": "CCBLocalizationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBLocalizationManager.h"
+                }, 
+                "CCBReader.h": {
+                    "key": "CCBReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader.h"
+                }, 
+                "CCBReader_Private.h": {
+                    "key": "CCBReader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader_Private.h"
+                }, 
+                "CCBSequence.h": {
+                    "key": "CCBSequence.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequence.h"
+                }, 
+                "CCBSequenceProperty.h": {
+                    "key": "CCBSequenceProperty.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequenceProperty.h"
+                }, 
+                "CCBuilderReader.h": {
+                    "key": "CCBuilderReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBuilderReader.h"
+                }, 
+                "CCButton.h": {
+                    "key": "CCButton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCButton.h"
+                }, 
+                "CCCache.h": {
+                    "key": "CCCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCCache.h"
+                }, 
+                "CCClippingNode.h": {
+                    "key": "CCClippingNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCClippingNode.h"
+                }, 
+                "CCColor.h": {
+                    "key": "CCColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCColor.h"
+                }, 
+                "CCConfiguration.h": {
+                    "key": "CCConfiguration.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCConfiguration.h"
+                }, 
+                "CCControl.h": {
+                    "key": "CCControl.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControl.h"
+                }, 
+                "CCControlTextureFactory.h": {
+                    "key": "CCControlTextureFactory.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControlTextureFactory.h"
+                }, 
+                "CCDirector.h": {
+                    "key": "CCDirector.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDirector.h"
+                }, 
+                "CCDirectorIOS.h": {
+                    "key": "CCDirectorIOS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCDirectorIOS.h"
+                }, 
+                "CCDirectorMac.h": {
+                    "key": "CCDirectorMac.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCDirectorMac.h"
+                }, 
+                "CCDrawNode.h": {
+                    "key": "CCDrawNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDrawNode.h"
+                }, 
+                "CCES2Renderer.h": {
+                    "key": "CCES2Renderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCES2Renderer.h"
+                }, 
+                "CCESRenderer.h": {
+                    "key": "CCESRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCESRenderer.h"
+                }, 
+                "CCEffect.h": {
+                    "key": "CCEffect.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect.h"
+                }, 
+                "CCEffectBrightness.h": {
+                    "key": "CCEffectBrightness.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBrightness.h"
+                }, 
+                "CCEffectContrast.h": {
+                    "key": "CCEffectContrast.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectContrast.h"
+                }, 
+                "CCEffectGaussianBlur.h": {
+                    "key": "CCEffectGaussianBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGaussianBlur.h"
+                }, 
+                "CCEffectGlow.h": {
+                    "key": "CCEffectGlow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGlow.h"
+                }, 
+                "CCEffectNode.h": {
+                    "key": "CCEffectNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectNode.h"
+                }, 
+                "CCEffectPixellate.h": {
+                    "key": "CCEffectPixellate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectPixellate.h"
+                }, 
+                "CCEffectRenderer.h": {
+                    "key": "CCEffectRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRenderer.h"
+                }, 
+                "CCEffectSaturation.h": {
+                    "key": "CCEffectSaturation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectSaturation.h"
+                }, 
+                "CCEffectStack.h": {
+                    "key": "CCEffectStack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectStack.h"
+                }, 
+                "CCEffect_Private.h": {
+                    "key": "CCEffect_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect_Private.h"
+                }, 
+                "CCFileUtils.h": {
+                    "key": "CCFileUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCFileUtils.h"
+                }, 
+                "CCGL.h": {
+                    "key": "CCGL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCGL.h"
+                }, 
+                "CCGLView.h": {
+                    "key": "CCGLView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCGLView.h"
+                }, 
+                "CCLabelBMFont.h": {
+                    "key": "CCLabelBMFont.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont.h"
+                }, 
+                "CCLabelBMFont_Private.h": {
+                    "key": "CCLabelBMFont_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont_Private.h"
+                }, 
+                "CCLabelTTF.h": {
+                    "key": "CCLabelTTF.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelTTF.h"
+                }, 
+                "CCLayout.h": {
+                    "key": "CCLayout.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayout.h"
+                }, 
+                "CCLayoutBox.h": {
+                    "key": "CCLayoutBox.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayoutBox.h"
+                }, 
+                "CCMotionStreak.h": {
+                    "key": "CCMotionStreak.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCMotionStreak.h"
+                }, 
+                "CCNS.h": {
+                    "key": "CCNS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCNS.h"
+                }, 
+                "CCNode+Debug.h": {
+                    "key": "CCNode+Debug.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode+Debug.h"
+                }, 
+                "CCNode.h": {
+                    "key": "CCNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode.h"
+                }, 
+                "CCNodeColor.h": {
+                    "key": "CCNodeColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNodeColor.h"
+                }, 
+                "CCNode_Private.h": {
+                    "key": "CCNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode_Private.h"
+                }, 
+                "CCParallaxNode.h": {
+                    "key": "CCParallaxNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParallaxNode.h"
+                }, 
+                "CCParticleBatchNode.h": {
+                    "key": "CCParticleBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleBatchNode.h"
+                }, 
+                "CCParticleExamples.h": {
+                    "key": "CCParticleExamples.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleExamples.h"
+                }, 
+                "CCParticleSystem.h": {
+                    "key": "CCParticleSystem.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem.h"
+                }, 
+                "CCParticleSystemBase.h": {
+                    "key": "CCParticleSystemBase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase.h"
+                }, 
+                "CCParticleSystemBase_Private.h": {
+                    "key": "CCParticleSystemBase_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase_Private.h"
+                }, 
+                "CCParticleSystem_Private.h": {
+                    "key": "CCParticleSystem_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem_Private.h"
+                }, 
+                "CCPhysicsShape.h": {
+                    "key": "CCPhysicsShape.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsShape.h"
+                }, 
+                "CCProfiling.h": {
+                    "key": "CCProfiling.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCProfiling.h"
+                }, 
+                "CCProgressNode.h": {
+                    "key": "CCProgressNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode.h"
+                }, 
+                "CCProgressNode_Private.h": {
+                    "key": "CCProgressNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode_Private.h"
+                }, 
+                "CCProtocols.h": {
+                    "key": "CCProtocols.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProtocols.h"
+                }, 
+                "CCRenderTexture.h": {
+                    "key": "CCRenderTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderTexture.h"
+                }, 
+                "CCRenderer.h": {
+                    "key": "CCRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer.h"
+                }, 
+                "CCRenderer_private.h": {
+                    "key": "CCRenderer_private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer_private.h"
+                }, 
+                "CCResponder.h": {
+                    "key": "CCResponder.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponder.h"
+                }, 
+                "CCResponderManager.h": {
+                    "key": "CCResponderManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponderManager.h"
+                }, 
+                "CCScene.h": {
+                    "key": "CCScene.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScene.h"
+                }, 
+                "CCScheduler.h": {
+                    "key": "CCScheduler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScheduler.h"
+                }, 
+                "CCScrollView.h": {
+                    "key": "CCScrollView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCScrollView.h"
+                }, 
+                "CCShader.h": {
+                    "key": "CCShader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader.h"
+                }, 
+                "CCShader_Private.h": {
+                    "key": "CCShader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader_Private.h"
+                }, 
+                "CCSlider.h": {
+                    "key": "CCSlider.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCSlider.h"
+                }, 
+                "CCSprite.h": {
+                    "key": "CCSprite.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite.h"
+                }, 
+                "CCSprite9Slice.h": {
+                    "key": "CCSprite9Slice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite9Slice.h"
+                }, 
+                "CCSpriteBatchNode.h": {
+                    "key": "CCSpriteBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteBatchNode.h"
+                }, 
+                "CCSpriteFrame.h": {
+                    "key": "CCSpriteFrame.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrame.h"
+                }, 
+                "CCSpriteFrameCache.h": {
+                    "key": "CCSpriteFrameCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrameCache.h"
+                }, 
+                "CCSprite_Private.h": {
+                    "key": "CCSprite_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite_Private.h"
+                }, 
+                "CCTMXXMLParser.h": {
+                    "key": "CCTMXXMLParser.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXXMLParser.h"
+                }, 
+                "CCTableView.h": {
+                    "key": "CCTableView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTableView.h"
+                }, 
+                "CCTextField.h": {
+                    "key": "CCTextField.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTextField.h"
+                }, 
+                "CCTexture.h": {
+                    "key": "CCTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture.h"
+                }, 
+                "CCTextureCache.h": {
+                    "key": "CCTextureCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTextureCache.h"
+                }, 
+                "CCTexturePVR.h": {
+                    "key": "CCTexturePVR.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexturePVR.h"
+                }, 
+                "CCTexture_Private.h": {
+                    "key": "CCTexture_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture_Private.h"
+                }, 
+                "CCTiledMap.h": {
+                    "key": "CCTiledMap.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMap.h"
+                }, 
+                "CCTiledMapLayer.h": {
+                    "key": "CCTiledMapLayer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer.h"
+                }, 
+                "CCTiledMapLayer_Private.h": {
+                    "key": "CCTiledMapLayer_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer_Private.h"
+                }, 
+                "CCTiledMapObjectGroup.h": {
+                    "key": "CCTiledMapObjectGroup.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapObjectGroup.h"
+                }, 
+                "CCTransition.h": {
+                    "key": "CCTransition.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTransition.h"
+                }, 
+                "CCWindow.h": {
+                    "key": "CCWindow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCWindow.h"
+                }, 
+                "CGPointExtension.h": {
+                    "key": "CGPointExtension.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CGPointExtension.h"
+                }, 
+                "IOSVersion.h": {
+                    "key": "IOSVersion.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "IOSVersion.h"
+                }, 
+                "NSAttributedString+CCAdditions.h": {
+                    "key": "NSAttributedString+CCAdditions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSAttributedString+CCAdditions.h"
+                }, 
+                "NSMutableArray+WeakReferences.h": {
+                    "key": "NSMutableArray+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableArray+WeakReferences.h"
+                }, 
+                "NSMutableDictionary+WeakReferences.h": {
+                    "key": "NSMutableDictionary+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableDictionary+WeakReferences.h"
+                }, 
+                "NSThread+performBlock.h": {
+                    "key": "NSThread+performBlock.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSThread+performBlock.h"
+                }, 
+                "OALAction+Private.h": {
+                    "key": "OALAction+Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction+Private.h"
+                }, 
+                "OALAction.h": {
+                    "key": "OALAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction.h"
+                }, 
+                "OALActionManager.h": {
+                    "key": "OALActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALActionManager.h"
+                }, 
+                "OALAudioActions.h": {
+                    "key": "OALAudioActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAudioActions.h"
+                }, 
+                "OALAudioFile.h": {
+                    "key": "OALAudioFile.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALAudioFile.h"
+                }, 
+                "OALAudioSession.h": {
+                    "key": "OALAudioSession.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALAudioSession.h"
+                }, 
+                "OALAudioTrack.h": {
+                    "key": "OALAudioTrack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrack.h"
+                }, 
+                "OALAudioTrackNotifications.h": {
+                    "key": "OALAudioTrackNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrackNotifications.h"
+                }, 
+                "OALAudioTracks.h": {
+                    "key": "OALAudioTracks.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTracks.h"
+                }, 
+                "OALNotifications.h": {
+                    "key": "OALNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALNotifications.h"
+                }, 
+                "OALSimpleAudio.h": {
+                    "key": "OALSimpleAudio.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "OALSimpleAudio.h"
+                }, 
+                "OALSuspendHandler.h": {
+                    "key": "OALSuspendHandler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALSuspendHandler.h"
+                }, 
+                "OALTools.h": {
+                    "key": "OALTools.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALTools.h"
+                }, 
+                "OALUtilityActions.h": {
+                    "key": "OALUtilityActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALUtilityActions.h"
+                }, 
+                "ObjectAL.h": {
+                    "key": "ObjectAL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectAL.h"
+                }, 
+                "ObjectALConfig.h": {
+                    "key": "ObjectALConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectALConfig.h"
+                }, 
+                "ObjectALMacros.h": {
+                    "key": "ObjectALMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ObjectALMacros.h"
+                }, 
+                "OpenALManager.h": {
+                    "key": "OpenALManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "OpenALManager.h"
+                }, 
+                "SynthesizeSingleton.h": {
+                    "key": "SynthesizeSingleton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "SynthesizeSingleton.h"
+                }, 
+                "TGAlib.h": {
+                    "key": "TGAlib.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "TGAlib.h"
+                }, 
+                "UITouch+CC.h": {
+                    "key": "UITouch+CC.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "UITouch+CC.h"
+                }, 
+                "ZipUtils.h": {
+                    "key": "ZipUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ZipUtils.h"
+                }, 
+                "base64.h": {
+                    "key": "base64.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "base64.h"
+                }, 
+                "ccConfig.h": {
+                    "key": "ccConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccConfig.h"
+                }, 
+                "ccFPSImages.h": {
+                    "key": "ccFPSImages.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccFPSImages.h"
+                }, 
+                "ccMacros.h": {
+                    "key": "ccMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccMacros.h"
+                }, 
+                "ccTypes.h": {
+                    "key": "ccTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccTypes.h"
+                }, 
+                "ccUtils.h": {
+                    "key": "ccUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ccUtils.h"
+                }, 
+                "cocos2d.h": {
+                    "key": "cocos2d.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "cocos2d.h"
+                }, 
+                "cocos2d/ALBuffer.h": {
+                    "key": "cocos2d/ALBuffer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALBuffer.h"
+                }, 
+                "cocos2d/ALCaptureDevice.h": {
+                    "key": "cocos2d/ALCaptureDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALCaptureDevice.h"
+                }, 
+                "cocos2d/ALChannelSource.h": {
+                    "key": "cocos2d/ALChannelSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALChannelSource.h"
+                }, 
+                "cocos2d/ALContext.h": {
+                    "key": "cocos2d/ALContext.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALContext.h"
+                }, 
+                "cocos2d/ALDevice.h": {
+                    "key": "cocos2d/ALDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALDevice.h"
+                }, 
+                "cocos2d/ALListener.h": {
+                    "key": "cocos2d/ALListener.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALListener.h"
+                }, 
+                "cocos2d/ALSoundSource.h": {
+                    "key": "cocos2d/ALSoundSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSource.h"
+                }, 
+                "cocos2d/ALSoundSourcePool.h": {
+                    "key": "cocos2d/ALSoundSourcePool.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSourcePool.h"
+                }, 
+                "cocos2d/ALSource.h": {
+                    "key": "cocos2d/ALSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSource.h"
+                }, 
+                "cocos2d/ALTypes.h": {
+                    "key": "cocos2d/ALTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALTypes.h"
+                }, 
+                "cocos2d/ALWrapper.h": {
+                    "key": "cocos2d/ALWrapper.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALWrapper.h"
+                }, 
+                "cocos2d/ARCSafe_MemMgmt.h": {
+                    "key": "cocos2d/ARCSafe_MemMgmt.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ARCSafe_MemMgmt.h"
+                }, 
+                "cocos2d/CCAction.h": {
+                    "key": "cocos2d/CCAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAction.h"
+                }, 
+                "cocos2d/CCActionCatmullRom.h": {
+                    "key": "cocos2d/CCActionCatmullRom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionCatmullRom.h"
+                }, 
+                "cocos2d/CCActionEase.h": {
+                    "key": "cocos2d/CCActionEase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionEase.h"
+                }, 
+                "cocos2d/CCActionInstant.h": {
+                    "key": "cocos2d/CCActionInstant.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInstant.h"
+                }, 
+                "cocos2d/CCActionInterval.h": {
+                    "key": "cocos2d/CCActionInterval.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInterval.h"
+                }, 
+                "cocos2d/CCActionManager.h": {
+                    "key": "cocos2d/CCActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionManager.h"
+                }, 
+                "cocos2d/CCActionProgressTimer.h": {
+                    "key": "cocos2d/CCActionProgressTimer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionProgressTimer.h"
+                }, 
+                "cocos2d/CCActionTween.h": {
+                    "key": "cocos2d/CCActionTween.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionTween.h"
+                }, 
+                "cocos2d/CCAnimation.h": {
+                    "key": "cocos2d/CCAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimation.h"
+                }, 
+                "cocos2d/CCAnimationCache.h": {
+                    "key": "cocos2d/CCAnimationCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimationCache.h"
+                }, 
+                "cocos2d/CCAnimationManager+FrameAnimation.h": {
+                    "key": "cocos2d/CCAnimationManager+FrameAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager+FrameAnimation.h"
+                }, 
+                "cocos2d/CCAnimationManager.h": {
+                    "key": "cocos2d/CCAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager.h"
+                }, 
+                "cocos2d/CCAnimationManager_Private.h": {
+                    "key": "cocos2d/CCAnimationManager_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager_Private.h"
+                }, 
+                "cocos2d/CCAppDelegate.h": {
+                    "key": "cocos2d/CCAppDelegate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCAppDelegate.h"
+                }, 
+                "cocos2d/CCBAnimationManager.h": {
+                    "key": "cocos2d/CCBAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBAnimationManager.h"
+                }, 
+                "cocos2d/CCBKeyframe.h": {
+                    "key": "cocos2d/CCBKeyframe.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBKeyframe.h"
+                }, 
+                "cocos2d/CCBLocalizationManager.h": {
+                    "key": "cocos2d/CCBLocalizationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBLocalizationManager.h"
+                }, 
+                "cocos2d/CCBReader.h": {
+                    "key": "cocos2d/CCBReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader.h"
+                }, 
+                "cocos2d/CCBReader_Private.h": {
+                    "key": "cocos2d/CCBReader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader_Private.h"
+                }, 
+                "cocos2d/CCBSequence.h": {
+                    "key": "cocos2d/CCBSequence.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequence.h"
+                }, 
+                "cocos2d/CCBSequenceProperty.h": {
+                    "key": "cocos2d/CCBSequenceProperty.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequenceProperty.h"
+                }, 
+                "cocos2d/CCBuilderReader.h": {
+                    "key": "cocos2d/CCBuilderReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBuilderReader.h"
+                }, 
+                "cocos2d/CCButton.h": {
+                    "key": "cocos2d/CCButton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCButton.h"
+                }, 
+                "cocos2d/CCCache.h": {
+                    "key": "cocos2d/CCCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCCache.h"
+                }, 
+                "cocos2d/CCClippingNode.h": {
+                    "key": "cocos2d/CCClippingNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCClippingNode.h"
+                }, 
+                "cocos2d/CCColor.h": {
+                    "key": "cocos2d/CCColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCColor.h"
+                }, 
+                "cocos2d/CCConfiguration.h": {
+                    "key": "cocos2d/CCConfiguration.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCConfiguration.h"
+                }, 
+                "cocos2d/CCControl.h": {
+                    "key": "cocos2d/CCControl.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControl.h"
+                }, 
+                "cocos2d/CCControlTextureFactory.h": {
+                    "key": "cocos2d/CCControlTextureFactory.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControlTextureFactory.h"
+                }, 
+                "cocos2d/CCDirector.h": {
+                    "key": "cocos2d/CCDirector.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDirector.h"
+                }, 
+                "cocos2d/CCDirectorIOS.h": {
+                    "key": "cocos2d/CCDirectorIOS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCDirectorIOS.h"
+                }, 
+                "cocos2d/CCDirectorMac.h": {
+                    "key": "cocos2d/CCDirectorMac.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCDirectorMac.h"
+                }, 
+                "cocos2d/CCDrawNode.h": {
+                    "key": "cocos2d/CCDrawNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDrawNode.h"
+                }, 
+                "cocos2d/CCES2Renderer.h": {
+                    "key": "cocos2d/CCES2Renderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCES2Renderer.h"
+                }, 
+                "cocos2d/CCESRenderer.h": {
+                    "key": "cocos2d/CCESRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCESRenderer.h"
+                }, 
+                "cocos2d/CCEffect.h": {
+                    "key": "cocos2d/CCEffect.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect.h"
+                }, 
+                "cocos2d/CCEffectBrightness.h": {
+                    "key": "cocos2d/CCEffectBrightness.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBrightness.h"
+                }, 
+                "cocos2d/CCEffectContrast.h": {
+                    "key": "cocos2d/CCEffectContrast.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectContrast.h"
+                }, 
+                "cocos2d/CCEffectGaussianBlur.h": {
+                    "key": "cocos2d/CCEffectGaussianBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGaussianBlur.h"
+                }, 
+                "cocos2d/CCEffectGlow.h": {
+                    "key": "cocos2d/CCEffectGlow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGlow.h"
+                }, 
+                "cocos2d/CCEffectNode.h": {
+                    "key": "cocos2d/CCEffectNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectNode.h"
+                }, 
+                "cocos2d/CCEffectPixellate.h": {
+                    "key": "cocos2d/CCEffectPixellate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectPixellate.h"
+                }, 
+                "cocos2d/CCEffectRenderer.h": {
+                    "key": "cocos2d/CCEffectRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRenderer.h"
+                }, 
+                "cocos2d/CCEffectSaturation.h": {
+                    "key": "cocos2d/CCEffectSaturation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectSaturation.h"
+                }, 
+                "cocos2d/CCEffectStack.h": {
+                    "key": "cocos2d/CCEffectStack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectStack.h"
+                }, 
+                "cocos2d/CCEffect_Private.h": {
+                    "key": "cocos2d/CCEffect_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect_Private.h"
+                }, 
+                "cocos2d/CCFileUtils.h": {
+                    "key": "cocos2d/CCFileUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCFileUtils.h"
+                }, 
+                "cocos2d/CCGL.h": {
+                    "key": "cocos2d/CCGL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCGL.h"
+                }, 
+                "cocos2d/CCGLView.h": {
+                    "key": "cocos2d/CCGLView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCGLView.h"
+                }, 
+                "cocos2d/CCLabelBMFont.h": {
+                    "key": "cocos2d/CCLabelBMFont.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont.h"
+                }, 
+                "cocos2d/CCLabelBMFont_Private.h": {
+                    "key": "cocos2d/CCLabelBMFont_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont_Private.h"
+                }, 
+                "cocos2d/CCLabelTTF.h": {
+                    "key": "cocos2d/CCLabelTTF.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelTTF.h"
+                }, 
+                "cocos2d/CCLayout.h": {
+                    "key": "cocos2d/CCLayout.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayout.h"
+                }, 
+                "cocos2d/CCLayoutBox.h": {
+                    "key": "cocos2d/CCLayoutBox.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayoutBox.h"
+                }, 
+                "cocos2d/CCMotionStreak.h": {
+                    "key": "cocos2d/CCMotionStreak.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCMotionStreak.h"
+                }, 
+                "cocos2d/CCNS.h": {
+                    "key": "cocos2d/CCNS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCNS.h"
+                }, 
+                "cocos2d/CCNode+Debug.h": {
+                    "key": "cocos2d/CCNode+Debug.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode+Debug.h"
+                }, 
+                "cocos2d/CCNode.h": {
+                    "key": "cocos2d/CCNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode.h"
+                }, 
+                "cocos2d/CCNodeColor.h": {
+                    "key": "cocos2d/CCNodeColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNodeColor.h"
+                }, 
+                "cocos2d/CCNode_Private.h": {
+                    "key": "cocos2d/CCNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode_Private.h"
+                }, 
+                "cocos2d/CCParallaxNode.h": {
+                    "key": "cocos2d/CCParallaxNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParallaxNode.h"
+                }, 
+                "cocos2d/CCParticleBatchNode.h": {
+                    "key": "cocos2d/CCParticleBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleBatchNode.h"
+                }, 
+                "cocos2d/CCParticleExamples.h": {
+                    "key": "cocos2d/CCParticleExamples.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleExamples.h"
+                }, 
+                "cocos2d/CCParticleSystem.h": {
+                    "key": "cocos2d/CCParticleSystem.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem.h"
+                }, 
+                "cocos2d/CCParticleSystemBase.h": {
+                    "key": "cocos2d/CCParticleSystemBase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase.h"
+                }, 
+                "cocos2d/CCParticleSystemBase_Private.h": {
+                    "key": "cocos2d/CCParticleSystemBase_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase_Private.h"
+                }, 
+                "cocos2d/CCParticleSystem_Private.h": {
+                    "key": "cocos2d/CCParticleSystem_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem_Private.h"
+                }, 
+                "cocos2d/CCPhysicsShape.h": {
+                    "key": "cocos2d/CCPhysicsShape.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsShape.h"
+                }, 
+                "cocos2d/CCProfiling.h": {
+                    "key": "cocos2d/CCProfiling.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCProfiling.h"
+                }, 
+                "cocos2d/CCProgressNode.h": {
+                    "key": "cocos2d/CCProgressNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode.h"
+                }, 
+                "cocos2d/CCProgressNode_Private.h": {
+                    "key": "cocos2d/CCProgressNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode_Private.h"
+                }, 
+                "cocos2d/CCProtocols.h": {
+                    "key": "cocos2d/CCProtocols.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProtocols.h"
+                }, 
+                "cocos2d/CCRenderTexture.h": {
+                    "key": "cocos2d/CCRenderTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderTexture.h"
+                }, 
+                "cocos2d/CCRenderer.h": {
+                    "key": "cocos2d/CCRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer.h"
+                }, 
+                "cocos2d/CCRenderer_private.h": {
+                    "key": "cocos2d/CCRenderer_private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer_private.h"
+                }, 
+                "cocos2d/CCResponder.h": {
+                    "key": "cocos2d/CCResponder.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponder.h"
+                }, 
+                "cocos2d/CCResponderManager.h": {
+                    "key": "cocos2d/CCResponderManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponderManager.h"
+                }, 
+                "cocos2d/CCScene.h": {
+                    "key": "cocos2d/CCScene.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScene.h"
+                }, 
+                "cocos2d/CCScheduler.h": {
+                    "key": "cocos2d/CCScheduler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScheduler.h"
+                }, 
+                "cocos2d/CCScrollView.h": {
+                    "key": "cocos2d/CCScrollView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCScrollView.h"
+                }, 
+                "cocos2d/CCShader.h": {
+                    "key": "cocos2d/CCShader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader.h"
+                }, 
+                "cocos2d/CCShader_Private.h": {
+                    "key": "cocos2d/CCShader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader_Private.h"
+                }, 
+                "cocos2d/CCSlider.h": {
+                    "key": "cocos2d/CCSlider.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCSlider.h"
+                }, 
+                "cocos2d/CCSprite.h": {
+                    "key": "cocos2d/CCSprite.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite.h"
+                }, 
+                "cocos2d/CCSprite9Slice.h": {
+                    "key": "cocos2d/CCSprite9Slice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite9Slice.h"
+                }, 
+                "cocos2d/CCSpriteBatchNode.h": {
+                    "key": "cocos2d/CCSpriteBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteBatchNode.h"
+                }, 
+                "cocos2d/CCSpriteFrame.h": {
+                    "key": "cocos2d/CCSpriteFrame.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrame.h"
+                }, 
+                "cocos2d/CCSpriteFrameCache.h": {
+                    "key": "cocos2d/CCSpriteFrameCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrameCache.h"
+                }, 
+                "cocos2d/CCSprite_Private.h": {
+                    "key": "cocos2d/CCSprite_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite_Private.h"
+                }, 
+                "cocos2d/CCTMXXMLParser.h": {
+                    "key": "cocos2d/CCTMXXMLParser.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXXMLParser.h"
+                }, 
+                "cocos2d/CCTableView.h": {
+                    "key": "cocos2d/CCTableView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTableView.h"
+                }, 
+                "cocos2d/CCTextField.h": {
+                    "key": "cocos2d/CCTextField.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTextField.h"
+                }, 
+                "cocos2d/CCTexture.h": {
+                    "key": "cocos2d/CCTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture.h"
+                }, 
+                "cocos2d/CCTextureCache.h": {
+                    "key": "cocos2d/CCTextureCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTextureCache.h"
+                }, 
+                "cocos2d/CCTexturePVR.h": {
+                    "key": "cocos2d/CCTexturePVR.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexturePVR.h"
+                }, 
+                "cocos2d/CCTexture_Private.h": {
+                    "key": "cocos2d/CCTexture_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture_Private.h"
+                }, 
+                "cocos2d/CCTiledMap.h": {
+                    "key": "cocos2d/CCTiledMap.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMap.h"
+                }, 
+                "cocos2d/CCTiledMapLayer.h": {
+                    "key": "cocos2d/CCTiledMapLayer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer.h"
+                }, 
+                "cocos2d/CCTiledMapLayer_Private.h": {
+                    "key": "cocos2d/CCTiledMapLayer_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer_Private.h"
+                }, 
+                "cocos2d/CCTiledMapObjectGroup.h": {
+                    "key": "cocos2d/CCTiledMapObjectGroup.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapObjectGroup.h"
+                }, 
+                "cocos2d/CCTransition.h": {
+                    "key": "cocos2d/CCTransition.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTransition.h"
+                }, 
+                "cocos2d/CCWindow.h": {
+                    "key": "cocos2d/CCWindow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCWindow.h"
+                }, 
+                "cocos2d/CGPointExtension.h": {
+                    "key": "cocos2d/CGPointExtension.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CGPointExtension.h"
+                }, 
+                "cocos2d/IOSVersion.h": {
+                    "key": "cocos2d/IOSVersion.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "IOSVersion.h"
+                }, 
+                "cocos2d/NSAttributedString+CCAdditions.h": {
+                    "key": "cocos2d/NSAttributedString+CCAdditions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSAttributedString+CCAdditions.h"
+                }, 
+                "cocos2d/NSMutableArray+WeakReferences.h": {
+                    "key": "cocos2d/NSMutableArray+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableArray+WeakReferences.h"
+                }, 
+                "cocos2d/NSMutableDictionary+WeakReferences.h": {
+                    "key": "cocos2d/NSMutableDictionary+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableDictionary+WeakReferences.h"
+                }, 
+                "cocos2d/NSThread+performBlock.h": {
+                    "key": "cocos2d/NSThread+performBlock.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSThread+performBlock.h"
+                }, 
+                "cocos2d/OALAction+Private.h": {
+                    "key": "cocos2d/OALAction+Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction+Private.h"
+                }, 
+                "cocos2d/OALAction.h": {
+                    "key": "cocos2d/OALAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction.h"
+                }, 
+                "cocos2d/OALActionManager.h": {
+                    "key": "cocos2d/OALActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALActionManager.h"
+                }, 
+                "cocos2d/OALAudioActions.h": {
+                    "key": "cocos2d/OALAudioActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAudioActions.h"
+                }, 
+                "cocos2d/OALAudioFile.h": {
+                    "key": "cocos2d/OALAudioFile.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALAudioFile.h"
+                }, 
+                "cocos2d/OALAudioSession.h": {
+                    "key": "cocos2d/OALAudioSession.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALAudioSession.h"
+                }, 
+                "cocos2d/OALAudioTrack.h": {
+                    "key": "cocos2d/OALAudioTrack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrack.h"
+                }, 
+                "cocos2d/OALAudioTrackNotifications.h": {
+                    "key": "cocos2d/OALAudioTrackNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrackNotifications.h"
+                }, 
+                "cocos2d/OALAudioTracks.h": {
+                    "key": "cocos2d/OALAudioTracks.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTracks.h"
+                }, 
+                "cocos2d/OALNotifications.h": {
+                    "key": "cocos2d/OALNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALNotifications.h"
+                }, 
+                "cocos2d/OALSimpleAudio.h": {
+                    "key": "cocos2d/OALSimpleAudio.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "OALSimpleAudio.h"
+                }, 
+                "cocos2d/OALSuspendHandler.h": {
+                    "key": "cocos2d/OALSuspendHandler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALSuspendHandler.h"
+                }, 
+                "cocos2d/OALTools.h": {
+                    "key": "cocos2d/OALTools.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALTools.h"
+                }, 
+                "cocos2d/OALUtilityActions.h": {
+                    "key": "cocos2d/OALUtilityActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALUtilityActions.h"
+                }, 
+                "cocos2d/ObjectAL.h": {
+                    "key": "cocos2d/ObjectAL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectAL.h"
+                }, 
+                "cocos2d/ObjectALConfig.h": {
+                    "key": "cocos2d/ObjectALConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectALConfig.h"
+                }, 
+                "cocos2d/ObjectALMacros.h": {
+                    "key": "cocos2d/ObjectALMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ObjectALMacros.h"
+                }, 
+                "cocos2d/OpenALManager.h": {
+                    "key": "cocos2d/OpenALManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "OpenALManager.h"
+                }, 
+                "cocos2d/SynthesizeSingleton.h": {
+                    "key": "cocos2d/SynthesizeSingleton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "SynthesizeSingleton.h"
+                }, 
+                "cocos2d/TGAlib.h": {
+                    "key": "cocos2d/TGAlib.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "TGAlib.h"
+                }, 
+                "cocos2d/UITouch+CC.h": {
+                    "key": "cocos2d/UITouch+CC.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "UITouch+CC.h"
+                }, 
+                "cocos2d/ZipUtils.h": {
+                    "key": "cocos2d/ZipUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ZipUtils.h"
+                }, 
+                "cocos2d/base64.h": {
+                    "key": "cocos2d/base64.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "base64.h"
+                }, 
+                "cocos2d/ccConfig.h": {
+                    "key": "cocos2d/ccConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccConfig.h"
+                }, 
+                "cocos2d/ccFPSImages.h": {
+                    "key": "cocos2d/ccFPSImages.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccFPSImages.h"
+                }, 
+                "cocos2d/ccMacros.h": {
+                    "key": "cocos2d/ccMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccMacros.h"
+                }, 
+                "cocos2d/ccTypes.h": {
+                    "key": "cocos2d/ccTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccTypes.h"
+                }, 
+                "cocos2d/ccUtils.h": {
+                    "key": "cocos2d/ccUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ccUtils.h"
+                }, 
+                "cocos2d/cocos2d.h": {
+                    "key": "cocos2d/cocos2d.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "cocos2d.h"
+                }, 
+                "cocos2d/mach_timing.h": {
+                    "key": "cocos2d/mach_timing.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "mach_timing.h"
+                }, 
+                "cocos2d/uthash.h": {
+                    "key": "cocos2d/uthash.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "uthash.h"
+                }, 
+                "cocos2d/utlist.h": {
+                    "key": "cocos2d/utlist.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "utlist.h"
+                }, 
+                "mach_timing.h": {
+                    "key": "mach_timing.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "mach_timing.h"
+                }, 
+                "uthash.h": {
+                    "key": "uthash.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "uthash.h"
+                }, 
+                "utlist.h": {
+                    "key": "utlist.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "utlist.h"
+                }
+            }, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "cocos2d-all-target-headers.hmap", 
+            "hmap": {
+                "cocos2d/ALBuffer.h": {
+                    "key": "cocos2d/ALBuffer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALBuffer.h"
+                }, 
+                "cocos2d/ALCaptureDevice.h": {
+                    "key": "cocos2d/ALCaptureDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALCaptureDevice.h"
+                }, 
+                "cocos2d/ALChannelSource.h": {
+                    "key": "cocos2d/ALChannelSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALChannelSource.h"
+                }, 
+                "cocos2d/ALContext.h": {
+                    "key": "cocos2d/ALContext.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALContext.h"
+                }, 
+                "cocos2d/ALDevice.h": {
+                    "key": "cocos2d/ALDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALDevice.h"
+                }, 
+                "cocos2d/ALListener.h": {
+                    "key": "cocos2d/ALListener.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALListener.h"
+                }, 
+                "cocos2d/ALSoundSource.h": {
+                    "key": "cocos2d/ALSoundSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSource.h"
+                }, 
+                "cocos2d/ALSoundSourcePool.h": {
+                    "key": "cocos2d/ALSoundSourcePool.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSourcePool.h"
+                }, 
+                "cocos2d/ALSource.h": {
+                    "key": "cocos2d/ALSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSource.h"
+                }, 
+                "cocos2d/ALTypes.h": {
+                    "key": "cocos2d/ALTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALTypes.h"
+                }, 
+                "cocos2d/ALWrapper.h": {
+                    "key": "cocos2d/ALWrapper.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALWrapper.h"
+                }, 
+                "cocos2d/ARCSafe_MemMgmt.h": {
+                    "key": "cocos2d/ARCSafe_MemMgmt.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ARCSafe_MemMgmt.h"
+                }, 
+                "cocos2d/CCAction.h": {
+                    "key": "cocos2d/CCAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAction.h"
+                }, 
+                "cocos2d/CCActionCatmullRom.h": {
+                    "key": "cocos2d/CCActionCatmullRom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionCatmullRom.h"
+                }, 
+                "cocos2d/CCActionEase.h": {
+                    "key": "cocos2d/CCActionEase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionEase.h"
+                }, 
+                "cocos2d/CCActionInstant.h": {
+                    "key": "cocos2d/CCActionInstant.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInstant.h"
+                }, 
+                "cocos2d/CCActionInterval.h": {
+                    "key": "cocos2d/CCActionInterval.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInterval.h"
+                }, 
+                "cocos2d/CCActionManager.h": {
+                    "key": "cocos2d/CCActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionManager.h"
+                }, 
+                "cocos2d/CCActionProgressTimer.h": {
+                    "key": "cocos2d/CCActionProgressTimer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionProgressTimer.h"
+                }, 
+                "cocos2d/CCActionTween.h": {
+                    "key": "cocos2d/CCActionTween.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionTween.h"
+                }, 
+                "cocos2d/CCAnimation.h": {
+                    "key": "cocos2d/CCAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimation.h"
+                }, 
+                "cocos2d/CCAnimationCache.h": {
+                    "key": "cocos2d/CCAnimationCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimationCache.h"
+                }, 
+                "cocos2d/CCAnimationManager+FrameAnimation.h": {
+                    "key": "cocos2d/CCAnimationManager+FrameAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager+FrameAnimation.h"
+                }, 
+                "cocos2d/CCAnimationManager.h": {
+                    "key": "cocos2d/CCAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager.h"
+                }, 
+                "cocos2d/CCAnimationManager_Private.h": {
+                    "key": "cocos2d/CCAnimationManager_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager_Private.h"
+                }, 
+                "cocos2d/CCAppDelegate.h": {
+                    "key": "cocos2d/CCAppDelegate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCAppDelegate.h"
+                }, 
+                "cocos2d/CCBAnimationManager.h": {
+                    "key": "cocos2d/CCBAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBAnimationManager.h"
+                }, 
+                "cocos2d/CCBKeyframe.h": {
+                    "key": "cocos2d/CCBKeyframe.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBKeyframe.h"
+                }, 
+                "cocos2d/CCBLocalizationManager.h": {
+                    "key": "cocos2d/CCBLocalizationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBLocalizationManager.h"
+                }, 
+                "cocos2d/CCBReader.h": {
+                    "key": "cocos2d/CCBReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader.h"
+                }, 
+                "cocos2d/CCBReader_Private.h": {
+                    "key": "cocos2d/CCBReader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader_Private.h"
+                }, 
+                "cocos2d/CCBSequence.h": {
+                    "key": "cocos2d/CCBSequence.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequence.h"
+                }, 
+                "cocos2d/CCBSequenceProperty.h": {
+                    "key": "cocos2d/CCBSequenceProperty.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequenceProperty.h"
+                }, 
+                "cocos2d/CCBuilderReader.h": {
+                    "key": "cocos2d/CCBuilderReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBuilderReader.h"
+                }, 
+                "cocos2d/CCButton.h": {
+                    "key": "cocos2d/CCButton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCButton.h"
+                }, 
+                "cocos2d/CCCache.h": {
+                    "key": "cocos2d/CCCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCCache.h"
+                }, 
+                "cocos2d/CCClippingNode.h": {
+                    "key": "cocos2d/CCClippingNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCClippingNode.h"
+                }, 
+                "cocos2d/CCColor.h": {
+                    "key": "cocos2d/CCColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCColor.h"
+                }, 
+                "cocos2d/CCConfiguration.h": {
+                    "key": "cocos2d/CCConfiguration.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCConfiguration.h"
+                }, 
+                "cocos2d/CCControl.h": {
+                    "key": "cocos2d/CCControl.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControl.h"
+                }, 
+                "cocos2d/CCControlTextureFactory.h": {
+                    "key": "cocos2d/CCControlTextureFactory.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControlTextureFactory.h"
+                }, 
+                "cocos2d/CCDirector.h": {
+                    "key": "cocos2d/CCDirector.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDirector.h"
+                }, 
+                "cocos2d/CCDirectorIOS.h": {
+                    "key": "cocos2d/CCDirectorIOS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCDirectorIOS.h"
+                }, 
+                "cocos2d/CCDirectorMac.h": {
+                    "key": "cocos2d/CCDirectorMac.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCDirectorMac.h"
+                }, 
+                "cocos2d/CCDrawNode.h": {
+                    "key": "cocos2d/CCDrawNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDrawNode.h"
+                }, 
+                "cocos2d/CCES2Renderer.h": {
+                    "key": "cocos2d/CCES2Renderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCES2Renderer.h"
+                }, 
+                "cocos2d/CCESRenderer.h": {
+                    "key": "cocos2d/CCESRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCESRenderer.h"
+                }, 
+                "cocos2d/CCEffect.h": {
+                    "key": "cocos2d/CCEffect.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect.h"
+                }, 
+                "cocos2d/CCEffectBrightness.h": {
+                    "key": "cocos2d/CCEffectBrightness.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBrightness.h"
+                }, 
+                "cocos2d/CCEffectContrast.h": {
+                    "key": "cocos2d/CCEffectContrast.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectContrast.h"
+                }, 
+                "cocos2d/CCEffectGaussianBlur.h": {
+                    "key": "cocos2d/CCEffectGaussianBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGaussianBlur.h"
+                }, 
+                "cocos2d/CCEffectGlow.h": {
+                    "key": "cocos2d/CCEffectGlow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGlow.h"
+                }, 
+                "cocos2d/CCEffectNode.h": {
+                    "key": "cocos2d/CCEffectNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectNode.h"
+                }, 
+                "cocos2d/CCEffectPixellate.h": {
+                    "key": "cocos2d/CCEffectPixellate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectPixellate.h"
+                }, 
+                "cocos2d/CCEffectRenderer.h": {
+                    "key": "cocos2d/CCEffectRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRenderer.h"
+                }, 
+                "cocos2d/CCEffectSaturation.h": {
+                    "key": "cocos2d/CCEffectSaturation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectSaturation.h"
+                }, 
+                "cocos2d/CCEffectStack.h": {
+                    "key": "cocos2d/CCEffectStack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectStack.h"
+                }, 
+                "cocos2d/CCEffect_Private.h": {
+                    "key": "cocos2d/CCEffect_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect_Private.h"
+                }, 
+                "cocos2d/CCFileUtils.h": {
+                    "key": "cocos2d/CCFileUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCFileUtils.h"
+                }, 
+                "cocos2d/CCGL.h": {
+                    "key": "cocos2d/CCGL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCGL.h"
+                }, 
+                "cocos2d/CCGLView.h": {
+                    "key": "cocos2d/CCGLView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCGLView.h"
+                }, 
+                "cocos2d/CCLabelBMFont.h": {
+                    "key": "cocos2d/CCLabelBMFont.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont.h"
+                }, 
+                "cocos2d/CCLabelBMFont_Private.h": {
+                    "key": "cocos2d/CCLabelBMFont_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont_Private.h"
+                }, 
+                "cocos2d/CCLabelTTF.h": {
+                    "key": "cocos2d/CCLabelTTF.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelTTF.h"
+                }, 
+                "cocos2d/CCLayout.h": {
+                    "key": "cocos2d/CCLayout.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayout.h"
+                }, 
+                "cocos2d/CCLayoutBox.h": {
+                    "key": "cocos2d/CCLayoutBox.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayoutBox.h"
+                }, 
+                "cocos2d/CCMotionStreak.h": {
+                    "key": "cocos2d/CCMotionStreak.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCMotionStreak.h"
+                }, 
+                "cocos2d/CCNS.h": {
+                    "key": "cocos2d/CCNS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCNS.h"
+                }, 
+                "cocos2d/CCNode+Debug.h": {
+                    "key": "cocos2d/CCNode+Debug.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode+Debug.h"
+                }, 
+                "cocos2d/CCNode.h": {
+                    "key": "cocos2d/CCNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode.h"
+                }, 
+                "cocos2d/CCNodeColor.h": {
+                    "key": "cocos2d/CCNodeColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNodeColor.h"
+                }, 
+                "cocos2d/CCNode_Private.h": {
+                    "key": "cocos2d/CCNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode_Private.h"
+                }, 
+                "cocos2d/CCParallaxNode.h": {
+                    "key": "cocos2d/CCParallaxNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParallaxNode.h"
+                }, 
+                "cocos2d/CCParticleBatchNode.h": {
+                    "key": "cocos2d/CCParticleBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleBatchNode.h"
+                }, 
+                "cocos2d/CCParticleExamples.h": {
+                    "key": "cocos2d/CCParticleExamples.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleExamples.h"
+                }, 
+                "cocos2d/CCParticleSystem.h": {
+                    "key": "cocos2d/CCParticleSystem.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem.h"
+                }, 
+                "cocos2d/CCParticleSystemBase.h": {
+                    "key": "cocos2d/CCParticleSystemBase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase.h"
+                }, 
+                "cocos2d/CCParticleSystemBase_Private.h": {
+                    "key": "cocos2d/CCParticleSystemBase_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase_Private.h"
+                }, 
+                "cocos2d/CCParticleSystem_Private.h": {
+                    "key": "cocos2d/CCParticleSystem_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem_Private.h"
+                }, 
+                "cocos2d/CCPhysicsShape.h": {
+                    "key": "cocos2d/CCPhysicsShape.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsShape.h"
+                }, 
+                "cocos2d/CCProfiling.h": {
+                    "key": "cocos2d/CCProfiling.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCProfiling.h"
+                }, 
+                "cocos2d/CCProgressNode.h": {
+                    "key": "cocos2d/CCProgressNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode.h"
+                }, 
+                "cocos2d/CCProgressNode_Private.h": {
+                    "key": "cocos2d/CCProgressNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode_Private.h"
+                }, 
+                "cocos2d/CCProtocols.h": {
+                    "key": "cocos2d/CCProtocols.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProtocols.h"
+                }, 
+                "cocos2d/CCRenderTexture.h": {
+                    "key": "cocos2d/CCRenderTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderTexture.h"
+                }, 
+                "cocos2d/CCRenderer.h": {
+                    "key": "cocos2d/CCRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer.h"
+                }, 
+                "cocos2d/CCRenderer_private.h": {
+                    "key": "cocos2d/CCRenderer_private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer_private.h"
+                }, 
+                "cocos2d/CCResponder.h": {
+                    "key": "cocos2d/CCResponder.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponder.h"
+                }, 
+                "cocos2d/CCResponderManager.h": {
+                    "key": "cocos2d/CCResponderManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponderManager.h"
+                }, 
+                "cocos2d/CCScene.h": {
+                    "key": "cocos2d/CCScene.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScene.h"
+                }, 
+                "cocos2d/CCScheduler.h": {
+                    "key": "cocos2d/CCScheduler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScheduler.h"
+                }, 
+                "cocos2d/CCScrollView.h": {
+                    "key": "cocos2d/CCScrollView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCScrollView.h"
+                }, 
+                "cocos2d/CCShader.h": {
+                    "key": "cocos2d/CCShader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader.h"
+                }, 
+                "cocos2d/CCShader_Private.h": {
+                    "key": "cocos2d/CCShader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader_Private.h"
+                }, 
+                "cocos2d/CCSlider.h": {
+                    "key": "cocos2d/CCSlider.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCSlider.h"
+                }, 
+                "cocos2d/CCSprite.h": {
+                    "key": "cocos2d/CCSprite.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite.h"
+                }, 
+                "cocos2d/CCSprite9Slice.h": {
+                    "key": "cocos2d/CCSprite9Slice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite9Slice.h"
+                }, 
+                "cocos2d/CCSpriteBatchNode.h": {
+                    "key": "cocos2d/CCSpriteBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteBatchNode.h"
+                }, 
+                "cocos2d/CCSpriteFrame.h": {
+                    "key": "cocos2d/CCSpriteFrame.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrame.h"
+                }, 
+                "cocos2d/CCSpriteFrameCache.h": {
+                    "key": "cocos2d/CCSpriteFrameCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrameCache.h"
+                }, 
+                "cocos2d/CCSprite_Private.h": {
+                    "key": "cocos2d/CCSprite_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite_Private.h"
+                }, 
+                "cocos2d/CCTMXXMLParser.h": {
+                    "key": "cocos2d/CCTMXXMLParser.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXXMLParser.h"
+                }, 
+                "cocos2d/CCTableView.h": {
+                    "key": "cocos2d/CCTableView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTableView.h"
+                }, 
+                "cocos2d/CCTextField.h": {
+                    "key": "cocos2d/CCTextField.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTextField.h"
+                }, 
+                "cocos2d/CCTexture.h": {
+                    "key": "cocos2d/CCTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture.h"
+                }, 
+                "cocos2d/CCTextureCache.h": {
+                    "key": "cocos2d/CCTextureCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTextureCache.h"
+                }, 
+                "cocos2d/CCTexturePVR.h": {
+                    "key": "cocos2d/CCTexturePVR.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexturePVR.h"
+                }, 
+                "cocos2d/CCTexture_Private.h": {
+                    "key": "cocos2d/CCTexture_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture_Private.h"
+                }, 
+                "cocos2d/CCTiledMap.h": {
+                    "key": "cocos2d/CCTiledMap.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMap.h"
+                }, 
+                "cocos2d/CCTiledMapLayer.h": {
+                    "key": "cocos2d/CCTiledMapLayer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer.h"
+                }, 
+                "cocos2d/CCTiledMapLayer_Private.h": {
+                    "key": "cocos2d/CCTiledMapLayer_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer_Private.h"
+                }, 
+                "cocos2d/CCTiledMapObjectGroup.h": {
+                    "key": "cocos2d/CCTiledMapObjectGroup.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapObjectGroup.h"
+                }, 
+                "cocos2d/CCTransition.h": {
+                    "key": "cocos2d/CCTransition.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTransition.h"
+                }, 
+                "cocos2d/CCWindow.h": {
+                    "key": "cocos2d/CCWindow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCWindow.h"
+                }, 
+                "cocos2d/CGPointExtension.h": {
+                    "key": "cocos2d/CGPointExtension.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CGPointExtension.h"
+                }, 
+                "cocos2d/IOSVersion.h": {
+                    "key": "cocos2d/IOSVersion.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "IOSVersion.h"
+                }, 
+                "cocos2d/NSAttributedString+CCAdditions.h": {
+                    "key": "cocos2d/NSAttributedString+CCAdditions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSAttributedString+CCAdditions.h"
+                }, 
+                "cocos2d/NSMutableArray+WeakReferences.h": {
+                    "key": "cocos2d/NSMutableArray+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableArray+WeakReferences.h"
+                }, 
+                "cocos2d/NSMutableDictionary+WeakReferences.h": {
+                    "key": "cocos2d/NSMutableDictionary+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableDictionary+WeakReferences.h"
+                }, 
+                "cocos2d/NSThread+performBlock.h": {
+                    "key": "cocos2d/NSThread+performBlock.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSThread+performBlock.h"
+                }, 
+                "cocos2d/OALAction+Private.h": {
+                    "key": "cocos2d/OALAction+Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction+Private.h"
+                }, 
+                "cocos2d/OALAction.h": {
+                    "key": "cocos2d/OALAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction.h"
+                }, 
+                "cocos2d/OALActionManager.h": {
+                    "key": "cocos2d/OALActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALActionManager.h"
+                }, 
+                "cocos2d/OALAudioActions.h": {
+                    "key": "cocos2d/OALAudioActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAudioActions.h"
+                }, 
+                "cocos2d/OALAudioFile.h": {
+                    "key": "cocos2d/OALAudioFile.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALAudioFile.h"
+                }, 
+                "cocos2d/OALAudioSession.h": {
+                    "key": "cocos2d/OALAudioSession.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALAudioSession.h"
+                }, 
+                "cocos2d/OALAudioTrack.h": {
+                    "key": "cocos2d/OALAudioTrack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrack.h"
+                }, 
+                "cocos2d/OALAudioTrackNotifications.h": {
+                    "key": "cocos2d/OALAudioTrackNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrackNotifications.h"
+                }, 
+                "cocos2d/OALAudioTracks.h": {
+                    "key": "cocos2d/OALAudioTracks.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTracks.h"
+                }, 
+                "cocos2d/OALNotifications.h": {
+                    "key": "cocos2d/OALNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALNotifications.h"
+                }, 
+                "cocos2d/OALSimpleAudio.h": {
+                    "key": "cocos2d/OALSimpleAudio.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "OALSimpleAudio.h"
+                }, 
+                "cocos2d/OALSuspendHandler.h": {
+                    "key": "cocos2d/OALSuspendHandler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALSuspendHandler.h"
+                }, 
+                "cocos2d/OALTools.h": {
+                    "key": "cocos2d/OALTools.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALTools.h"
+                }, 
+                "cocos2d/OALUtilityActions.h": {
+                    "key": "cocos2d/OALUtilityActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALUtilityActions.h"
+                }, 
+                "cocos2d/ObjectAL.h": {
+                    "key": "cocos2d/ObjectAL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectAL.h"
+                }, 
+                "cocos2d/ObjectALConfig.h": {
+                    "key": "cocos2d/ObjectALConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectALConfig.h"
+                }, 
+                "cocos2d/ObjectALMacros.h": {
+                    "key": "cocos2d/ObjectALMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ObjectALMacros.h"
+                }, 
+                "cocos2d/OpenALManager.h": {
+                    "key": "cocos2d/OpenALManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "OpenALManager.h"
+                }, 
+                "cocos2d/SynthesizeSingleton.h": {
+                    "key": "cocos2d/SynthesizeSingleton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "SynthesizeSingleton.h"
+                }, 
+                "cocos2d/TGAlib.h": {
+                    "key": "cocos2d/TGAlib.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "TGAlib.h"
+                }, 
+                "cocos2d/UITouch+CC.h": {
+                    "key": "cocos2d/UITouch+CC.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "UITouch+CC.h"
+                }, 
+                "cocos2d/ZipUtils.h": {
+                    "key": "cocos2d/ZipUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ZipUtils.h"
+                }, 
+                "cocos2d/base64.h": {
+                    "key": "cocos2d/base64.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "base64.h"
+                }, 
+                "cocos2d/ccConfig.h": {
+                    "key": "cocos2d/ccConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccConfig.h"
+                }, 
+                "cocos2d/ccFPSImages.h": {
+                    "key": "cocos2d/ccFPSImages.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccFPSImages.h"
+                }, 
+                "cocos2d/ccMacros.h": {
+                    "key": "cocos2d/ccMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccMacros.h"
+                }, 
+                "cocos2d/ccTypes.h": {
+                    "key": "cocos2d/ccTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccTypes.h"
+                }, 
+                "cocos2d/ccUtils.h": {
+                    "key": "cocos2d/ccUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ccUtils.h"
+                }, 
+                "cocos2d/cocos2d.h": {
+                    "key": "cocos2d/cocos2d.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "cocos2d.h"
+                }, 
+                "cocos2d/mach_timing.h": {
+                    "key": "cocos2d/mach_timing.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "mach_timing.h"
+                }, 
+                "cocos2d/uthash.h": {
+                    "key": "cocos2d/uthash.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "uthash.h"
+                }, 
+                "cocos2d/utlist.h": {
+                    "key": "cocos2d/utlist.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "utlist.h"
+                }
+            }, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "cocos2d-project-headers.hmap", 
+            "hmap": {
+                "ALBuffer.h": {
+                    "key": "ALBuffer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALBuffer.h"
+                }, 
+                "ALCaptureDevice.h": {
+                    "key": "ALCaptureDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALCaptureDevice.h"
+                }, 
+                "ALChannelSource.h": {
+                    "key": "ALChannelSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALChannelSource.h"
+                }, 
+                "ALContext.h": {
+                    "key": "ALContext.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALContext.h"
+                }, 
+                "ALDevice.h": {
+                    "key": "ALDevice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALDevice.h"
+                }, 
+                "ALListener.h": {
+                    "key": "ALListener.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALListener.h"
+                }, 
+                "ALSoundSource.h": {
+                    "key": "ALSoundSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSource.h"
+                }, 
+                "ALSoundSourcePool.h": {
+                    "key": "ALSoundSourcePool.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSourcePool.h"
+                }, 
+                "ALSource.h": {
+                    "key": "ALSource.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALSource.h"
+                }, 
+                "ALTypes.h": {
+                    "key": "ALTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALTypes.h"
+                }, 
+                "ALWrapper.h": {
+                    "key": "ALWrapper.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "ALWrapper.h"
+                }, 
+                "ARCSafe_MemMgmt.h": {
+                    "key": "ARCSafe_MemMgmt.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ARCSafe_MemMgmt.h"
+                }, 
+                "CCAction.h": {
+                    "key": "CCAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAction.h"
+                }, 
+                "CCActionCatmullRom.h": {
+                    "key": "CCActionCatmullRom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionCatmullRom.h"
+                }, 
+                "CCActionEase.h": {
+                    "key": "CCActionEase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionEase.h"
+                }, 
+                "CCActionInstant.h": {
+                    "key": "CCActionInstant.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInstant.h"
+                }, 
+                "CCActionInterval.h": {
+                    "key": "CCActionInterval.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInterval.h"
+                }, 
+                "CCActionManager.h": {
+                    "key": "CCActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionManager.h"
+                }, 
+                "CCActionManager_Private.h": {
+                    "key": "CCActionManager_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionManager_Private.h"
+                }, 
+                "CCActionProgressTimer.h": {
+                    "key": "CCActionProgressTimer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionProgressTimer.h"
+                }, 
+                "CCActionTween.h": {
+                    "key": "CCActionTween.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionTween.h"
+                }, 
+                "CCAnimation.h": {
+                    "key": "CCAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimation.h"
+                }, 
+                "CCAnimationCache.h": {
+                    "key": "CCAnimationCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimationCache.h"
+                }, 
+                "CCAnimationManager+FrameAnimation.h": {
+                    "key": "CCAnimationManager+FrameAnimation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager+FrameAnimation.h"
+                }, 
+                "CCAnimationManager.h": {
+                    "key": "CCAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager.h"
+                }, 
+                "CCAnimationManager_Private.h": {
+                    "key": "CCAnimationManager_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCAnimationManager_Private.h"
+                }, 
+                "CCAppDelegate.h": {
+                    "key": "CCAppDelegate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCAppDelegate.h"
+                }, 
+                "CCBAnimationManager.h": {
+                    "key": "CCBAnimationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBAnimationManager.h"
+                }, 
+                "CCBKeyframe.h": {
+                    "key": "CCBKeyframe.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBKeyframe.h"
+                }, 
+                "CCBLocalizationManager.h": {
+                    "key": "CCBLocalizationManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBLocalizationManager.h"
+                }, 
+                "CCBReader.h": {
+                    "key": "CCBReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader.h"
+                }, 
+                "CCBReader_Private.h": {
+                    "key": "CCBReader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBReader_Private.h"
+                }, 
+                "CCBSequence.h": {
+                    "key": "CCBSequence.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequence.h"
+                }, 
+                "CCBSequenceProperty.h": {
+                    "key": "CCBSequenceProperty.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBSequenceProperty.h"
+                }, 
+                "CCBuilderReader.h": {
+                    "key": "CCBuilderReader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader/", 
+                    "suffix": "CCBuilderReader.h"
+                }, 
+                "CCButton.h": {
+                    "key": "CCButton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCButton.h"
+                }, 
+                "CCCache.h": {
+                    "key": "CCCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCCache.h"
+                }, 
+                "CCClippingNode.h": {
+                    "key": "CCClippingNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCClippingNode.h"
+                }, 
+                "CCColor.h": {
+                    "key": "CCColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCColor.h"
+                }, 
+                "CCConfiguration.h": {
+                    "key": "CCConfiguration.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCConfiguration.h"
+                }, 
+                "CCControl.h": {
+                    "key": "CCControl.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControl.h"
+                }, 
+                "CCControlSubclass.h": {
+                    "key": "CCControlSubclass.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControlSubclass.h"
+                }, 
+                "CCControlTextureFactory.h": {
+                    "key": "CCControlTextureFactory.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCControlTextureFactory.h"
+                }, 
+                "CCDirector.h": {
+                    "key": "CCDirector.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDirector.h"
+                }, 
+                "CCDirectorIOS.h": {
+                    "key": "CCDirectorIOS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCDirectorIOS.h"
+                }, 
+                "CCDirectorMac.h": {
+                    "key": "CCDirectorMac.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCDirectorMac.h"
+                }, 
+                "CCDirector_Private.h": {
+                    "key": "CCDirector_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDirector_Private.h"
+                }, 
+                "CCDrawNode.h": {
+                    "key": "CCDrawNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDrawNode.h"
+                }, 
+                "CCES2Renderer.h": {
+                    "key": "CCES2Renderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCES2Renderer.h"
+                }, 
+                "CCESRenderer.h": {
+                    "key": "CCESRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCESRenderer.h"
+                }, 
+                "CCEffect.h": {
+                    "key": "CCEffect.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect.h"
+                }, 
+                "CCEffectBrightness.h": {
+                    "key": "CCEffectBrightness.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBrightness.h"
+                }, 
+                "CCEffectContrast.h": {
+                    "key": "CCEffectContrast.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectContrast.h"
+                }, 
+                "CCEffectGaussianBlur.h": {
+                    "key": "CCEffectGaussianBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGaussianBlur.h"
+                }, 
+                "CCEffectGlow.h": {
+                    "key": "CCEffectGlow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectGlow.h"
+                }, 
+                "CCEffectNode.h": {
+                    "key": "CCEffectNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectNode.h"
+                }, 
+                "CCEffectPixellate.h": {
+                    "key": "CCEffectPixellate.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectPixellate.h"
+                }, 
+                "CCEffectRenderer.h": {
+                    "key": "CCEffectRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRenderer.h"
+                }, 
+                "CCEffectSaturation.h": {
+                    "key": "CCEffectSaturation.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectSaturation.h"
+                }, 
+                "CCEffectStack.h": {
+                    "key": "CCEffectStack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectStack.h"
+                }, 
+                "CCEffectStack_Private.h": {
+                    "key": "CCEffectStack_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectStack_Private.h"
+                }, 
+                "CCEffect_Private.h": {
+                    "key": "CCEffect_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffect_Private.h"
+                }, 
+                "CCFileUtils.h": {
+                    "key": "CCFileUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCFileUtils.h"
+                }, 
+                "CCGL.h": {
+                    "key": "CCGL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCGL.h"
+                }, 
+                "CCGLView.h": {
+                    "key": "CCGLView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCGLView.h"
+                }, 
+                "CCLabelBMFont.h": {
+                    "key": "CCLabelBMFont.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont.h"
+                }, 
+                "CCLabelBMFont_Private.h": {
+                    "key": "CCLabelBMFont_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont_Private.h"
+                }, 
+                "CCLabelTTF.h": {
+                    "key": "CCLabelTTF.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelTTF.h"
+                }, 
+                "CCLayout.h": {
+                    "key": "CCLayout.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayout.h"
+                }, 
+                "CCLayoutBox.h": {
+                    "key": "CCLayoutBox.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayoutBox.h"
+                }, 
+                "CCMotionStreak.h": {
+                    "key": "CCMotionStreak.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCMotionStreak.h"
+                }, 
+                "CCNS.h": {
+                    "key": "CCNS.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCNS.h"
+                }, 
+                "CCNode+Debug.h": {
+                    "key": "CCNode+Debug.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode+Debug.h"
+                }, 
+                "CCNode.h": {
+                    "key": "CCNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode.h"
+                }, 
+                "CCNodeColor.h": {
+                    "key": "CCNodeColor.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNodeColor.h"
+                }, 
+                "CCNode_Private.h": {
+                    "key": "CCNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode_Private.h"
+                }, 
+                "CCParallaxNode.h": {
+                    "key": "CCParallaxNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParallaxNode.h"
+                }, 
+                "CCParticleBatchNode.h": {
+                    "key": "CCParticleBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleBatchNode.h"
+                }, 
+                "CCParticleExamples.h": {
+                    "key": "CCParticleExamples.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleExamples.h"
+                }, 
+                "CCParticleSystem.h": {
+                    "key": "CCParticleSystem.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem.h"
+                }, 
+                "CCParticleSystemBase.h": {
+                    "key": "CCParticleSystemBase.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase.h"
+                }, 
+                "CCParticleSystemBase_Private.h": {
+                    "key": "CCParticleSystemBase_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemBase_Private.h"
+                }, 
+                "CCParticleSystem_Private.h": {
+                    "key": "CCParticleSystem_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem_Private.h"
+                }, 
+                "CCPhysics+ObjectiveChipmunk.h": {
+                    "key": "CCPhysics+ObjectiveChipmunk.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysics+ObjectiveChipmunk.h"
+                }, 
+                "CCPhysicsBody.h": {
+                    "key": "CCPhysicsBody.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsBody.h"
+                }, 
+                "CCPhysicsJoint.h": {
+                    "key": "CCPhysicsJoint.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsJoint.h"
+                }, 
+                "CCPhysicsNode.h": {
+                    "key": "CCPhysicsNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsNode.h"
+                }, 
+                "CCPhysicsShape.h": {
+                    "key": "CCPhysicsShape.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsShape.h"
+                }, 
+                "CCProfiling.h": {
+                    "key": "CCProfiling.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCProfiling.h"
+                }, 
+                "CCProgressNode.h": {
+                    "key": "CCProgressNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode.h"
+                }, 
+                "CCProgressNode_Private.h": {
+                    "key": "CCProgressNode_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressNode_Private.h"
+                }, 
+                "CCProtocols.h": {
+                    "key": "CCProtocols.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProtocols.h"
+                }, 
+                "CCRenderTexture.h": {
+                    "key": "CCRenderTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderTexture.h"
+                }, 
+                "CCRenderTexture_Private.h": {
+                    "key": "CCRenderTexture_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderTexture_Private.h"
+                }, 
+                "CCRenderer.h": {
+                    "key": "CCRenderer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer.h"
+                }, 
+                "CCRenderer_private.h": {
+                    "key": "CCRenderer_private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderer_private.h"
+                }, 
+                "CCResponder.h": {
+                    "key": "CCResponder.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponder.h"
+                }, 
+                "CCResponderManager.h": {
+                    "key": "CCResponderManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCResponderManager.h"
+                }, 
+                "CCScene.h": {
+                    "key": "CCScene.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScene.h"
+                }, 
+                "CCScheduler.h": {
+                    "key": "CCScheduler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScheduler.h"
+                }, 
+                "CCScrollView.h": {
+                    "key": "CCScrollView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCScrollView.h"
+                }, 
+                "CCShader.h": {
+                    "key": "CCShader.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader.h"
+                }, 
+                "CCShader_Private.h": {
+                    "key": "CCShader_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShader_Private.h"
+                }, 
+                "CCSlider.h": {
+                    "key": "CCSlider.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCSlider.h"
+                }, 
+                "CCSprite.h": {
+                    "key": "CCSprite.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite.h"
+                }, 
+                "CCSprite9Slice.h": {
+                    "key": "CCSprite9Slice.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite9Slice.h"
+                }, 
+                "CCSpriteBatchNode.h": {
+                    "key": "CCSpriteBatchNode.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteBatchNode.h"
+                }, 
+                "CCSpriteFrame.h": {
+                    "key": "CCSpriteFrame.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrame.h"
+                }, 
+                "CCSpriteFrameCache.h": {
+                    "key": "CCSpriteFrameCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrameCache.h"
+                }, 
+                "CCSprite_Private.h": {
+                    "key": "CCSprite_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite_Private.h"
+                }, 
+                "CCTMXXMLParser.h": {
+                    "key": "CCTMXXMLParser.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXXMLParser.h"
+                }, 
+                "CCTableView.h": {
+                    "key": "CCTableView.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTableView.h"
+                }, 
+                "CCTextField.h": {
+                    "key": "CCTextField.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "CCTextField.h"
+                }, 
+                "CCTexture.h": {
+                    "key": "CCTexture.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture.h"
+                }, 
+                "CCTextureCache.h": {
+                    "key": "CCTextureCache.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTextureCache.h"
+                }, 
+                "CCTexturePVR.h": {
+                    "key": "CCTexturePVR.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexturePVR.h"
+                }, 
+                "CCTexture_Private.h": {
+                    "key": "CCTexture_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture_Private.h"
+                }, 
+                "CCTiledMap.h": {
+                    "key": "CCTiledMap.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMap.h"
+                }, 
+                "CCTiledMapLayer.h": {
+                    "key": "CCTiledMapLayer.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer.h"
+                }, 
+                "CCTiledMapLayer_Private.h": {
+                    "key": "CCTiledMapLayer_Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapLayer_Private.h"
+                }, 
+                "CCTiledMapObjectGroup.h": {
+                    "key": "CCTiledMapObjectGroup.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTiledMapObjectGroup.h"
+                }, 
+                "CCTransition.h": {
+                    "key": "CCTransition.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTransition.h"
+                }, 
+                "CCWindow.h": {
+                    "key": "CCWindow.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCWindow.h"
+                }, 
+                "CGPointExtension.h": {
+                    "key": "CGPointExtension.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CGPointExtension.h"
+                }, 
+                "IOSVersion.h": {
+                    "key": "IOSVersion.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "IOSVersion.h"
+                }, 
+                "NSAttributedString+CCAdditions.h": {
+                    "key": "NSAttributedString+CCAdditions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSAttributedString+CCAdditions.h"
+                }, 
+                "NSMutableArray+WeakReferences.h": {
+                    "key": "NSMutableArray+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableArray+WeakReferences.h"
+                }, 
+                "NSMutableDictionary+WeakReferences.h": {
+                    "key": "NSMutableDictionary+WeakReferences.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "NSMutableDictionary+WeakReferences.h"
+                }, 
+                "NSThread+performBlock.h": {
+                    "key": "NSThread+performBlock.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSThread+performBlock.h"
+                }, 
+                "OALAction+Private.h": {
+                    "key": "OALAction+Private.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction+Private.h"
+                }, 
+                "OALAction.h": {
+                    "key": "OALAction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAction.h"
+                }, 
+                "OALActionManager.h": {
+                    "key": "OALActionManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALActionManager.h"
+                }, 
+                "OALAudioActions.h": {
+                    "key": "OALAudioActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALAudioActions.h"
+                }, 
+                "OALAudioFile.h": {
+                    "key": "OALAudioFile.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALAudioFile.h"
+                }, 
+                "OALAudioSession.h": {
+                    "key": "OALAudioSession.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALAudioSession.h"
+                }, 
+                "OALAudioTrack.h": {
+                    "key": "OALAudioTrack.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrack.h"
+                }, 
+                "OALAudioTrackNotifications.h": {
+                    "key": "OALAudioTrackNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrackNotifications.h"
+                }, 
+                "OALAudioTracks.h": {
+                    "key": "OALAudioTracks.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTracks.h"
+                }, 
+                "OALNotifications.h": {
+                    "key": "OALNotifications.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALNotifications.h"
+                }, 
+                "OALSimpleAudio.h": {
+                    "key": "OALSimpleAudio.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "OALSimpleAudio.h"
+                }, 
+                "OALSuspendHandler.h": {
+                    "key": "OALSuspendHandler.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Session/", 
+                    "suffix": "OALSuspendHandler.h"
+                }, 
+                "OALTools.h": {
+                    "key": "OALTools.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "OALTools.h"
+                }, 
+                "OALUtilityActions.h": {
+                    "key": "OALUtilityActions.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions/", 
+                    "suffix": "OALUtilityActions.h"
+                }, 
+                "ObjectAL.h": {
+                    "key": "ObjectAL.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectAL.h"
+                }, 
+                "ObjectALConfig.h": {
+                    "key": "ObjectALConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/", 
+                    "suffix": "ObjectALConfig.h"
+                }, 
+                "ObjectALMacros.h": {
+                    "key": "ObjectALMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "ObjectALMacros.h"
+                }, 
+                "OpenALManager.h": {
+                    "key": "OpenALManager.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL/", 
+                    "suffix": "OpenALManager.h"
+                }, 
+                "SynthesizeSingleton.h": {
+                    "key": "SynthesizeSingleton.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "SynthesizeSingleton.h"
+                }, 
+                "TGAlib.h": {
+                    "key": "TGAlib.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "TGAlib.h"
+                }, 
+                "UITouch+CC.h": {
+                    "key": "UITouch+CC.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "UITouch+CC.h"
+                }, 
+                "ZipUtils.h": {
+                    "key": "ZipUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ZipUtils.h"
+                }, 
+                "base64.h": {
+                    "key": "base64.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "base64.h"
+                }, 
+                "ccConfig.h": {
+                    "key": "ccConfig.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccConfig.h"
+                }, 
+                "ccFPSImages.h": {
+                    "key": "ccFPSImages.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccFPSImages.h"
+                }, 
+                "ccMacros.h": {
+                    "key": "ccMacros.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccMacros.h"
+                }, 
+                "ccTypes.h": {
+                    "key": "ccTypes.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccTypes.h"
+                }, 
+                "ccUtils.h": {
+                    "key": "ccUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ccUtils.h"
+                }, 
+                "cocos2d-ui.h": {
+                    "key": "cocos2d-ui.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d-ui/", 
+                    "suffix": "cocos2d-ui.h"
+                }, 
+                "cocos2d.h": {
+                    "key": "cocos2d.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "cocos2d.h"
+                }, 
+                "mach_timing.h": {
+                    "key": "mach_timing.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/external/ObjectAL/Support/", 
+                    "suffix": "mach_timing.h"
+                }, 
+                "uthash.h": {
+                    "key": "uthash.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "uthash.h"
+                }, 
+                "utlist.h": {
+                    "key": "utlist.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "utlist.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "external/kazmath/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d/Platforms", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d/Support", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d/Platforms/iOS", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d/Platforms/Mac", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui/CCBReader", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/ios", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/osx", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/ios/Resources", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/osx/Resources", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Cards", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-phone", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-phonehd", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-tablet", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-tablethd", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Sounds", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/TileMaps", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder/Resources", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-phone", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-phonehd", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-tablet", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-tablethd", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/TileMaps/resources-phone", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/TileMaps/resources-phonehd", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-phone", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-phonehd", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-tablet", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-tablethd", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder/Resources/Interface", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder/Resources/resources-auto", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Interface", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sounds", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sprites", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Tests", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Interface/resources-auto", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sprites/resources-auto", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Tests/resources-auto", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "external/Chipmunk/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "external/Chipmunk/objectivec/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../external/ObjectAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../external/ObjectAL/Actions", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../external/ObjectAL/AudioTrack", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../external/ObjectAL/OpenAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../external/ObjectAL/Session", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "../../../external/ObjectAL/Support", 
+            "type": "I"
+        }, 
+        "external/kazmath/include", 
+        "external/Box2d", 
+        "external/Chipmunk/objectivec/include", 
+        "external/Chipmunk/include/chipmunk/"
+    ], 
+    "hmaps": {}, 
+    "infoplists": [], 
+    "java_libs": [], 
+    "java_res_dirs": [], 
+    "java_sourcepaths": [], 
+    "java_sources": [], 
+    "libs": [], 
+    "link_flags": [], 
+    "modules": [], 
+    "pchs": [], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCAnimationManager+FrameAnimation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCAnimationManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCBAnimationManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCBKeyframe.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCBLocalizationManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCBReader.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCBSequenceProperty.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCBReader/CCBsequence.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCButton.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCControl.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCControlTextureFactory.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCScrollView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCSlider.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCTableView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d-ui/CCTextField.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCAction.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCActionCatmullRom.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCActionEase.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCActionInstant.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCActionInterval.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCActionManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCActionProgressTimer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCActionTween.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCAnimation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCAnimationCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCClippingNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCConfiguration.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCDirector.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCDrawNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffect.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectBrightness.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectContrast.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectGaussianBlur.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectGlow.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectPixellate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectSaturation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectStack.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCLabelBMFont.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCLabelTTF.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCLayout.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCLayoutBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCMotionStreak.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCNode+Debug.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCNodeColor.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCParallaxNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCParticleBatchNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCParticleExamples.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCParticleSystem.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCParticleSystemBase.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCPhysicsBody.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCPhysicsJoint.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCPhysicsNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCPhysicsShape.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCProgressNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCRenderTexture.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCResponder.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCResponderManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCScene.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCScheduler.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCShader.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCSprite.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCSprite9Slice.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCSpriteBatchNode.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCSpriteFrame.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCSpriteFrameCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTMXXMLParser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTexture.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTextureCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTexturePVR.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTiledMap.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTiledMapLayer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTiledMapObjectGroup.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCTransition.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/Mac/CCDirectorMac.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/Mac/CCGLView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/Mac/CCWindow.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/iOS/CCAppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/iOS/CCDirectorIOS.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/iOS/CCES2Renderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/iOS/CCGLView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Platforms/iOS/UITouch+CC.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/CCColor.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/CCFileUtils.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/CCProfiling.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/CGPointExtension.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/NSAttributedString+CCAdditions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/NSThread+performBlock.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/TGAlib.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/Support/ZipUtils.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "cocos2d/Support/base64.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "cocos2d/Support/ccUtils.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/ccFPSImages.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/cocos2d.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Actions/OALAction.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Actions/OALActionManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Actions/OALAudioActions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Actions/OALUtilityActions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/AudioTrack/OALAudioTrack.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/AudioTrack/OALAudioTrackNotifications.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/AudioTrack/OALAudioTracks.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OALSimpleAudio.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALBuffer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALCaptureDevice.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALChannelSource.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALContext.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALDevice.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALListener.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALSoundSourcePool.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALSource.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/ALWrapper.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/OpenAL/OpenALManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Session/OALAudioSession.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Session/OALSuspendHandler.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Support/IOSVersion.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Support/NSMutableArray+WeakReferences.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Support/NSMutableDictionary+WeakReferences.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Support/OALAudioFile.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "external/ObjectAL/Support/OALTools.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "c", 
+            "source": "external/ObjectAL/Support/mach_timing.c"
+        }
+    ], 
+    "type": "static-lib", 
+    "version": "1", 
+    "xcode_project": "cocos2d-ios.xcodeproj"
+}

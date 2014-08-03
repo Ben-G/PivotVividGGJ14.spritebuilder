@@ -78,10 +78,14 @@ static const NSInteger VERTICAL_MARGIN = 12;
             [_scrollView.contentNode addChild:levelTile];
             
             x += columnWidth + tileMarginHorizontal;
-            
+        
             int selectedLevel = row * elementsPerRow + column;
-            levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel];
+            // check if level is unlocked:
+            NSString *levelString = [NSString stringWithFormat:@"Level_%d_unlocked", selectedLevel];
+            BOOL levelUnlocked = [[NSUserDefaults standardUserDefaults] boolForKey:levelString];
+            levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel+1];
             levelTile.levelIndex = selectedLevel;
+            levelTile.locked = !levelUnlocked;
             
             __weak LevelTile *weakLevelTile = levelTile;
             

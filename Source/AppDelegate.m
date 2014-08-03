@@ -27,7 +27,10 @@
 
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
+
+#ifndef ANDROID
 #import <Kamcord/Kamcord.h>
+#endif
 
 @implementation AppController
 
@@ -59,10 +62,17 @@
     
     [self setupCocos2dWithOptions:cocos2dSetup];
     
+    NSString *levelString = [NSString stringWithFormat:@"Level_%d_unlocked", 0];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:levelString];
+    
+#ifndef ANDROID
+    
     [Kamcord setDeveloperKey:@"uhZuvwvqIaerV5fixpkolWcZYxKYa8V9pbIr6vSsr88"
              developerSecret:@"XhhJElaHZHyuOJefokI6Gr88jf7S9hw610wFIHcPArk"
                      appName:@"Magic Masks"
         parentViewController:[CCDirector sharedDirector]];
+    
+#endif
     
     return YES;
 }

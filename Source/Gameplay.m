@@ -19,10 +19,12 @@
 #import "DisplayInstruction.h"
 #import "CCDirector_Private.h"
 #import "GameEndLayer.h"
-#import <Kamcord/Kamcord.h>
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
 
+#ifndef ANDROID
+#import <Kamcord/Kamcord.h>
+#endif
 
 @interface Gameplay()
 
@@ -200,8 +202,10 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
     // set up level instructions
     
+#ifndef ANDROID
     [Kamcord stopRecording];
     [Kamcord startRecording];
+#endif
 }
 
 - (void)addMaskAtPosition:(CGPoint)pos {
@@ -563,7 +567,9 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (void)watchReplay {
+#ifndef ANDROID
     [Kamcord showView];
+#endif
 }
 
 - (void)restartPressed {
@@ -620,7 +626,9 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
     [_hero runAction:fadeOutHero];
     
+#ifndef ANDROID
     [Kamcord stopRecording];
+#endif
 }
 
 #pragma mark - Collision Handling

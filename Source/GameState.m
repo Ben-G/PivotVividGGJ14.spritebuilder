@@ -60,6 +60,10 @@
 }
 
 - (void)loadNextLevel {
+    NSString *levelString = [NSString stringWithFormat:@"Level_%d_unlocked", _currentLevelIndex+1];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:levelString];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     int nextIndex = self.currentLevelIndex + 1;
     
     if (self.currentLevelIndex+1 >= _levels.count) {

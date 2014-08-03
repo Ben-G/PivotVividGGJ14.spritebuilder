@@ -8,7 +8,9 @@
 
 #import "LevelTile.h"
 
-@implementation LevelTile
+@implementation LevelTile {
+    CCSprite *_lock;
+}
 
 - (void)onEnter {
     [super onEnter];
@@ -21,7 +23,14 @@
 }
 
 - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
-    self.levelSelectionBlock();
+    if (!self.locked) {
+        self.levelSelectionBlock();
+    }
+}
+
+- (void)setLocked:(BOOL)locked {
+    _locked = locked;
+    _lock.visible = locked;
 }
 
 @end

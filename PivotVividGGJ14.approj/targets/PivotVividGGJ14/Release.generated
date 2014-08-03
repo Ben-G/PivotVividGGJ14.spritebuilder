@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist", 
+            "asset": "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
             "target": "ResourceRules.plist"
         }, 
         {
@@ -9,16 +9,8 @@
             "target": "Settings.png"
         }, 
         {
-            "asset": "Source/Resources/animation/resources-phonehd/sad_default.png", 
-            "target": "sad_default.png"
-        }, 
-        {
             "asset": "Source/Resources/Default@2x.png", 
             "target": "Default@2x.png"
-        }, 
-        {
-            "asset": "Source/Resources/animation/resources-phonehd/angry_default.plist", 
-            "target": "angry_default.plist"
         }, 
         {
             "asset": "Source/Resources/Audio/fear.mp3", 
@@ -37,14 +29,6 @@
             "target": "iPad-old@2x.png"
         }, 
         {
-            "asset": "Source/Resources/animation/resources-phonehd/scared_default.plist", 
-            "target": "scared_default.plist"
-        }, 
-        {
-            "asset": "Source/Resources/animation/resources-phonehd/happy_default-hd.plist", 
-            "target": "happy_default-hd.plist"
-        }, 
-        {
             "asset": "Source/Resources/Icons/iPhone-old@2x.png", 
             "target": "iPhone-old@2x.png"
         }, 
@@ -57,40 +41,36 @@
             "target": "Published-iOS"
         }, 
         {
-            "asset": "Source/Resources/Icons/Settings@2x.png", 
-            "target": "Settings@2x.png"
+            "asset": "Frameworks/Kamcord.embeddedframework/Resources/KC_GTMOAuth2ViewTouch.nib", 
+            "target": "KC_GTMOAuth2ViewTouch.nib"
         }, 
         {
-            "asset": "Source/Resources/animation/resources-phonehd/kaput_default.png", 
-            "target": "kaput_default.png"
+            "asset": "Source/Resources/Icons/Settings@2x.png", 
+            "target": "Settings@2x.png"
         }, 
         {
             "asset": "Source/Resources/Audio/calm.mp3", 
             "target": "calm.mp3"
         }, 
         {
-            "asset": "Source/Resources/Audio/angry.mp3", 
-            "target": "angry.mp3"
+            "asset": "Source/Resources/Base.lproj/Localizable.strings", 
+            "target": "Base.lproj/Localizable.strings"
         }, 
         {
-            "asset": "Source/Resources/animation/resources-phonehd/scared_default.png", 
-            "target": "scared_default.png"
+            "asset": "Source/Resources/en.lproj/Localizable.strings", 
+            "target": "en.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Source/Resources/Audio/angry.mp3", 
+            "target": "angry.mp3"
         }, 
         {
             "asset": "Source/Resources/Default-Landscape~ipad.png", 
             "target": "Default-Landscape~ipad.png"
         }, 
         {
-            "asset": "Source/Resources/animation/resources-phonehd/kaput_default.plist", 
-            "target": "kaput_default.plist"
-        }, 
-        {
             "asset": "Source/Resources/Icons/iPhone-old.png", 
             "target": "iPhone-old.png"
-        }, 
-        {
-            "asset": "Source/Resources/animation/resources-phonehd/happy_default-hd.png", 
-            "target": "happy_default-hd.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPhone.png", 
@@ -105,12 +85,8 @@
             "target": "Default-568h@2x.png"
         }, 
         {
-            "asset": "Source/Resources/animation/resources-phonehd/sad_default.plist", 
-            "target": "sad_default.plist"
-        }, 
-        {
-            "asset": "Source/Resources/animation/resources-phonehd/angry_default.png", 
-            "target": "angry_default.png"
+            "asset": "Source/Resources/Additional-Resources", 
+            "target": "Additional-Resources"
         }, 
         {
             "asset": "Source/Resources/Icons/iPhone@2x.png", 
@@ -123,6 +99,10 @@
         {
             "asset": "Source/Resources/Icons/iPad-old.png", 
             "target": "iPad-old.png"
+        }, 
+        {
+            "asset": "Frameworks/Kamcord.embeddedframework/Resources/Kamcord.bundle", 
+            "target": "Kamcord.bundle"
         }
     ], 
     "config": {
@@ -138,15 +118,24 @@
     "defines": {
         "NDEBUG": 1, 
         "NS_BLOCK_ASSERTIONS": 1, 
-        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 70000
     }, 
     "deps": [
         "UIKit", 
+        "Twitter", 
+        "SystemConfiguration", 
+        "Security", 
         "QuartzCore", 
+        "MessageUI", 
+        "MediaPlayer", 
+        "CoreVideo", 
+        "CoreMedia", 
+        "AVFoundation", 
+        "AudioToolbox", 
+        "GLKit", 
         "OpenGLES", 
         "OpenAL", 
-        "AudioToolbox", 
-        "AVFoundation", 
+        "Kamcord", 
         "UIKit", 
         "Foundation", 
         "CoreGraphics", 
@@ -230,10 +219,20 @@
                     "prefix": "Source/", 
                     "suffix": "CCAnimatedSprite.h"
                 }, 
+                "DisplayInstruction.h": {
+                    "key": "DisplayInstruction.h", 
+                    "prefix": "Source/Instruction/", 
+                    "suffix": "DisplayInstruction.h"
+                }, 
                 "Enemy.h": {
                     "key": "Enemy.h", 
                     "prefix": "Source/", 
                     "suffix": "Enemy.h"
+                }, 
+                "GameEndLayer.h": {
+                    "key": "GameEndLayer.h", 
+                    "prefix": "Source/UIElements/", 
+                    "suffix": "GameEndLayer.h"
                 }, 
                 "GameState.h": {
                     "key": "GameState.h", 
@@ -275,6 +274,11 @@
                     "prefix": "Source/", 
                     "suffix": "Hero.h"
                 }, 
+                "Instruction.h": {
+                    "key": "Instruction.h", 
+                    "prefix": "Source/Instruction/", 
+                    "suffix": "Instruction.h"
+                }, 
                 "Level.h": {
                     "key": "Level.h", 
                     "prefix": "Source/", 
@@ -289,6 +293,11 @@
                     "key": "LevelDetails.h", 
                     "prefix": "Source/", 
                     "suffix": "LevelDetails.h"
+                }, 
+                "LevelTile.h": {
+                    "key": "LevelTile.h", 
+                    "prefix": "Source/UIElements/", 
+                    "suffix": "LevelTile.h"
                 }, 
                 "MainScene.h": {
                     "key": "MainScene.h", 
@@ -325,24 +334,56 @@
                     "prefix": "./", 
                     "suffix": "Startscreen.h"
                 }, 
+                "TutorialFragment.h": {
+                    "key": "TutorialFragment.h", 
+                    "prefix": "Source/Tutorial/", 
+                    "suffix": "TutorialFragment.h"
+                }, 
+                "TutorialFragment1_0.h": {
+                    "key": "TutorialFragment1_0.h", 
+                    "prefix": "Source/Tutorial/Tutorial1/", 
+                    "suffix": "TutorialFragment1_0.h"
+                }, 
+                "TutorialFragment1_1.h": {
+                    "key": "TutorialFragment1_1.h", 
+                    "prefix": "Source/Tutorial/Tutorial1/", 
+                    "suffix": "TutorialFragment1_1.h"
+                }, 
+                "TutorialFragment1_2.h": {
+                    "key": "TutorialFragment1_2.h", 
+                    "prefix": "Source/Tutorial/Tutorial1/", 
+                    "suffix": "TutorialFragment1_2.h"
+                }, 
+                "TutorialFragment1_3.h": {
+                    "key": "TutorialFragment1_3.h", 
+                    "prefix": "Source/Tutorial/Tutorial1/", 
+                    "suffix": "TutorialFragment1_3.h"
+                }, 
+                "TutorialFragment1_4.h": {
+                    "key": "TutorialFragment1_4.h", 
+                    "prefix": "Source/Tutorial/Tutorial1/", 
+                    "suffix": "TutorialFragment1_4.h"
+                }, 
                 "TutorialGameplay.h": {
                     "key": "TutorialGameplay.h", 
                     "prefix": "Source/", 
                     "suffix": "TutorialGameplay.h"
+                }, 
+                "TutorialInstructionPopup.h": {
+                    "key": "TutorialInstructionPopup.h", 
+                    "prefix": "Source/", 
+                    "suffix": "TutorialInstructionPopup.h"
+                }, 
+                "UIUtils.h": {
+                    "key": "UIUtils.h", 
+                    "prefix": "Source/UIUtils/", 
+                    "suffix": "UIUtils.h"
                 }
             }, 
             "type": "iquote"
         }, 
         {
             "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include", 
-            "type": "I"
-        }, 
-        {
-            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include/kazmath", 
-            "type": "I"
-        }, 
-        {
-            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include/kazmath/GL", 
             "type": "I"
         }, 
         {
@@ -548,6 +589,20 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
+            "source": "Source/Instruction/DisplayInstruction.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Instruction/Instruction.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
             "source": "Source/Level.m"
         }, 
         {
@@ -597,7 +652,77 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
+            "source": "Source/Tutorial/Tutorial1/TutorialFragment1_0.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Tutorial/Tutorial1/TutorialFragment1_1.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Tutorial/Tutorial1/TutorialFragment1_2.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Tutorial/Tutorial1/TutorialFragment1_3.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Tutorial/Tutorial1/TutorialFragment1_4.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Tutorial/TutorialFragment.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
             "source": "Source/TutorialGameplay.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/TutorialInstructionPopup.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/UIElements/GameEndLayer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/UIElements/LevelTile.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/UIUtils/UIUtils.m"
         }, 
         {
             "defines": {}, 

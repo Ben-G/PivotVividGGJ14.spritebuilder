@@ -12,6 +12,7 @@
 
 @property CCLabelTTF *levelNumber;
 @property NSInteger levelIndex;
+@property (nonatomic) BOOL locked;
 
 @property (nonatomic, copy) void (^levelSelectionBlock)();
 
