@@ -18,8 +18,10 @@
 #import "Instruction.h"
 #import "DisplayInstruction.h"
 #import "CCDirector_Private.h"
+#import "GameEndLayer.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
+
 
 @interface Gameplay()
 
@@ -28,7 +30,6 @@
 @end
 
 @implementation Gameplay {
-    CCNode *_progressBar;
     CCPhysicsNode *_physicsNode;
     
     int updates;
@@ -56,10 +57,6 @@
     
     BOOL _gameOver;
     
-    CCButton *_nextLevelButton;
-    CCButton *_levelSelectionButton;
-    CCButton *_restartButton;
-  
     // stores start position
     CCNode *_startPositionNode;
   
@@ -97,8 +94,6 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 - (void)didLoadFromCCB {
     _physicsNode.sleepTimeThreshold = 10.f;
 //    _physicsNode.debugDraw= TRUE;
-  
-    _progressBar.opacity = 0.f;
     
     _hero.physicsBody.body.body->velocity_func = playerUpdateVelocity;
     
@@ -270,14 +265,12 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     CGPoint heroOnScreen = [self convertToNodeSpace:heroWorldPos];
     
     if (heroOnScreen.x < 0) {
-        [self endGame];
+        [self endGame:DeathTypeOffScreen];
     }
     
     if (_hero.position.x >= levelGoal) {
         //[self winGame];
     }
-    
-    _progressBar.scaleX = (_hero.position.x / (levelGoal  * 1.f));
     
     // scroll left
     if (heroOnScreen.x >= (playerPositionX*1.05f)) {
@@ -290,7 +283,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     if ((_hero.boundingBox.origin.y + _hero.boundingBox.size.height) < 0) {
         // when the hero falls -> game over
-        [self endGame];
+        [self endGame:DeathTypeOffScreen];
     }
     
 //    if (_hero.physicsBody.velocity.x < _baseSpeed) {
@@ -493,32 +486,19 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
 #pragma mark - Loose / Win interation
 
-- (void)endGame {
+- (void)endGame:(DeathType)deathType {
     if (_gameOver) {
         return;
     }
     
     self.activeInstruction = nil;
     
-    _levelSelectionButton.visible = TRUE;
-    _restartButton.visible = TRUE;
-    
     [_hero runDeathAnimation];
-    
-    CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"YOU LOSE!" fontName:@"Arial"fontSize:40.f];
-    winLabel.color = [CCColor blackColor];
-    winLabel.positionType = CCPositionTypeNormalized;
-    winLabel.position = ccp(0.5f, 0.5f);
-    
-    [self addChild:winLabel];
     
     for (CCNode *block in _blocks) {
         // stop blinking of blocks, because we will fade out now
         [block stopAllActions];
     }
-    
-    CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
-    [_progressBar runAction:fadeIn];
     
     CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:1.f];
     _level.cascadeOpacityEnabled = TRUE;
@@ -526,7 +506,28 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     CCActionFadeOut *fadeOutHero = [CCActionFadeOut actionWithDuration:1.f];
     [_hero runAction:fadeOutHero];
-//    [_hero removeFromParent];
+
+    GameEndLayer *gameEndLayer = (GameEndLayer *) [CCBReader load:@"UI/GameEndLayer" owner:self];
+    gameEndLayer.cascadeOpacityEnabled = YES;
+    gameEndLayer.opacity = 0.f;
+    [gameEndLayer displayCompletionRate:(_hero.position.x / (levelGoal  * 1.f))];
+    
+    NSString *hint;
+    if ([_masks count] == 0) {
+        hint = NSLocalizedString(@"hint_no_masks", nil);
+    } else if (deathType == DeathTypeEnemy) {
+        hint = NSLocalizedString(@"hint_kill_enemy", nil);
+    } else if (deathType == DeathTypeOffScreen) {
+        hint = NSLocalizedString(@"hint_blocks_colors", nil);
+    }
+    
+    [gameEndLayer displayHint:hint];
+    
+    [self addChild:gameEndLayer];
+    
+    CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
+    [gameEndLayer runAction:fadeIn];
+    
     
     int n = [_masks count];
     
@@ -570,28 +571,20 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     self.activeInstruction = nil;
     
-    baseSpeed = 10;
+    baseSpeed = 0;
     
     [_hero stopAllActions];
     
     _gameOver = TRUE;
 
-    _nextLevelButton.visible = TRUE;
-
-    CCLabelTTF *winLabel = [CCLabelTTF labelWithString:@"WELL DONE!" fontName:@"Arial"fontSize:40.f];
-    winLabel.color = [CCColor blackColor];
-    winLabel.positionType = CCPositionTypeNormalized;
-    winLabel.position = ccp(0.5f, 0.5f);
-    [self addChild:winLabel];
+    CCNode *gameWinLayer = [CCBReader load:@"UI/GameWinLayer" owner:self];
+    gameWinLayer.cascadeOpacityEnabled = YES;
+    gameWinLayer.opacity = 0.f;
+    [self addChild:gameWinLayer];
     
-    NSDictionary *nextLevel = [[GameState sharedInstance] nextLevelInfo];
-    NSString *levelName = [NSString stringWithFormat:@"next: %@",nextLevel[@"levelTitle"]];
+    CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
+    [gameWinLayer runAction:fadeIn];
     
-    CCLabelTTF *nextLevelLabel = [CCLabelTTF labelWithString:levelName fontName:@"Arial"fontSize:40.f];
-    nextLevelLabel.color = [CCColor blackColor];
-    nextLevelLabel.positionType = CCPositionTypeNormalized;
-    nextLevelLabel.position = ccp(0.5f, 0.2f);
-    [self addChild:nextLevelLabel];
 
     for (CCNode *block in _blocks) {
         // stop blinking of blocks, because we will fade out now
@@ -649,7 +642,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         [self addMaskAtPosition:pos];
     } else {
         // if enemy does not die -> player dies
-        [self endGame];
+        [self endGame:DeathTypeEnemy];
     }
 }
 

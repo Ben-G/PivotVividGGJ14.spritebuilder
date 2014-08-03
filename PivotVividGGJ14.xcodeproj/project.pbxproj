@@ -45,6 +45,7 @@
 		62CB016918BC239C00EC8097 /* TutorialGameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB016818BC239C00EC8097 /* TutorialGameplay.m */; };
 		62CB017118C29C1F00EC8097 /* TutorialFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB017018C29C1F00EC8097 /* TutorialFragment.m */; };
 		62CB017418C2A00800EC8097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62CB017618C2A00800EC8097 /* Localizable.strings */; };
+		62CF7D6A198DDBBA00ABF971 /* GameEndLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CF7D69198DDBBA00ABF971 /* GameEndLayer.m */; };
 		62D3F310197E044A001C51F8 /* LevelTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D3F30F197E044A001C51F8 /* LevelTile.m */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
@@ -166,6 +167,8 @@
 		62CB017018C29C1F00EC8097 /* TutorialFragment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment.m; sourceTree = "<group>"; };
 		62CB017518C2A00800EC8097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62CB017718C2A00C00EC8097 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62CF7D68198DDBBA00ABF971 /* GameEndLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEndLayer.h; sourceTree = "<group>"; };
+		62CF7D69198DDBBA00ABF971 /* GameEndLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEndLayer.m; sourceTree = "<group>"; };
 		62D3F30E197E044A001C51F8 /* LevelTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTile.h; sourceTree = "<group>"; };
 		62D3F30F197E044A001C51F8 /* LevelTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTile.m; sourceTree = "<group>"; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 			children = (
 				62D3F30E197E044A001C51F8 /* LevelTile.h */,
 				62D3F30F197E044A001C51F8 /* LevelTile.m */,
+				62CF7D68198DDBBA00ABF971 /* GameEndLayer.h */,
+				62CF7D69198DDBBA00ABF971 /* GameEndLayer.m */,
 			);
 			name = UIElements;
 			path = Source/UIElements;
@@ -621,6 +626,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,
+				62CF7D6A198DDBBA00ABF971 /* GameEndLayer.m in Sources */,
 				621F0F8D198562A6008A0A45 /* Instruction.m in Sources */,
 				623469051969C5AB0030AC0A /* TutorialFragment1_3.m in Sources */,
 				62A0B8EF189551D90037B7E4 /* ScaredEnemy.m in Sources */,

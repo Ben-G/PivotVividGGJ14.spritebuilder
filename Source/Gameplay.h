@@ -9,6 +9,11 @@
 #import "CCNode.h"
 #import "Level.h"
 
+typedef NS_ENUM(NSInteger, DeathType) {
+    DeathTypeOffScreen,
+    DeathTypeEnemy
+};
+
 @class Hero;
 
 @interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
@@ -27,7 +32,7 @@
 - (void)removeAllBlocks;
 - (void)jump;
 - (void)switchMood;
-- (void)endGame;
+- (void)endGame:(DeathType)deathType;
 - (void)winGame;
 - (void)addMaskAtPosition:(CGPoint)pos;
 
