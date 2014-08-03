@@ -382,13 +382,16 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
 - (void)removeOneMask {
     Mask *firstMask = [_masks firstObject];
-    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:3.f position:ccp(600, 800)];
+    CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:6.f position:ccp(-200, 800)];
+    CCActionFadeOut *fadeOut = [CCActionFadeOut actionWithDuration:6.f];
     CCActionCallBlock *removeFromParent = [CCActionCallBlock actionWithBlock:^{
         [firstMask removeFromParent];
     }];
     
     CCActionEaseBounceOut *bounceOut = [CCActionEaseBounceOut actionWithAction:moveBy];
-    CCActionSequence *sequence = [CCActionSequence actions:bounceOut, removeFromParent, nil];
+    CCActionSpawn *group = [CCActionSpawn actionOne:bounceOut two:fadeOut];
+
+    CCActionSequence *sequence = [CCActionSequence actions:group, removeFromParent, nil];
     
     [firstMask runAction:sequence];
     [_masks removeObject:firstMask];
@@ -608,7 +611,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
     CCContactSet contactSet = pair.contacts;
     CGPoint collisionNormal = contactSet.normal;
-    if (collisionNormal.y == -1) {
+    if (collisionNormal.y < -0.8f) {
         self.onGround = TRUE;
     }
 }
