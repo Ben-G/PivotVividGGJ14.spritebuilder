@@ -108,9 +108,15 @@ static const NSInteger VERTICAL_MARGIN = 12;
         CCScene *scene = [CCBReader loadAsScene:@"TutorialGameplay"];
         [[CCDirector sharedDirector] replaceScene:scene];
     } else {
-        CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
-        [[CCDirector sharedDirector] replaceScene:scene];
+        CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
+        [self addChild:loadingScreen];
+        [self performSelector:@selector(actualLoadLevel) withObject:nil afterDelay:0.1f];
     }
+}
+
+- (void)actualLoadLevel {
+    CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)reactivateInteraction {

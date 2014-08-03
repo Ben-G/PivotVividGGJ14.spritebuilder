@@ -1203,8 +1203,6 @@
 								<string>Instructions/Instruction_Jump.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1438,7 +1436,7 @@
 				<key>type</key>
 				<integer>1</integer>
 				<key>value</key>
-				<string>80.000000</string>
+				<string>90.000000</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -1519,6 +1517,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

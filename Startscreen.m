@@ -12,6 +12,7 @@
 @implementation Startscreen {
     CCLabelTTF *_label;
     CCNode *_backgroundImage;
+    BOOL _loading;
 }
 
 - (void)didLoadFromCCB {
@@ -46,6 +47,15 @@
 }
 
 - (void)startNow {
+    if (!_loading) {
+        _loading = YES;
+        CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
+        [self addChild:loadingScreen];
+        [self performSelector:@selector(start) withObject:nil afterDelay:0.1f];
+    }
+}
+
+- (void)start {
     presentGameplaySceneWithCurrentLevel();
 }
 

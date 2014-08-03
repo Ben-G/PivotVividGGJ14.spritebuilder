@@ -541,6 +541,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 - (void)restartLevel {
     // reload level
     [self stopMusic];
+
+    CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
+    [self addChild:loadingScreen];
+    [self performSelector:@selector(actualRestartLevel) withObject:nil afterDelay:0.1f];
+}
+
+- (void)actualRestartLevel {
     CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
@@ -560,6 +567,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [[GameState sharedInstance] loadNextLevel];
     
     [self stopMusic];
+    
+    CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
+    [self addChild:loadingScreen];
+    [self performSelector:@selector(actualNextLevel) withObject:nil afterDelay:0.1f];
+}
+
+- (void)actualNextLevel {
     CCScene *scene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
