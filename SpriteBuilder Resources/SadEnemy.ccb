@@ -80,12 +80,12 @@
 					<real>95.00390625</real>
 				</array>
 				<array>
-					<real>4.585906982421875</real>
-					<real>11.00390625</real>
+					<real>10.343719482421875</real>
+					<real>14.15234375</real>
 				</array>
 				<array>
-					<real>32.585906982421875</real>
-					<real>4.00390625</real>
+					<real>35.070281982421875</real>
+					<real>4.40234375</real>
 				</array>
 				<array>
 					<real>60.585906982421875</real>
@@ -96,8 +96,8 @@
 					<real>95.00390625</real>
 				</array>
 				<array>
-					<real>43.628875732421875</real>
-					<real>106.7109375</real>
+					<real>35.374969482421875</real>
+					<real>104.19140625</real>
 				</array>
 			</array>
 			<key>polygons</key>
@@ -108,12 +108,12 @@
 						<real>95.00390625</real>
 					</array>
 					<array>
-						<real>4.585906982421875</real>
-						<real>11.00390625</real>
+						<real>10.343719482421875</real>
+						<real>14.15234375</real>
 					</array>
 					<array>
-						<real>32.585906982421875</real>
-						<real>4.00390625</real>
+						<real>35.070281982421875</real>
+						<real>4.40234375</real>
 					</array>
 					<array>
 						<real>60.585906982421875</real>
@@ -124,8 +124,8 @@
 						<real>95.00390625</real>
 					</array>
 					<array>
-						<real>43.628875732421875</real>
-						<real>106.7109375</real>
+						<real>35.374969482421875</real>
+						<real>104.19140625</real>
 					</array>
 				</array>
 			</array>

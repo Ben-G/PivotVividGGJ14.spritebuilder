@@ -372,7 +372,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     CGPoint currentPos = [touch locationInNode:self];
     CGFloat distance = ccpDistance(currentPos, _touchStartPosition);
     
-    if (distance > 30.f) {
+    if (distance > 50.f) {
         [self switchMood];
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jump) object:nil];
     }
@@ -627,7 +627,10 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [_hero runAction:fadeOutHero];
     
 #ifndef ANDROID
-    [Kamcord stopRecording];
+    // wait 1 second, then stop recording
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [Kamcord stopRecording];
+    });
 #endif
 }
 
@@ -636,7 +639,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
     CCContactSet contactSet = pair.contacts;
     CGPoint collisionNormal = contactSet.normal;
-    if (collisionNormal.y < -0.8f) {
+    if (collisionNormal.y < -0.5f) {
         self.onGround = TRUE;
     }
 }
@@ -654,7 +657,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     return TRUE;
 }
 
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
+    
     BasicEnemy *basicEnemy = (BasicEnemy*)enemy;
     NSString *moodPrefix = [_moods[_currentMoodIndex] moodPrefix];
     
@@ -676,6 +680,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         // if enemy does not die -> player dies
         [self endGame:DeathTypeEnemy];
     }
+    
+    return NO;
 }
 
 #pragma mark - Instructions

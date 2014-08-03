@@ -83,6 +83,9 @@ static const NSInteger VERTICAL_MARGIN = 12;
             // check if level is unlocked:
             NSString *levelString = [NSString stringWithFormat:@"Level_%d_unlocked", selectedLevel];
             BOOL levelUnlocked = [[NSUserDefaults standardUserDefaults] boolForKey:levelString];
+#ifdef DEBUG
+            levelUnlocked = YES;
+#endif
             levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel+1];
             levelTile.levelIndex = selectedLevel;
             levelTile.locked = !levelUnlocked;

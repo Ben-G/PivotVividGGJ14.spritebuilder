@@ -50,5 +50,13 @@
 		<key>levelDescription</key>
 		<string></string>
 	</dict>
+    <dict>
+		<key>levelTitle</key>
+		<string>Level 2</string>
+		<key>levelName</key>
+		<string>Levels/Level_6</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
 </array>
 </plist>
