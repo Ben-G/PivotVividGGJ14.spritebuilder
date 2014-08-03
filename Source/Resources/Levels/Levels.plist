@@ -30,7 +30,15 @@
 		<key>levelTitle</key>
 		<string>Level 1</string>
 		<key>levelName</key>
-		<string>Level_tutorial</string>
+		<string>Levels/Level_3</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
+    <dict>
+		<key>levelTitle</key>
+		<string>Level 2</string>
+		<key>levelName</key>
+		<string>Levels/Level_4</string>
 		<key>levelDescription</key>
 		<string></string>
 	</dict>
@@ -38,23 +46,7 @@
 		<key>levelTitle</key>
 		<string>Level 2</string>
 		<key>levelName</key>
-		<string>Level1</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level 3</string>
-		<key>levelName</key>
-		<string>Level4</string>
-		<key>levelDescription</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level 4</string>
-		<key>levelName</key>
-		<string>Level5</string>
+		<string>Levels/Level_5</string>
 		<key>levelDescription</key>
 		<string></string>
 	</dict>

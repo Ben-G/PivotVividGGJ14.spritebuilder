@@ -68,7 +68,7 @@
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
-			<false/>
+			<true/>
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
@@ -80,12 +80,12 @@
 					<real>59.28125</real>
 				</array>
 				<array>
-					<real>14.542938232421875</real>
-					<real>2.28125</real>
+					<real>14.355438232421875</real>
+					<real>-10.0859375</real>
 				</array>
 				<array>
-					<real>50.542938232421875</real>
-					<real>2.28125</real>
+					<real>47.968719482421875</real>
+					<real>-10.78125</real>
 				</array>
 				<array>
 					<real>61.542938232421875</real>
@@ -100,12 +100,12 @@
 						<real>59.28125</real>
 					</array>
 					<array>
-						<real>14.542938232421875</real>
-						<real>2.28125</real>
+						<real>14.355438232421875</real>
+						<real>-10.0859375</real>
 					</array>
 					<array>
-						<real>50.542938232421875</real>
-						<real>2.28125</real>
+						<real>47.968719482421875</real>
+						<real>-10.78125</real>
 					</array>
 					<array>
 						<real>61.542938232421875</real>

@@ -638,7 +638,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>3357</real>
+									<real>3354</real>
 									<real>139</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -948,8 +948,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>2468</real>
-									<real>32</real>
+									<real>2466</real>
+									<real>33</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1072,7 +1072,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>2304</real>
+									<real>2302</real>
 									<real>33</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1135,7 +1135,7 @@
 								<key>value</key>
 								<array>
 									<real>2174</real>
-									<real>34</real>
+									<real>33</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1383,7 +1383,7 @@
 								<key>value</key>
 								<array>
 									<real>1417</real>
-									<real>34</real>
+									<real>33</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1568,7 +1568,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>5392</real>
+									<real>5401</real>
 									<real>174</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1692,7 +1692,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>3486</real>
+									<real>3483</real>
 									<real>139</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1817,7 +1817,7 @@
 								<key>value</key>
 								<array>
 									<real>561</real>
-									<real>34</real>
+									<real>33</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1845,6 +1845,8 @@
 								<string>blocks/OnlyAngerCube.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1940,7 +1942,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>3420</real>
+									<real>3418</real>
 									<real>139</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2003,7 +2005,7 @@
 								<key>value</key>
 								<array>
 									<real>3607</real>
-									<real>110</real>
+									<real>109</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2589,8 +2591,6 @@
 						<string>StartPosition.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
