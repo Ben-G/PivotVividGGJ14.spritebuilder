@@ -464,7 +464,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     __block BOOL jumped = FALSE;
     
     [_hero.physicsBody.chipmunkObjects[0] eachArbiter:^(cpArbiter *arbiter) {
-        if (!jumped) {
+        if (!jumped && self.onGround) {
             [_hero.physicsBody setVelocity:ccp(_hero.physicsBody.velocity.x, 500.f)];
             jumped = TRUE;
             self.onGround = FALSE;
@@ -602,7 +602,11 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 #pragma mark - Collision Handling
 
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
-    self.onGround = TRUE;
+    CCContactSet contactSet = pair.contacts;
+    CGPoint collisionNormal = contactSet.normal;
+    if (collisionNormal.y == -1) {
+        self.onGround = TRUE;
+    }
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
