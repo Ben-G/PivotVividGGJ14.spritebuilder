@@ -109,7 +109,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>Swipe</string>
+							<string>Swipe Once</string>
 							<false/>
 						</array>
 					</dict>

@@ -58,5 +58,21 @@
 		<key>levelDescription</key>
 		<string></string>
 	</dict>
+    <dict>
+		<key>levelTitle</key>
+		<string>Level 2</string>
+		<key>levelName</key>
+		<string>Levels/Level_7</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
+    <dict>
+		<key>levelTitle</key>
+		<string>Level 2</string>
+		<key>levelName</key>
+		<string>Levels/Level_X</string>
+		<key>levelDescription</key>
+		<string></string>
+	</dict>
 </array>
 </plist>
