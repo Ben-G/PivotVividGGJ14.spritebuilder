@@ -76,6 +76,8 @@
     LightingLayer *_lightingLayer;
     
     LightSource *_lightSource;
+    
+    CCParticleSystemBase *_clouds;
 }
 
 // distance between masks
@@ -452,6 +454,10 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     for (CCSprite *bg in _backgrounds) {
         [bg setSpriteFrame:spriteFrame];
     }
+    
+//    CCColor *moodColor = [_moods[_currentMoodIndex] moodColor];
+//    CCColor *endColor = [CCColor colorWithRed:moodColor.red/3.f green:moodColor.green/3.f blue:moodColor.blue/3.f alpha:0.f];
+//    _clouds.endColor = endColor;
     
     //TEST
     //_hero.speed += RAMP;

@@ -12,7 +12,7 @@
 
 -(float)lightRadius
 {
-	return 350.f;
+	return 250.f;
 }
 
 -(GLKVector4)lightColor

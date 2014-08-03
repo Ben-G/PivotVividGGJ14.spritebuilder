@@ -65,6 +65,8 @@
     NSString *levelString = [NSString stringWithFormat:@"Level_%d_unlocked", 0];
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:levelString];
     
+    [[CCDirector sharedDirector] setDisplayStats:YES];
+    
 #ifndef ANDROID
     
     [Kamcord setDeveloperKey:@"uhZuvwvqIaerV5fixpkolWcZYxKYa8V9pbIr6vSsr88"
