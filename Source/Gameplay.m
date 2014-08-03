@@ -19,6 +19,8 @@
 #import "DisplayInstruction.h"
 #import "CCDirector_Private.h"
 #import "GameEndLayer.h"
+#import "LightingLayer.h"
+#import "LightSource.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
 
@@ -26,7 +28,7 @@
 #import <Kamcord/Kamcord.h>
 #endif
 
-@interface Gameplay()
+@interface Gameplay() <Light>
 
 @property (nonatomic, weak) Instruction *activeInstruction;
 
@@ -70,6 +72,10 @@
     NSMutableArray *_levelInstructions;
     
     id _pauseKey;
+    
+    LightingLayer *_lightingLayer;
+    
+    LightSource *_lightSource;
 }
 
 // distance between masks
@@ -93,8 +99,26 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 	body->v.x = baseSpeed;
 }
 
+- (void)onEnter {
+//    [_lightingLayer addOccluder:self];
+    
+    _lightSource.position = ccp(_lightingLayer.contentSizeInPoints.width/2, _lightingLayer.contentSizeInPoints.height);
+    [_lightingLayer addLight:_lightSource];
+    
+    [super onEnter];
+}
+
+- (void)onExit {
+//    [self.lightingLayer removeOccluder:self];
+    [_lightingLayer removeLight:_lightSource];
+    
+    [super onExit];
+}
+
 
 - (void)didLoadFromCCB {
+    _lightSource = [[LightSource alloc] init];
+
     _physicsNode.sleepTimeThreshold = 10.f;
 //    _physicsNode.debugDraw= TRUE;
     
@@ -414,6 +438,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     [_hero applyMood:newMood];
     
+    _lightSource.mood = _moods[_currentMoodIndex];
+    
     // apply new mood to all blocks
     for (GroundBlock *block in _blocks) {
         [block applyMood:newMood];
@@ -456,6 +482,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
             self.activeInstruction = nil;
         }
     }
+    
 //    [[[CCDirector sharedDirector] scheduler] setTimeScale:0.5f];
 }
 

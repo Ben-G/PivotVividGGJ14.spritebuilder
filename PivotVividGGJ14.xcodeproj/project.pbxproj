@@ -42,6 +42,7 @@
 		62A0B8F21895581D0037B7E4 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8F11895581D0037B7E4 /* Level.m */; };
 		62A0B8F51895644B0037B7E4 /* GoalPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0B8F41895644A0037B7E4 /* GoalPosition.m */; };
 		62A1F4C91895AA5200122E90 /* Startscreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A1F4C81895AA5200122E90 /* Startscreen.m */; };
+		62ADFA58198E7F5400AD451F /* LightSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ADFA57198E7F5400AD451F /* LightSource.m */; };
 		62CB016918BC239C00EC8097 /* TutorialGameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB016818BC239C00EC8097 /* TutorialGameplay.m */; };
 		62CB017118C29C1F00EC8097 /* TutorialFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB017018C29C1F00EC8097 /* TutorialFragment.m */; };
 		62CB017418C2A00800EC8097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62CB017618C2A00800EC8097 /* Localizable.strings */; };
@@ -62,6 +63,7 @@
 		62CF7D89198DFE5900ABF971 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF7D88198DFE5900ABF971 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		62CF7D8B198DFE6E00ABF971 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF7D8A198DFE6D00ABF971 /* SystemConfiguration.framework */; };
 		62CF7D8D198DFE7500ABF971 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF7D8C198DFE7400ABF971 /* Twitter.framework */; };
+		62CF7D90198E78E200ABF971 /* LightingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CF7D8F198E78E200ABF971 /* LightingLayer.m */; };
 		62D3F310197E044A001C51F8 /* LevelTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D3F30F197E044A001C51F8 /* LevelTile.m */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
@@ -177,6 +179,8 @@
 		62A0B8F41895644A0037B7E4 /* GoalPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoalPosition.m; path = Source/GoalPosition.m; sourceTree = "<group>"; };
 		62A1F4C71895AA5200122E90 /* Startscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Startscreen.h; sourceTree = "<group>"; };
 		62A1F4C81895AA5200122E90 /* Startscreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Startscreen.m; sourceTree = "<group>"; };
+		62ADFA56198E7F5400AD451F /* LightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightSource.h; sourceTree = "<group>"; };
+		62ADFA57198E7F5400AD451F /* LightSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightSource.m; sourceTree = "<group>"; };
 		62CB016718BC239C00EC8097 /* TutorialGameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialGameplay.h; path = Source/TutorialGameplay.h; sourceTree = "<group>"; };
 		62CB016818BC239C00EC8097 /* TutorialGameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialGameplay.m; path = Source/TutorialGameplay.m; sourceTree = "<group>"; };
 		62CB016F18C29C1F00EC8097 /* TutorialFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment.h; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 		62CF7D88198DFE5900ABF971 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		62CF7D8A198DFE6D00ABF971 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		62CF7D8C198DFE7400ABF971 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		62CF7D8E198E78E200ABF971 /* LightingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightingLayer.h; path = ../Source/LightingLayer.h; sourceTree = "<group>"; };
+		62CF7D8F198E78E200ABF971 /* LightingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LightingLayer.m; path = ../Source/LightingLayer.m; sourceTree = "<group>"; };
 		62D3F30E197E044A001C51F8 /* LevelTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTile.h; sourceTree = "<group>"; };
 		62D3F30F197E044A001C51F8 /* LevelTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTile.m; sourceTree = "<group>"; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
@@ -346,6 +352,17 @@
 			path = Levels;
 			sourceTree = "<group>";
 		};
+		62ADFA54198E7F3D00AD451F /* Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				62CF7D8E198E78E200ABF971 /* LightingLayer.h */,
+				62CF7D8F198E78E200ABF971 /* LightingLayer.m */,
+				62ADFA56198E7F5400AD451F /* LightSource.h */,
+				62ADFA57198E7F5400AD451F /* LightSource.m */,
+			);
+			path = Lighting;
+			sourceTree = "<group>";
+		};
 		62CB016D18C29C0500EC8097 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +418,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				62ADFA54198E7F3D00AD451F /* Lighting */,
 				621F0F891985628C008A0A45 /* Instruction */,
 				62D3F30C197E03D3001C51F8 /* UIElements */,
 				62095C23196A18AD00FCEC78 /* UIUtils */,
@@ -677,6 +695,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6226720118E8990C0094A8B9 /* TutorialFragment1_2.m in Sources */,
+				62ADFA58198E7F5400AD451F /* LightSource.m in Sources */,
 				AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */,
 				62A0B8E318950D890037B7E4 /* GameState.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
@@ -708,6 +727,7 @@
 				624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,
 				62CF7D6A198DDBBA00ABF971 /* GameEndLayer.m in Sources */,
+				62CF7D90198E78E200ABF971 /* LightingLayer.m in Sources */,
 				621F0F8D198562A6008A0A45 /* Instruction.m in Sources */,
 				623469051969C5AB0030AC0A /* TutorialFragment1_3.m in Sources */,
 				62A0B8EF189551D90037B7E4 /* ScaredEnemy.m in Sources */,
