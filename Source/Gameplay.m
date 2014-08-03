@@ -327,7 +327,11 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
                 BOOL fullfilled = [instruction switchedMood:_moods[_currentMoodIndex]];
                 
                 if (!fullfilled) {
-                    if (instruction.instructionType == InstructionTypeSwitch && [_masks count] > 0) {
+                    if (instruction.instructionType == InstructionTypeSwitch) {
+                        if ([_masks count] > 0) {
+                            self.activeInstruction = instruction;
+                        }
+                    } else {
                         self.activeInstruction = instruction;
                     }
                 }
