@@ -1,0 +1,254 @@
+"Current password" = "Текущий пароль ";
+
+"Please enter a valid username" = "Введи действительное имя пользователя";
+
+"Username must be less than 16 characters" = "Имя пользователя должно быть менее 16 символов";
+
+"Connection error" = "Ошибка подключения";
+
+"Unclaimed Videos" = "Невостребованные видео";
+
+"Please sign-in again and authorize posting to share to Facebook." = "Повторно войди и разреши публикации для общего доступа на Facebook.";
+
+"Enable Voice Overlay?" = "Включить Наложение голоса?";
+
+"YouTube" = "YouTube";
+
+"Illegal characters in username" = "Недопустимые символы в имени пользователя";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "Активируй по крайней мере один аккаунт в 'Настройки -> Twitter' и предоставь разрешения этому приложению.";
+
+"Invalid email" = "Неверная эл.почта";
+
+"On" = "Вкл";
+
+"Ok" = "OK";
+
+"Uploading..." = "Идет загрузка в систему ...";
+
+"Voice overlay is disabled on this device." = "На этом устройстве отключено наложение голоса.";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "Страница слишком долго загружается. Проверь подключение к Интернету и повтори попытку.";
+
+"Email Sent" = "Письмо отправлено";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "Войди в 'Настройки -> Facebook' и предоставь разрешения этому приложению.";
+
+"Password" = "Пароль";
+
+"OK" = "OK";
+
+"Confirm Facebook Sign Out" = "Подтвердить выход из Facebook";
+
+"Voice Overlay Disabled" = "Наложение голоса отключено";
+
+"Share" = "Поделиться";
+
+"Profile" = "Профиль";
+
+"Kamcord Profile" = "Профиль Kamcord";
+
+"Connected" = "Подключено";
+
+"Enable Voice Overlay" = "Включи наложение голоса";
+
+"Watch Replays" = "Смотреть повторы";
+
+"Retry" = "Повторить";
+
+"Voice Overlay" = "Наложение голоса";
+
+"You must enter an email" = "Тебе нужно ввести эл. почту";
+
+"Email" = "Эл. почта";
+
+"Username" = "Имя пользователя";
+
+"Enable" = "Включить";
+
+"The server is not responding. Try again at a later time." = "Сервер не отвечает! Повтори попытку позднее.";
+
+"Trimming..." = "Обрезка ...";
+
+"Please try again later." = "Повтори попытку позднее.";
+
+"Release to refresh..." = "Для обновления отпусти ...";
+
+"Facebook" = "Facebook";
+
+"Upload failed" = "Ошибка загрузки";
+
+"Confirm Twitter Sign Out" = "Подтвердить выход из Twitter";
+
+"Email Not Sent" = "Письмо не отправлено";
+
+"We've emailed you a link to reset your password!" = "Мы выслали тебе по эл.почте ссылку для восстановления твоего пароля.";
+
+"Settings" = "Настройки";
+
+"Terms of Service" = "Условия обслуживания";
+
+"Don't have a profile yet?" = "Еще нет профиля?";
+
+"Powered by Kamcord" = "На базе ПО Kamcord";
+
+"New password" = "Новый пароль";
+
+"Sign In" = "Вход";
+
+"Refreshing page..." = "Обновление страницы...";
+
+"Confirm Kamcord Sign Out" = "Подтвердить выход из Kamcord";
+
+"Not Authorized" = "Не разрешено";
+
+"Cannot Connect to Server" = "Невозможно подключиться к серверу";
+
+"Back" = "Назад";
+
+"Reset Password" = "Изменить пароль";
+
+"Privacy Policy" = "Политика конфиденциальности";
+
+"Another password reset request is already pending." = "Еще один запрос на сброс пароля уже находится на рассмотрении.";
+
+"Confirm YouTube Sign Out" = "Подтвердить выход из YouTube";
+
+"Videos Saved" = "Сохраненные видео";
+
+"Write a title..." = "Введи заголовок...";
+
+"Yes" = "Да";
+
+"Username must be at least 5 characters" = "Имя пользователя должно содержать не менее 5 символов";
+
+"No Email Accounts" = "Нет аккаунтов эл. почты";
+
+"No" = "Нет";
+
+"Watch" = "Смотреть";
+
+"Upload Finished!" = "Загрузка завершена";
+
+"Upload Failed" = "Ошибка загрузки";
+
+"Forgot your password?" = "Забыл(а) пароль?";
+
+"Working..." = "Работает...";
+
+"Is your email correct?" = "Это твой верный адрес эл.почты?";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "Ты можешь включить Наложение голоса, перейдя в 'Профиль -> Настройки' или нажав 'Включить' ниже.";
+
+"No account linked" = "Нет связанных аккаунтов";
+
+"Voice Overlay will be enabled for future videos." = "Наложение голоса будет включено для будущих видео.";
+
+"Are you sure you want to sign out?" = "Уверен(а), что хочешь выйти?";
+
+"Profile creation did not work, please try again later" = "Создание профиля не работает. Повтори попытку позднее";
+
+"Not authorized" = "Не разрешено";
+
+"Enter the username or email address of your Kamcord profile." = "Введи имя пользователя или адрес эл. почты своего профиля Kamcord.";
+
+"Sorry, we could not find any matching accounts." = "К сожалению, мы не смогли найти никаких совпадающих аккаунтов.";
+
+"Other Games" = "Прочие игры";
+
+"Must enter a username and password" = "Необходимо ввести имя пользователя и пароль";
+
+"Change Password" = "Изменить пароль";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "Видео на этом устройстве в настоящее время связаны с твоим профилем";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "Изменить профиль";
+
+"Cancel" = "Отмена";
+
+"Close" = "Закрыть";
+
+"Password must be at least 6 characters" = "Пароль должен содержать не менее 6 символов";
+
+"Any unclaimed videos will be associated with your profile." = "Все невостребованные видео будут связаны с твоим профилем.";
+
+"Gameplay of the Week" = "Геймплей недели";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "Войди в 'Настройки -> Twitter' и предоставь разрешения этому приложению.";
+
+"No Account Found" = "Аккаунт не найден";
+
+"Profile Creation Error" = "Ошибка создания профиля";
+
+"Please reconnect and try again." = "Повторно подключись и повтори попытку.";
+
+"The email you entered is %@" = "Введенная тобой эл. почта — %@";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "Нажимая на 'Создать профиль', ты подтверждаешь, что прочитал(а) и согласен(на) с Политикой конфиденциальности и Условиями обслуживания.";
+
+"Create Profile" = "Создать профиль";
+
+"Sign Out" = "Выход";
+
+"No Internet Connection" = "Нет подключения к Интернету";
+
+"Disable" = "Отключить";
+
+"New password (again)" = "Новый пароль (повторно)";
+
+"New passwords do not match" = "Новые пароли не совпадают";
+
+"You must enter a password" = "Ты должен ввести пароль";
+
+"Pull down to refresh..." = "Для обновления потяни вниз ...";
+
+"Off" = "Выкл";
+
+"Voice Overlay Enabled!" = "Наложение голоса включено!";
+
+"Not Now" = "Не сейчас";
+
+"Slow Internet Connection" = "Медленное подключение к Интернету";
+
+"Please enter your current password" = "Введи свой текущий пароль";
+
+"Trim" = "Обрезать";
+
+"Share Replay" = "Поделиться повтором";
+
+"Username or Email" = "Имя пользователя или эл. почта";
+
+"Password must less than 31 characters" = "Пароль должен содержать не более 31 символа";
+
+"Please setup an email account in Settings > Mail." = "Настрой аккаунт эл. почты в разделе 'Настройки -> Почта'.";
+
+"I'm Ready!" = "Я готов(а)!";
+
+"Select Twitter account to use" = "Выбери используемый аккаунт Twitter";
+
+"Featured Playlist" = "Популярный плейлист";
+
+"Watch Video" = "Просмотреть видео";
+
+"WeChat Sharing Disabled" = "WeChat Sharing Disabled";
+
+"LINE" = "LINE";
+
+"You must install the LINE App before you can share to LINE." = "You must install the LINE App before you can share to LINE.";
+
+"You must install the WeChat App before you can share to WeChat." = "You must install the WeChat App before you can share to WeChat.";
+
+"LINE App Not Found" = "LINE App Not Found";
+
+"gameplay" = "gameplay";
+
+"WeChat App Not Found" = "WeChat App Not Found";
+
+"You cannot share to WeChat on this device." = "You cannot share to WeChat on this device.";
+
+"WeChat" = "WeChat";
+

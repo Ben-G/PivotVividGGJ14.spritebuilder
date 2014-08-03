@@ -1,0 +1,254 @@
+"Current password" = "كلمة السر الحالية";
+
+"Please enter a valid username" = "الرجاء إدخال اسم مستخدم صحيح";
+
+"Username must be less than 16 characters" = "اسم المستخدم يجب أن يكون أقل من 16 حرفًا";
+
+"Connection error" = "خطأ في الاتصال";
+
+"Unclaimed Videos" = "فيديوهات غير مربوطة";
+
+"Please sign-in again and authorize posting to share to Facebook." = "الرجاء إعادة تسجيل الدخول وتخويل النشر المشاركة على موقع Facebook.";
+
+"Enable Voice Overlay?" = "هل تريد تمكين تراكب الصوت؟";
+
+"YouTube" = "YouTube";
+
+"Illegal characters in username" = "حروف غير صحيحة في اسم المستخدمة";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "الرجاء تمكين حساب واحد على الأقل في 'الإعدادات -> Twitter' ومنح الإذن الخاص لهذا التطبيق.";
+
+"Invalid email" = "بريد إلكتروني غير صحيح";
+
+"On" = "On";
+
+"Ok" = "Ok";
+
+"Uploading..." = "جار التحميل...";
+
+"Voice overlay is disabled on this device." = "تم تعطيل تراكب الصوت على هذا الجهاز.";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "تستغرق الصفحة وقتًا طويلًا في التحميل. تحقق من اتصال الانترنت الخاص بك وعاود المحاولة.";
+
+"Email Sent" = "تم إرسال البريد الإلكتروني";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "الرجاء تسجيل الدخول في 'الإعدادات -> Facebook' ومنح الإذن الخاص لهذا التطبيق.";
+
+"Password" = "كلمة السر";
+
+"OK" = "موافق";
+
+"Confirm Facebook Sign Out" = "تأكيد تسجيل الخروج من Facebook";
+
+"Voice Overlay Disabled" = "تم تعطيل تراكب الصوت";
+
+"Share" = "مشاركة";
+
+"Profile" = "حساب";
+
+"Kamcord Profile" = "حساب Kamcord";
+
+"Connected" = "تم الاتصال";
+
+"Enable Voice Overlay" = "تمكين تراكب الصوت";
+
+"Watch Replays" = "مشاهدة الفيديوهات";
+
+"Retry" = "إعادة المحاولة";
+
+"Voice Overlay" = "تراكب الصوت";
+
+"You must enter an email" = "يجب إدخال بريد إلكتروني";
+
+"Email" = "بريد إلكتروني";
+
+"Username" = "اسم المستخدم";
+
+"Enable" = "تمكين";
+
+"The server is not responding. Try again at a later time." = "الملقم لا يستجيب. الرجاء المحاولة لاحقًا.";
+
+"Trimming..." = "جارِ الاقتطاع...";
+
+"Please try again later." = "الرجاء إعادة المحاولة لاحقًا.";
+
+"Release to refresh..." = "حرر للتحديث...";
+
+"Facebook" = "Facebook";
+
+"Upload failed" = "فشل التحميل";
+
+"Confirm Twitter Sign Out" = "تأكيد تسجيل الخروج من Twitter";
+
+"Email Not Sent" = "لم يتم إرسال البريد الإلكتروني";
+
+"We've emailed you a link to reset your password!" = "أرسلنا لك بريدًا إلكترونيًا يحتوي على رابط لاستعادة كلمة المرور الخاصة بك!";
+
+"Settings" = "الإعدادات";
+
+"Terms of Service" = "شروط الخدمة";
+
+"Don't have a profile yet?" = "لا تمتلك حسابًا بعد؟";
+
+"Powered by Kamcord" = "برعاية Kamcord";
+
+"New password" = "كلمة سر الجديدة";
+
+"Sign In" = "تسجيل الدخول";
+
+"Refreshing page..." = "جارِ تحديث الصفحة...";
+
+"Confirm Kamcord Sign Out" = "تأكيد تسجيل الخروج من Kamcord";
+
+"Not Authorized" = "غير مخوّل";
+
+"Cannot Connect to Server" = "يتعذر الاتصال بالملقم";
+
+"Back" = "العودة";
+
+"Reset Password" = "استعادة كلمة السر";
+
+"Privacy Policy" = "سياسة الخصوصية";
+
+"Another password reset request is already pending." = "يوجد طلب آخر في الانتظار لاستعادة كلمة السر.";
+
+"Confirm YouTube Sign Out" = "تأكيد تسجيل الخروج من YouTube";
+
+"Videos Saved" = "تم حفظ الفيديوهات";
+
+"Write a title..." = "اكتب عنوان...";
+
+"Yes" = "نعم";
+
+"Username must be at least 5 characters" = "اسم المستخدم يجب ألا يقل عن 5 أحرف";
+
+"No Email Accounts" = "لا يوجد حسابات بريد إلكتروني";
+
+"No" = "لا";
+
+"Watch" = "مشاهدة";
+
+"Upload Finished!" = "انتهى التحميل!";
+
+"Upload Failed" = "فشل التحميل";
+
+"Forgot your password?" = "هل نسيت كلمة السر؟";
+
+"Working..." = "جارِ العمل...";
+
+"Is your email correct?" = "هل البريد الإلكتروني صحيح؟";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "يمكنك تمكين تراكب الصوت بالذهاب إلى 'الحساب -> الإعدادات' أو الضغط على تمكين بالأدنى.";
+
+"No account linked" = "لا يوجد أي حساب مربوط";
+
+"Voice Overlay will be enabled for future videos." = "سوف يتم تمكين تراكب الصوت للفيديوهات القادمة.";
+
+"Are you sure you want to sign out?" = "هل أنت مأكد أنك تريد تسجيل الخروج؟";
+
+"Profile creation did not work, please try again later" = "إنشاء الحساب لا يعمل، الرجاء المحاولة مرة أخرى لاحقًا";
+
+"Not authorized" = "غير مخوّل";
+
+"Enter the username or email address of your Kamcord profile." = "أدخل اسم المستخدم أو عنوان البريد الإلكتروني الخاص بحسابك على Kamcord.";
+
+"Sorry, we could not find any matching accounts." = "نأسف، لكن تعذر العثور على أي حسابات مطابقة.";
+
+"Other Games" = "ألعاب أخرى";
+
+"Must enter a username and password" = "يجب إدخال اسم مستخدم وكلمة سر";
+
+"Change Password" = "تغيير كلمة السر";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "تم ربط الفيديوهات الموجودة على هذا الجهاز بالحساب الخاص بك";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "تعديل الحساب";
+
+"Cancel" = "إلغاء";
+
+"Close" = "إغلاق";
+
+"Password must be at least 6 characters" = "يجب أن تكون كلمة السر 6 أحرف على الأقل";
+
+"Any unclaimed videos will be associated with your profile." = "أي فيديوهات غير مربوطة سيتم ربطها بالحساب الخاص بك.";
+
+"Gameplay of the Week" = "فيديو تشغيل اللعبة لهذا الأسبوع";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "الرجاء تسجيل الدخول في 'الإعدادات -> Twitter' ومنح الإذن الخاص لهذا التطبيق.";
+
+"No Account Found" = "لم يتم العثور على أي حساب";
+
+"Profile Creation Error" = "خطأ في إنشاء الحساب";
+
+"Please reconnect and try again." = "الرجاء إعادة الاتصال والمحاولة مرة أخرى.";
+
+"The email you entered is %@" = "البريد الإلكتروني الذي تم إدخاله هو %@";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "بالنقر على إنشاء حساب، فإنك تقر أنك قرأت سياسة الخصوصية وشروط الخدمة ووافقت على الالتزام بها.";
+
+"Create Profile" = "إنشاء حساب";
+
+"Sign Out" = "تسجيل الخروج";
+
+"No Internet Connection" = "لا يوجد اتصال بالانترنت";
+
+"Disable" = "تعطيل";
+
+"New password (again)" = "كلمة السر الجديدة (مرة أخرى)";
+
+"New passwords do not match" = "كلمة السر الجديدة غير متطابقة";
+
+"You must enter a password" = "يجب إدخال كلمة سر";
+
+"Pull down to refresh..." = "اسحب لأسفل للتحديث...";
+
+"Off" = "Off";
+
+"Voice Overlay Enabled!" = "تم تمكين تراكب الصوت!";
+
+"Not Now" = "ليس الآن";
+
+"Slow Internet Connection" = "اتصال ضعيف بالانترنت";
+
+"Please enter your current password" = "الرجاء إدخال كلمة السر الحالية";
+
+"Trim" = "اقتطاع";
+
+"Share Replay" = "مشاركة الفيديو";
+
+"Username or Email" = "اسم مستخدم أو بريد إلكتروني";
+
+"Password must less than 31 characters" = "يجب أن تكون كلمة السر أقل من 31 حرفًا";
+
+"Please setup an email account in Settings > Mail." = "الرجاء إعداد حساب بريد إلكتروني في 'الإعدادات -> البريد'.";
+
+"I'm Ready!" = "أنا مستعد!";
+
+"Select Twitter account to use" = "حدد حساب Twitter ليتم استخدامه";
+
+"Featured Playlist" = "قائمة تشغيل مميز";
+
+"Watch Video" = "مشاهدة الفيديو";
+
+"WeChat Sharing Disabled" = "WeChat Sharing Disabled";
+
+"LINE" = "LINE";
+
+"You must install the LINE App before you can share to LINE." = "You must install the LINE App before you can share to LINE.";
+
+"You must install the WeChat App before you can share to WeChat." = "You must install the WeChat App before you can share to WeChat.";
+
+"LINE App Not Found" = "LINE App Not Found";
+
+"gameplay" = "gameplay";
+
+"WeChat App Not Found" = "WeChat App Not Found";
+
+"You cannot share to WeChat on this device." = "You cannot share to WeChat on this device.";
+
+"WeChat" = "WeChat";
+

@@ -1,0 +1,253 @@
+"Current password" = "Senha atual";
+
+"Please enter a valid username" = "Por favor, digite um nome de usuário válido";
+
+"Username must be less than 16 characters" = "O nome de usuário deve ter menos de 16 caracteres";
+
+"Connection error" = "Erro na conexão";
+
+"Unclaimed Videos" = "Vídeos Não Reconhecidos";
+
+"Please sign-in again and authorize posting to share to Facebook." = "Por favor, entre novamente e autorize o compartilhamento com o Facebook.";
+
+"Enable Voice Overlay?" = "Habilitar a Narração?";
+
+"YouTube" = "YouTube";
+
+"Illegal characters in username" = "Caracteres não permitidos no nome de usuário.";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "Por favor, habilite pelo menos uma conta em 'Configurações -> Twitter' e permita este aplicativo.";
+
+"Invalid email" = "E-mail inválido";
+
+"On" = "On";
+
+"Ok" = "OK";
+
+"Uploading..." = "Enviando...";
+
+"Voice overlay is disabled on this device." = "A Narração está desabilitada neste aparelho.";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "A página está demorando para carregar. Verifique a sua Internet e tente novamente.";
+
+"Email Sent" = "E-Mail Enviado";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "Por favor, entre em 'Configurações -> Facebook' e permita este aplicativo.";
+
+"Password" = "Senha";
+
+"OK" = "OK";
+
+"Confirm Facebook Sign Out" = "Confirmar Saída do Facebook";
+
+"Voice Overlay Disabled" = "Narração Desabilitada";
+
+"Share" = "Compartilhar";
+
+"Profile" = "Perfil";
+
+"Kamcord Profile" = "Kamcord Perfil";
+
+"Connected" = "Conectado";
+
+"Enable Voice Overlay" = "Habilite a Narração";
+
+"Watch Replays" = "Ver Replays";
+
+"Retry" = "Tentar de novo";
+
+"Voice Overlay" = "Narração";
+
+"You must enter an email" = "Você precisa digitar um e-mail";
+
+"Email" = "E-mail";
+
+"Username" = "Nome de usuário";
+
+"Enable" = "Habilitar";
+
+"The server is not responding. Try again at a later time." = "O servidor não está respondendo. Tente de novo depois.";
+
+"Trimming..." = "Cortando...";
+
+"Please try again later." = "Por favor, tente de novo depois.";
+
+"Release to refresh..." = "Solte para atualizar...";
+
+"Facebook" = "Facebook";
+
+"Upload failed" = "Falha no envio";
+
+"Confirm Twitter Sign Out" = "Confirmar Saída do Twitter";
+
+"Email Not Sent" = "E-Mail Não Enviado";
+
+"We've emailed you a link to reset your password!" = "Nós lhe enviamos por e-maill o link para redefinir a sua senha!";
+
+"Settings" = "Configurações";
+
+"Terms of Service" = "Termos do Serviço";
+
+"Don't have a profile yet?" = "Ainda não tem um perfil?";
+
+"Powered by Kamcord" = "Utiliza o serviço Kamcord";
+
+"New password" = "Nova senha";
+
+"Sign In" = "Entrar";
+
+"Refreshing page..." = "Atualizando a página...";
+
+"Confirm Kamcord Sign Out" = "Confirmar Saída do Kamcord";
+
+"Not Authorized" = "Não Autorizado";
+
+"Cannot Connect to Server" = "Impossível Conectar ao Servidor";
+
+"Back" = "Voltar";
+
+"Reset Password" = "Redefinir Senha";
+
+"Privacy Policy" = "Política de Privacidade";
+
+"Another password reset request is already pending." = "Você já pediu para redefinir a senha.";
+
+"Confirm YouTube Sign Out" = "Confirmar Saída do YouTube";
+
+"Videos Saved" = "Vídeos Salvos";
+
+"Write a title..." = "Escreva um título...";
+
+"Yes" = "Sim";
+
+"Username must be at least 5 characters" = "O nome de usuário deve ter no mínimo 5 caracteres";
+
+"No Email Accounts" = "Não Há Contas de E-Mail";
+
+"No" = "Não";
+
+"Watch" = "Ver";
+
+"Upload Finished!" = "Envio Finalizado!";
+
+"Upload Failed" = "Falha no Envio";
+
+"Forgot your password?" = "Esqueceu a sua senha?";
+
+"Working..." = "Trabalhando...";
+
+"Is your email correct?" = "Seu e-mail está certo?";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "Você pode habilitar a Narração indo até 'Perfil -> Configurações' ou pressionando 'Habilitar' abaixo.";
+
+"No account linked" = "Não há conta associada";
+
+"Voice Overlay will be enabled for future videos." = "A Narração estará habilitada para os próximos vídeos.";
+
+"Are you sure you want to sign out?" = "Você quer mesmo sair?";
+
+"Profile creation did not work, please try again later" = "A criação do perfil não funcionou. Por favor, tente de novo depois.";
+
+"Not authorized" = "Não autorizado";
+
+"Enter the username or email address of your Kamcord profile." = "Digite o nome de usuário ou o e-mail do seu perfil no Kamcord.";
+
+"Sorry, we could not find any matching accounts." = "Desculpe; não encontramos uma conta correspondente.";
+
+"Other Games" = "Outros Jogos";
+
+"Must enter a username and password" = "É preciso digitar um nome de usuário e uma senha";
+
+"Change Password" = "Mudar Senha";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "Os vídeos neste aparelho agora estão associados ao seu perfil";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "Editar Perfil";
+
+"Cancel" = "Cancelar";
+
+"Close" = "Fechar";
+
+"Password must be at least 6 characters" = "A senha deve ter no mínimo 6 caracteres";
+
+"Any unclaimed videos will be associated with your profile." = "Os vídeos não reconhecidos serão associados ao seu perfil.";
+
+"Gameplay of the Week" = "Vídeo de Jogo da Semana";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "Por favor, entre em 'Configurações -> Twitter' e permita este aplicativo.";
+
+"No Account Found" = "Nenhuma Conta Encontrada";
+
+"Profile Creation Error" = "Erro na Criação do Perfil";
+
+"Please reconnect and try again." = "Por favor, reconecte e tente de novo.";
+
+"The email you entered is %@" = "O e-mail que você digitou é %@";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "Clicando em 'Criar Perfil', você indica ter lido e concordado com a Política de Privacidade e os Termos do Serviço.";
+
+"Create Profile" = "Criar Perfil";
+
+"Sign Out" = "Sair";
+
+"No Internet Connection" = "Sem Internet";
+
+"Disable" = "Desabilitar";
+
+"New password (again)" = "Nova senha (outra vez)";
+
+"New passwords do not match" = "As novas senhas não estão iguais";
+
+"You must enter a password" = "Você precisa digitar uma senha";
+
+"Pull down to refresh..." = "Puxe para baixo para atualizar...";
+
+"Off" = "Off";
+
+"Voice Overlay Enabled!" = "Narração Habilitada!";
+
+"Not Now" = "Agora Não";
+
+"Slow Internet Connection" = "Internet Lenta";
+
+"Please enter your current password" = "Por favor, digite a sua senha atual";
+
+"Trim" = "Cortar";
+
+"Share Replay" = "Compartilhar Replay";
+
+"Username or Email" = "Nome de Usuário ou E-Mail";
+
+"Password must less than 31 characters" = "A senha deve ter no máximo 31 caracteres";
+
+"Please setup an email account in Settings > Mail." = "Por favor, configure uma conta de e-mail em 'Configurações -> E-Mail'.";
+
+"I'm Ready!" = "Estou Pronto!";
+
+"Select Twitter account to use" = "Selecione a conta do Twitter a ser usada";
+
+"Featured Playlist" = "Vídeos em Destaque";
+
+"Watch Video" = "Ver Video";
+"WeChat Sharing Disabled" = "WeChat Sharing Disabled";
+
+"LINE" = "LINE";
+
+"You must install the LINE App before you can share to LINE." = "You must install the LINE App before you can share to LINE.";
+
+"You must install the WeChat App before you can share to WeChat." = "You must install the WeChat App before you can share to WeChat.";
+
+"LINE App Not Found" = "LINE App Not Found";
+
+"gameplay" = "gameplay";
+
+"WeChat App Not Found" = "WeChat App Not Found";
+
+"You cannot share to WeChat on this device." = "You cannot share to WeChat on this device.";
+
+"WeChat" = "WeChat";
+

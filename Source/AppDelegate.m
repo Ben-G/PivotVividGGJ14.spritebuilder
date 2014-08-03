@@ -27,6 +27,7 @@
 
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
+#import <Kamcord/Kamcord.h>
 
 @implementation AppController
 
@@ -57,6 +58,11 @@
     //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
     
     [self setupCocos2dWithOptions:cocos2dSetup];
+    
+    [Kamcord setDeveloperKey:@"uhZuvwvqIaerV5fixpkolWcZYxKYa8V9pbIr6vSsr88"
+             developerSecret:@"XhhJElaHZHyuOJefokI6Gr88jf7S9hw610wFIHcPArk"
+                     appName:@"Magic Masks"
+        parentViewController:[CCDirector sharedDirector]];
     
     return YES;
 }

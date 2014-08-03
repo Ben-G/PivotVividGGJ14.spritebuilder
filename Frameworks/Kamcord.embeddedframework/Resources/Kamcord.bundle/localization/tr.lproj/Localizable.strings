@@ -1,0 +1,254 @@
+"Current password" = "Geçerli şifre";
+
+"Please enter a valid username" = "Lütfen geçerli bir kullanıcı adı gir";
+
+"Username must be less than 16 characters" = "Kullanıcı adı 16 karakterden kısa olmalıdır";
+
+"Connection error" = "Bağlantı hatası";
+
+"Unclaimed Videos" = "Sahipsiz Videolar";
+
+"Please sign-in again and authorize posting to share to Facebook." = "Lütfen tekrar giriş yapın ve Facebook ile paylaşıma izin ver.";
+
+"Enable Voice Overlay?" = "Ses Kaydını Aç?";
+
+"YouTube" = "Youtube";
+
+"Illegal characters in username" = "Kullanıcı adında uygunsuz karakterler";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "Lütfen 'Ayarlar -> Twitter' kısmında en az bir hesabı etkinleştirin ve bu uygulamaya izin ver.";
+
+"Invalid email" = "Geçersiz email";
+
+"On" = "Açık";
+
+"Ok" = "Tamam";
+
+"Uploading..." = "Yükleniyor...";
+
+"Voice overlay is disabled on this device." = "Bu cihazda Ses Kaydı kapalıdır.";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "Sayfanın yüklenmesi uzun sürüyor. İnternet bağlantını kontrol et ve yeniden dene.";
+
+"Email Sent" = "Email gönderildi";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "Lütfen 'Ayarlar -> Facebook' kısmından giriş yap ve bu uygulamaya izin ver.";
+
+"Password" = "Şifre";
+
+"OK" = "Tamam";
+
+"Confirm Facebook Sign Out" = "Facebook Çıkışını Onayla";
+
+"Voice Overlay Disabled" = "Ses Kaydı Kapalı";
+
+"Share" = "Paylaş";
+
+"Profile" = "Profil";
+
+"Kamcord Profile" = "Kamcord Profilin";
+
+"Connected" = "Bağlantı kuruldu";
+
+"Enable Voice Overlay" = "Ses Kaydını Aç";
+
+"Watch Replays" = "Videoları İzle";
+
+"Retry" = "Yeniden dene";
+
+"Voice Overlay" = "Ses Kaydı";
+
+"You must enter an email" = "Email adresi girmelisin";
+
+"Email" = "Email";
+
+"Username" = "Kullanıcı adı";
+
+"Enable" = "Aç";
+
+"The server is not responding. Try again at a later time." = "Sunucu yanıt vermiyor. Daha sonra tekrar dene.";
+
+"Trimming..." = "Kırpılıyor...";
+
+"Please try again later." = "Lütfen daha sonra tekrar dene.";
+
+"Release to refresh..." = "Yenilemek için aşağı çekip bırak...";
+
+"Facebook" = "Facebook";
+
+"Upload failed" = "Yükleme başarısız";
+
+"Confirm Twitter Sign Out" = "Twitter Çıkışını Onayla";
+
+"Email Not Sent" = "Email Gönderilmedi";
+
+"We've emailed you a link to reset your password!" = "Şifreni sıfırlaman için sana email ile bir link yolladık!";
+
+"Settings" = "Ayarlar";
+
+"Terms of Service" = "Hizmet Koşulları";
+
+"Don't have a profile yet?" = "Henüz bir profilin yok mu?";
+
+"Powered by Kamcord" = "Kamcord";
+
+"New password" = "Yeni şifre";
+
+"Sign In" = "Giriş Yap";
+
+"Refreshing page..." = "Sayfa yenileniyor...";
+
+"Confirm Kamcord Sign Out" = "Kamcord Çıkışını Onayla";
+
+"Not Authorized" = "İzin Yok";
+
+"Cannot Connect to Server" = "Sunucuya Bağlanamıyor";
+
+"Back" = "Geri";
+
+"Reset Password" = "Şifreyi Sıfırla";
+
+"Privacy Policy" = "Gizlilik Politikası";
+
+"Another password reset request is already pending." = "Başka bir şifre sıfırlama isteği zaten gönderildi.";
+
+"Confirm YouTube Sign Out" = "Youtube Çıkışını Onayla";
+
+"Videos Saved" = "Videolar Kaydedildi";
+
+"Write a title..." = "Başlık yaz";
+
+"Yes" = "Evet";
+
+"Username must be at least 5 characters" = "Kullanıcı adı en az 5 karakter olmalıdır";
+
+"No Email Accounts" = "Email Hesabı Yok";
+
+"No" = "Hayır";
+
+"Watch" = "İzle";
+
+"Upload Finished!" = "Yükleme Bitti!";
+
+"Upload Failed" = "Yükleme Başarısız";
+
+"Forgot your password?" = "Şifreni mi unuttun?";
+
+"Working..." = "İşlem yapılıyor...";
+
+"Is your email correct?" = "Email adresin doğru mu?";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "Profil -> Ayarlar' kısmına girerek veya aşağıdaki Aç tuşuna basarak Ses Kaydını açabilirsin.";
+
+"No account linked" = "Bağlı hesap yok";
+
+"Voice Overlay will be enabled for future videos." = "Ses Kaydı daha sonraki videolar için açık olacak. ";
+
+"Are you sure you want to sign out?" = "Çıkış yapmak istediğinden emin misin?";
+
+"Profile creation did not work, please try again later" = "Profil oluşturulamadı, lütfen daha sonra tekrar dene";
+
+"Not authorized" = "İzin yok";
+
+"Enter the username or email address of your Kamcord profile." = "Kamcord profilinin kullanıcı adını veya email adresini gir.";
+
+"Sorry, we could not find any matching accounts." = "Üzgünüz, eşleşen hesap bulamadık.";
+
+"Other Games" = "Diğer Oyunlar";
+
+"Must enter a username and password" = "Bir kullanıcı adı ve şifre girilmeli";
+
+"Change Password" = "Şifreyi Değiştir";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "Bu cihazdaki videolar artık profilinle ilişkili";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "Profili Düzenle";
+
+"Cancel" = "İptal";
+
+"Close" = "Kapat";
+
+"Password must be at least 6 characters" = "Şifre en az 6 karakter olmalı";
+
+"Any unclaimed videos will be associated with your profile." = "Tüm sahipsiz videolar profilinle ilişkilendirilecek.";
+
+"Gameplay of the Week" = "Haftanın Oyun Videosu";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "Lütfen 'Ayarlar -> Twitter' kısmından giriş yap ve bu uygulamaya izin ver.";
+
+"No Account Found" = "Hesap Bulunamadı";
+
+"Profile Creation Error" = "Profil Oluşturma Hatası";
+
+"Please reconnect and try again." = "Lütfen yeniden bağlan ve tekrar dene.";
+
+"The email you entered is %@" = "Girdiğin email adresi %@";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "Profil Oluştur tuşuna basarak Gizlilik Politikası ve Hizmet Koşullarını okuyup kabul ettiğini onaylıyorsun.";
+
+"Create Profile" = "Profil Oluştur";
+
+"Sign Out" = "Çıkış Yap";
+
+"No Internet Connection" = "İnternet Bağlantısı Yok";
+
+"Disable" = "Devre dışı bırak";
+
+"New password (again)" = "Yeni şifre (tekrar)";
+
+"New passwords do not match" = "Yeni şifreler eşleşmiyor";
+
+"You must enter a password" = "Şifre girmelisin";
+
+"Pull down to refresh..." = "Yenilemek için aşağı çek...";
+
+"Off" = "Kapalı";
+
+"Voice Overlay Enabled!" = "Ses Kaydı Açıldı!";
+
+"Not Now" = "Şimdi Değil";
+
+"Slow Internet Connection" = "Yavaş İnternet Bağlantısı";
+
+"Please enter your current password" = "Lütfen geçerli şifreni gir";
+
+"Trim" = "Kırp";
+
+"Share Replay" = "Videoları Paylaş";
+
+"Username or Email" = "Kullanıcı adı veya Email";
+
+"Password must less than 31 characters" = "Şifre 31 karakterden kısa olmalı";
+
+"Please setup an email account in Settings > Mail." = "Lütfen 'Ayarlar -> Mail' kısmına email hesabı gir.";
+
+"I'm Ready!" = "Hazırım!";
+
+"Select Twitter account to use" = "Kullanılacak Twitter hesabını seç";
+
+"Featured Playlist" = "Özellikli Çalma Listesi";
+
+"Watch Video" = "Video'yu Ýzle";
+
+"WeChat Sharing Disabled" = "WeChat Sharing Disabled";
+
+"LINE" = "LINE";
+
+"You must install the LINE App before you can share to LINE." = "You must install the LINE App before you can share to LINE.";
+
+"You must install the WeChat App before you can share to WeChat." = "You must install the WeChat App before you can share to WeChat.";
+
+"LINE App Not Found" = "LINE App Not Found";
+
+"gameplay" = "gameplay";
+
+"WeChat App Not Found" = "WeChat App Not Found";
+
+"You cannot share to WeChat on this device." = "You cannot share to WeChat on this device.";
+
+"WeChat" = "WeChat";
+

@@ -1,0 +1,297 @@
+"Current password" = "現在のパスワード";
+
+"Please enter a valid username" = "有効なユーザー名を入力して下さい";
+
+"Username must be less than 16 characters" = "ユーザー名は半角16文字以下にして下さい"; 
+
+"Connection error" = "接続エラー";
+
+"Please allow Twitter access to share" = "Twitterへの共有を許可して下さい";
+
+"Please log in to Twitter in iOS Settings" = "iOS設定の中でTwitterにログインして下さい";
+
+"Unclaimed Videos" = "持ち主の不明なビデオ"; 
+
+"Please sign-in again and authorize posting to share to Facebook." = "もう一度ログインし、Facebook上で投稿を共有できるように許可して下さい";
+
+"YouTube" = "YouTube";
+
+"Disable" = "無効にする";
+
+"Sign in" = "ログイン";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "設定->Twitterからアカウントを有効にし、このアプリからのアクセスを許可して下さい";
+
+"Invalid email" = "無効なメールアドレス";
+
+"Reset" = "リセット";
+
+"On" = "有効";
+
+"Ok" = "OK";
+
+"Voice overlay is disabled on this device." = "ボイスオーバーは無効になっています";
+
+"Voice Overlay Disabled" = "ボイスオーバー無効";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "設定->Facebookからログインし、このアプリからのアクセスを許可して下さい";
+
+"Send a password reset email" = "パスワードリセットメールを送る";
+
+"OK" = "OK";
+
+"Confirm Facebook Sign Out" = "Facebookログアウトの確認"; 
+
+"Share" = "共有";
+
+"Watch Replays" = "リプレイを再生";
+
+"Create" = "作成";
+
+"Kamcord requires an internet connection" = "インターネット接続が必要です";
+
+"Voice Overlay" = "ボイスオーバー";
+
+"Save" = "保存";
+
+"You must enter an email" = "メールアドレスの入力が必要です";
+
+"Email" = "メール";
+
+"Enable" = "有効にする";
+
+"No Internet" = "インターネット接続なし";
+
+"Please try again later." = "後で再度お試し下さい";
+
+"Connected" = "接続中";
+
+"Upload failed" = "アップロードが失敗しました";
+
+"Upload Failed" = "アップロードが失敗しました";
+
+"Confirm Twitter Sign Out" = "Twitterログアウトの確認"; 
+
+"Email Not Sent" = "メールは送信されませんでした";
+
+"We've emailed you a link to reset your password!" = "パスワードをリセットするためのリンクをメールしました!";
+
+"Terms of Service" = "サービス規約";
+
+"Don't have a profile yet?" = "プロフィールを作成しますか？";　
+
+"Powered by Kamcord" = "Powered by Kamcord";
+
+"New password" = "新しいパスワード";
+
+"Sign In" = "ログイン";
+
+"Confirm Kamcord Sign Out" = "Kamcordログアウトの確認"; 
+
+"Change Password" = "パスワード変更";
+
+"Back" = "戻る";
+
+"Privacy Policy" = "プライバシー・ポリシー";
+
+"Another password reset request is already pending." = "前回のパスワードリセットを確認ください。"; 
+
+"Confirm YouTube Sign Out" = "YouTubeログアウトの確認"; 
+
+"Videos Saved" = "保存されたビデオ";
+
+"Not Now" = "後で";
+
+"Yes" = "はい";
+
+"Username must be at least 5 characters" = "ユーザー名は半角5文字以上にして下さい。";
+
+"No Email Accounts" = "メールアカウントがありません";
+
+"No" = "いいえ";
+
+"Watch" = "見る";
+
+"Forgot your password?" = "パスワードをお忘れですか？";
+
+"Is your email correct?" = "メールアドレスは正しいですか？";
+
+"Are you sure you want to sign out?" = "本当にログアウトしますか？";
+
+"New password (again)" = "新しいパスワード（確認）";
+
+"Not authorized" = "許可されていません";
+
+"Sorry, we could not find any matching accounts." = "一致するアカウントが見つかりませんでした";
+
+"Facebook" = "Facebook";
+
+"Other Games" = "他のゲーム";
+
+"Please check Twitter settings" = "Twitterの設定を確認して下さい";
+
+"Must enter a username and password" = "ユーザー名とパスワードを入力して下さい";
+
+"Not Authorized" = "許可されていません";
+
+"Already have a profile?" = "プロフィール作成済みですか？";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "この端末のビデオはあなたのプロフィールに関連付けられました";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "プロフィールを編集";
+
+"Done" = "終了";
+
+"Cancel" = "キャンセル";
+
+"Password must be at least 6 characters" = "パスワードは6文字以上にして下さい。";
+
+"Any unclaimed videos will be associated with your profile." = "これまでのビデオは全て、あなたのプロフィールと関連づけられます。"; 
+
+"Search" = "検索";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "設定->Twitterでログインし、このアプリからのアクセスを許可して下さい。";
+
+"No Account Found" = "アカウントが見つかりません";
+
+"Profile Creation Error" = "プロフィール作成エラー";
+
+"Profile creation did not work, please try again later" = "プロフィールは作成できませんでした、後ほどお試し下さい";
+
+"The email you entered is %@" = "入力したメールアドレスは%@";
+
+"Profile" = "プロフィール";
+
+"Kamcord Profile" = "Kamcordプロフィール";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "「プロフィールを作成する」ボタンをクリックした後は、プライバシー・ポリシーとサービス規約を読み、それらに同意したものとみなされます";
+
+"Create Profile" = "プロフィールを作成する";
+
+"Sign Out" = "ログアウト";
+
+"No Internet Connection" = "インターネットに接続されていません";
+
+"Illegal characters in username" = "ユーザー名に許可されていない文字が含まれています";
+
+"Email Sent" = "メールが送信されました";
+
+"New passwords do not match" = "新しいパスワードが一致しません";
+
+"You must enter a password" = "パスワードを入力して下さい";
+
+"Off" = "無効";
+
+"Connect account" = "アカウントと接続する"; 
+
+"Write a title..." = "タイトルを書いて下さい...";
+
+"Please enter your current password" = "現在のパスワードを入力して下さい";
+
+"Trim" = "トリミング";
+
+"Share Replay" = "リプレイを共有する";
+
+"My Videos" = "マイビデオ";
+
+"Password must less than 31 characters" = "パスワードは半角31文字以下にして下さい";
+
+"Please setup an email account in Settings > Mail." = "設定->メールでメールアカウントを設定して下さい";
+
+"Select Twitter account to use" = "使用するTwitterアカウントを選んで下さい";
+
+"Watch the new Gameplay of the Week!" = "今週のゲームプレイをチェック！";
+
+"Trimming..." = "トリミング中...";
+
+"Release to refresh..." = "リリースして更新...";
+
+"Refreshing page..." = "再読み込み中...";
+
+"Working..." = "処理中...";
+
+"Upload Done!" = "アップロード完了!";
+
+"Gameplay of the Week" = "今週のゲームプレイ";
+
+"Pull down to refresh..." = "下へスライドして更新...";
+
+"Password" = "パスワード";
+
+"Username" = "ユーザー名";
+
+"Username or Email" = "ユーザー名またはメールアドレス";
+
+"Settings" = "設定";
+
+"Uploading" = "アップロード中";
+
+"Watch Video" = "ビデオを見る";
+
+"Reset Password" = "パスワードをリセット";
+
+"Enter your Kamcord username or the email address associated with your account." = "Kamcordユーザー名または登録したメールアドレスを入力してください。";
+
+"Uploading Failed" = "アップロードが失敗しました";
+
+"Upload Finished!" = "アップロード完了!";
+
+"Uploading..." = "アップロード中 ...";
+
+"Enable Voice Overlay?" = "ボイスオーバーを有効にしますか?";
+
+"Voice Overlay Enabled!" = "ボイスオーバーは有効になりました!";
+
+"Working ..." = "処理中...";
+
+"No Voice in Simulator" = "シミュレータではボイスオーバーできません";
+
+"I'm Ready!" = "準備ができました!";
+
+"No account linked" = "リンクされたアカウントはありません";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "ボイスオーバーを有効にするには、「プロフィール」->「設定」から、または下の「有効にする」ボタンを押してください。";
+
+"Voice Overlay will be enabled for future videos." = "今後のビデオではボイスオーバーが有効になります。";
+
+"Enter the username or email address of your Kamcord profile." = "Kamcordユーザー名または登録したメールアドレスを入力してください。";
+
+"Close" = "閉じる";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "ページの読み込みに時間がかかっています。インターネットの接続状況を確認しもう一度お試し下さい。";
+
+"Enable Voice Overlay" = "ボイスオーバーを有効にする";
+
+"Retry" = "もう一度";
+
+"The server is not responding. Try again at a later time." = "サーバーが応答していません。後ほどもう一度お試し下さい。";
+
+"Cannot Connect to Server" = "サーバーに接続できません";
+
+"Please reconnect and try again." = "再接続してもう一度お試し下さい。";
+
+"Slow Internet Connection" = "インターネット接続が遅くなっています";
+
+"You must install the LINE App before you can share to LINE." = "LINEへ共有するためにはLINEアプリのインストールが必要です";
+
+"You must install the WeChat App before you can share to WeChat." = "WeChatへ共有するためにはWeChatアプリのインストールが必要です";
+
+"LINE App Not Found" = "LINEアプリが見つかりません";
+
+"gameplay" = "ゲームプレイ";
+
+"WeChat App Not Found" = "WeChatアプリが見つかりません";
+
+"Featured Playlist" = "特集プレイリスト";
+"WeChat Sharing Disabled" = "WeChat共有は無効";
+
+"LINE" = "LINE";
+
+"You cannot share to WeChat on this device." = "この端末でWeChatでの共有はできません";
+
+"WeChat" = "WeChat";
+

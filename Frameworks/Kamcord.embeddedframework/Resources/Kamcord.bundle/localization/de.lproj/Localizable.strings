@@ -1,0 +1,253 @@
+"Current password" = "Aktuelles Passwort";
+
+"Please enter a valid username" = "Bitte gib einen gültigen Benutzernamen ein";
+
+"Username must be less than 16 characters" = "Benutzername muss weniger als 16 Zeichen lang sein";
+
+"Connection error" = "Verbindungsfehler";
+
+"Unclaimed Videos" = "Nicht abgerufene Videos";
+
+"Please sign-in again and authorize posting to share to Facebook." = "Bitte melde dich wieder an und bestätige das Posten von Beiträgen auf Facebook.";
+
+"Enable Voice Overlay?" = "Vertonung aktivieren?";
+
+"YouTube" = "YouTube";
+
+"Illegal characters in username" = "Ungültige Zeichen im Benutzernamen ";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "Bitte aktiviere unter 'Einstellungen -> Twitter' mindestens ein Konto und erteile diese Anwendungsberechtigungen.";
+
+"Invalid email" = "Ungültige Email";
+
+"On" = "Ein";
+
+"Ok" = "Ok";
+
+"Uploading..." = "Hochladen...";
+
+"Voice overlay is disabled on this device." = "Auf diesem Gerät ist die Vertonung deaktiviert.";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "Die Seite braucht lange zum Laden. Überprüfe deine Internetverbindung und versuche es erneut.";
+
+"Email Sent" = "Email gesendet";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "Bitte gehe zu 'Einstellungen -> Facebook' und erteile diese Anwendungsberechtigungen.";
+
+"Password" = "Passwort";
+
+"OK" = "OK";
+
+"Confirm Facebook Sign Out" = "Facebook-Abmeldung bestätigen";
+
+"Voice Overlay Disabled" = "Vertonung deaktiviert";
+
+"Share" = "Teilen";
+
+"Profile" = "Profil";
+
+"Kamcord Profile" = "Kamcord Profil";
+
+"Connected" = "Verbunden";
+
+"Enable Voice Overlay" = "Vertonung aktivieren";
+
+"Watch Replays" = "Videos anschauen";
+
+"Retry" = "Wiederholen";
+
+"Voice Overlay" = "Vertonung";
+
+"You must enter an email" = "Du musst eine Email eingeben";
+
+"Email" = "Email";
+
+"Username" = "Benutzername";
+
+"Enable" = "Aktivieren";
+
+"The server is not responding. Try again at a later time." = "Der Server antwortet nicht. Versuche es später erneut.";
+
+"Trimming..." = "Trimmen...";
+
+"Please try again later." = "Bitte versuche es später noch einmal.";
+
+"Release to refresh..." = "Zum Aktualisieren loslassen...";
+
+"Facebook" = "Facebook";
+
+"Upload failed" = "Hochladen fehlgeschlagen";
+
+"Confirm Twitter Sign Out" = "Twitter-Abmeldung bestätigen";
+
+"Email Not Sent" = "Email nicht gesendet";
+
+"We've emailed you a link to reset your password!" = "Wir haben dir per Email einen Link geschickt, um dein Passwort zurückzusetzen!";
+
+"Settings" = "Einstellungen";
+
+"Terms of Service" = "Nutzungsbedingungen";
+
+"Don't have a profile yet?" = "Du hast noch kein Profil?";
+
+"Powered by Kamcord" = "Unterstützt von Kamcord";
+
+"New password" = "Neues Passwort";
+
+"Sign In" = "Anmelden";
+
+"Refreshing page..." = "Seite wird aktualisiert...";
+
+"Confirm Kamcord Sign Out" = "Kamcord-Abmeldung bestätigen";
+
+"Not Authorized" = "Nicht autorisiert";
+
+"Cannot Connect to Server" = "Kann keine Verbindung zum Server herstellen";
+
+"Back" = "Zurück";
+
+"Reset Password" = "Passwort zurücksetzen";
+
+"Privacy Policy" = "Datenschutzrichtlinien";
+
+"Another password reset request is already pending." = "Es gibt bereits eine Anfrage für ein anderes Passwort.";
+
+"Confirm YouTube Sign Out" = "YouTube-Abmeldung bestätigen";
+
+"Videos Saved" = "Videos gespeichert";
+
+"Write a title..." = "Schreibe einen Titel...";
+
+"Yes" = "Ja";
+
+"Username must be at least 5 characters" = "Benutzername muss mindestens 5 Zeichen lang sein.";
+
+"No Email Accounts" = "Keine Email-Konten";
+
+"No" = "Nein";
+
+"Watch" = "Anschauen";
+
+"Upload Finished!" = "Hochladen abgeschlossen!";
+
+"Upload Failed" = "Hochladen fehlgeschlagen";
+
+"Forgot your password?" = "Passwort vergessen?";
+
+"Working..." = "In Arbeit...";
+
+"Is your email correct?" = "Ist deine Email korrekt?";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "Du kannst die Vertonung aktivieren, indem du auf 'Profil -> Einstellungen' gehst oder unten auf Aktivieren drückst.";
+
+"No account linked" = "Kein Konto verbunden";
+
+"Voice Overlay will be enabled for future videos." = "Vertonung wird für künftige Videos aktiviert.";
+
+"Are you sure you want to sign out?" = "Bist du sicher, dass du dich abmelden willst?";
+
+"Profile creation did not work, please try again later" = "Erstellung des Profils nicht möglich, bitte versuche es später noch einmal";
+
+"Not authorized" = "Nicht autorisiert";
+
+"Enter the username or email address of your Kamcord profile." = "Gib den Benutzernamen oder die Emailadresse für dein Kamcord-Profil ein.";
+
+"Sorry, we could not find any matching accounts." = "Leider konnten wir keine passenden Konten finden.";
+
+"Other Games" = "Andere Gameplays";
+
+"Must enter a username and password" = "Du musst einen Benutzernamen und ein Passwort eingeben";
+
+"Change Password" = "Passwort ändern";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "Die Videos auf diesem Gerät sind jetzt deinem Profil zugeordnet";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "Profil bearbeiten";
+
+"Cancel" = "Abbrechen";
+
+"Close" = "Schließen";
+
+"Password must be at least 6 characters" = "Passwort muss mindestens 6 Zeichen lang sein";
+
+"Any unclaimed videos will be associated with your profile." = "Alle nicht abgerufenen Videos werden deinem Profil zugeordnet.";
+
+"Gameplay of the Week" = "Gameplay der Woche";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "Bitte gehe zu 'Einstellungen -> Twitter' und erteile diese Anwendungsberechtigungen.";
+
+"No Account Found" = "Kein Konto gefunden";
+
+"Profile Creation Error" = "Fehler beim Erstellen des Profils";
+
+"Please reconnect and try again." = "Bitte verbinde dich neu und versuche es noch einmal.";
+
+"The email you entered is %@" = "Die Email, die du eingegeben hast, ist %@";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "Wenn du auf 'Profil erstellen' klickst, bestätigst du, dass du die Datenschutzrichtlinien und die Nutzungsbedingungen gelesen hast und ihnen zustimmst.";
+
+"Create Profile" = "Profil erstellen";
+
+"Sign Out" = "Abmelden";
+
+"No Internet Connection" = "Keine Internetverbindung";
+
+"Disable" = "Deaktivieren";
+
+"New password (again)" = "Neues Passwort (wiederholen)";
+
+"New passwords do not match" = "Neue Passwörter stimmen nicht überein";
+
+"You must enter a password" = "Du musst ein Passwort eingeben";
+
+"Pull down to refresh..." = "Zum Aktualisieren nach unten ziehen...";
+
+"Off" = "Aus";
+
+"Voice Overlay Enabled!" = "Vertonung aktiviert!";
+
+"Not Now" = "Jetzt nicht";
+
+"Slow Internet Connection" = "Langsame Internetverbindung";
+
+"Please enter your current password" = "Bitte gib dein aktuelles Passwort ein";
+
+"Trim" = "Trimmen";
+
+"Share Replay" = "Video teilen";
+
+"Username or Email" = "Benutzername oder Email";
+
+"Password must less than 31 characters" = "Passwort darf nicht mehr als 31 Zeichen lang sein";
+
+"Please setup an email account in Settings > Mail." = "Bitte erstelle in 'Einstellungen -> Mail' ein Email-Konto.";
+
+"I'm Ready!" = "Ich bin fertig!";
+
+"Select Twitter account to use" = "Wähle das zu benutzende Twitter-Konto aus";
+
+"Featured Playlist" = "Vorgestellte Wiedergabeliste";
+
+"Watch Video" = "Video Ansehen";
+"WeChat Sharing Disabled" = "WeChat Sharing Disabled";
+
+"LINE" = "LINE";
+
+"You must install the LINE App before you can share to LINE." = "You must install the LINE App before you can share to LINE.";
+
+"You must install the WeChat App before you can share to WeChat." = "You must install the WeChat App before you can share to WeChat.";
+
+"LINE App Not Found" = "LINE App Not Found";
+
+"gameplay" = "gameplay";
+
+"WeChat App Not Found" = "WeChat App Not Found";
+
+"You cannot share to WeChat on this device." = "You cannot share to WeChat on this device.";
+
+"WeChat" = "WeChat";
+
