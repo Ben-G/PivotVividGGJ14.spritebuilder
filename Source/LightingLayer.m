@@ -148,12 +148,12 @@ LightVertex(GLKMatrix4 transform, GLKVector2 pos, GLKVector2 texCoord, GLKVector
 	CGAffineTransform worldToLight = self.worldToNodeTransform;
 	GLKMatrix4 projection = _lightMapBuffer.projection;
 	
-	float ambient = 0.6 * 0.5;
+	float ambient = 0.7 * 0.5;
 	[_lightMapBuffer beginWithClear:ambient g:ambient b:ambient a:1.0f];
 		for(CCNode<Light> *light in _lights){
 			CGPoint pos = light.position;
 			float radius = light.lightRadius;
-			GLKVector4 color4 = GLKVector4MultiplyScalar(light.lightColor, 0.4);
+			GLKVector4 color4 = GLKVector4MultiplyScalar(light.lightColor, 0.3);
 			
 			[renderer enqueueBlock:^{
 				// Disable drawing the front faces to cut down on fillrate.

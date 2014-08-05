@@ -483,7 +483,9 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     if (_activeInstruction) {
         BOOL completed = [_activeInstruction switchedMood:_moods[_currentMoodIndex]];
-        if (completed) {
+        BOOL noMoreMasks = ([_masks count] == 0);
+
+        if (completed || noMoreMasks) {
             [self resumeWithKey:self.activeInstruction];
             self.activeInstruction = nil;
         }

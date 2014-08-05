@@ -208,7 +208,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>You loose!</string>
+							<string>You lose!</string>
 							<false/>
 						</array>
 					</dict>
