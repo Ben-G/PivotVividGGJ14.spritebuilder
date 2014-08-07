@@ -12,8 +12,9 @@
 
 @property (nonatomic, readonly) NSString *currentLevel;
 @property (nonatomic, readonly) int currentLevelIndex;
+@property (nonatomic) int currentLevelAttempts;
 
-+ (id)sharedInstance;
++ (instancetype)sharedInstance;
 - (NSDictionary *)nextLevelInfo;
 - (NSDictionary *)currentLevelInfo;
 - (void)loadNextLevel;

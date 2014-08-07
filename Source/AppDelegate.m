@@ -76,6 +76,8 @@
     
 #endif
     
+    [MGWU loadMGWU:@"PivotVivid"];
+    
     return YES;
 }
 

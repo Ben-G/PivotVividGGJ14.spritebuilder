@@ -36,12 +36,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/LightingLayer.m"
-            timestampString = "428768812.511567"
+            timestampString = "428769484.843816"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "-addLight:"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "-maskLight:renderer:worldToLight:projection:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -51,13 +51,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Source/LightingLayer.m"
-            timestampString = "428769484.843816"
+            filePath = "Source/MainScene.m"
+            timestampString = "429066175.546069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "-maskLight:renderer:worldToLight:projection:"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-onEnter"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -12,7 +12,7 @@
     NSArray *_levels;
 }
 
-+ (id)sharedInstance
++ (instancetype)sharedInstance
 {
     // structure used to test whether the block has completed or not
     static dispatch_once_t p = 0;
@@ -77,6 +77,7 @@
     NSDictionary *nextLevel = _levels[levelIndex];
     _currentLevel = nextLevel[@"levelName"];
     _currentLevelIndex = levelIndex;
+    self.currentLevelAttempts = 0;
 }
 
 @end

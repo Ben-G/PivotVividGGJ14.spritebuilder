@@ -14,5 +14,6 @@
 "tutorial1_5" = "Collect the Talisman at the end of each level to win.";
 
 "hint_no_masks" = "When you have no Masks left,\n you cannot switch colors anymore";
+"hint_earn_masks" = "You earn Masks by killing enemies";
 "hint_kill_enemy" = "You kill enemies by having the same color as them";
 "hint_blocks_colors" = "Certain blocks are only solid in certain colors";

@@ -92,7 +92,6 @@ static const int JUMP_IMPULSE = 100000;
 
 #pragma mark - Init
 
-
 static void
 playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 {
@@ -149,6 +148,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     _currentMoodIndex = 0;
     
     // load first level
+    
     NSString *levelName = [[GameState sharedInstance] currentLevel];
     
     NSNumber *isTutorial = ([[GameState sharedInstance] currentLevelInfo]) [@"isTutorial"];
@@ -534,6 +534,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         return;
     }
     
+    [MGWU logEvent:@"LevelLost" withParams:@{@"level": @([[GameState sharedInstance] currentLevelIndex]), @"attempts": @([GameState sharedInstance].currentLevelAttempts)}];
+    
     self.activeInstruction = nil;
     
     [_hero runDeathAnimation];
@@ -557,7 +559,12 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     NSString *hint;
     if ([_masks count] == 0) {
-        hint = NSLocalizedString(@"hint_no_masks", nil);
+        int random = arc4random_uniform(2);
+        if (random == 0) {
+            hint = NSLocalizedString(@"hint_no_masks", nil);
+        } else if (random == 1) {
+            hint = NSLocalizedString(@"hint_earn_masks", nil);
+        }
     } else if (deathType == DeathTypeEnemy) {
         hint = NSLocalizedString(@"hint_kill_enemy", nil);
     } else if (deathType == DeathTypeOffScreen) {
@@ -585,6 +592,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     // reload level
     [self stopMusic];
 
+    [GameState sharedInstance].currentLevelAttempts++;
+    
     CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
     [self addChild:loadingScreen];
     [self performSelector:@selector(actualRestartLevel) withObject:nil afterDelay:0.1f];
@@ -667,6 +676,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         [Kamcord stopRecording];
     });
 #endif
+    
+    [MGWU logEvent:@"LevelCompleted" withParams:@{@"level": @([[GameState sharedInstance] currentLevelIndex]), @"attempts": @([GameState sharedInstance].currentLevelAttempts)}];
 }
 
 #pragma mark - Collision Handling
