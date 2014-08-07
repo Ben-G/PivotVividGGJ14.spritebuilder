@@ -136,6 +136,7 @@
 		62CF7D8D198DFE7500ABF971 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF7D8C198DFE7400ABF971 /* Twitter.framework */; };
 		62CF7D90198E78E200ABF971 /* LightingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CF7D8F198E78E200ABF971 /* LightingLayer.m */; };
 		62D3F310197E044A001C51F8 /* LevelTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D3F30F197E044A001C51F8 /* LevelTile.m */; };
+		62E639121992FA5E00B40584 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E639111992FA5E00B40584 /* StoreKit.framework */; };
 		62F4177F1894923400663BDD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F4177E1894923400663BDD /* Block.m */; };
 		AC0C8C8E1894B9DC00080A19 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C8C8D1894B9DC00080A19 /* Enemy.m */; };
 		ACAF7F0B189421BB0021FC4C /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF7F0A189421BB0021FC4C /* Mask.m */; };
@@ -351,6 +352,7 @@
 		62CF7D8F198E78E200ABF971 /* LightingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LightingLayer.m; path = ../Source/LightingLayer.m; sourceTree = "<group>"; };
 		62D3F30E197E044A001C51F8 /* LevelTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTile.h; sourceTree = "<group>"; };
 		62D3F30F197E044A001C51F8 /* LevelTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTile.m; sourceTree = "<group>"; };
+		62E639111992FA5E00B40584 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		62F4177D1894923400663BDD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Block.h; path = Source/Block.h; sourceTree = "<group>"; };
 		62F4177E1894923400663BDD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Block.m; path = Source/Block.m; sourceTree = "<group>"; };
 		AC0C8C8C1894B9DC00080A19 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Source/Enemy.h; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E639121992FA5E00B40584 /* StoreKit.framework in Frameworks */,
 				62CF7D8D198DFE7500ABF971 /* Twitter.framework in Frameworks */,
 				62CF7D8B198DFE6E00ABF971 /* SystemConfiguration.framework in Frameworks */,
 				62CF7D89198DFE5900ABF971 /* Social.framework in Frameworks */,
@@ -759,6 +762,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62E639111992FA5E00B40584 /* StoreKit.framework */,
 				62ADFA5F19914BD400AD451F /* mgwuSDK.embeddedframework */,
 				62CF7D8C198DFE7400ABF971 /* Twitter.framework */,
 				62CF7D8A198DFE6D00ABF971 /* SystemConfiguration.framework */,

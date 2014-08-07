@@ -674,7 +674,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
     CCContactSet contactSet = pair.contacts;
     CGPoint collisionNormal = contactSet.normal;
-    if (collisionNormal.y < -0.5f) {
+    if (collisionNormal.y < -0.8f) {
         self.onGround = TRUE;
     }
 }
