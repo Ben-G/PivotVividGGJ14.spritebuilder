@@ -48,16 +48,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Source/MainScene.m"
-            timestampString = "429066175.546069"
+            filePath = "Source/Gameplay.m"
+            timestampString = "429122562.085502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-onEnter"
+            startingLineNumber = "537"
+            endingLineNumber = "537"
+            landmarkName = "-endGame:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

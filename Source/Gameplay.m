@@ -534,7 +534,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         return;
     }
     
-    [MGWU logEvent:@"LevelLost" withParams:@{@"level": @([[GameState sharedInstance] currentLevelIndex]), @"attempts": @([GameState sharedInstance].currentLevelAttempts)}];
+    [MGWU logEvent:@"LevelLost" withParams:@{@"level": @([[GameState sharedInstance] currentLevelIndex]), @"attempts": @([GameState sharedInstance].currentLevelAttempts), @"deathPositionX:":@(_hero.position.x), @"deathPositionY:":@(_hero.position.y)}];
     
     self.activeInstruction = nil;
     
