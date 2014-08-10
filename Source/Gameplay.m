@@ -22,6 +22,7 @@
 #import "LightingLayer.h"
 #import "LightSource.h"
 #import "IAPManager.h"
+#import "PurchaseScreen.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
 
@@ -633,10 +634,21 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     if (![[IAPManager sharedInstance] hasPurchasedPremium] && [[GameState sharedInstance] isNextLevelPremium]) {
         CCLOG(@"Need to pay before moving on!");
-        CCNode *purchaseScreen = [CCBReader load:@"UI/PurchaseScreen"];
+        PurchaseScreen *purchaseScreen = (PurchaseScreen *)[CCBReader load:@"UI/PurchaseScreen"];
         purchaseScreen.positionType = CCPositionTypeNormalized;
         purchaseScreen.position = ccp(0.5, 0.5);
         [self addChild:purchaseScreen];
+        
+        purchaseScreen.purchaseCompleteBlock = ^void () {
+            [[GameState sharedInstance] loadNextLevel];
+            
+            [self stopMusic];
+
+            CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
+            CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:1.f];
+            [[CCDirector sharedDirector] replaceScene:gameplayScene withTransition:transition];
+        };
+        
     } else {
         [[GameState sharedInstance] loadNextLevel];
         

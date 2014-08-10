@@ -35,6 +35,10 @@ static NSString * const IAP_PREMIUM_ID = @"com.benjaminencz.magicmasks.premium";
         _sharedObject = [[self alloc] init];
     });
     
+#ifdef DEBUG
+    [MGWU removeObjectForKey:IAP_PREMIUM];
+#endif
+    
     // returns the same object each time
     return _sharedObject;
 }
@@ -74,10 +78,10 @@ static NSString * const IAP_PREMIUM_ID = @"com.benjaminencz.magicmasks.premium";
     if ([articleID isEqualToString:IAP_PREMIUM_ID]) {
         [MGWU logEvent:@"Completed_Purchase" withParams:@{@"product_id":IAP_PREMIUM_ID}];
         [MGWU setObject:@(YES) forKey:IAP_PREMIUM];
-        [_purchaseTarget performSelector:@selector(_purchaseSelector) withObject:@(YES)];
+        [_purchaseTarget performSelector:_purchaseSelector withObject:@(YES)];
     } else {
         [MGWU logEvent:@"Cancelled_Purchase" withParams:@{@"product_id":IAP_PREMIUM_ID}];
-        [_purchaseTarget performSelector:@selector(_purchaseSelector) withObject:@(NO)];
+        [_purchaseTarget performSelector:_purchaseSelector withObject:@(NO)];
     }
 }
 
@@ -91,9 +95,9 @@ static NSString * const IAP_PREMIUM_ID = @"com.benjaminencz.magicmasks.premium";
         
         [MGWU logEvent:@"Completed_Restore" withParams:@{@"product_id":IAP_PREMIUM_ID}];
         
-        [_restoreTarget performSelector:@selector(_restoreSelector) withObject:@(YES)];
+        [_restoreTarget performSelector:_restoreSelector withObject:@(YES)];
     } else {
-        [_restoreTarget performSelector:@selector(_restoreSelector) withObject:@(NO)];
+        [_restoreTarget performSelector:_restoreSelector withObject:@(NO)];
     }
 }
 

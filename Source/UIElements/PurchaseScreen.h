@@ -10,4 +10,6 @@
 
 @interface PurchaseScreen : CCNode
 
+@property (nonatomic, copy) void (^purchaseCompleteBlock)();
+
 @end
