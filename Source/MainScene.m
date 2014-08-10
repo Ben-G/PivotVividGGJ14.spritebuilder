@@ -11,6 +11,8 @@
 #import "LevelDetails.h"
 #import "GameState.h"
 #import "LevelTile.h"
+#import "IAPManager.h"
+#import "PurchaseScreen.h"
 
 static const NSInteger GRID_WIDTH = 4;
 static const NSInteger VERTICAL_MARGIN = 12;
@@ -111,13 +113,35 @@ static const NSInteger VERTICAL_MARGIN = 12;
     [[GameState sharedInstance] loadLevel:levelIndex];
     NSDictionary *levelInfo = [[GameState sharedInstance] currentLevelInfo];
     
-    if (levelInfo[@"isTutorial"] == [NSNumber numberWithBool:TRUE]) {
-        CCScene *scene = [CCBReader loadAsScene:@"TutorialGameplay"];
-        [[CCDirector sharedDirector] replaceScene:scene];
+    
+    
+    if (![[IAPManager sharedInstance] hasPurchasedPremium] && [levelInfo[@"premium"] boolValue]) {
+        CCLOG(@"Need to pay before moving on!");
+        PurchaseScreen *purchaseScreen = (PurchaseScreen *)[CCBReader load:@"UI/PurchaseScreen"];
+        purchaseScreen.positionType = CCPositionTypeNormalized;
+        purchaseScreen.position = ccp(0.5, 0.5);
+        [self addChild:purchaseScreen];
+        
+        purchaseScreen.purchaseCompleteBlock = ^void () {
+            if (levelInfo[@"isTutorial"] == [NSNumber numberWithBool:TRUE]) {
+                CCScene *scene = [CCBReader loadAsScene:@"TutorialGameplay"];
+                [[CCDirector sharedDirector] replaceScene:scene];
+            } else {
+                CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
+                [self addChild:loadingScreen];
+                [self performSelector:@selector(actualLoadLevel) withObject:nil afterDelay:0.1f];
+            }
+        };
+        
     } else {
-        CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
-        [self addChild:loadingScreen];
-        [self performSelector:@selector(actualLoadLevel) withObject:nil afterDelay:0.1f];
+        if (levelInfo[@"isTutorial"] == [NSNumber numberWithBool:TRUE]) {
+            CCScene *scene = [CCBReader loadAsScene:@"TutorialGameplay"];
+            [[CCDirector sharedDirector] replaceScene:scene];
+        } else {
+            CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
+            [self addChild:loadingScreen];
+            [self performSelector:@selector(actualLoadLevel) withObject:nil afterDelay:0.1f];
+        }
     }
 }
 
