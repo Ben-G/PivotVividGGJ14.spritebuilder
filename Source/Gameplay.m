@@ -63,9 +63,6 @@
     int playerPositionX;
     
     BOOL _gameOver;
-    
-    // stores start position
-    CCNode *_startPositionNode;
   
     CGFloat _baseSpeed;
     int _initialMasks;
@@ -164,18 +161,16 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         _levelInstructions = [_level.instructions mutableCopy];
     }
     
-    _hero.position = _level.startPosition;
+    // determines how the camera shall follow the player (where in the camera image the hero will be positioned)
+    playerPositionX = 150;
+    
+    _hero.position = ccp(playerPositionX, _level.startPosition.y);
     // initialize previous position for mask following
     _hero.previousPosition = _hero.position;
     
     // read custom level properties
     _initialMasks = _level.initialMasks;
     baseSpeed = _baseSpeed = _level.levelSpeed;
-    
-    
-    // determines how the camera shall follow the player (where in the camera image the hero will be positioned)
-    playerPositionX = 150;
-    _hero.position = ccp(playerPositionX, _hero.position.y);
     
     levelGoal = _level.contentSize.width - 300;
     

@@ -892,7 +892,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>29</real>
+							<real>30</real>
 							<real>99</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -921,6 +921,8 @@
 						<string>StartPosition.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1517,8 +1519,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

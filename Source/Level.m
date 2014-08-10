@@ -35,7 +35,7 @@ static const CGPoint START_POS = {150, 200};
     if (_startPositionNode) {
         self.startPosition = _startPositionNode.position;
     } else {
-        CCLOG(@"Warning, no start position for level");
+        NSAssert(_startPositionNode != nil, @"every Level needs a start position node!");
     }
     
     self.instructions = _instructionNodes.children;
