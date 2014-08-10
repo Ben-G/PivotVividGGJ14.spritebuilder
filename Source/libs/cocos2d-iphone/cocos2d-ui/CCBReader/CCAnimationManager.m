@@ -887,18 +887,20 @@ static NSInteger ccbAnimationManagerID = 0;
 	
     if(_currentActions.count==0) return;
     
-    CCAction *action;
-    NSArray *actionsCopy = [_currentActions copy];
-    
-    for(action in actionsCopy) {
-        [action step:step];
+    if ([_currentActions count] == 1) {
+        [_currentActions[0] step:step];
+    } else {
+        CCAction *action;
+        NSArray *actionsCopy = [_currentActions copy];
         
-        if([action isDone]) {
-            [_currentActions removeObject:action];
+        for(action in actionsCopy) {
+            [action step:step];
+            
+            if([action isDone]) {
+                [_currentActions removeObject:action];
+            }
         }
     }
-    
-
 }
 
 - (void)clearAllActions {

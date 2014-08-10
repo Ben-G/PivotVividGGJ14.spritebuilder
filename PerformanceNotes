@@ -1,0 +1,3 @@
+* Lighting: 30% of CPU
+* Kamcord: 10% of CPU
+* AnimationManager (SB) takes a lot: 10%
