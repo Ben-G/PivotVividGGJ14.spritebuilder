@@ -78,6 +78,10 @@
     
     [MGWU loadMGWU:@"PivotVivid"];
     
+#ifndef DEBUG
+    [MGWU useIAPs];
+#endif
+    
     return YES;
 }
 

@@ -13,7 +13,11 @@
 + (instancetype)sharedInstance;
 
 - (BOOL)hasPurchasedPremium;
+
+// callback should take 1 parameter of type NSNumber to indicate success of purchase
 - (void)purchasePremiumWithTarget:(id)target callback:(SEL)callback;
+
+// callback should take 1 parameter of type NSNumber to indicate success of restore
 - (void)restorePremiumWithTarget:(id)target callback:(SEL)callback;
 
 @end
