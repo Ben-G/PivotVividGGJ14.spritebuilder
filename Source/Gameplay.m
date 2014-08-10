@@ -78,6 +78,9 @@
     LightSource *_lightSource;
     
     CCParticleSystemBase *_clouds;
+    
+    NSTimeInterval _currentTimestamp;
+    NSTimeInterval _lastGroundTimeStamp;
 }
 
 // distance between masks
@@ -287,6 +290,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 #pragma mark - Update
 
 - (void)fixedUpdate:(CCTime)delta {
+    _currentTimestamp += delta;
     
     if (_gameOver || self.contentNode.paused) {
         return;
@@ -506,13 +510,11 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     //TODO: needs to be improved, need to check that arbiter actually is the ground
     __block BOOL jumped = FALSE;
     
-    [_hero.physicsBody.chipmunkObjects[0] eachArbiter:^(cpArbiter *arbiter) {
-        if (!jumped && self.onGround) {
+        if (!jumped && self.onGround && (_currentTimestamp - _lastGroundTimeStamp < 0.05f)) {
             [_hero.physicsBody setVelocity:ccp(_hero.physicsBody.velocity.x, 500.f)];
             jumped = TRUE;
             self.onGround = FALSE;
         }
-    }];
 }
 
 - (void)setOnGround:(BOOL)onGround {
@@ -685,8 +687,9 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 -(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero ground:(CCNode *)ground {
     CCContactSet contactSet = pair.contacts;
     CGPoint collisionNormal = contactSet.normal;
-    if (collisionNormal.y < -0.8f) {
+    if (collisionNormal.y < -0.95f) {
         self.onGround = TRUE;
+        _lastGroundTimeStamp = _currentTimestamp;
     }
 }
 
