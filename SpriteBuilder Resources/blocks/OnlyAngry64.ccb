@@ -183,7 +183,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>art/angry_blocksmall.PNG</string>
+					<string>art/angry_blocksmall.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -200,8 +200,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

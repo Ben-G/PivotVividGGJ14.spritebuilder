@@ -633,6 +633,10 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     if (![[IAPManager sharedInstance] hasPurchasedPremium] && [[GameState sharedInstance] isNextLevelPremium]) {
         CCLOG(@"Need to pay before moving on!");
+        CCNode *purchaseScreen = [CCBReader load:@"UI/PurchaseScreen"];
+        purchaseScreen.positionType = CCPositionTypeNormalized;
+        purchaseScreen.position = ccp(0.5, 0.5);
+        [self addChild:purchaseScreen];
     } else {
         [[GameState sharedInstance] loadNextLevel];
         

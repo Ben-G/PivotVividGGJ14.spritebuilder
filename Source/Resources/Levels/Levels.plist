@@ -112,6 +112,16 @@
         <key>premium</key>
 		<false/>
 	</dict>
+    <dict>
+		<key>levelTitle</key>
+		<string>Level 2</string>
+		<key>levelName</key>
+		<string>Levels/Level_6_Pre</string>
+		<key>levelDescription</key>
+		<string></string>
+        <key>premium</key>
+		<false/>
+	</dict>
 	<dict>
 		<key>levelTitle</key>
 		<string>Level 2</string>
