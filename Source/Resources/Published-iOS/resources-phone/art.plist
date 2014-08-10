@@ -59,7 +59,7 @@
 		<key>art/angertiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{368, 1013}, {33, 8}}</string>
+			<string>{{392, 1012}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>
@@ -199,6 +199,19 @@
 			<key>sourceSize</key>
 			<string>{33, 34}</string>
 		</dict>
+		<key>art/coin.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{325, 1003}, {19, 22}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{3, 1}, {19, 22}}</string>
+			<key>sourceSize</key>
+			<string>{24, 24}</string>
+		</dict>
 		<key>art/fear_background.png</key>
 		<dict>
 			<key>frame</key>
@@ -267,7 +280,7 @@
 		<key>art/feartiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{368, 1003}, {33, 8}}</string>
+			<string>{{392, 1002}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>
@@ -280,7 +293,7 @@
 		<key>art/followmask.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{325, 1003}, {18, 29}}</string>
+			<string>{{349, 1003}, {18, 29}}</string>
 			<key>offset</key>
 			<string>{-1, 0}</string>
 			<key>rotated</key>
@@ -410,7 +423,7 @@
 		<key>art/happytiletop.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{403, 1002}, {33, 8}}</string>
+			<string>{{427, 1002}, {33, 8}}</string>
 			<key>offset</key>
 			<string>{0, -13}</string>
 			<key>rotated</key>
@@ -423,7 +436,7 @@
 		<key>art/icepartical.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{356, 1003}, {10, 16}}</string>
+			<string>{{380, 1002}, {10, 16}}</string>
 			<key>offset</key>
 			<string>{-1, 0}</string>
 			<key>rotated</key>

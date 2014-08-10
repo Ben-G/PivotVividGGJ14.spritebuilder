@@ -10,6 +10,7 @@
 
 @implementation LevelTile {
     CCSprite *_lock;
+    CCSprite *_coin;
 }
 
 - (void)onEnter {
@@ -31,6 +32,11 @@
 - (void)setLocked:(BOOL)locked {
     _locked = locked;
     _lock.visible = locked;
+}
+
+- (void)setPremium:(BOOL)premium {
+    _premium = premium;
+    _coin.visible = premium;
 }
 
 @end

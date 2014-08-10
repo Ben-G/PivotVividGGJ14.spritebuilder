@@ -199,6 +199,19 @@
 			<key>sourceSize</key>
 			<string>{132, 136}</string>
 		</dict>
+		<key>art/coin.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 3995}, {74, 88}}</string>
+			<key>offset</key>
+			<string>{2, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{13, 5}, {74, 88}}</string>
+			<key>sourceSize</key>
+			<string>{96, 96}</string>
+		</dict>
 		<key>art/fear_background.png</key>
 		<dict>
 			<key>frame</key>
@@ -280,7 +293,7 @@
 		<key>art/followmask.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 3995}, {78, 120}}</string>
+			<string>{{77, 3995}, {78, 120}}</string>
 			<key>offset</key>
 			<string>{-3, -2}</string>
 			<key>rotated</key>

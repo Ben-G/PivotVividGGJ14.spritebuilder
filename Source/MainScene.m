@@ -85,6 +85,10 @@ static const NSInteger VERTICAL_MARGIN = 12;
             // check if level is unlocked:
             NSString *levelString = [NSString stringWithFormat:@"Level_%d_unlocked", selectedLevel];
             BOOL levelUnlocked = [[NSUserDefaults standardUserDefaults] boolForKey:levelString];
+            
+            // check if level is premium:
+            NSDictionary *currentLevel = _levels[selectedLevel];
+            levelTile.premium = [currentLevel[@"premium"] boolValue];
 #ifdef DEBUG
             levelUnlocked = YES;
 #endif
