@@ -259,7 +259,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>361</real>
+							<real>360</real>
 							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -321,7 +321,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>297</real>
+							<real>296</real>
 							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -445,7 +445,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>2937</real>
+							<real>2932</real>
 							<real>208</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2778,7 +2778,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1864</real>
+							<real>1863</real>
 							<real>228</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2840,7 +2840,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1929</real>
+							<real>1928</real>
 							<real>228</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2902,7 +2902,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1864</real>
+							<real>1863</real>
 							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2964,7 +2964,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1929</real>
+							<real>1928</real>
 							<real>33</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3026,7 +3026,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>2113</real>
+							<real>2114</real>
 							<real>117</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3336,7 +3336,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>2933</real>
+							<real>2932</real>
 							<real>143</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3460,6 +3460,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
