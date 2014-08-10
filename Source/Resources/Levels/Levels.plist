@@ -9,6 +9,8 @@
 		<string>Levels/Level_0</string>
 		<key>levelDescription</key>
 		<string></string>
+		<key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -17,6 +19,8 @@
 		<string>Levels/Level_1</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -25,6 +29,8 @@
 		<string>Levels/Level_2</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -33,6 +39,8 @@
 		<string>Levels/Level_3</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -41,6 +49,8 @@
 		<string>Levels/Level_4</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -49,6 +59,8 @@
 		<string>Levels/Level_5</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -57,6 +69,8 @@
 		<string>Levels/Level_6_Pre</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -65,6 +79,8 @@
 		<string>Levels/Level_6</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -73,6 +89,8 @@
 		<string>Levels/Level_7</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -81,6 +99,8 @@
 		<string>Levels/Level_9</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -89,22 +109,28 @@
 		<string>Levels/Level_8</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<false/>
 	</dict>
-    <dict>
+	<dict>
 		<key>levelTitle</key>
 		<string>Level 2</string>
 		<key>levelName</key>
 		<string>Levels/Level_10</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>levelTitle</key>
 		<string>Level 2</string>
 		<key>levelName</key>
 		<string>Levels/Level_11</string>
 		<key>levelDescription</key>
 		<string></string>
+        <key>premium</key>
+		<true/>
 	</dict>
 </array>
 </plist>

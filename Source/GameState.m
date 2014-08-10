@@ -80,4 +80,10 @@
     self.currentLevelAttempts = 0;
 }
 
+- (BOOL)isNextLevelPremium {
+    NSDictionary *nextLevel = [self nextLevelInfo];
+    
+    return [nextLevel[@"premium"] boolValue];
+}
+
 @end

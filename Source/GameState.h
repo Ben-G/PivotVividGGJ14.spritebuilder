@@ -17,6 +17,7 @@
 + (instancetype)sharedInstance;
 - (NSDictionary *)nextLevelInfo;
 - (NSDictionary *)currentLevelInfo;
+- (BOOL)isNextLevelPremium;
 - (void)loadNextLevel;
 - (void)loadLevel:(NSInteger)levelIndex;
 

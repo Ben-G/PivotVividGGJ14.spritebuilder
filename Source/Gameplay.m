@@ -21,6 +21,7 @@
 #import "GameEndLayer.h"
 #import "LightingLayer.h"
 #import "LightSource.h"
+#import "IAPManager.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
 
@@ -628,14 +629,19 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (void)nextLevel {
-    // reload level
-    [[GameState sharedInstance] loadNextLevel];
+    // check if next level is paid
     
-    [self stopMusic];
-    
-    CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
-    [self addChild:loadingScreen];
-    [self performSelector:@selector(actualNextLevel) withObject:nil afterDelay:0.1f];
+    if (![[IAPManager sharedInstance] hasPurchasedPremium] && [[GameState sharedInstance] isNextLevelPremium]) {
+        CCLOG(@"Need to pay before moving on!");
+    } else {
+        [[GameState sharedInstance] loadNextLevel];
+        
+        [self stopMusic];
+        
+        CCNode *loadingScreen = [CCBReader load:@"UI/LoadingScreen"];
+        [self addChild:loadingScreen];
+        [self performSelector:@selector(actualNextLevel) withObject:nil afterDelay:0.1f];
+    }
 }
 
 - (void)actualNextLevel {

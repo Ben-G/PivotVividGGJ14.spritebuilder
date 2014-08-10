@@ -114,6 +114,7 @@
 		62ADFAEB19914BD400AD451F /* send-button-instate.png in Resources */ = {isa = PBXBuildFile; fileRef = 62ADFAA519914BD400AD451F /* send-button-instate.png */; };
 		62ADFAEC19914BD400AD451F /* send-field-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 62ADFAA619914BD400AD451F /* send-field-landscape.png */; };
 		62ADFAEF19915D2700AD451F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62ADFAEE19915D2700AD451F /* Images.xcassets */; };
+		62BE00B5199746DB00796091 /* IAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BE00B4199746DB00796091 /* IAPManager.m */; };
 		62CB016918BC239C00EC8097 /* TutorialGameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB016818BC239C00EC8097 /* TutorialGameplay.m */; };
 		62CB017118C29C1F00EC8097 /* TutorialFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB017018C29C1F00EC8097 /* TutorialFragment.m */; };
 		62CB017418C2A00800EC8097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62CB017618C2A00800EC8097 /* Localizable.strings */; };
@@ -324,6 +325,8 @@
 		62ADFAA519914BD400AD451F /* send-button-instate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-button-instate.png"; sourceTree = "<group>"; };
 		62ADFAA619914BD400AD451F /* send-field-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-field-landscape.png"; sourceTree = "<group>"; };
 		62ADFAEE19915D2700AD451F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PivotVividGGJ14/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		62BE00B3199746DB00796091 /* IAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPManager.h; sourceTree = "<group>"; };
+		62BE00B4199746DB00796091 /* IAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPManager.m; sourceTree = "<group>"; };
 		62CB016718BC239C00EC8097 /* TutorialGameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialGameplay.h; path = Source/TutorialGameplay.h; sourceTree = "<group>"; };
 		62CB016818BC239C00EC8097 /* TutorialGameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialGameplay.m; path = Source/TutorialGameplay.m; sourceTree = "<group>"; };
 		62CB016F18C29C1F00EC8097 /* TutorialFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment.h; sourceTree = "<group>"; };
@@ -595,6 +598,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		62BE00B2199746CB00796091 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				62BE00B3199746DB00796091 /* IAPManager.h */,
+				62BE00B4199746DB00796091 /* IAPManager.m */,
+			);
+			name = IAP;
+			path = Source/IAP;
+			sourceTree = "<group>";
+		};
 		62CB016D18C29C0500EC8097 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -650,6 +663,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				62BE00B2199746CB00796091 /* IAP */,
 				62ADFA54198E7F3D00AD451F /* Lighting */,
 				621F0F891985628C008A0A45 /* Instruction */,
 				62D3F30C197E03D3001C51F8 /* UIElements */,
@@ -1010,6 +1024,7 @@
 				62F4177F1894923400663BDD /* Block.m in Sources */,
 				62A0B8F21895581D0037B7E4 /* Level.m in Sources */,
 				627C5BFB1893FC3800409C84 /* LevelBatchNode.m in Sources */,
+				62BE00B5199746DB00796091 /* IAPManager.m in Sources */,
 				622BE81D18D2BCB9009178AF /* TutorialFragment1_0.m in Sources */,
 				627C5C071894676000409C84 /* GroundBlockEight.m in Sources */,
 				62A0B8F51895644B0037B7E4 /* GoalPosition.m in Sources */,
