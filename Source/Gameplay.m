@@ -23,6 +23,7 @@
 #import "LightSource.h"
 #import "IAPManager.h"
 #import "PurchaseScreen.h"
+#import "UIDeviceHardware.h"
 #define CP_ALLOW_PRIVATE_ACCESS 1
 #import "CCPhysics+ObjectiveChipmunk.h"
 
@@ -229,8 +230,10 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     // set up level instructions
     
 #ifndef ANDROID
-    [Kamcord stopRecording];
-    [Kamcord startRecording];
+    if (![UIDeviceHardware iPhone4OrOlder]) {
+        [Kamcord stopRecording];
+        [Kamcord startRecording];
+    }
 #endif
 }
 
@@ -616,7 +619,9 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 
 - (void)watchReplay {
 #ifndef ANDROID
-    [Kamcord showView];
+    if (![UIDeviceHardware iPhone4OrOlder]) {
+        [Kamcord showView];
+    }
 #endif
 }
 
@@ -695,10 +700,12 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [_hero runAction:fadeOutHero];
     
 #ifndef ANDROID
-    // wait 1 second, then stop recording
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [Kamcord stopRecording];
-    });
+    if (![UIDeviceHardware iPhone4OrOlder]) {
+        // wait 1 second, then stop recording
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            [Kamcord stopRecording];
+        });
+    }
 #endif
     
     [MGWU logEvent:@"LevelCompleted" withParams:@{@"level": @([[GameState sharedInstance] currentLevelIndex]), @"attempts": @([GameState sharedInstance].currentLevelAttempts)}];

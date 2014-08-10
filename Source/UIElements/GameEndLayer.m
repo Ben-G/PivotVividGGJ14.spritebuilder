@@ -7,10 +7,24 @@
 //
 
 #import "GameEndLayer.h"
+#import "UIDeviceHardware.h"
 
 @implementation GameEndLayer {
     CCNodeColor *_progressBar;
     CCLabelTTF *_hintLabel;
+    
+    CCButton *_watchReplayButton;
+    CCButton *_nextLevelButton;
+}
+
+- (void)onEnter {
+    if ([UIDeviceHardware iPhone4OrOlder]) {
+        [_watchReplayButton removeFromParent];
+        // center nextLevel Button, because replay button doesn't exist
+        _nextLevelButton.position = ccp(0.5f, _nextLevelButton.position.y);
+    }
+    
+    [super onEnter];
 }
 
 - (void)onEnterTransitionDidFinish {

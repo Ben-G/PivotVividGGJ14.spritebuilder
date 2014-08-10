@@ -370,7 +370,7 @@
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_nextLevelButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -390,7 +390,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.31999999284744263</real>
+							<real>0.32000002264976501</real>
 							<real>0.15000000596046448</real>
 							<integer>3</integer>
 							<integer>2</integer>
@@ -806,7 +806,7 @@
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_watchReplayButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>

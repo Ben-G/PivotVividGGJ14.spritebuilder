@@ -57,7 +57,7 @@ static NSString * const IAP_PREMIUM_ID = @"com.benjaminencz.magicmasks.premium";
 #if DEBUG
     [MGWU testBuyProduct:IAP_PREMIUM_ID withCallback:@selector(purchasedPremium:) onTarget:self];
 #else
-    [MGWU testBuyProduct:IAP_PREMIUM_ID withCallback:@selector(purchasedPremium:) onTarget:self];
+    [MGWU buyProduct:IAP_PREMIUM_ID withCallback:@selector(purchasedPremium:) onTarget:self];
 #endif
 }
 

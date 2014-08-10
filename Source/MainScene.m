@@ -92,8 +92,6 @@ static const NSInteger VERTICAL_MARGIN = 12;
 #ifdef DEBUG
             levelUnlocked = YES;
 #endif
-            levelUnlocked = YES;
-            
             levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel+1];
             levelTile.levelIndex = selectedLevel;
             levelTile.locked = !levelUnlocked;

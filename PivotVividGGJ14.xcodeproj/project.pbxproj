@@ -18,6 +18,7 @@
 		623468FE1969A8CE0030AC0A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623468FD1969A8CE0030AC0A /* GLKit.framework */; };
 		623469051969C5AB0030AC0A /* TutorialFragment1_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 623469041969C5AB0030AC0A /* TutorialFragment1_3.m */; };
 		6241216C1997544600410E7C /* PurchaseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6241216B1997544600410E7C /* PurchaseScreen.m */; };
+		6241217119980D4700410E7C /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 6241217019980D4700410E7C /* UIDeviceHardware.m */; };
 		624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 624462181935A18000895F2D /* TutorialInstructionPopup.m */; };
 		627C5BB51893750300409C84 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB41893750300409C84 /* Gameplay.m */; };
 		627C5BB91893873100409C84 /* GroundBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5BB81893873100409C84 /* GroundBlock.m */; };
@@ -210,6 +211,8 @@
 		623469041969C5AB0030AC0A /* TutorialFragment1_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_3.m; sourceTree = "<group>"; };
 		6241216A1997544600410E7C /* PurchaseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseScreen.h; sourceTree = "<group>"; };
 		6241216B1997544600410E7C /* PurchaseScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseScreen.m; sourceTree = "<group>"; };
+		6241216F19980D4700410E7C /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
+		6241217019980D4700410E7C /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
 		624462171935A18000895F2D /* TutorialInstructionPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialInstructionPopup.h; path = Source/TutorialInstructionPopup.h; sourceTree = "<group>"; };
 		624462181935A18000895F2D /* TutorialInstructionPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialInstructionPopup.m; path = Source/TutorialInstructionPopup.m; sourceTree = "<group>"; };
 		627C5BB31893750300409C84 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
@@ -458,6 +461,16 @@
 			path = Source/Instruction;
 			sourceTree = "<group>";
 		};
+		6241216E19980CC900410E7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6241216F19980D4700410E7C /* UIDeviceHardware.h */,
+				6241217019980D4700410E7C /* UIDeviceHardware.m */,
+			);
+			name = Utils;
+			path = Source/Utils;
+			sourceTree = "<group>";
+		};
 		6273BBA218C2D15D0006C979 /* Tutorial1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +681,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6241216E19980CC900410E7C /* Utils */,
 				62BE00B2199746CB00796091 /* IAP */,
 				62ADFA54198E7F3D00AD451F /* Lighting */,
 				621F0F891985628C008A0A45 /* Instruction */,
@@ -1041,6 +1055,7 @@
 				62095C26196A18C800FCEC78 /* UIUtils.m in Sources */,
 				62A0B8EC18954DF00037B7E4 /* SadEnemy.m in Sources */,
 				621F0F9019856D30008A0A45 /* DisplayInstruction.m in Sources */,
+				6241217119980D4700410E7C /* UIDeviceHardware.m in Sources */,
 				627C5BB51893750300409C84 /* Gameplay.m in Sources */,
 				6241216C1997544600410E7C /* PurchaseScreen.m in Sources */,
 				62A1F4C91895AA5200122E90 /* Startscreen.m in Sources */,

@@ -885,22 +885,26 @@ static NSInteger ccbAnimationManagerID = 0;
     
     _runningSequence.time+=step;
 	
-    if(_currentActions.count==0) return;
-    
-    if ([_currentActions count] == 1) {
-        [_currentActions[0] step:step];
-    } else {
-        CCAction *action;
-        NSArray *actionsCopy = [_currentActions copy];
+        if(_currentActions.count==0) return;
         
-        for(action in actionsCopy) {
-            [action step:step];
+        if ([_currentActions count] == 1) {
+            [_currentActions[0] step:step];
             
-            if([action isDone]) {
-                [_currentActions removeObject:action];
+            if([_currentActions[0] isDone]) {
+                [_currentActions removeObjectAtIndex:0];
+            }
+        } else {
+            CCAction *action;
+            NSArray *actionsCopy = [_currentActions copy];
+            
+            for(action in actionsCopy) {
+                [action step:step];
+                
+                if([action isDone]) {
+                    [_currentActions removeObject:action];
+                }
             }
         }
-    }
 }
 
 - (void)clearAllActions {
