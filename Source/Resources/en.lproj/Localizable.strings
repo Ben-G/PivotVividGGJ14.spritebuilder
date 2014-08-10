@@ -17,3 +17,4 @@
 "hint_earn_masks" = "You earn Masks by killing enemies";
 "hint_kill_enemy" = "You kill enemies by having the same color as them";
 "hint_blocks_colors" = "Certain blocks are only solid in certain colors";
+"hint_smoke" = "Avoid the evil smoke!";

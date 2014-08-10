@@ -11,7 +11,8 @@
 
 typedef NS_ENUM(NSInteger, DeathType) {
     DeathTypeOffScreen,
-    DeathTypeEnemy
+    DeathTypeEnemy,
+    DeathEvilSmoke
 };
 
 @class Hero;

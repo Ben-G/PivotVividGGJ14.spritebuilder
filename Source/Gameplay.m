@@ -573,6 +573,11 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
         hint = NSLocalizedString(@"hint_blocks_colors", nil);
     }
     
+    // if smoke was the reason - always mention that and override possible other reasons
+    if (deathType == DeathEvilSmoke) {
+        hint = NSLocalizedString(@"hint_smoke", nil);
+    }
+    
     [gameEndLayer displayHint:hint];
     
     [self addChild:gameEndLayer];
@@ -707,8 +712,16 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
-    
     BasicEnemy *basicEnemy = (BasicEnemy*)enemy;
+    
+    // for all other enemy types, besides colored enemies -> die immediately
+    if (![basicEnemy isKindOfClass:[Enemy class]]) {
+        [self endGame:DeathEvilSmoke];
+        return NO;
+    }
+    
+    [Enemy isSubclassOfClass:[Enemy class]];
+    
     NSString *moodPrefix = [_moods[_currentMoodIndex] moodPrefix];
     
     // test if enemy should be killed in current mood
