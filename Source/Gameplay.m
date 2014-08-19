@@ -181,6 +181,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     _hero.physicsBody.allowsRotation = FALSE;
     _hero.physicsBody.collisionType = @"hero";
     _hero.speed = _baseSpeed;
+    _hero.zOrder = 1;
     
     // load level into physics node, setup ourselves as physics delegate
     [_physicsNode addChild:_level];
@@ -523,7 +524,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     if (_onGround != onGround) {
         _onGround = onGround;
         
-        if (_onGround) {
+        if (_onGround && !_gameOver) {
             [_hero runAnimationIfNotRunning:[_moods[_currentMoodIndex] moodPrefix]];
         } else {
             [_hero stopAnimation];
@@ -675,16 +676,24 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     self.activeInstruction = nil;
     
     baseSpeed = 0;
-    
     [_hero stopAllActions];
-    
     _gameOver = TRUE;
+ 
+    CCActionScaleBy *actionScaleBy = [CCActionScaleBy actionWithDuration:0.3f scale:1.6f];
+    CCActionEaseBackOut *bounceScale = [CCActionEaseBackOut actionWithAction:actionScaleBy];
+    [self runAction:bounceScale];
+    
+    [self performSelector:@selector(winGame2) withObject:nil afterDelay:0.6f];
+}
+
+- (void)winGame2 {
+    CCActionScaleTo *actionScaleTo = [CCActionScaleTo actionWithDuration:0.3f scale:1.f];
+    [self runAction:actionScaleTo];
     
     // add goldenmask to win layer, then animate to center
     CGPoint goalWorldPosition = [_achievedGoalObject.parent convertToWorldSpace:_achievedGoalObject.position];
     [_achievedGoalObject removeFromParent];
     
-
     CCNode *gameWinLayer = [CCBReader load:@"UI/GameWinLayer" owner:self];
     gameWinLayer.cascadeOpacityEnabled = YES;
     gameWinLayer.opacity = 0.f;
@@ -695,13 +704,13 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     CCActionMoveTo *moveToCenter = [CCActionMoveTo actionWithDuration:1.f position:ccp(gameWinLayer.contentSizeInPoints.width/2, gameWinLayer.contentSizeInPoints.height/3)];
     CCActionEaseBackOut *bounce = [CCActionEaseBackOut actionWithAction:moveToCenter];
-
+    
     [_achievedGoalObject runAction:bounce];
     
     CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
     [gameWinLayer runAction:fadeIn];
     
-
+    
     for (CCNode *block in _blocks) {
         // stop blinking of blocks, because we will fade out now
         [block stopAllActions];
@@ -724,6 +733,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 #endif
     
     [MGWU logEvent:@"LevelCompleted" withParams:@{@"level": @([[GameState sharedInstance] currentLevelIndex]), @"attempts": @([GameState sharedInstance].currentLevelAttempts)}];
+    
 }
 
 #pragma mark - Collision Handling
@@ -750,7 +760,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     
     [self winGame];
 
-    return TRUE;
+    return NO;
 }
 
 - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero enemy:(CCNode *)enemy {
