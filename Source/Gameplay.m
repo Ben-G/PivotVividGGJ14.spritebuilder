@@ -81,6 +81,8 @@
     
     NSTimeInterval _currentTimestamp;
     NSTimeInterval _lastGroundTimeStamp;
+    
+    CCNode *_achievedGoalObject;
 }
 
 // distance between masks
@@ -677,11 +679,24 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [_hero stopAllActions];
     
     _gameOver = TRUE;
+    
+    // add goldenmask to win layer, then animate to center
+    CGPoint goalWorldPosition = [_achievedGoalObject.parent convertToWorldSpace:_achievedGoalObject.position];
+    [_achievedGoalObject removeFromParent];
+    
 
     CCNode *gameWinLayer = [CCBReader load:@"UI/GameWinLayer" owner:self];
     gameWinLayer.cascadeOpacityEnabled = YES;
     gameWinLayer.opacity = 0.f;
     [self addChild:gameWinLayer];
+    
+    _achievedGoalObject.position = [gameWinLayer convertToNodeSpace:goalWorldPosition];
+    [gameWinLayer addChild:_achievedGoalObject];
+    
+    CCActionMoveTo *moveToCenter = [CCActionMoveTo actionWithDuration:1.f position:ccp(gameWinLayer.contentSizeInPoints.width/2, gameWinLayer.contentSizeInPoints.height/3)];
+    CCActionEaseBackOut *bounce = [CCActionEaseBackOut actionWithAction:moveToCenter];
+
+    [_achievedGoalObject runAction:bounce];
     
     CCActionFadeIn *fadeIn = [CCActionFadeIn actionWithDuration:1.f];
     [gameWinLayer runAction:fadeIn];
@@ -723,14 +738,17 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero goal:(CCNode *)goal {
-    [self winGame];
+    _achievedGoalObject = goal;
     
     // particle effect for death
     CCParticleSystem *particle = (CCParticleSystem *)[CCBReader load:@"EnemyDies"];
     particle.position = goal.position;
     particle.autoRemoveOnFinish = TRUE;
-    [goal removeFromParentAndCleanup:TRUE];
+    goal.physicsBody = nil;
+
     [_physicsNode addChild:particle];
+    
+    [self winGame];
 
     return TRUE;
 }
