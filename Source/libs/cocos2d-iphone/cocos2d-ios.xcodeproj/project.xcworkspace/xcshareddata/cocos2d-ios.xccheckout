@@ -5,38 +5,38 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A1F9EF54-463A-4883-A531-915D41FC6749</string>
+	<string>C6BA9178-3CD4-4C97-94E9-7E7AC85E4C07</string>
 	<key>IDESourceControlProjectName</key>
 	<string>cocos2d-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4A173B38-65FF-4688-8ABF-31A9E4862AF1</key>
-		<string>git://github.com/slembcke/Chipmunk-Physics.git</string>
-		<key>83AC1C00-3851-44B7-A248-AE85203D88DC</key>
-		<string>https://github.com/apportable/cocos2d-iphone.git</string>
+		<key>8FD09E12-42F5-4CFE-B22F-30A26247F50E</key>
+		<string>https://github.com/slembcke/Chipmunk2D.git</string>
+		<key>A3E79198-5FE0-4AFD-BDEB-9D6F51E4B2D5</key>
+		<string>https://github.com/cocos2d/cocos2d-iphone.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>cocos2d-ios.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4A173B38-65FF-4688-8ABF-31A9E4862AF1</key>
+		<key>8FD09E12-42F5-4CFE-B22F-30A26247F50E</key>
 		<string>../../external/Chipmunk</string>
-		<key>83AC1C00-3851-44B7-A248-AE85203D88DC</key>
+		<key>A3E79198-5FE0-4AFD-BDEB-9D6F51E4B2D5</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/apportable/cocos2d-iphone.git</string>
+	<string>https://github.com/cocos2d/cocos2d-iphone.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>83AC1C00-3851-44B7-A248-AE85203D88DC</string>
+	<string>A3E79198-5FE0-4AFD-BDEB-9D6F51E4B2D5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4A173B38-65FF-4688-8ABF-31A9E4862AF1</string>
+			<string>8FD09E12-42F5-4CFE-B22F-30A26247F50E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Chipmunk</string>
 		</dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>83AC1C00-3851-44B7-A248-AE85203D88DC</string>
+			<string>A3E79198-5FE0-4AFD-BDEB-9D6F51E4B2D5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>cocos2d-iphone</string>
 		</dict>

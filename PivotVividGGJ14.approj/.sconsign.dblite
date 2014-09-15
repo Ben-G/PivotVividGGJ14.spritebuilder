@@ -1,1 +1,22 @@
-{"/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/PivotVividGGJ14.approj/configuration.json":{"hash":"7e3054fdd3208b173195988801c47568","mod":1390621049.0},"/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/PivotVividGGJ14.approj/targets/PivotVividGGJ14/Release.generated":{"hash":"38dd37bd26afe40e9b08657084d457a4","mod":1407047720.0},"/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/PivotVividGGJ14.xcodeproj/project.pbxproj":{"hash":"a15e3999f9259ff480f265020d05e7df","mod":1407047590.0},"/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/Source/libs/cocos2d-iphone/Chipmunk7-ios.approj/configuration.json":{"hash":"fffca53229b597618e8b24a6c884cd4e","mod":1407047721.0},"/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/Source/libs/cocos2d-iphone/cocos2d-ios.approj/configuration.json":{"hash":"2e12d7904c991ef301c67a724be239e9","mod":1407047721.0}}
+{
+    "/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/PivotVividGGJ14.approj/configuration.json": {
+        "hash": "7e3054fdd3208b173195988801c47568", 
+        "mod": 1390621049.0
+    }, 
+    "/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/PivotVividGGJ14.approj/targets/PivotVividGGJ14/Release.generated": {
+        "hash": "38dd37bd26afe40e9b08657084d457a4", 
+        "mod": 1407047720.0
+    }, 
+    "/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/PivotVividGGJ14.xcodeproj/project.pbxproj": {
+        "hash": "37ee7f5bf09dc496ac6a76925a21c0d2", 
+        "mod": 1408474590.0
+    }, 
+    "/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/Source/libs/cocos2d-iphone/Chipmunk7-ios.approj/configuration.json": {
+        "hash": "fffca53229b597618e8b24a6c884cd4e", 
+        "mod": 1407047721.0
+    }, 
+    "/Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/Source/libs/cocos2d-iphone/cocos2d-ios.approj/configuration.json": {
+        "hash": "2e12d7904c991ef301c67a724be239e9", 
+        "mod": 1407047721.0
+    }
+}

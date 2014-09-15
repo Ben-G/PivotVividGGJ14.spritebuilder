@@ -16,17 +16,22 @@ dependencies: \
   cocos2d/CCActionProgressTimer.h cocos2d/CCProgressNode.h \
   cocos2d/CCSprite.h cocos2d/CCActionTween.h cocos2d/CCClippingNode.h \
   cocos2d/CCConfiguration.h cocos2d/CCDirector.h cocos2d/CCDrawNode.h \
+  cocos2d/CCEffect.h cocos2d/CCShader.h cocos2d/CCEffectBloom.h \
+  cocos2d/CCEffectBrightness.h cocos2d/CCEffectContrast.h \
+  cocos2d/CCEffectBlur.h cocos2d/CCEffectGlass.h cocos2d/CCEffectHue.h \
+  cocos2d/CCEffectNode.h cocos2d/CCRenderTexture.h cocos2d/CCTexture.h \
+  cocos2d/Platforms/CCNS.h cocos2d/CCEffectPixellate.h \
+  cocos2d/CCEffectReflection.h cocos2d/CCEffectRefraction.h \
+  cocos2d/CCEffectSaturation.h cocos2d/CCEffectStack.h \
   cocos2d/CCLabelBMFont.h cocos2d/CCSpriteBatchNode.h \
-  cocos2d/Support/uthash.h cocos2d/CCLabelTTF.h cocos2d/CCTexture.h \
-  cocos2d/Platforms/CCNS.h cocos2d/CCMotionStreak.h \
+  cocos2d/Support/uthash.h cocos2d/CCLabelTTF.h cocos2d/CCMotionStreak.h \
   cocos2d/CCNode+Debug.h cocos2d/CCNodeColor.h cocos2d/CCParallaxNode.h \
   cocos2d/CCParticleExamples.h cocos2d/CCParticleSystem.h \
-  cocos2d/CCParticleSystemBase.h cocos2d/CCRenderTexture.h \
-  cocos2d/CCScene.h cocos2d/CCSprite9Slice.h \
-  cocos2d/CCSpriteFrameCache.h cocos2d/CCTMXXMLParser.h \
-  cocos2d/CCTexturePVR.h cocos2d/CCTiledMap.h cocos2d/CCTiledMapLayer.h \
-  cocos2d/CCTiledMapObjectGroup.h cocos2d/CCTransition.h \
-  cocos2d/CCLayout.h cocos2d/CCLayoutBox.h cocos2d/CCShader.h \
+  cocos2d/CCParticleSystemBase.h cocos2d/CCScene.h \
+  cocos2d/CCSprite9Slice.h cocos2d/CCSpriteFrameCache.h \
+  cocos2d/CCTMXXMLParser.h cocos2d/CCTexturePVR.h cocos2d/CCTiledMap.h \
+  cocos2d/CCTiledMapLayer.h cocos2d/CCTiledMapObjectGroup.h \
+  cocos2d/CCTransition.h cocos2d/CCLayout.h cocos2d/CCLayoutBox.h \
   cocos2d/CCPhysicsBody.h cocos2d/CCPhysicsJoint.h \
   cocos2d/CCPhysicsNode.h cocos2d/CCPhysicsShape.h \
   /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OALSimpleAudio.h \

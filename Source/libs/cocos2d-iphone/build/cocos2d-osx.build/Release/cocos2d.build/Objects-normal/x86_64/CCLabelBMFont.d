@@ -11,4 +11,6 @@ dependencies: \
   cocos2d/CCSprite.h cocos2d/CCConfiguration.h cocos2d/CCTexture.h \
   cocos2d/Platforms/CCNS.h cocos2d/CCTextureCache.h \
   cocos2d/Support/CCFileUtils.h cocos2d/CCLabelBMFont_Private.h \
-  cocos2d/CCSprite_Private.h
+  cocos2d/CCSprite_Private.h cocos2d/CCEffectRenderer.h \
+  cocos2d/CCEffect_Private.h cocos2d/CCEffect.h cocos2d/CCShader.h \
+  cocos2d/CCEffectStackProtocol.h

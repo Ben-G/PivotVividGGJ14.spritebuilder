@@ -24,6 +24,9 @@
     // Short version name for the app, e.g., "1.0"
     // "SHORT_VERSION": "",
 
+    // If you're using Google Play Game Services, put in the client id (a numerical value)
+    // "GOOGLE_PLAY_CLIENT_ID": "1234567"
+
     // A list of features needed on the target platform.
     // Common features include:
     //   "accelerometer"
@@ -33,8 +36,8 @@
     //   "billing"
     //   "c2dm_receive"
     //   "check_license"
+    //   "gcm_receive"
     //   "get_accounts"
-    //   "large_heap"
     //   "large_heap"
     //   "live_wallpaper"
     //   "multitouch"
@@ -76,7 +79,12 @@
 
     // Path to the image to use for the app's icon.
     // Usually something like "./Icon.png".
-    // "ICON": "",
+    // "ICON": "",              // 48x48
+    // "MEDIUM_RES_ICON": "",   // 48x48
+    // "HIGH_RES_ICON": "",     // 72x72
+    // "XHIGH_RES_ICON": "",    // 96x96
+    // "XXHIGH_RES_ICON": "",   // 144x144
+    // "XXXHIGH_RES_ICON": "",  // 192x192
 
     // A regular expression to determine which assets
     // should be compressed when building the final app.
@@ -137,6 +145,7 @@
     //"MIN_SDK": 9,
     //"C2DM_SENDER": "",
     //"HARDWARE_ACCELERATED": "",
+    //"HOCKEYAPP_APP_ID": "",
     //"NFC_SCHEME": "",
     //"MPMETRICS_API_KEY": "",
     //"RENAME_TARGET": true,
@@ -182,7 +191,8 @@
    
     // A list of dependencies.  Typically these correspond to
     // frameworks in the xcode project.
-    "deps": [],
+    "deps": [
+    ],
     
     // A list of source files (e.g. .m, .mm, .c, .cc, and .cpp) files to build.
     // Source files can be a string, e.g. "./main.c", or a dictionary specifying
@@ -227,7 +237,16 @@
     //Additional linker (ld) flags.
     "link_flags":[],
 
-    //Sub projects
+    // A list of XIBs to compile into NIBs.
+    "xibs": [],
+
+    // A list of storyboards to compile into storyboardc bundles
+    "storyboards": [],
+
+    // A list of xcdatamodels to compile into momc bundles
+    "xcdatamodels": [],
+
+    //Sub projects.  Example : SomeSubProject.xcodeproj should be listed as "SomeSubProject"
     "modules": [],
   },
 
@@ -304,7 +323,16 @@
     //Additional linker (ld) flags.
     "link_flags":[],
 
-    //Sub projects
+    // A list of XIBs to compile into NIBs.
+    "xibs": [],
+
+    // A list of storyboards to compile into storyboardc bundles
+    "storyboards": [],
+
+    // A list of xcdatamodels to compile into momc bundles
+    "xcdatamodels": [],
+
+    //Sub projects.  Example : SomeSubProject.xcodeproj should be listed as "SomeSubProject"
     "modules": [],
   }
 }

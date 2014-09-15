@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../../../var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmp3AuEIm/TARGET_BUILD_DIR/libcocos2d.a", 
+            "asset": "../../../../../../var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/TARGET_BUILD_DIR/libcocos2d.a", 
             "target": "../../../../../../../../Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/normal"
         }
     ], 
@@ -308,6 +308,16 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffect.h"
                 }, 
+                "CCEffectBloom.h": {
+                    "key": "CCEffectBloom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBloom.h"
+                }, 
+                "CCEffectBlur.h": {
+                    "key": "CCEffectBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBlur.h"
+                }, 
                 "CCEffectBrightness.h": {
                     "key": "CCEffectBrightness.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
@@ -318,15 +328,15 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectContrast.h"
                 }, 
-                "CCEffectGaussianBlur.h": {
-                    "key": "CCEffectGaussianBlur.h", 
+                "CCEffectGlass.h": {
+                    "key": "CCEffectGlass.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGaussianBlur.h"
+                    "suffix": "CCEffectGlass.h"
                 }, 
-                "CCEffectGlow.h": {
-                    "key": "CCEffectGlow.h", 
+                "CCEffectHue.h": {
+                    "key": "CCEffectHue.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGlow.h"
+                    "suffix": "CCEffectHue.h"
                 }, 
                 "CCEffectNode.h": {
                     "key": "CCEffectNode.h", 
@@ -337,6 +347,16 @@
                     "key": "CCEffectPixellate.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectPixellate.h"
+                }, 
+                "CCEffectReflection.h": {
+                    "key": "CCEffectReflection.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectReflection.h"
+                }, 
+                "CCEffectRefraction.h": {
+                    "key": "CCEffectRefraction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRefraction.h"
                 }, 
                 "CCEffectRenderer.h": {
                     "key": "CCEffectRenderer.h", 
@@ -352,6 +372,11 @@
                     "key": "CCEffectStack.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectStack.h"
+                }, 
+                "CCEffectUtils.h": {
+                    "key": "CCEffectUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectUtils.h"
                 }, 
                 "CCEffect_Private.h": {
                     "key": "CCEffect_Private.h", 
@@ -1053,6 +1078,16 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffect.h"
                 }, 
+                "cocos2d/CCEffectBloom.h": {
+                    "key": "cocos2d/CCEffectBloom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBloom.h"
+                }, 
+                "cocos2d/CCEffectBlur.h": {
+                    "key": "cocos2d/CCEffectBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBlur.h"
+                }, 
                 "cocos2d/CCEffectBrightness.h": {
                     "key": "cocos2d/CCEffectBrightness.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
@@ -1063,15 +1098,15 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectContrast.h"
                 }, 
-                "cocos2d/CCEffectGaussianBlur.h": {
-                    "key": "cocos2d/CCEffectGaussianBlur.h", 
+                "cocos2d/CCEffectGlass.h": {
+                    "key": "cocos2d/CCEffectGlass.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGaussianBlur.h"
+                    "suffix": "CCEffectGlass.h"
                 }, 
-                "cocos2d/CCEffectGlow.h": {
-                    "key": "cocos2d/CCEffectGlow.h", 
+                "cocos2d/CCEffectHue.h": {
+                    "key": "cocos2d/CCEffectHue.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGlow.h"
+                    "suffix": "CCEffectHue.h"
                 }, 
                 "cocos2d/CCEffectNode.h": {
                     "key": "cocos2d/CCEffectNode.h", 
@@ -1082,6 +1117,16 @@
                     "key": "cocos2d/CCEffectPixellate.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectPixellate.h"
+                }, 
+                "cocos2d/CCEffectReflection.h": {
+                    "key": "cocos2d/CCEffectReflection.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectReflection.h"
+                }, 
+                "cocos2d/CCEffectRefraction.h": {
+                    "key": "cocos2d/CCEffectRefraction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRefraction.h"
                 }, 
                 "cocos2d/CCEffectRenderer.h": {
                     "key": "cocos2d/CCEffectRenderer.h", 
@@ -1097,6 +1142,11 @@
                     "key": "cocos2d/CCEffectStack.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectStack.h"
+                }, 
+                "cocos2d/CCEffectUtils.h": {
+                    "key": "cocos2d/CCEffectUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectUtils.h"
                 }, 
                 "cocos2d/CCEffect_Private.h": {
                     "key": "cocos2d/CCEffect_Private.h", 
@@ -1834,6 +1884,16 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffect.h"
                 }, 
+                "cocos2d/CCEffectBloom.h": {
+                    "key": "cocos2d/CCEffectBloom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBloom.h"
+                }, 
+                "cocos2d/CCEffectBlur.h": {
+                    "key": "cocos2d/CCEffectBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBlur.h"
+                }, 
                 "cocos2d/CCEffectBrightness.h": {
                     "key": "cocos2d/CCEffectBrightness.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
@@ -1844,15 +1904,15 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectContrast.h"
                 }, 
-                "cocos2d/CCEffectGaussianBlur.h": {
-                    "key": "cocos2d/CCEffectGaussianBlur.h", 
+                "cocos2d/CCEffectGlass.h": {
+                    "key": "cocos2d/CCEffectGlass.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGaussianBlur.h"
+                    "suffix": "CCEffectGlass.h"
                 }, 
-                "cocos2d/CCEffectGlow.h": {
-                    "key": "cocos2d/CCEffectGlow.h", 
+                "cocos2d/CCEffectHue.h": {
+                    "key": "cocos2d/CCEffectHue.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGlow.h"
+                    "suffix": "CCEffectHue.h"
                 }, 
                 "cocos2d/CCEffectNode.h": {
                     "key": "cocos2d/CCEffectNode.h", 
@@ -1863,6 +1923,16 @@
                     "key": "cocos2d/CCEffectPixellate.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectPixellate.h"
+                }, 
+                "cocos2d/CCEffectReflection.h": {
+                    "key": "cocos2d/CCEffectReflection.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectReflection.h"
+                }, 
+                "cocos2d/CCEffectRefraction.h": {
+                    "key": "cocos2d/CCEffectRefraction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRefraction.h"
                 }, 
                 "cocos2d/CCEffectRenderer.h": {
                     "key": "cocos2d/CCEffectRenderer.h", 
@@ -1878,6 +1948,11 @@
                     "key": "cocos2d/CCEffectStack.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectStack.h"
+                }, 
+                "cocos2d/CCEffectUtils.h": {
+                    "key": "cocos2d/CCEffectUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectUtils.h"
                 }, 
                 "cocos2d/CCEffect_Private.h": {
                     "key": "cocos2d/CCEffect_Private.h", 
@@ -2615,6 +2690,16 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffect.h"
                 }, 
+                "CCEffectBloom.h": {
+                    "key": "CCEffectBloom.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBloom.h"
+                }, 
+                "CCEffectBlur.h": {
+                    "key": "CCEffectBlur.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectBlur.h"
+                }, 
                 "CCEffectBrightness.h": {
                     "key": "CCEffectBrightness.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
@@ -2625,15 +2710,15 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectContrast.h"
                 }, 
-                "CCEffectGaussianBlur.h": {
-                    "key": "CCEffectGaussianBlur.h", 
+                "CCEffectGlass.h": {
+                    "key": "CCEffectGlass.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGaussianBlur.h"
+                    "suffix": "CCEffectGlass.h"
                 }, 
-                "CCEffectGlow.h": {
-                    "key": "CCEffectGlow.h", 
+                "CCEffectHue.h": {
+                    "key": "CCEffectHue.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
-                    "suffix": "CCEffectGlow.h"
+                    "suffix": "CCEffectHue.h"
                 }, 
                 "CCEffectNode.h": {
                     "key": "CCEffectNode.h", 
@@ -2644,6 +2729,16 @@
                     "key": "CCEffectPixellate.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectPixellate.h"
+                }, 
+                "CCEffectReflection.h": {
+                    "key": "CCEffectReflection.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectReflection.h"
+                }, 
+                "CCEffectRefraction.h": {
+                    "key": "CCEffectRefraction.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectRefraction.h"
                 }, 
                 "CCEffectRenderer.h": {
                     "key": "CCEffectRenderer.h", 
@@ -2660,10 +2755,20 @@
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectStack.h"
                 }, 
+                "CCEffectStackProtocol.h": {
+                    "key": "CCEffectStackProtocol.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectStackProtocol.h"
+                }, 
                 "CCEffectStack_Private.h": {
                     "key": "CCEffectStack_Private.h", 
                     "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
                     "suffix": "CCEffectStack_Private.h"
+                }, 
+                "CCEffectUtils.h": {
+                    "key": "CCEffectUtils.h", 
+                    "prefix": "Source/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCEffectUtils.h"
                 }, 
                 "CCEffect_Private.h": {
                     "key": "CCEffect_Private.h", 
@@ -3174,187 +3279,191 @@
             "type": "iquote"
         }, 
         {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
+        }, 
+        {
             "header_path": "external/kazmath/include", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d", 
+            "header_path": "cocos2d", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d/Platforms", 
+            "header_path": "cocos2d/Platforms", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d/Support", 
+            "header_path": "cocos2d/Support", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d/Platforms/iOS", 
+            "header_path": "cocos2d/Platforms/iOS", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d/Platforms/Mac", 
+            "header_path": "cocos2d/Platforms/Mac", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui", 
+            "header_path": "cocos2d-ui", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui/CCBReader", 
+            "header_path": "cocos2d-ui/CCBReader", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests", 
+            "header_path": "cocos2d-ui-tests", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/ios", 
+            "header_path": "cocos2d-ui-tests/ios", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/osx", 
+            "header_path": "cocos2d-ui-tests/osx", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared", 
+            "header_path": "cocos2d-ui-tests/Resources-shared", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder", 
+            "header_path": "cocos2d-ui-tests/SpriteBuilder", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/ios/Resources", 
+            "header_path": "cocos2d-ui-tests/ios/Resources", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/osx/Resources", 
+            "header_path": "cocos2d-ui-tests/osx/Resources", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Cards", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Cards", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-phone", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/resources-phone", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-phonehd", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/resources-phonehd", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-tablet", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/resources-tablet", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/resources-tablethd", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/resources-tablethd", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Sounds", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Sounds", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tests", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/TileMaps", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/TileMaps", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tiles", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder/Resources", 
+            "header_path": "cocos2d-ui-tests/SpriteBuilder/Resources", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-phone", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tests/resources-phone", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-phonehd", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tests/resources-phonehd", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-tablet", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tests/resources-tablet", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tests/resources-tablethd", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tests/resources-tablethd", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/TileMaps/resources-phone", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/TileMaps/resources-phone", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/TileMaps/resources-phonehd", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/TileMaps/resources-phonehd", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-phone", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tiles/resources-phone", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-phonehd", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tiles/resources-phonehd", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-tablet", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tiles/resources-tablet", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/Resources-shared/Tiles/resources-tablethd", 
+            "header_path": "cocos2d-ui-tests/Resources-shared/Tiles/resources-tablethd", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder/Resources/Interface", 
+            "header_path": "cocos2d-ui-tests/SpriteBuilder/Resources/Interface", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/SpriteBuilder/Resources/resources-auto", 
+            "header_path": "cocos2d-ui-tests/SpriteBuilder/Resources/resources-auto", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Interface", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Interface", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sounds", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sounds", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sprites", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sprites", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Tests", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Tests", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Interface/resources-auto", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Interface/resources-auto", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sprites/resources-auto", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Sprites/resources-auto", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Tests/resources-auto", 
+            "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources/Tests/resources-auto", 
             "type": "I"
         }, 
         {
@@ -3366,27 +3475,35 @@
             "type": "I"
         }, 
         {
-            "header_path": "../../../external/ObjectAL", 
+            "header_path": "external/ObjectAL", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../external/ObjectAL/Actions", 
+            "header_path": "external/ObjectAL/Actions", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../external/ObjectAL/AudioTrack", 
+            "header_path": "external/ObjectAL/AudioTrack", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../external/ObjectAL/OpenAL", 
+            "header_path": "external/ObjectAL/OpenAL", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../external/ObjectAL/Session", 
+            "header_path": "external/ObjectAL/Session", 
             "type": "I"
         }, 
         {
-            "header_path": "../../../external/ObjectAL/Support", 
+            "header_path": "external/ObjectAL/Support", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -3618,6 +3735,20 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
+            "source": "cocos2d/CCEffectBloom.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectBlur.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
             "source": "cocos2d/CCEffectBrightness.m"
         }, 
         {
@@ -3632,14 +3763,14 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
-            "source": "cocos2d/CCEffectGaussianBlur.m"
+            "source": "cocos2d/CCEffectGlass.m"
         }, 
         {
             "defines": {}, 
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
-            "source": "cocos2d/CCEffectGlow.m"
+            "source": "cocos2d/CCEffectHue.m"
         }, 
         {
             "defines": {}, 
@@ -3654,6 +3785,20 @@
             "header_paths": [], 
             "language": "objc", 
             "source": "cocos2d/CCEffectPixellate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectReflection.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectRefraction.m"
         }, 
         {
             "defines": {}, 
@@ -3675,6 +3820,13 @@
             "header_paths": [], 
             "language": "objc", 
             "source": "cocos2d/CCEffectStack.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCEffectUtils.m"
         }, 
         {
             "defines": {}, 
@@ -3710,6 +3862,15 @@
             "header_paths": [], 
             "language": "objc", 
             "source": "cocos2d/CCMotionStreak.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "cocos2d/CCNoARC.m"
         }, 
         {
             "defines": {}, 
@@ -4265,7 +4426,10 @@
             "source": "external/ObjectAL/Support/mach_timing.c"
         }
     ], 
+    "storyboards": [], 
     "type": "static-lib", 
-    "version": "1", 
-    "xcode_project": "cocos2d-ios.xcodeproj"
+    "version": "3", 
+    "xcdatamodels": [], 
+    "xcode_project": "cocos2d-ios.xcodeproj", 
+    "xibs": []
 }

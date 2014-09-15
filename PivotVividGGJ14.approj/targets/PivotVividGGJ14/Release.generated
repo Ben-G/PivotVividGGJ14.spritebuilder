@@ -1,40 +1,120 @@
 {
     "assets": [
         {
-            "asset": "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
-            "target": "ResourceRules.plist"
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Portrait@2x~ipad.png", 
+            "target": "MGWUBackgroundDark-Portrait@2x~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/send-button-inactive.png", 
+            "target": "send-button-inactive.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Portrait@2x~iphone.png", 
+            "target": "MGWUAboutFooter-Portrait@2x~iphone.png"
         }, 
         {
             "asset": "Source/Resources/Icons/Settings.png", 
             "target": "Settings.png"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBLoginButton.png", 
+            "target": "FBLoginButton.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Landscape@2x~ipad.png", 
+            "target": "MGWUBackground-Landscape@2x~ipad.png"
+        }, 
+        {
             "asset": "Source/Resources/Default@2x.png", 
             "target": "Default@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuPlaceholderIcon.png", 
+            "target": "mgwuPlaceholderIcon.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/aqua.png", 
+            "target": "aqua.png"
         }, 
         {
             "asset": "Source/Resources/Audio/fear.mp3", 
             "target": "fear.mp3"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Landscape@2x~ipad.png", 
+            "target": "MGWUAboutFooter-Landscape@2x~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FacebookIcon.png", 
+            "target": "FacebookIcon.png"
+        }, 
+        {
             "asset": "Source/Resources/Icons/iPad@2x.png", 
             "target": "iPad@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/grey-background.png", 
+            "target": "grey-background.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPad.png", 
             "target": "iPad.png"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuLogo@2x.png", 
+            "target": "mgwuLogo@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Portrait~iphone.png", 
+            "target": "MGWUAboutFooter-Portrait~iphone.png"
+        }, 
+        {
             "asset": "Source/Resources/Icons/iPad-old@2x.png", 
             "target": "iPad-old@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/send-button-active.png", 
+            "target": "send-button-active.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuPlaceholderIconDark@2x.png", 
+            "target": "mgwuPlaceholderIconDark@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Landscape@2x~iphone.png", 
+            "target": "MGWUAboutFooter-Landscape@2x~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Landscape~ipad.png", 
+            "target": "MGWUBackgroundDark-Landscape~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/CrossPromoViewController.nib", 
+            "target": "CrossPromoViewController.nib"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Landscape@2x~iphone.png", 
+            "target": "MGWUBackground-Landscape@2x~iphone.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPhone-old@2x.png", 
             "target": "iPhone-old@2x.png"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Portrait~iphone.png", 
+            "target": "MGWUBackgroundDark-Portrait~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/send-field-landscape.png", 
+            "target": "send-field-landscape.png"
+        }, 
+        {
             "asset": "Source/Resources/Levels/Levels.plist", 
             "target": "Levels.plist"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Portrait~ipad.png", 
+            "target": "MGWUBackground-Portrait~ipad.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS", 
@@ -45,8 +125,32 @@
             "target": "KC_GTMOAuth2ViewTouch.nib"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Landscape~iphone.png", 
+            "target": "MGWUAboutFooter-Landscape~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUFacebookLoginLandscapeDark.nib", 
+            "target": "MGWUFacebookLoginLandscapeDark.nib"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/hipmobsend_field@2x.png", 
+            "target": "hipmobsend_field@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuPlaceholderIcon@2x.png", 
+            "target": "mgwuPlaceholderIcon@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBNoThanksButtonPressed@2x.png", 
+            "target": "FBNoThanksButtonPressed@2x.png"
+        }, 
+        {
             "asset": "Source/Resources/Icons/Settings@2x.png", 
             "target": "Settings@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Portrait~ipad.png", 
+            "target": "MGWUBackgroundDark-Portrait~ipad.png"
         }, 
         {
             "asset": "Source/Resources/Audio/calm.mp3", 
@@ -65,20 +169,116 @@
             "target": "angry.mp3"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwu-m@2x.png", 
+            "target": "mgwu-m@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUClose@2x.png", 
+            "target": "MGWUClose@2x.png"
+        }, 
+        {
             "asset": "Source/Resources/Default-Landscape~ipad.png", 
             "target": "Default-Landscape~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/operator.available.png", 
+            "target": "operator.available.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Landscape~iphone.png", 
+            "target": "MGWUBackground-Landscape~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwu-m.png", 
+            "target": "mgwu-m.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/bluechatbubble.png", 
+            "target": "bluechatbubble.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPhone-old.png", 
             "target": "iPhone-old.png"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuLogoDark.png", 
+            "target": "mgwuLogoDark.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUFacebookLoginPortrait.nib", 
+            "target": "MGWUFacebookLoginPortrait.nib"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/operator.unavailable.png", 
+            "target": "operator.unavailable.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBLoginButton@2x.png", 
+            "target": "FBLoginButton@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Portrait@2x~iphone.png", 
+            "target": "MGWUBackground-Portrait@2x~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBNoThanksButtonPressed.png", 
+            "target": "FBNoThanksButtonPressed.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUFacebookLoginLandscape.nib", 
+            "target": "MGWUFacebookLoginLandscape.nib"
+        }, 
+        {
             "asset": "Source/Resources/Icons/iPhone.png", 
             "target": "iPhone.png"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Portrait@2x~iphone.png", 
+            "target": "MGWUBackgroundDark-Portrait@2x~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Portrait@2x~ipad.png", 
+            "target": "MGWUAboutFooter-Portrait@2x~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Portrait~iphone.png", 
+            "target": "MGWUBackground-Portrait~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Portrait@2x~ipad.png", 
+            "target": "MGWUBackground-Portrait@2x~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Portrait~ipad.png", 
+            "target": "MGWUAboutFooter-Portrait~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBNoThanksButton@2x.png", 
+            "target": "FBNoThanksButton@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Landscape-568h@2x~iphone.png", 
+            "target": "MGWUAboutFooter-Landscape-568h@2x~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Landscape@2x~ipad.png", 
+            "target": "MGWUBackgroundDark-Landscape@2x~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBNoThanksButton.png", 
+            "target": "FBNoThanksButton.png"
+        }, 
+        {
             "asset": "Source/Resources/Audio/happy.mp3", 
             "target": "happy.mp3"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/send-button-instate.png", 
+            "target": "send-button-instate.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/hipmobsend_field.png", 
+            "target": "hipmobsend_field.png"
         }, 
         {
             "asset": "Source/Resources/Default-568h@2x.png", 
@@ -87,6 +287,26 @@
         {
             "asset": "Source/Resources/Additional-Resources", 
             "target": "Additional-Resources"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBLoginButtonPressed@2x.png", 
+            "target": "FBLoginButtonPressed@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Landscape~iphone.png", 
+            "target": "MGWUBackgroundDark-Landscape~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuLogo.png", 
+            "target": "mgwuLogo.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackground-Landscape~ipad.png", 
+            "target": "MGWUBackground-Landscape~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/hipmob.back.btn.png", 
+            "target": "hipmob.back.btn.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPhone@2x.png", 
@@ -101,13 +321,69 @@
             "target": "iPad-old.png"
         }, 
         {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwu-gk-notification.png", 
+            "target": "mgwu-gk-notification.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUFacebookLoginPortraitDark.nib", 
+            "target": "MGWUFacebookLoginPortraitDark.nib"
+        }, 
+        {
             "asset": "Frameworks/Kamcord.embeddedframework/Resources/Kamcord.bundle", 
             "target": "Kamcord.bundle"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUAboutFooter-Landscape~ipad.png", 
+            "target": "MGWUAboutFooter-Landscape~ipad.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuPlaceholderIconDark.png", 
+            "target": "mgwuPlaceholderIconDark.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/green.png", 
+            "target": "green.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUClose.png", 
+            "target": "MGWUClose.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/hipmob.send.png", 
+            "target": "hipmob.send.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwuLogoDark@2x.png", 
+            "target": "mgwuLogoDark@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/mgwu-gk-notification@2x.png", 
+            "target": "mgwu-gk-notification@2x.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/FBLoginButtonPressed.png", 
+            "target": "FBLoginButtonPressed.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/MGWUBackgroundDark-Landscape@2x~iphone.png", 
+            "target": "MGWUBackgroundDark-Landscape@2x~iphone.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/operator.connecting.png", 
+            "target": "operator.connecting.png"
+        }, 
+        {
+            "asset": "Frameworks/mgwuSDK.embeddedframework/Resources/fb_connect.png", 
+            "target": "fb_connect.png"
+        }, 
+        {
+            "asset": "PivotVividGGJ14/Images.xcassets", 
+            "target": null
         }
     ], 
     "config": {
         "APPLICATION_FULL_NAME": "PivotVividGGJ14", 
-        "APPLICATION_IDENTIFIER": "com.apportable.PivotVividGGJ14", 
+        "APPLICATION_IDENTIFIER": "com.benjaminencz.magicmasks", 
         "APPLICATION_NAME": "PivotVividGGJ14", 
         "LONG_VERSION": "1.0", 
         "TEMPLATE_VALUES": {
@@ -122,6 +398,7 @@
     }, 
     "deps": [
         "UIKit", 
+        "StoreKit", 
         "Twitter", 
         "SystemConfiguration", 
         "Security", 
@@ -139,7 +416,8 @@
         "UIKit", 
         "Foundation", 
         "CoreGraphics", 
-        "CoreText"
+        "CoreText", 
+        "mgwuSDK"
     ], 
     "flags": [
         "-fobjc-arc", 
@@ -274,6 +552,11 @@
                     "prefix": "Source/", 
                     "suffix": "Hero.h"
                 }, 
+                "IAPManager.h": {
+                    "key": "IAPManager.h", 
+                    "prefix": "Source/IAP/", 
+                    "suffix": "IAPManager.h"
+                }, 
                 "Instruction.h": {
                     "key": "Instruction.h", 
                     "prefix": "Source/Instruction/", 
@@ -299,6 +582,16 @@
                     "prefix": "Source/UIElements/", 
                     "suffix": "LevelTile.h"
                 }, 
+                "LightSource.h": {
+                    "key": "LightSource.h", 
+                    "prefix": "Lighting/", 
+                    "suffix": "LightSource.h"
+                }, 
+                "LightingLayer.h": {
+                    "key": "LightingLayer.h", 
+                    "prefix": "Source/", 
+                    "suffix": "LightingLayer.h"
+                }, 
                 "MainScene.h": {
                     "key": "MainScene.h", 
                     "prefix": "Source/", 
@@ -318,6 +611,11 @@
                     "key": "Prefix.pch", 
                     "prefix": "Source/", 
                     "suffix": "Prefix.pch"
+                }, 
+                "PurchaseScreen.h": {
+                    "key": "PurchaseScreen.h", 
+                    "prefix": "Source/UIElements/", 
+                    "suffix": "PurchaseScreen.h"
                 }, 
                 "SadEnemy.h": {
                     "key": "SadEnemy.h", 
@@ -374,6 +672,11 @@
                     "prefix": "Source/", 
                     "suffix": "TutorialInstructionPopup.h"
                 }, 
+                "UIDeviceHardware.h": {
+                    "key": "UIDeviceHardware.h", 
+                    "prefix": "Source/Utils/", 
+                    "suffix": "UIDeviceHardware.h"
+                }, 
                 "UIUtils.h": {
                     "key": "UIUtils.h", 
                     "prefix": "Source/UIUtils/", 
@@ -381,6 +684,10 @@
                 }
             }, 
             "type": "iquote"
+        }, 
+        {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
         }, 
         {
             "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include", 
@@ -445,6 +752,14 @@
         {
             "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Support", 
             "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/DERIVED_FILE_DIR", 
+            "type": "I"
         }
     ], 
     "infoplists": [
@@ -472,6 +787,13 @@
         "./Source/Prefix.pch"
     ], 
     "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Lighting/LightSource.m"
+        }, 
         {
             "defines": {}, 
             "flags": [], 
@@ -589,6 +911,13 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
+            "source": "Source/IAP/IAPManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
             "source": "Source/Instruction/DisplayInstruction.m"
         }, 
         {
@@ -618,6 +947,13 @@
             "header_paths": [], 
             "language": "objc", 
             "source": "Source/LevelDetails.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/LightingLayer.m"
         }, 
         {
             "defines": {}, 
@@ -722,7 +1058,21 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
+            "source": "Source/UIElements/PurchaseScreen.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
             "source": "Source/UIUtils/UIUtils.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Utils/UIDeviceHardware.m"
         }, 
         {
             "defines": {}, 
@@ -739,7 +1089,10 @@
             "source": "Startscreen.m"
         }
     ], 
+    "storyboards": [], 
     "type": "app", 
-    "version": "1", 
-    "xcode_project": "PivotVividGGJ14.xcodeproj"
+    "version": "3", 
+    "xcdatamodels": [], 
+    "xcode_project": "PivotVividGGJ14.xcodeproj", 
+    "xibs": []
 }

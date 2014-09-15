@@ -112,6 +112,12 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [_lightingLayer addLight:_lightSource];
     
     [super onEnter];
+    
+    CCRenderTexture *renderTexture = [CCRenderTexture renderTextureWithWidth:2048 height:self.level.contentSizeInPoints.height];
+    [renderTexture beginWithClear:0 g:0 b:0 a:1.f];
+    [self visit];
+    [renderTexture end];
+    [renderTexture saveToFile:@"Screenshot.jpeg"];
 }
 
 - (void)onExit {

@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../../../var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmp3AuEIm/TARGET_BUILD_DIR/libObjectiveChipmunk-iPhone.a", 
+            "asset": "../../../../../../var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/TARGET_BUILD_DIR/libObjectiveChipmunk-iPhone.a", 
             "target": "../../../../../../../../Users/benjaminencz/Development/MGWU/SpriteBuilder_Testing/PivotVividGGJ14.spritebuilder/normal"
         }
     ], 
@@ -17,6 +17,14 @@
     "flags": [
         "-DNDEBUG", 
         "-ffast-math", 
+        {
+            "flag": "-DNDEBUG", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-ffast-math", 
+            "type": "c++"
+        }, 
         "-fno-objc-arc", 
         "-fasm-blocks", 
         {
@@ -231,11 +239,23 @@
             "type": "iquote"
         }, 
         {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
+        }, 
+        {
             "header_path": "external/Chipmunk/include", 
             "type": "I"
         }, 
         {
             "header_path": "external/Chipmunk/objectivec/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/rw/x2gc57pd5pz56y0fqn7bhbyr0000gn/T/tmpK0Fwpp/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -477,7 +497,10 @@
             "source": "external/Chipmunk/src/cpSweep1D.c"
         }
     ], 
+    "storyboards": [], 
     "type": "static-lib", 
-    "version": "1", 
-    "xcode_project": "Chipmunk7-ios.xcodeproj"
+    "version": "3", 
+    "xcdatamodels": [], 
+    "xcode_project": "Chipmunk7-ios.xcodeproj", 
+    "xibs": []
 }

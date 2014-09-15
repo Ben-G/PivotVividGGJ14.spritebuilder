@@ -18,6 +18,12 @@ dependencies: \
   cocos2d/CCActionInstant.h cocos2d/CCSpriteFrame.h \
   cocos2d/CCActionProgressTimer.h cocos2d/CCProgressNode.h \
   cocos2d/CCActionTween.h cocos2d/CCClippingNode.h cocos2d/CCDrawNode.h \
+  cocos2d/CCEffect.h cocos2d/CCEffectBloom.h \
+  cocos2d/CCEffectBrightness.h cocos2d/CCEffectContrast.h \
+  cocos2d/CCEffectBlur.h cocos2d/CCEffectGlass.h cocos2d/CCEffectHue.h \
+  cocos2d/CCEffectNode.h cocos2d/CCEffectPixellate.h \
+  cocos2d/CCEffectReflection.h cocos2d/CCEffectRefraction.h \
+  cocos2d/CCEffectSaturation.h cocos2d/CCEffectStack.h \
   cocos2d/CCLabelBMFont.h cocos2d/CCSpriteBatchNode.h \
   cocos2d/Support/uthash.h cocos2d/CCLabelTTF.h cocos2d/CCMotionStreak.h \
   cocos2d/CCNode+Debug.h cocos2d/CCNodeColor.h cocos2d/CCParallaxNode.h \

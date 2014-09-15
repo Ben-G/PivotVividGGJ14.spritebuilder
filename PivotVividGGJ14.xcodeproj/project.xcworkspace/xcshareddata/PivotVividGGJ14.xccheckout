@@ -10,22 +10,26 @@
 	<string>PivotVividGGJ14</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>A4A3CC07B24F5452D5277CE01D30839FA3AB5120</key>
+		<string>https://github.com/Ben-G/PivotVividGGJ14.git</string>
 		<key>CFB26F15-196D-43C2-A647-179CE6417C90</key>
 		<string>https://github.com/Ben-G/PivotVividGGJ14.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PivotVividGGJ14.xcodeproj/project.xcworkspace</string>
+	<string>PivotVividGGJ14.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CFB26F15-196D-43C2-A647-179CE6417C90</key>
+		<key>A4A3CC07B24F5452D5277CE01D30839FA3AB5120</key>
 		<string>../..</string>
+		<key>CFB26F15-196D-43C2-A647-179CE6417C90</key>
+		<string>../../../PivotVividGGJ14</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Ben-G/PivotVividGGJ14.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CFB26F15-196D-43C2-A647-179CE6417C90</string>
+	<string>A4A3CC07B24F5452D5277CE01D30839FA3AB5120</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>CFB26F15-196D-43C2-A647-179CE6417C90</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PivotVividGGJ14</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A4A3CC07B24F5452D5277CE01D30839FA3AB5120</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PivotVividGGJ14.spritebuilder</string>
 		</dict>
 	</array>
 </dict>
