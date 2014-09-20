@@ -679,8 +679,11 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [_hero stopAllActions];
     _gameOver = TRUE;
  
+
+//    create CCActionActionMoveTo to center-zoom
     CCActionScaleBy *actionScaleBy = [CCActionScaleBy actionWithDuration:0.3f scale:1.6f];
     CCActionEaseBackOut *bounceScale = [CCActionEaseBackOut actionWithAction:actionScaleBy];
+//    CCActionSpawn *spawn = [CCActionSpawn actionWithArray:@[follow, bounceScale]];
     [self runAction:bounceScale];
     
     [self performSelector:@selector(winGame2) withObject:nil afterDelay:0.6f];

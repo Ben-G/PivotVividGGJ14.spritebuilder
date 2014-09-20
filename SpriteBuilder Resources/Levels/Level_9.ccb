@@ -1845,8 +1845,6 @@
 								<string>blocks/OnlyAngerCube.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -2066,8 +2064,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>133</real>
-									<real>33</real>
+									<real>137.49246215820312</real>
+									<real>197.72352600097656</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2540,7 +2538,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCBFile</string>
+				<string>StartPosition</string>
 				<key>memberVarAssignmentName</key>
 				<string>_startPositionNode</string>
 				<key>memberVarAssignmentType</key>
@@ -2562,8 +2560,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>49</real>
-							<real>104</real>
+							<real>38.661342620849609</real>
+							<real>269.04522705078125</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2686,8 +2684,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>5645</real>
-							<real>287</real>
+							<real>242.06855773925781</real>
+							<real>266.03518676757812</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3114,7 +3112,7 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>1.7020831108093262</real>
+			<real>0.0</real>
 			<key>position</key>
 			<real>6.2333331108093262</real>
 			<key>resolution</key>
