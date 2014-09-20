@@ -11,5 +11,7 @@ dependencies: \
   cocos2d/CCScheduler.h cocos2d/CCRenderer.h cocos2d/CCTMXXMLParser.h \
   cocos2d/CCTiledMap.h cocos2d/CCSprite.h cocos2d/CCTextureCache.h \
   cocos2d/CCShader.h cocos2d/CCNode_Private.h cocos2d/CCSprite_Private.h \
+  cocos2d/CCEffectRenderer.h cocos2d/CCEffect_Private.h \
+  cocos2d/CCEffect.h cocos2d/CCEffectStackProtocol.h \
   cocos2d/CCTiledMapLayer_Private.h cocos2d/CCTexture_Private.h \
   cocos2d/CCTexture.h cocos2d/Platforms/CCNS.h
