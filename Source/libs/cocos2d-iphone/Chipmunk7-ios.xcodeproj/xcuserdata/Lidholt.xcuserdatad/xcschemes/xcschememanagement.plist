@@ -4,14 +4,36 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ObjectiveChipmunk-iPhone.xcscheme</key>
+		<key>ObjectiveChipmunk-Android.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>28</integer>
+		</dict>
+		<key>ObjectiveChipmunk-Mac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>30</integer>
+		</dict>
+		<key>ObjectiveChipmunk-iPhone.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7A40366D19DE39C8007B6E8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A5948D719E3795700F65F90</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D309B21217EFE2EF00AA52C8</key>
 		<dict>
 			<key>primary</key>

@@ -121,7 +121,6 @@
 		62CB017118C29C1F00EC8097 /* TutorialFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CB017018C29C1F00EC8097 /* TutorialFragment.m */; };
 		62CB017418C2A00800EC8097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62CB017618C2A00800EC8097 /* Localizable.strings */; };
 		62CF7D6A198DDBBA00ABF971 /* GameEndLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CF7D69198DDBBA00ABF971 /* GameEndLayer.m */; };
-		62CF7D73198DFDC100ABF971 /* Kamcord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF7D6D198DFDC100ABF971 /* Kamcord.framework */; };
 		62CF7D74198DFDC100ABF971 /* Kamcord.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62CF7D6F198DFDC100ABF971 /* Kamcord.bundle */; };
 		62CF7D75198DFDC100ABF971 /* KamcordiPad.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 62CF7D70198DFDC100ABF971 /* KamcordiPad.storyboardc */; };
 		62CF7D76198DFDC100ABF971 /* KamcordiPhone.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 62CF7D71198DFDC100ABF971 /* KamcordiPhone.storyboardc */; };
@@ -174,6 +173,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		624BB6B21A27075A00099579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2FEB74F194F6C9E00FC0574;
+			remoteInfo = cocos2dAndroid;
+		};
+		624BB6B41A27075A00099579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BF3267A195F8D8800D9A51A;
+			remoteInfo = cocos2dJava;
+		};
+		624BB6B61A27075A00099579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4037A819E37038007B6E8F;
+			remoteInfo = "cocos2d-mac";
+		};
 		B737894A180761A90076A88C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
@@ -427,7 +447,6 @@
 				623468FE1969A8CE0030AC0A /* GLKit.framework in Frameworks */,
 				B77F1B3417B978D7009739AE /* OpenGLES.framework in Frameworks */,
 				B77F1B3617B978D7009739AE /* OpenAL.framework in Frameworks */,
-				62CF7D73198DFDC100ABF971 /* Kamcord.framework in Frameworks */,
 				B77F1B3C17B978D7009739AE /* UIKit.framework in Frameworks */,
 				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
 				B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */,
@@ -747,6 +766,9 @@
 			isa = PBXGroup;
 			children = (
 				B737894B180761A90076A88C /* libcocos2d.a */,
+				624BB6B31A27075A00099579 /* libcocos2dAndroid.a */,
+				624BB6B51A27075A00099579 /* cocos2dJava.jar */,
+				624BB6B71A27075A00099579 /* libcocos2d-mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -912,6 +934,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		624BB6B31A27075A00099579 /* libcocos2dAndroid.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos2dAndroid.a;
+			remoteRef = 624BB6B21A27075A00099579 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		624BB6B51A27075A00099579 /* cocos2dJava.jar */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.jar;
+			path = cocos2dJava.jar;
+			remoteRef = 624BB6B41A27075A00099579 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		624BB6B71A27075A00099579 /* libcocos2d-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d-mac.a";
+			remoteRef = 624BB6B61A27075A00099579 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B737894B180761A90076A88C /* libcocos2d.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1154,7 +1197,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Kamcord.embeddedframework",
 					"$(PROJECT_DIR)/Frameworks/mgwuSDK.embeddedframework",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1196,7 +1238,6 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Kamcord.embeddedframework",
 					"$(PROJECT_DIR)/Frameworks/mgwuSDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -33,6 +33,7 @@
 #import "CCScheduler.h"
 #import "CCRenderer.h"
 
+
 @class CCScene;
 @class CCShader;
 @class CCScheduler;
@@ -530,6 +531,17 @@ A common user pattern in building a Cocos2d game is to subclass CCNode, add it t
  *
  *  @return A newly initialized CCTimer object.
  */
+ 
+ /**
+ * Schedules a custom selector with an interval time in seconds.
+ * If the custom selector you pass in is not already scheduled, this method simply schedules it for the first time.
+ * The difference between this method and the schedule:interval: method is that if the selector passed in this method is already scheduled, calling this method will only adjust the interval on the already scheduled method. In contrast, when you call schedule:interval: on an already scheduled selector, your custom selector will be unscheduled and then rescheduled.
+*  @param selector       Selector to execute.
+*  @param interval Interval between execution in seconds.
+ */
+-(CCTimer*)reschedule:(SEL)selector interval:(CCTime)interval;
+ 
+ 
 - (CCTimer *) scheduleOnce:(SEL) selector delay:(CCTime) delay;
 
 /**
@@ -610,6 +622,16 @@ A common user pattern in building a Cocos2d game is to subclass CCNode, add it t
  *  @return World position in points.
  */
 - (CGPoint)convertToWorldSpaceAR:(CGPoint)nodePoint;
+
+/**
+ *  Converts a local Point to Window space coordinates.The result is in Points.
+ *  Treats the returned/received node point as anchor relative.
+ *
+ *  @param nodePoint Local position in points.
+ *
+ *  @return UI position in points.
+ */
+- (CGPoint)convertToWindowSpace:(CGPoint)nodePoint;
 
 
 /// -----------------------------------------------------------------------

@@ -55,7 +55,7 @@
 	
 	// This is currently a private method. CCRenderTextures default to being "aliased" (nearest neighbor filtering) for v2.x compatibility.
 	// Will be making a proper method to set this up soon since this is not very texture cache friendly.
-	[_lightMapBuffer.texture setAntiAliasTexParameters];
+	[_lightMapBuffer.texture setAntialiased:YES];
 	
 	_lightMapBuffer.projection = GLKMatrix4MakeOrtho(CGRectGetMinX(viewport), CGRectGetMaxX(viewport), CGRectGetMinY(viewport), CGRectGetMaxY(viewport), -1024, 1024);
 	

@@ -29,7 +29,7 @@
 #import "CCBuilderReader.h"
 
 #ifndef ANDROID
-#import <Kamcord/Kamcord.h>
+//#import <Kamcord/Kamcord.h>
 #endif
 
 @implementation AppController
@@ -69,10 +69,10 @@
     
 #ifndef ANDROID
     
-    [Kamcord setDeveloperKey:@"uhZuvwvqIaerV5fixpkolWcZYxKYa8V9pbIr6vSsr88"
-             developerSecret:@"XhhJElaHZHyuOJefokI6Gr88jf7S9hw610wFIHcPArk"
-                     appName:@"Magic Masks"
-        parentViewController:[CCDirector sharedDirector]];
+//    [Kamcord setDeveloperKey:@"uhZuvwvqIaerV5fixpkolWcZYxKYa8V9pbIr6vSsr88"
+//             developerSecret:@"XhhJElaHZHyuOJefokI6Gr88jf7S9hw610wFIHcPArk"
+//                     appName:@"Magic Masks"
+//        parentViewController:[CCDirector sharedDirector]];
     
 #endif
     

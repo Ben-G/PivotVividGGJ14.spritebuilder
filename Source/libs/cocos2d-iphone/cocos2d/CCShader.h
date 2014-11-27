@@ -32,21 +32,39 @@
 #import "ccMacros.h"
 #import "Platforms/CCGL.h"
 
-/// Macro to embed GLSL source
+#if __CC_METAL_SUPPORTED_AND_ENABLED
+#import <Metal/Metal.h>
+
+/// Macro to embed Metal shading language source.
+#define CC_METAL(x) @#x
+#endif
+
+
+/// Macro to embed GLSL source.
 #define CC_GLSL(x) @#x
 
 
-extern const NSString *CCShaderUniformProjection;
-extern const NSString *CCShaderUniformProjectionInv;
-extern const NSString *CCShaderUniformViewSize;
-extern const NSString *CCShaderUniformViewSizeInPixels;
-extern const NSString *CCShaderUniformTime;
-extern const NSString *CCShaderUniformSinTime;
-extern const NSString *CCShaderUniformCosTime;
-extern const NSString *CCShaderUniformRandom01;
-extern const NSString *CCShaderUniformMainTexture;
-extern const NSString *CCShaderUniformNormalMapTexture;
-extern const NSString *CCShaderUniformAlphaTestValue;
+/// GL attribute locations for built-in Cocos2D vertex attributes.
+typedef NS_ENUM(NSUInteger, CCShaderAttribute){
+	CCShaderAttributePosition,
+	CCShaderAttributeTexCoord1,
+	CCShaderAttributeTexCoord2,
+	CCShaderAttributeColor,
+};
+
+
+extern NSString * const CCShaderUniformDefaultGlobals;
+extern NSString * const CCShaderUniformProjection;
+extern NSString * const CCShaderUniformProjectionInv;
+extern NSString * const CCShaderUniformViewSize;
+extern NSString * const CCShaderUniformViewSizeInPixels;
+extern NSString * const CCShaderUniformTime;
+extern NSString * const CCShaderUniformSinTime;
+extern NSString * const CCShaderUniformCosTime;
+extern NSString * const CCShaderUniformRandom01;
+extern NSString * const CCShaderUniformMainTexture;
+extern NSString * const CCShaderUniformNormalMapTexture;
+extern NSString * const CCShaderUniformAlphaTestValue;
 
 
 @interface CCShader : NSObject<NSCopying>
@@ -57,6 +75,10 @@ extern const NSString *CCShaderUniformAlphaTestValue;
 
 -(instancetype)initWithVertexShaderSource:(NSString *)vertexSource fragmentShaderSource:(NSString *)fragmentSource;
 -(instancetype)initWithFragmentShaderSource:(NSString *)source;
+
+#if __CC_METAL_SUPPORTED_AND_ENABLED
+-(instancetype)initWithMetalVertexFunction:(id<MTLFunction>)vertexFunction fragmentFunction:(id<MTLFunction>)fragmentFunction;
+#endif
 
 +(instancetype)positionColorShader;
 +(instancetype)positionTextureColorShader;
