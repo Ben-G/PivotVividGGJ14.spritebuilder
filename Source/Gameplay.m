@@ -205,7 +205,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     // setup all moods
     Mood *happy = [[Mood alloc] init];
     happy.moodPrefix = @"happy";
-    happy.moodColor = [CCColor purpleColor];
+    happy.moodColor = [CCColor magentaColor];
     
     Mood *angry = [[Mood alloc] init];
     angry.moodPrefix = @"angry";
