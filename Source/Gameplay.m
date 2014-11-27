@@ -131,7 +131,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     _hero.physicsBody.body.body->velocity_func = playerUpdateVelocity;
     
     // load initial background
-    NSString *spriteFrameName = @"art/calm_background.png";
+    NSString *spriteFrameName = @"art2/calm_background.png";
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
 
     // position backgrounds
@@ -455,7 +455,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     }
     
     // change background color for moods
-    NSString *spriteFrameName = [NSString stringWithFormat:@"art/%@_background.png", newMood.moodPrefix];
+    NSString *spriteFrameName = [NSString stringWithFormat:@"art2/%@_background.png", newMood.moodPrefix];
     CCSpriteFrame* spriteFrame = [CCSpriteFrame frameWithImageNamed:spriteFrameName];
     
     for (CCSprite *bg in _backgrounds) {

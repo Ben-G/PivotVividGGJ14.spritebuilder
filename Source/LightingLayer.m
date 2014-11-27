@@ -148,7 +148,7 @@ LightVertex(GLKMatrix4 transform, GLKVector2 pos, GLKVector2 texCoord, GLKVector
 	CGAffineTransform worldToLight = self.worldToNodeTransform;
 	GLKMatrix4 projection = _lightMapBuffer.projection;
 	
-	float ambient = 0.7 * 0.5;
+	float ambient = 0.9 * 0.5;
 	[_lightMapBuffer beginWithClear:ambient g:ambient b:ambient a:1.0f];
 		for(CCNode<Light> *light in _lights){
 			CGPoint pos = light.position;

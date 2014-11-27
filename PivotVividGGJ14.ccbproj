@@ -85,6 +85,15 @@
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
+		<key>art2</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>art2/angry_background.png</key>
+		<dict/>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
@@ -169,8 +178,9 @@
 		</dict>
 	</dict>
 	<key>versionStr</key>
-	<string>Version: 1.2.1
-GitHub: dde98b0763
+	<string>revision : 87486f6b8d
+sku : default
+version : 1.3.5
 </string>
 </dict>
 </plist>
