@@ -167,8 +167,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     // determines how the camera shall follow the player (where in the camera image the hero will be positioned)
     playerPositionX = 150;
     
-    _hero.position = ccp(playerPositionX, _level.startPosition.y);
-    // initialize previous position for mask following
+    _hero.position = ccp(playerPositionX, _level.startPosition.y);    // initialize previous position for mask following
     _hero.previousPosition = _hero.position;
     
     // read custom level properties
@@ -205,7 +204,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     // setup all moods
     Mood *happy = [[Mood alloc] init];
     happy.moodPrefix = @"happy";
-    happy.moodColor = [CCColor magentaColor];
+    happy.moodColor = [CCColor colorWithRed:227/255.f green:58/255.f blue:192/255.f];
     
     Mood *angry = [[Mood alloc] init];
     angry.moodPrefix = @"angry";
@@ -679,11 +678,8 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     [_hero stopAllActions];
     _gameOver = TRUE;
  
-
-//    create CCActionActionMoveTo to center-zoom
-    CCActionScaleBy *actionScaleBy = [CCActionScaleBy actionWithDuration:0.3f scale:1.6f];
+    CCActionScaleBy *actionScaleBy = [CCActionScaleBy actionWithDuration:0.3f scale:1.2f];
     CCActionEaseBackOut *bounceScale = [CCActionEaseBackOut actionWithAction:actionScaleBy];
-//    CCActionSpawn *spawn = [CCActionSpawn actionWithArray:@[follow, bounceScale]];
     [self runAction:bounceScale];
     
     [self performSelector:@selector(winGame2) withObject:nil afterDelay:0.6f];
