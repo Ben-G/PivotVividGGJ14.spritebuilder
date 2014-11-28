@@ -27,7 +27,7 @@
         if ([newMood.moodPrefix isEqualToString:self.onlyVisibleInMood]) {
             self.physicsBody.collisionMask = nil;
             self.opacity = 1.f;
-            CCColor *originalColor = self.color;
+            CCColor *originalColor = [CCColor colorWithRed:1.f green:1.f blue:1.f];
             CCActionTintTo *tintToWhite = [CCActionTintTo actionWithDuration:0.5f color:[CCColor grayColor]];
             CCActionTintTo *tintToBlack = [CCActionTintTo actionWithDuration:0.5f color:originalColor];
             CCActionSequence *sequence = [CCActionSequence actionWithArray:@[tintToWhite, tintToBlack]];

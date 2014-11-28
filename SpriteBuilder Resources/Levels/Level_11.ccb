@@ -471,7 +471,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>Fragments/DefaultVerticalWall.ccb</string>
+						<string>Fragments/Default/DefaultVerticalWall.ccb</string>
 					</dict>
 				</array>
 			</dict>
@@ -533,7 +533,7 @@
 						<key>type</key>
 						<string>CCBFile</string>
 						<key>value</key>
-						<string>Fragments/DefaultVerticalWall.ccb</string>
+						<string>Fragments/Default/DefaultVerticalWall.ccb</string>
 					</dict>
 				</array>
 			</dict>
