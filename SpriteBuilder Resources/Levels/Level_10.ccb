@@ -164,8 +164,6 @@
 						<string>blocks/OnlyAngerCube.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -819,7 +817,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1014</real>
+							<real>1015</real>
 							<real>228</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1129,7 +1127,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1078</real>
+							<real>1080</real>
 							<real>228</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1191,7 +1189,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>1078</real>
+							<real>1080</real>
 							<real>163</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3400,6 +3398,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
