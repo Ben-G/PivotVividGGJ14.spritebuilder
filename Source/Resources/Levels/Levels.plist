@@ -100,7 +100,7 @@
 		<key>levelDescription</key>
 		<string></string>
 		<key>premium</key>
-		<false/>
+		<true/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -110,17 +110,7 @@
 		<key>levelDescription</key>
 		<string></string>
 		<key>premium</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level 2</string>
-		<key>levelName</key>
-		<string>Levels/Level_6_Pre</string>
-		<key>levelDescription</key>
-		<string></string>
-		<key>premium</key>
-		<false/>
+		<true/>
 	</dict>
 	<dict>
 		<key>levelTitle</key>
@@ -141,16 +131,6 @@
 		<string></string>
 		<key>premium</key>
 		<true/>
-	</dict>
-	<dict>
-		<key>levelTitle</key>
-		<string>Level 2</string>
-		<key>levelName</key>
-		<string>Levels/Level_Test</string>
-		<key>levelDescription</key>
-		<string></string>
-		<key>premium</key>
-		<false/>
 	</dict>
 </array>
 </plist>

@@ -64,7 +64,7 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>32.21484375</real>
+			<real>27.16796875</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -76,8 +76,8 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>41.449188232421875</real>
-					<real>32.60546875</real>
+					<real>40.75390625</real>
+					<real>29.976577758789062</real>
 				</array>
 			</array>
 			<key>polygons</key>
@@ -144,6 +144,17 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>normalMapSpriteFrame</string>
+				<key>type</key>
+				<string>SpriteFrame</string>
+				<key>value</key>
+				<array>
+					<string></string>
+					<string></string>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>color</string>
 				<key>type</key>
 				<string>Color3</string>
@@ -155,7 +166,17 @@
 					<real>1</real>
 				</array>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>effects</string>
+				<key>type</key>
+				<string>EffectControl</string>
+				<key>value</key>
+				<array/>
+			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
