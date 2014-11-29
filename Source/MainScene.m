@@ -64,7 +64,7 @@ static const NSInteger VERTICAL_MARGIN = 12;
     [tile performSelector:@selector(cleanup)];
     
     // calculate the margin by subtracting the tile sizes from the grid size
-    CGFloat tileMarginHorizontal = (self.contentSizeInPoints.width - (GRID_WIDTH * columnWidth)) / (GRID_WIDTH+1);
+    CGFloat tileMarginHorizontal = (_scrollView.contentSizeInPoints.width - (GRID_WIDTH * columnWidth)) / (GRID_WIDTH+1);
     CGFloat tileMarginVertical = VERTICAL_MARGIN;
     
     CGFloat x = tileMarginHorizontal;

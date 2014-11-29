@@ -283,7 +283,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Arial-BoldMT</string>
+						<string>Baskerville-Bold</string>
 					</dict>
 					<dict>
 						<key>name</key>
