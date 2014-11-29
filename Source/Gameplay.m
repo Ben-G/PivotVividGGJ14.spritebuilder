@@ -28,7 +28,7 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 #ifndef ANDROID
-//#import <Kamcord/Kamcord.h>
+#import <Kamcord/Kamcord.h>
 #endif
 
 @interface Gameplay() <Light>
@@ -232,10 +232,10 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     // set up level instructions
     
 #ifndef ANDROID
-//    if (![UIDeviceHardware iPhone4OrOlder]) {
-//        [Kamcord stopRecording];
-//        [Kamcord startRecording];
-//    }
+    if (![UIDeviceHardware iPhone4OrOlder]) {
+        [Kamcord stopRecording];
+        [Kamcord startRecording];
+    }
 #endif
 }
 
@@ -622,7 +622,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 - (void)watchReplay {
 #ifndef ANDROID
     if (![UIDeviceHardware iPhone4OrOlder]) {
-//        [Kamcord showView];
+        [Kamcord showView];
     }
 #endif
 }
@@ -726,7 +726,7 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     if (![UIDeviceHardware iPhone4OrOlder]) {
         // wait 1 second, then stop recording
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-//            [Kamcord stopRecording];
+            [Kamcord stopRecording];
         });
     }
 #endif

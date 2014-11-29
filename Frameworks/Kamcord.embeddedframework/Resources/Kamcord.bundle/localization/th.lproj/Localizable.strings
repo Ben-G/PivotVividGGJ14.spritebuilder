@@ -1,0 +1,350 @@
+"Current password" = "รหัสผ่านปัจจุบัน";
+
+"Please enter a valid username" = "กรุณาใส่ชื่อผู้ใช้ที่ถูกต้อง";
+
+"Username must be less than 16 characters" = "ชื่อผู้ใช้ต้องยาวไม่เกิน 16 ตัวอักษร";
+
+"Connection error" = "เกิดปัญหาในการเชื่อมต่อ";
+
+"Please allow Twitter access to share" = "กรุณาอนุญาตให้เข้าถึง Twitter เพื่อแบ่งปัน";
+
+"Please log in to Twitter in iOS Settings" = "กรุณาลงชื่อเข้าใช้ Twitter ที่การตั้งค่า iOS ";
+
+"Unclaimed Videos" = "วิดีโอที่ไม่ปรากฏเจ้าของ";
+
+"Please sign-in again and authorize posting to share to Facebook." = "กรุณาลงชื่อเข้าใช้อีกครั้งและอนุญาตการโพสต์เพื่อแบ่งปันขึ้นบน Facebook";
+
+"YouTube" = "YouTube";
+
+"Disable" = "ปิดการใช้งาน";
+
+"Sign in" = "ลงชื่อเข้าใช้";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "กรุณาเปิดใช้งานอย่างน้อยหนึ่งบัญชีผู้ใช้ที่ การตั้งค่า -> Twitter และอนุญาตการเข้าถึงผ่านแอปพลิเคชั่นนี้";
+
+"Invalid email" = "ไม่พบที่อยู่อีเมลนี้";
+
+"Reset" = "ตั้งค่าใหม่";
+
+"On" = "เปิด";
+
+"Ok" = "ตกลง";
+
+"Voice overlay is disabled on this device." = "ฟังก์ชั่นการใส่เสียงประกอบถูกปิดบนอุปกรณ์นี้";
+
+"Voice Overlay Disabled" = "ปิดฟังก์ชั่นการใส่เสียงประกอบ";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "กรุณาลงชื่อเข้าใช้ที่ การตั้งค่า > Facebook และอนุญาตการเข้าถึงผ่านแอปพลิเคชั่นนี้";
+
+"Send a password reset email" = "ส่งอีเมลตั้งค่ารหัสผ่านใหม่";
+
+"OK" = "ตกลง";
+
+"Confirm Facebook Sign Out" = "ยืนยันการลงชื่อออกจาก Facebook ";
+
+"Share" = "แบ่งปัน";
+
+"Watch Replays" = "ดูซ้ำ";
+
+"Create" = "สร้าง";
+
+"Kamcord requires an internet connection" = "ต้องเชื่อมต่ออินเทอร์เน็ตเพื่อใช้งาน Kamcord";
+
+"Voice Overlay" = "การใส่เสียง";
+
+"Save" = "บันทึก";
+
+"You must enter an email" = "คุณต้องกรอกอีเมล";
+
+"Email" = "อีเมล";
+
+"Enable" = "เปิดใช้งาน";
+
+"No Internet" = "ไม่มีสัญญาณอินเทอร์เน็ต";
+
+"Please try again later." = "กรุณาลองอีกครั้งภายหลัง";
+
+"Connected" = "เชื่อมต่อแล้ว";
+
+"Upload failed" = "อัพโหลดไม่สำเร็จ";
+
+"Upload Failed" = "อัพโหลดไม่สำเร็จ";
+
+"Confirm Twitter Sign Out" = "ยืนยันการลงชื่อออกจาก Twitter ";
+
+"Email Not Sent" = "อีเมลยังไม่ถูกส่ง";
+
+"We've emailed you a link to reset your password!" = "เราส่งอีเมลลิงค์ตั้งค่ารหัสผ่านใหม่ถึงคุณ";
+
+"Terms of Service" = "เงื่อนไขการให้บริการ";
+
+"Don't have a profile yet?" = "ยังไม่มีโปรไฟล์?";
+
+"Powered by Kamcord" = "ดำเนินการโดย Kamcord";
+
+"New password" = "รหัสผ่านใหม่";
+
+"Sign In" = "ลงชื่อเข้าใช้";
+
+"Confirm Kamcord Sign Out" = "ยืนยันการลงชื่อออกจาก Kamcord";
+
+"Change Password" = "เปลี่ยนรหัสผ่าน";
+
+"Back" = "กลับ";
+
+"Privacy Policy" = "นโยบายความเป็นส่วนตัว";
+
+"Another password reset request is already pending." = "คำขอตั้งค่ารหัสผ่านใหม่อื่นๆ กำลังรอ";
+
+"Confirm YouTube Sign Out" = "ยืนยันการลงชื่อออกจาก YouTube";
+
+"Videos Saved" = "บันทึกวิดีโอแล้ว";
+
+"Not Now" = "ยังก่อน";
+
+"Yes" = "ใช่";
+
+"Username must be at least 5 characters" = "ชื่อผู้ใช้ต้องมีความยาวไม่น้อยกว่า 5 ตัวอักษร";
+
+"No Email Accounts" = "ไม่พบบัญชีผู้ใช้อีเมล";
+
+"No" = "ไม่";
+
+"Watch" = "ดู";
+
+"Forgot your password?" = "ลืมรหัสผ่าน?";
+
+"Is your email correct?" = "อีเมลของคุณถูกต้อง?";
+
+"Are you sure you want to sign out?" = "คุณแน่ใจว่าต้องการลงชื่อออก?";
+
+"New password (again)" = "รหัสผ่านใหม่ (อีกครั้ง)";
+
+"Not authorized" = "ไม่ได้รับอนุญาต";
+
+"Sorry, we could not find any matching accounts." = "ขออภัย เราไม่พบบัญชีผู้ใช้ที่ตรงกัน";
+
+"Facebook" = "Facebook";
+
+"Other Games" = "เกมอื่นๆ";
+
+"Please check Twitter settings" = "กรุณาตรวจสอบการตั้งค่า Twitter ";
+
+"Must enter a username and password" = "ต้องกรอกชื่อผู้ใช้และรหัสผ่าน";
+
+"Not Authorized" = "ไม่ได้รับอนุญาต";
+
+"Already have a profile?" = "มีโปรไฟล์อยู่แล้ว?";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "วิดีโอบนอุปกรณ์นี้เชื่อมโยงกับโปรไฟล์ของคุณแล้ว";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "แก้ไขโปรไฟล์";
+
+"Done" = "เรียบร้อย";
+
+"Cancel" = "ยกเลิก";
+
+"Password must be at least 6 characters" = "รหัสผ่านต้องมีความยาวไม่น้อยกว่า 6 ตัวอักษร";
+
+"Any unclaimed videos will be associated with your profile." = "วิดีโอที่ไม่ปรากฏเจ้าของใดๆ จะเชื่อมโยงกับโปรไฟล์ของคุณ";
+
+"Search" = "ค้นหา";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "กรุณาลงชื่อเข้าใช้้ที่ การตั้งค่า > Twitter และอนุญาตการใช้งานแอปพลิเคชั่นนี้ ";
+
+"No Account Found" = "ไม่พบบัญชีผู้ใช้";
+
+"Profile Creation Error" = "สร้างโปรไฟล์ไม่สำเร็จ";
+
+"Profile creation did not work, please try again later" = "การสร้างโปรไฟล์ไม่ทำงาน กรุณาลองอีกครั้งภายหลัง";
+
+"The email you entered is %@" = "อีเมลที่คุณกรอกคือ %@";
+
+"Profile" = "โปรไฟล์";
+
+"Kamcord Profile" = "โปรไฟล์ Kamcord ";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "ในการคลิกสร้างโปรไฟล์คุณได้แสดงตัวว่าได้อ่านและยอมรับนโยบายความเป็นส่วนตัวและเงื่อนไขการให้บริการแล้ว";
+
+"Create Profile" = "สร้างโปรไฟล์";
+
+"Sign Out" = "ลงชื่อออก";
+
+"No Internet Connection" = "ไม่พบสัญญาณอินเทอร์เน็ต";
+
+"Illegal characters in username" = "มีตัวอักษรต้องห้ามในชื่อผู้ใช้";
+
+"Email Sent" = "ส่งอีเมลแล้ว";
+
+"New passwords do not match" = "รหัสผ่านใหม่ไม่ถูกต้อง";
+
+"You must enter a password" = "คุณต้องกรอกรหัสผ่าน";
+
+"Off" = "ปิด";
+
+"Connect account" = "เชื่อมต่อบัญชีผู้ใช้";
+
+"Write a title..." = "ตั้งชื่อ...";
+
+"Please enter your current password" = "กรุณากรอกรหัสผ่านปัจจุบัน";
+
+"Trim" = "ตัด";
+
+"Share Replay" = "แบ่งปันคำตอบ";
+
+"My Videos" = "วิดีโอของฉัน";
+
+"Password must less than 31 characters" = "รหัสผ่านต้องมีความยาวไม่น้อยกว่า 31 ตัวอักษร";
+
+"Please setup an email account in Settings > Mail." = "กรุณากำหนดบัญชีผู้ใช้อีเมลที่ การตั้งค่า > อีเมล";
+
+"Select Twitter account to use" = "เลือกบัญชีผู้ใช้ Twitter ที่ต้องการ";
+
+"Watch the new Gameplay of the Week!" = "ดู Gameplay ใหม่ล่าสุดของสัปดาห์";
+
+"Trimming..." = "กำลังตัด...";
+
+"Release to refresh..." = "ปล่อยเพื่อรีเฟรช...";
+
+"Refreshing page..." = "กำลังรีเฟรช...";
+
+"Working..." = "กำลังทำงาน....";
+
+"Upload Done!" = "อัพโหลดเรียบร้อย!";
+
+"Gameplay of the Week" = "Gameplay ของสัปดาห์นี้";
+
+"Pull down to refresh..." = "ดึงลงเพื่อรีเฟรช...";
+
+"Password" = "รหัสผ่าน";
+
+"Username" = "ชื่อผู้ใช้";
+
+"Username or Email" = "ชื่อผู้ใช้หรืออีเมล";
+
+"Settings" = "การตั้งค่า";
+
+"Uploading" = "กำลังอัพโหลด";
+
+"Watch Video" = "ดูวิดีโอ";
+
+"Reset Password" = "ตั้งค่ารหัสผ่านใหม่";
+
+"Enter your Kamcord username or the email address associated with your account." = "กรอกชื่อผู้ใช้งาน Kamcord หรือที่อยู่อีเมลที่เชื่อมโยงกับบัญชีผู้ใช้ของคุณ";
+
+"Uploading Failed" = "อัพโหลดไม่สำเร็จ";
+
+"Upload Finished!" = "อัพโหลดเรียบร้อย!";
+
+"Uploading..." = "กำลังอัพโหลด...";
+
+"Enable Voice Overlay?" = "เปิดการใส่เสียง?";
+
+"Voice Overlay Enabled!" = "เปิดใช้งานการใส่เสียงแล้ว?";
+
+"Working ..." = "กำลังทำงาน...";
+
+"No Voice in Simulator" = "ไม่พบเสียงในซิมูเลเตอร์";
+
+"I'm Ready!" = "ฉันพร้อมแล้ว!";
+
+"No account linked" = "ไม่พบบัญชีผู้ใช้ที่เชื่อมโยง";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "คุณสามารถเปิดใช้งานการใส่เสียงได้ที่ โปรไฟล์ => การตั้งค่า หรือกดเปิดใช้งานด้านล่าง";
+
+"Voice Overlay will be enabled for future videos." = "เปิดใช้งานการใส่เสียงสำหรับวิดีโออื่นในอนาคต";
+
+"Enter the username or email address of your Kamcord profile." = "กรอกชื่อผู้ใช้หรือที่อยู่อีเมลลงในโปรไฟล์ Kamcord";
+
+"Close" = "ปิด";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "หน้าเพจใช้เวลาโหลดนานเกินไป ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง";
+
+"Enable Voice Overlay" = "เปิดใช้งานการใส่เสียง";
+
+"Retry" = "ลองอีกครั้ง";
+
+"The server is not responding. Try again at a later time." = "เซิร์ฟเวอร์ไม่ตอบสนอง ลองอีกครั้งในภายหลัง";
+
+"Cannot Connect to Server" = "ไม่สามารถติดต่อเซิร์ฟเวอร์ได้";
+
+"Please reconnect and try again." = "กรุณาเชื่อมต่ออีกครั้งแล้วลองใหม่";
+
+"Slow Internet Connection" = "สัญญาณอินเทอร์เน็ตช้า";
+
+"You must install the LINE App before you can share to LINE." = "คุณต้องติดตั้งแอป Line ก่อนแบ่งปันบน Line";
+
+"You must install the WeChat App before you can share to WeChat." = "คุณต้องติดตั้งแอป WeChat ก่อนแบ่งปันบน WeChat";
+
+"LINE App Not Found" = "ไม่พบแอป Line";
+
+"gameplay" = "gameplay";
+
+"WeChat App Not Found" = "ไม่พบแอป WeChat ";
+
+"Featured Playlist" = "เพลย์ลิสต์แนะนำ";
+"WeChat Sharing Disabled" = "ปิดการแบ่งปันบน WeChat ";
+
+"LINE" = "Line";
+
+"You cannot share to WeChat on this device." = "เราไม่สามารแบ่งปันขึ้นบน WeChat ด้วยอุปกรณ์นี้ได้";
+
+"WeChat" = "WeChat ";
+
+"Cannot Write Comment" = "ไม่สามารถเขียนความคิดเห็นได้";
+
+"You have been signed out of Kamcord due to your age." = "คุณลงชื่อออกจาก Kamcord เนื่องจากอายุของคุณ";
+
+"Day" = "วัน";
+
+"Facebook Credentials Changed" = "เปลี่ยน Facebook Credentials แล้ว";
+
+"Change Birthday" = "เปลี่ยนวันเกิด";
+
+"Please set your correct birthday. You are missing: %@" = "กรุณาระบุวันเกิดที่ถูกต้อง คุณยังไม่ได้ระบุ : %@";
+
+"Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login." = "เปลี่ยน Facebook credentials ของคุณแล้ว กรุณาเปิดแอปตั้งค่า iOS ไปที่ Facebook ลงชื่อออกแล้วลงชื่อเข้าใช้อีกครั้งเพื่อรีเฟรช";
+
+"Month" = "เดือน";
+
+"Invalid Birthday" = "วันเกิดไม่ถูกต้อง";
+
+"You have been signed out" = "คุณลงชื่อออกแล้ว";
+
+"Save Birthday" = "บันทึกวันเกิด";
+
+"You're not old enough" = "คุณยังมีอายุไม่ถึงกำหนด";
+
+"Cannot Verify Profile" = "ไม่สามารถยืนยันโปรไฟล์ได้";
+
+"You cannot sign in" = "คุณไม่สามารถลงชื่อเข้าใช้ได้";
+
+"We're sorry, you're not old enough to create a profile." = "ขออภัย คุณยังอายุไม่ถึงกำหนดที่จะสร้างโปรไฟล์ได้";
+
+"You need an internet connection to create a profile." = "คุณต้องเชื่อมต่ออินเทอร์เน็ตเพื่อสร้างโปรไฟล์";
+
+"We're sorry. You're not old enough to use voice overlay." = "ขออภัย คุณยังอายุไม่ถึงกำหนดที่จะใช้การใส่เสียงได้";
+
+"Cannote Create Profile" = "ไม่สามารถสร้างโปรไฟล์ได้";
+
+"We're sorry, you're not old enough to write a comment." = "ขออภัย คุณยังอายุไม่ถึงกำหนดที่จะเขียนความคิดเห็ฯ";
+
+"You cannot sign in to Kamcord due to your age." = "คุณไม่สามารถลงชื่อเข้าใช้งาน Kamcord ได้เนื่องจากอายุยังไม่ถึงกำหนด";
+
+"Year" = "ปี";
+
+"You're not able to sign in to this game right now. Please try again later." = "คุณไม่สามารถลงชื่อเข้าเกมได้ในขณะนี้ กรุณาลองอีกครั้งภายหลัง";
+
+"You're not able to use voice overlay in this game right now. Please try again later." = "คุณไม่สามารถใช้งานการใส่เสียงในเกมนี้ได้ในขณะนี้ กรุณาลองอีกครั้งภายหลัง";
+
+"We're sorry!" = "ขออภัย!";
+
+"You're not able to create a profile in this game right now. Please try again later." = "คุณไม่สามารถสร้างโปรไฟล์ในเกมนี้ได้ในขณะนี้ กรุณาลองอีกครั้งภายหลัง";
+
+"We're Sorry!" = "ขออภัย!";
+"Password must be less than 31 characters" = "Password must be less than 31 characters";
+

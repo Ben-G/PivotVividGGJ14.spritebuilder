@@ -84,6 +84,9 @@
 - (void)thumbnailReadyAtFilePath:(NSString *)thumbnailFilepath;
 #endif
 
+
+- (void)ageStatusUpdated:(NSInteger)status;
+
 /*
  *
  * This is called when the user presses the share button and has successfully

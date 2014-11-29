@@ -2,7 +2,7 @@
 
 "Please enter a valid username" = "有効なユーザー名を入力して下さい";
 
-"Username must be less than 16 characters" = "ユーザー名は半角16文字以下にして下さい"; 
+"Username must be less than 16 characters" = "ユーザー名は半角16文字以下にして下さい";
 
 "Connection error" = "接続エラー";
 
@@ -10,7 +10,7 @@
 
 "Please log in to Twitter in iOS Settings" = "iOS設定の中でTwitterにログインして下さい";
 
-"Unclaimed Videos" = "持ち主の不明なビデオ"; 
+"Unclaimed Videos" = "持ち主の不明なビデオ";
 
 "Please sign-in again and authorize posting to share to Facebook." = "もう一度ログインし、Facebook上で投稿を共有できるように許可して下さい";
 
@@ -40,7 +40,7 @@
 
 "OK" = "OK";
 
-"Confirm Facebook Sign Out" = "Facebookログアウトの確認"; 
+"Confirm Facebook Sign Out" = "Facebookログアウトの確認";
 
 "Share" = "共有";
 
@@ -70,7 +70,7 @@
 
 "Upload Failed" = "アップロードが失敗しました";
 
-"Confirm Twitter Sign Out" = "Twitterログアウトの確認"; 
+"Confirm Twitter Sign Out" = "Twitterログアウトの確認";
 
 "Email Not Sent" = "メールは送信されませんでした";
 
@@ -78,7 +78,7 @@
 
 "Terms of Service" = "サービス規約";
 
-"Don't have a profile yet?" = "プロフィールを作成しますか？";　
+"Don't have a profile yet?" = "プロフィールを作成しますか？";
 
 "Powered by Kamcord" = "Powered by Kamcord";
 
@@ -86,7 +86,7 @@
 
 "Sign In" = "ログイン";
 
-"Confirm Kamcord Sign Out" = "Kamcordログアウトの確認"; 
+"Confirm Kamcord Sign Out" = "Kamcordログアウトの確認";
 
 "Change Password" = "パスワード変更";
 
@@ -94,9 +94,9 @@
 
 "Privacy Policy" = "プライバシー・ポリシー";
 
-"Another password reset request is already pending." = "前回のパスワードリセットを確認ください。"; 
+"Another password reset request is already pending." = "前回のパスワードリセットを確認ください。";
 
-"Confirm YouTube Sign Out" = "YouTubeログアウトの確認"; 
+"Confirm YouTube Sign Out" = "YouTubeログアウトの確認";
 
 "Videos Saved" = "保存されたビデオ";
 
@@ -150,7 +150,7 @@
 
 "Password must be at least 6 characters" = "パスワードは6文字以上にして下さい。";
 
-"Any unclaimed videos will be associated with your profile." = "これまでのビデオは全て、あなたのプロフィールと関連づけられます。"; 
+"Any unclaimed videos will be associated with your profile." = "これまでのビデオは全て、あなたのプロフィールと関連づけられます。";
 
 "Search" = "検索";
 
@@ -186,7 +186,7 @@
 
 "Off" = "無効";
 
-"Connect account" = "アカウントと接続する"; 
+"Connect account" = "アカウントと接続する";
 
 "Write a title..." = "タイトルを書いて下さい...";
 
@@ -294,4 +294,58 @@
 "You cannot share to WeChat on this device." = "この端末でWeChatでの共有はできません";
 
 "WeChat" = "WeChat";
+
+"Cannot Write Comment" = "Cannot Write Comment";
+
+"You have been signed out of Kamcord due to your age." = "You have been signed out of Kamcord due to your age.";
+
+"Day" = "Day";
+
+"Facebook Credentials Changed" = "Facebook Credentials Changed";
+
+"Change Birthday" = "Change Birthday";
+
+"Please set your correct birthday. You are missing: %@" = "Please set your correct birthday. You are missing: %@";
+
+"Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login." = "Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login.";
+
+"Month" = "Month";
+
+"Invalid Birthday" = "Invalid Birthday";
+
+"You have been signed out" = "You have been signed out";
+
+"Save Birthday" = "Save Birthday";
+
+"You're not old enough" = "You're not old enough";
+
+"Cannot Verify Profile" = "Cannot Verify Profile";
+
+"You cannot sign in" = "You cannot sign in";
+
+"We're sorry, you're not old enough to create a profile." = "We're sorry, you're not old enough to create a profile.";
+
+"You need an internet connection to create a profile." = "You need an internet connection to create a profile.";
+
+"We're sorry. You're not old enough to use voice overlay." = "We're sorry. You're not old enough to use voice overlay.";
+
+"Cannote Create Profile" = "Cannote Create Profile";
+
+"We're sorry, you're not old enough to write a comment." = "We're sorry, you're not old enough to write a comment.";
+
+"You cannot sign in to Kamcord due to your age." = "You cannot sign in to Kamcord due to your age.";
+
+"Year" = "Year";
+
+"You're not able to sign in to this game right now. Please try again later." = "You're not able to sign in to this game right now. Please try again later.";
+
+"You're not able to use voice overlay in this game right now. Please try again later." = "You're not able to use voice overlay in this game right now. Please try again later.";
+
+"We're sorry!" = "We're sorry!";
+
+"You're not able to create a profile in this game right now. Please try again later." = "You're not able to create a profile in this game right now. Please try again later.";
+
+"We're Sorry!" = "We're Sorry!";
+
+"Password must be less than 31 characters" = "Password must be less than 31 characters";
 

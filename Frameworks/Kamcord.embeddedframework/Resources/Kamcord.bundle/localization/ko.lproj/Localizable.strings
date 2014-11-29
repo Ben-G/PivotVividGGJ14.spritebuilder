@@ -102,7 +102,7 @@
 
 "Refreshing page..." = "페이지 새로고치는 중...";
 
-"Powered by Kamcord" = "Kamcord";
+"Powered by Kamcord" = "Powered by Kamcord";
 
 "Not Authorized" = "허가되지 않음";
 
@@ -114,7 +114,7 @@
 
 "Another password reset request is already pending." = "";
 
-"Confirm YouTube Sign Out" = "";
+"Confirm YouTube Sign Out" = "YouTube 로그아웃 확인";
 
 "Videos Saved" = "비디오가 저장됨";
 
@@ -228,7 +228,7 @@
 
 "Username or Email" = "사용자 이름 또는 이메일";
 
-"Password must less than 31 characters" = "비밀번호는 31자 이하이어야 합니다";
+"Password must be less than 31 characters" = "비밀번호는 31자 이하이어야 합니다";
 
 "Please setup an email account in Settings > Mail." = "설정 > 메일에서 이메일 계정을 설정하세요";
 
@@ -284,7 +284,6 @@
 
 "Featured Playlist" = "특집 재생목록";
 
-"Watch Video" = "";
 "WeChat Sharing Disabled" = "WeChat Sharing Disabled";
 
 "LINE" = "LINE";
@@ -292,4 +291,72 @@
 "You cannot share to WeChat on this device." = "You cannot share to WeChat on this device.";
 
 "WeChat" = "WeChat";
+
+"Change Email" = "이메일 변경";
+
+"New email" = "새로운 이메일";
+
+"New email (again)" = "새로운 이메일 (확인)";
+
+"No Video Available" = "이용 가능한 비디오 없음";
+
+"Email must be less than 65 characters" = "이메일 주소는 65자 미만이어야 합니다";
+
+"Email or username does not exist" = "이메일 또는 사용자 이름이 존재하지 않습니다";
+
+"Invalid password" = "잘못된 비밀번호";
+
+"New emails do not match" = "새로운 이메일 주소가 일치하지 않습니다";
+
+"Your preferred email was successfully changed." = "선호하는 이메일 주소가 성공적으로 변경되었습니다.";
+
+"Your password was successfully changed." = "비밀번호가 성공적으로 변경되었습니다.";
+
+"Success!" = "성공!";
+
+"Username is already in use" = "사용자 이름이 이미 사용 중입니다";
+
+"Email is already in use" = "이메일 주소가 이미 사용 중입니다";
+
+"Sign In Error" = "로그인 에러 ";
+
+"Really Delete" = "정말 삭제할까요";
+
+"You're not able to sign in to this game right now. Please try again later." = "You're not able to sign in to this game right now. Please try again later.";
+
+"You're not able to use voice overlay in this game right now. Please try again later." = "You're not able to use voice overlay in this game right now. Please try again later.";
+
+"We're sorry!" = "We're sorry!";
+
+"You're not able to create a profile in this game right now. Please try again later." = "You're not able to create a profile in this game right now. Please try again later.";
+
+"We're Sorry!" = "We're Sorry!";
+
+"You have been signed out of Kamcord due to your age." = "You have been signed out of Kamcord due to your age.";
+
+"Day" = "Day";
+
+"Cannot Write Comment" = "Cannot Write Comment";
+
+"Facebook Credentials Changed" = "Facebook Credentials Changed";
+
+"Please set your correct birthday. You are missing: %@" = "Please set your correct birthday. You are missing: %@";
+
+"Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login." = "Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login.";
+
+"Month" = "Month";
+
+"Invalid Birthday" = "Invalid Birthday";
+
+"You have been signed out" = "You have been signed out";
+
+"Save Birthday" = "Save Birthday";
+
+"Cannot Verify Profile" = "Cannot Verify Profile";
+
+"You need an internet connection to create a profile." = "You need an internet connection to create a profile.";
+
+"We're sorry, you're not old enough to write a comment." = "We're sorry, you're not old enough to write a comment.";
+
+"Year" = "Year";
 

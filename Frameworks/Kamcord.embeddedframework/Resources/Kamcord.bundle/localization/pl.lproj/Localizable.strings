@@ -1,0 +1,350 @@
+"Current password" = "Aktualne hasło";
+
+"Please enter a valid username" = "Wprowadź poprawną nazwę użytkownika";
+
+"Username must be less than 16 characters" = "Nazwa użytkownika musi mieć mniej niż 16 znaków";
+
+"Connection error" = "Błąd połączenia";
+
+"Please allow Twitter access to share" = "Zezwól aplikacji Twitter na dostęp, aby udostępnić";
+
+"Please log in to Twitter in iOS Settings" = "Zaloguj się do aplikacji Twitter w menu Ustawienia systemu iOS";
+
+"Unclaimed Videos" = "Nieodebrane filmy";
+
+"Please sign-in again and authorize posting to share to Facebook." = "Zaloguj się ponownie i zezwól na publikowanie postów, aby udostępnić na Facebooku.";
+
+"YouTube" = "YouTube";
+
+"Disable" = "Wyłącz";
+
+"Sign in" = "Zaloguj się";
+
+"Please enable at least one account in Settings -> Twitter and grant this application permissions." = "Aktywuj przynajmniej jedno konto w menu Ustawienia -> Twitter i udziel tej aplikacji pozwoleń.";
+
+"Invalid email" = "Niepoprawny e-mail";
+
+"Reset" = "Resetuj";
+
+"On" = "Wł.";
+
+"Ok" = "OK";
+
+"Voice overlay is disabled on this device." = "Funkcja nakładania głosu jest wyłączona w tym urządzeniu.";
+
+"Voice Overlay Disabled" = "Funkcja nakładania głosu wyłączona";
+
+"Please sign-in in Settings > Facebook and grant this application permission." = "Zaloguj się w menu Ustawienia > Facebook i udziel tej aplikacji pozwolenia.";
+
+"Send a password reset email" = "Wyślij e-mail do zresetowania hasła";
+
+"OK" = "OK";
+
+"Confirm Facebook Sign Out" = "Potwierdź wylogowanie z Facebooka";
+
+"Share" = "Udostępnij";
+
+"Watch Replays" = "Oglądaj powtórki";
+
+"Create" = "Utwórz";
+
+"Kamcord requires an internet connection" = "Kamcord wymaga połączenia z Internetem";
+
+"Voice Overlay" = "Nakładanie głosu";
+
+"Save" = "Zapisz";
+
+"You must enter an email" = "Musisz wprowadzić e-mail";
+
+"Email" = "E-mail";
+
+"Enable" = "Włącz";
+
+"No Internet" = "Brak połączenia z Internetem";
+
+"Please try again later." = "Spróbuj ponownie później";
+
+"Connected" = "Połączono";
+
+"Upload failed" = "Wysyłanie nieudane";
+
+"Upload Failed" = "Wysyłanie nieudane";
+
+"Confirm Twitter Sign Out" = "Potwierdź wylogowanie z Twittera";
+
+"Email Not Sent" = "Nie wysłano e-maila";
+
+"We've emailed you a link to reset your password!" = "Wysłaliśmy do ciebie e-mail z linkiem do zresetowania hasła";
+
+"Terms of Service" = "Warunki korzystania z usług";
+
+"Don't have a profile yet?" = "Nie masz jeszcze profilu?";
+
+"Powered by Kamcord" = "Dostarczone przez Kamcord";
+
+"New password" = "Nowe hasło";
+
+"Sign In" = "Zaloguj się";
+
+"Confirm Kamcord Sign Out" = "Potwierdź wylogowanie z Kamcord";
+
+"Change Password" = "Zmień hasło";
+
+"Back" = "Powrót";
+
+"Privacy Policy" = "Polityka prywatności";
+
+"Another password reset request is already pending." = "Wcześniejsza prośba o zresetowanie hasła oczekuje.";
+
+"Confirm YouTube Sign Out" = "Potwierdź wylogowanie z YouTube";
+
+"Videos Saved" = "Zapisane filmy";
+
+"Not Now" = "Nie teraz";
+
+"Yes" = "Tak";
+
+"Username must be at least 5 characters" = "Nazwa użytkownika musi mieć przynajmniej 5 znaków";
+
+"No Email Accounts" = "Brak kont e-mail";
+
+"No" = "Nie";
+
+"Watch" = "Oglądaj";
+
+"Forgot your password?" = "Nie pamiętasz hasła?";
+
+"Is your email correct?" = "Czy twój e-mail jest poprawny?";
+
+"Are you sure you want to sign out?" = "Czy na pewno chcesz się wylogować?";
+
+"New password (again)" = "Nowe hasło (ponownie)";
+
+"Not authorized" = "Brak autoryzacji";
+
+"Sorry, we could not find any matching accounts." = "Przepraszamy, nie można znaleźć żadnych pasujących kont.";
+
+"Facebook" = "Facebook";
+
+"Other Games" = "Inne gry";
+
+"Please check Twitter settings" = "Sprawdź ustawienia Twittera";
+
+"Must enter a username and password" = "Musisz wprowadzić nazwę użytkownika i hasło";
+
+"Not Authorized" = "Brak autoryzacji";
+
+"Already have a profile?" = "Masz już profil?";
+
+"Twitter" = "Twitter";
+
+"The videos on this device are now associated with your profile" = "Filmy w tym urządzeniu są teraz skojarzone z twoim profilem";
+
+"Kamcord" = "Kamcord";
+
+"Edit Profile" = "Edytuj profil";
+
+"Done" = "Gotowe";
+
+"Cancel" = "Anuluj";
+
+"Password must be at least 6 characters" = "Hasło musi mieć przynajmniej 6 znaków";
+
+"Any unclaimed videos will be associated with your profile." = "Wszystkie nieodebrane filmy zostaną skojarzone z twoim profilem.";
+
+"Search" = "Szukaj";
+
+"Please sign-in in Settings > Twitter and grant this application permission." = "Zaloguj się w menu Ustawienia > Twitter i udziel tej aplikacji pozwolenia.";
+
+"No Account Found" = "Nie znaleziono konta";
+
+"Profile Creation Error" = "Błąd podczas tworzenia profilu";
+
+"Profile creation did not work, please try again later" = "Nie udało się utworzyć profilu, spróbuj ponownie później";
+
+"The email you entered is %@" = "Wprowadzony przez ciebie e-mail to %@";
+
+"Profile" = "Profil";
+
+"Kamcord Profile" = "Profil Kamcord";
+
+"By clicking Create Profile you are indicating that you have read and agree to the Privacy Policy and Terms of Service." = "Klikając Utwórz profil, potwierdzasz przeczytanie i akceptację postanowień Polityki prywatności oraz Warunków korzystania z usług.";
+
+"Create Profile" = "Utwórz profil";
+
+"Sign Out" = "Wyloguj się";
+
+"No Internet Connection" = "Brak połączenia z Internetem";
+
+"Illegal characters in username" = "Nieprawidłowe znaki w nazwie użytkownika";
+
+"Email Sent" = "E-mail wysłany";
+
+"New passwords do not match" = "Nowe hasła nie są identyczne";
+
+"You must enter a password" = "Wprowadź hasło";
+
+"Off" = "Wył.";
+
+"Connect account" = "Połącz konto";
+
+"Write a title..." = "Wpisz tytuł...";
+
+"Please enter your current password" = "Wprowadź aktualne hasło";
+
+"Trim" = "Przytnij";
+
+"Share Replay" = "Udostępnij powtórkę";
+
+"My Videos" = "Moje filmy";
+
+"Password must less than 31 characters" = "Hasło musi mieć mniej niż 31 znaków";
+
+"Please setup an email account in Settings > Mail." = "Skonfiguruj konto e-mail w menu Ustawienia > Poczta.";
+
+"Select Twitter account to use" = "Wybierz konto serwisu Twitter, aby z niego skorzystać";
+
+"Watch the new Gameplay of the Week!" = "Oglądaj nową Rozgrywkę Tygodnia!";
+
+"Trimming..." = "Przycinam...";
+
+"Release to refresh..." = "Puść, aby odświeżyć...";
+
+"Refreshing page..." = "Odświeżam stronę...";
+
+"Working..." = "Przetwarzam...";
+
+"Upload Done!" = "Wysyłanie zakończone!";
+
+"Gameplay of the Week" = "Rozgrywka Tygodnia";
+
+"Pull down to refresh..." = "Pociągnij w dół, aby odświeżyć...";
+
+"Password" = "Hasło";
+
+"Username" = "Nazwa użytkownika";
+
+"Username or Email" = "Nazwa użytkownika lub e-mail";
+
+"Settings" = "Ustawienia";
+
+"Uploading" = "Wysyłanie";
+
+"Watch Video" = "Oglądaj film";
+
+"Reset Password" = "Resetuj hasło";
+
+"Enter your Kamcord username or the email address associated with your account." = "Wprowadź nazwę użytkownika Kamcord lub adres e-mail powiązany z kontem.";
+
+"Uploading Failed" = "Wysyłanie nieudane";
+
+"Upload Finished!" = "Wysyłanie zakończone!";
+
+"Uploading..." = "Wysyłam...";
+
+"Enable Voice Overlay?" = "Włączyć nakładanie głosu?";
+
+"Voice Overlay Enabled!" = "Nakładanie głosu włączone!";
+
+"Working ..." = "Przetwarzam...";
+
+"No Voice in Simulator" = "Brak głosu w symulatorze";
+
+"I'm Ready!" = "Jestem gotowy!";
+
+"No account linked" = "Brak połączonych kont";
+
+"You can enable voice overlay by going to Profile => Settings or pressing Enable below." = "Możesz włączyć nakładanie głosu przechodząc do zakładki Profil => Ustawienia lub naciskając poniżej.";
+
+"Voice Overlay will be enabled for future videos." = "Funkcja nakładania głosu będzie włączona podczas nagrywania następnych filmów.";
+
+"Enter the username or email address of your Kamcord profile." = "Wprowadź nazwę użytkownika lub adres e-mail profilu Kamcord.";
+
+"Close" = "Zamknij";
+
+"The page is taking a long time to load. Check your Internet connection and try again." = "Ładowanie strony trwa bardzo długo. Sprawdź połączenie z Internetem i spróbuj ponownie.";
+
+"Enable Voice Overlay" = "Włącz nakładanie głosu";
+
+"Retry" = "Ponów";
+
+"The server is not responding. Try again at a later time." = "Serwer nie odpowiada. Spróbuj ponownie później.";
+
+"Cannot Connect to Server" = "Nie można połączyć z serwerem";
+
+"Please reconnect and try again." = "Połącz i spróbuj ponownie.";
+
+"Slow Internet Connection" = "Wolne połączenie internetowe";
+
+"You must install the LINE App before you can share to LINE." = "Musisz zainstalować aplikację LINE, jeśli chcesz udostępniać w aplikacji LINE.";
+
+"You must install the WeChat App before you can share to WeChat." = "Musisz zainstalować aplikację WeChat, jeśli chcesz udostępniać w aplikacji WeChat.";
+
+"LINE App Not Found" = "Nie znaleziono aplikacji LINE";
+
+"gameplay" = "rozgrywka";
+
+"WeChat App Not Found" = "Nie znaleziono aplikacji WeChat";
+
+"Featured Playlist" = "Wyróżniona playlista";
+"WeChat Sharing Disabled" = "Udostępnianie przez WeChat wyłączone";
+
+"LINE" = "LINE";
+
+"You cannot share to WeChat on this device." = "Nie możesz udostępniać w WeChat na tym urządzeniu.";
+
+"WeChat" = "WeChat";
+
+"Cannot Write Comment" = "Nie można wpisać komentarza";
+
+"You have been signed out of Kamcord due to your age." = "Zostałeś wylogowany z Kamcord z powodu nieodpowiedniego wieku.";
+
+"Day" = "Dzień";
+
+"Facebook Credentials Changed" = "Dane uwierzytelniające serwisu Facebook uległy zmianie";
+
+"Change Birthday" = "Zmień datę urodzenia";
+
+"Please set your correct birthday. You are missing: %@" = "Ustaw prawidłową datę urodzenia. Brak: %@";
+
+"Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login." = "Twoje dane uwierzytelniające serwisu Facebook uległy zmianie. Otwórz menu Ustawienia systemu iOS, idź do aplikacji Facebook, wyloguj się i zaloguj ponownie, aby odświeżyć dane logowania.";
+
+"Month" = "Miesiąc";
+
+"Invalid Birthday" = "Niepoprawna data urodzenia";
+
+"You have been signed out" = "Zostałeś wylogowany";
+
+"Save Birthday" = "Zapisz datę urodzenia";
+
+"You're not old enough" = "Nie osiągnąłeś wymaganego wieku";
+
+"Cannot Verify Profile" = "Nie można zweryfikować profilu";
+
+"You cannot sign in" = "Nie możesz się zalogować";
+
+"We're sorry, you're not old enough to create a profile." = "Przepraszamy, nie osiągnąłeś wymaganego wielu, aby móc utworzyć profil.";
+
+"You need an internet connection to create a profile." = "Aby utworzyć profil, musisz połączyć się z Internetem.";
+
+"We're sorry. You're not old enough to use voice overlay." = "Przepraszamy. Nie osiągnąłeś wymaganego wieku, aby korzystać z funkcji nakładania głosu.";
+
+"Cannote Create Profile" = "Nie można utworzyć profilu";
+
+"We're sorry, you're not old enough to write a comment." = "Przepraszamy, nie osiągnąłeś wymaganego wieku, aby pisać komentarz.";
+
+"You cannot sign in to Kamcord due to your age." = "Nie możesz się zalogować do Kamcord z powodu nieodpowiedniego wieku.";
+
+"Year" = "Rok";
+
+"You're not able to sign in to this game right now. Please try again later." = "Nie możesz teraz zalogować się w tej grze. Spróbuj ponownie później.";
+
+"You're not able to use voice overlay in this game right now. Please try again later." = "Nie możesz teraz korzystać z funkcji nakładania głosu w tej grze. Spróbuj ponownie później.";
+
+"We're sorry!" = "Przepraszamy!";
+
+"You're not able to create a profile in this game right now. Please try again later." = "Nie możesz teraz utworzyć profilu w tej grze. Spróbuj ponownie później.";
+
+"We're Sorry!" = "Przepraszamy!";
+"Password must be less than 31 characters" = "Password must be less than 31 characters";
+

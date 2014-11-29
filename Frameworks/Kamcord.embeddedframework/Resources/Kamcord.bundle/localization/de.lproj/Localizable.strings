@@ -251,3 +251,57 @@
 
 "WeChat" = "WeChat";
 
+"Cannot Write Comment" = "Cannot Write Comment";
+
+"You have been signed out of Kamcord due to your age." = "You have been signed out of Kamcord due to your age.";
+
+"Day" = "Day";
+
+"Facebook Credentials Changed" = "Facebook Credentials Changed";
+
+"Change Birthday" = "Change Birthday";
+
+"Please set your correct birthday. You are missing: %@" = "Please set your correct birthday. You are missing: %@";
+
+"Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login." = "Your Facebook credentials have changed. Please open the iOS Settings app, go to Facebook, and sign out and sign in again to refresh your login.";
+
+"Month" = "Month";
+
+"Invalid Birthday" = "Invalid Birthday";
+
+"You have been signed out" = "You have been signed out";
+
+"Save Birthday" = "Save Birthday";
+
+"You're not old enough" = "You're not old enough";
+
+"Cannot Verify Profile" = "Cannot Verify Profile";
+
+"You cannot sign in" = "You cannot sign in";
+
+"We're sorry, you're not old enough to create a profile." = "We're sorry, you're not old enough to create a profile.";
+
+"You need an internet connection to create a profile." = "You need an internet connection to create a profile.";
+
+"We're sorry. You're not old enough to use voice overlay." = "We're sorry. You're not old enough to use voice overlay.";
+
+"Cannote Create Profile" = "Cannote Create Profile";
+
+"We're sorry, you're not old enough to write a comment." = "We're sorry, you're not old enough to write a comment.";
+
+"You cannot sign in to Kamcord due to your age." = "You cannot sign in to Kamcord due to your age.";
+
+"Year" = "Year";
+
+"You're not able to sign in to this game right now. Please try again later." = "You're not able to sign in to this game right now. Please try again later.";
+
+"You're not able to use voice overlay in this game right now. Please try again later." = "You're not able to use voice overlay in this game right now. Please try again later.";
+
+"We're sorry!" = "We're sorry!";
+
+"You're not able to create a profile in this game right now. Please try again later." = "You're not able to create a profile in this game right now. Please try again later.";
+
+"We're Sorry!" = "We're Sorry!";
+
+"Password must be less than 31 characters" = "Password must be less than 31 characters";
+

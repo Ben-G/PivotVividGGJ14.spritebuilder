@@ -17,8 +17,21 @@ extern "C" {
      * The different places a user can share a replay to.
      *
      */
-    typedef enum
-    {
+    typedef enum {
+        KCShareDestinationFacebook = 0,
+        KCShareDestinationTwitter,
+        KCShareDestinationYouTube,
+        KCShareDestinationEmail,
+        KCShareDestinationWeChat,
+        KCShareDestinationLine,
+    } KCShareDestination;
+    
+    /*
+     *
+     *  Deprecated enum, here for compatibility
+     *
+     */
+    __deprecated typedef enum {
         KC_SHARE_TARGET_FACEBOOK = 0,
         KC_SHARE_TARGET_TWITTER,
         KC_SHARE_TARGET_YOUTUBE,
@@ -77,6 +90,25 @@ extern "C" {
                                     bool disableiPad3,
                                     bool disableiPad4,
                                     bool disableiPadAir);
+    
+    /*
+    void Kamcord_SetDeviceBlacklist(bool disableiPod4G,
+                                    bool disableiPod5G,
+                                    bool disableiPhone3GS,
+                                    bool disableiPhone4,
+                                    bool disableiPhone4S,
+                                    bool disableiPhone5,
+                                    bool disableiPhone5C,
+                                    bool disableiPhone5S,
+                                    bool disableiPhone6,
+                                    bool disableiPhone6Plus,
+                                    bool disableiPad1,
+                                    bool disableiPad2,
+                                    bool disableiPadMini,
+                                    bool disableiPad3,
+                                    bool disableiPad4,
+                                    bool disableiPadAir);
+     */
     
     /*
      *
@@ -207,14 +239,24 @@ extern "C" {
      */
     void Kamcord_SetVideoTitle(const char * title);
     
-    typedef enum
-    {
+    typedef enum {
+        KCMetadataTypeLevel = 0,       // For a level played in the video.
+        KCMetadataTypeScore,           // For a score for the video.
+        KCMetadataTypeList,            // For a ',' delimited list of values, numerical value if given will apply to all.
+        KCMetadataTypeOther = 1000,    // For arbitrary key to value metadata.
+    } KCMetadataType;
+    
+    /*
+     *
+     * Previous enum, present here and deprecated for compatibility
+     *
+     */
+    __deprecated typedef enum {
         KC_LEVEL = 0,       // For a level played in the video.
         KC_SCORE,           // For a score for the video.
         KC_LIST,            // For a ',' delimited list of values to apply to a key, numerical value if given will apply to all.
         KC_OTHER = 1000,    // For arbitrary key to value metadata.
     } KC_METADATA_TYPE;
-    
     /*
      *
      * Set the ways users can share their videos. You can use this method to choose which
@@ -233,10 +275,10 @@ extern "C" {
      * @param       target4             The bottom-right element of the share grid
      *
      */
-    void Kamcord_SetShareTargets(KC_SHARE_TARGET target1,
-                                 KC_SHARE_TARGET target2,
-                                 KC_SHARE_TARGET target3,
-                                 KC_SHARE_TARGET target4);
+    void Kamcord_SetShareTargets(KCShareDestination target1,
+                                 KCShareDestination target2,
+                                 KCShareDestination target3,
+                                 KCShareDestination target4);
     
     /*
      *
@@ -249,11 +291,11 @@ extern "C" {
      * @param       numericValue       A numeric representation of the value for this metadata
      *
      */
-    void Kamcord_SetDeveloperMetadata(KC_METADATA_TYPE metadataType,
+    void Kamcord_SetDeveloperMetadata(KCMetadataType metadataType,
                                       const char * displayKey,
                                       const char * displayValue);
     
-    void Kamcord_SetDeveloperMetadataWithNumericValue(KC_METADATA_TYPE metadataType,
+    void Kamcord_SetDeveloperMetadataWithNumericValue(KCMetadataType metadataType,
                                                       const char * displayKey,
                                                       const char * displayValue,
                                                       double numericValue);
@@ -311,13 +353,22 @@ extern "C" {
      * @param   quality     The desired video quality.
      *
      */
-    typedef enum
-    {
+    typedef enum {
+        KCVideoQualityStandard   = 0,
+        KCVideoQualityTrailer    = 1,    // Should only be used to make trailers. Do *NOT* release your game with this setting.
+    } KCVideoQuality;
+    
+    /*
+     *
+     * Previous enum, present here and deprecated for compatibility
+     *
+     */
+    __deprecated typedef enum {
         KC_STANDARD_VIDEO_QUALITY   = 0,
         KC_TRAILER_VIDEO_QUALITY    = 1,    // Should only be used to make trailers. Do *NOT* release your game with this setting.
     } KC_VIDEO_QUALITY;
     
-    void Kamcord_SetVideoQuality(KC_VIDEO_QUALITY videoQuality);
+    void Kamcord_SetVideoQuality(KCVideoQuality videoQuality);
     
     /*
      *
@@ -647,8 +698,7 @@ extern "C" {
      * @param   score   The score the user just achieved on the given level.
      *
      */
-    void Kamcord_SetLevelAndScore(const char * level,
-                                  double score);
+    void Kamcord_SetLevelAndScore(const char * level, double score) __deprecated;
     
     /*******************************************************************
      *
