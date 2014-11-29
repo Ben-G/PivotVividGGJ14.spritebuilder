@@ -90,7 +90,7 @@ static const NSInteger VERTICAL_MARGIN = 12;
             NSDictionary *currentLevel = _levels[selectedLevel];
             levelTile.premium = [currentLevel[@"premium"] boolValue];
 #ifdef DEBUG
-            levelUnlocked = YES;
+//            levelUnlocked = YES;
 #endif
             levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel+1];
             levelTile.levelIndex = selectedLevel;
@@ -163,4 +163,16 @@ static const NSInteger VERTICAL_MARGIN = 12;
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
+- (void)restoreButtonPressed {
+    [[IAPManager sharedInstance] restorePremiumWithTarget:self callback:@selector(restoredPurchase:)];
+}
+
+- (void)restoredPurchase:(NSNumber *)successfull {
+    if ([successfull boolValue] == YES) {
+        [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Your purchase has been restored. Levels have been unlocked. Have fun!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+    } else {
+        [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"We couldn't find any purchases that could be restored." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+    }
+}
+                                                  
 @end

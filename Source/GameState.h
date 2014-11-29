@@ -20,5 +20,6 @@
 - (BOOL)isNextLevelPremium;
 - (void)loadNextLevel;
 - (void)loadLevel:(NSInteger)levelIndex;
+- (NSUInteger)levelCount;
 
 @end

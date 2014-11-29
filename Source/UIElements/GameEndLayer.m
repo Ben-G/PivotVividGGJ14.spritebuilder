@@ -8,6 +8,7 @@
 
 #import "GameEndLayer.h"
 #import "UIDeviceHardware.h"
+#import "GameState.h"
 
 @implementation GameEndLayer {
     CCNodeColor *_progressBar;
@@ -15,6 +16,7 @@
     
     CCButton *_watchReplayButton;
     CCButton *_nextLevelButton;
+    CCLabelTTF *_levelWinText;
 }
 
 - (void)onEnter {
@@ -23,6 +25,23 @@
         // center nextLevel Button, because replay button doesn't exist
         _nextLevelButton.position = ccp(0.5f, _nextLevelButton.position.y);
     }
+
+    NSUInteger levelCount = [[GameState sharedInstance] levelCount];
+    int currentLevel = [[GameState sharedInstance] currentLevelIndex];
+    
+    NSString *winText = nil;
+    
+    if (currentLevel < 0.5 * levelCount) {
+        winText = @"Still a long way to go!";
+    } else {
+        winText = @"You are better,\nbut not good enough";
+    }
+    
+    if (currentLevel + 1 == levelCount-1) {
+        winText = @"You will face the last\nand hardest challenge!";
+    }
+    
+    _levelWinText.string = [NSString stringWithFormat:@"%d out of %lu.\n%@", currentLevel+1, levelCount, winText];
     
     [super onEnter];
 }

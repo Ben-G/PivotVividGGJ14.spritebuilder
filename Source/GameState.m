@@ -37,7 +37,16 @@
         _levels = [NSArray arrayWithContentsOfFile:path];
         
         _currentLevelIndex = -1;
-        [self loadNextLevel];
+        
+        while (YES == [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"Level_%d_unlocked", _currentLevelIndex+1]]) {
+            _currentLevelIndex++;
+        }
+        
+        if (_currentLevelIndex < [_levels count]) {
+            [self loadLevel:_currentLevelIndex];
+        } else {
+            [self loadLevel:0];
+        }
     }
     
     return self;
@@ -84,6 +93,10 @@
     NSDictionary *nextLevel = [self nextLevelInfo];
     
     return [nextLevel[@"premium"] boolValue];
+}
+
+- (NSUInteger)levelCount {
+    return [_levels count];
 }
 
 @end

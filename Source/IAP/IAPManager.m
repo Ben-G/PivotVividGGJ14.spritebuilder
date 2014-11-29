@@ -36,7 +36,7 @@ static NSString * const IAP_PREMIUM_ID = @"com.benjaminencz.magicmasks.premium";
     });
     
 #ifdef DEBUG
-    [MGWU removeObjectForKey:IAP_PREMIUM];
+//    [MGWU removeObjectForKey:IAP_PREMIUM];
 #endif
     
     // returns the same object each time

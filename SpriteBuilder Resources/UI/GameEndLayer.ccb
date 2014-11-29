@@ -137,6 +137,8 @@
 						<real>0.40000000596046448</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -240,7 +242,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.4982394278049469</real>
 							<real>0.5</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -283,8 +285,8 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>Enemies are killed when you are in
-the same color as they are! </string>
+							<string>You will face the last
+and hardest challenge</string>
 							<false/>
 						</array>
 					</dict>
