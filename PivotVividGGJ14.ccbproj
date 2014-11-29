@@ -68,7 +68,7 @@
 	<array>
 		<dict>
 			<key>path</key>
-			<string>SpriteBuilder Resources</string>
+			<string>Packages/SpriteBuilder Resources.sbpack</string>
 		</dict>
 	</array>
 	<key>resourceProperties</key>
@@ -87,8 +87,6 @@
 		</dict>
 		<key>art2</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
