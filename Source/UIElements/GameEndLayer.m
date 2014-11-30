@@ -39,9 +39,11 @@
     
     if (currentLevel + 1 == levelCount-1) {
         winText = @"You will face the last\nand hardest challenge!";
+    } else if (currentLevel + 1 == levelCount) {
+        winText = @"Nooo! You made it.";
     }
     
-    _levelWinText.string = [NSString stringWithFormat:@"%d out of %lu.\n%@", currentLevel+1, levelCount, winText];
+    _levelWinText.string = [NSString stringWithFormat:@"%d out of %lu.\n%@", currentLevel+1, (unsigned long) levelCount, winText];
     
     [super onEnter];
 }
@@ -59,6 +61,16 @@
 
 - (void)displayHint:(NSString *)hint {
     _hintLabel.string = hint;
+}
+
+#pragma mark - Getter/Setter implementations
+
+- (NSString *)nextLevelButtonText {
+    return _nextLevelButton.title;
+}
+
+- (void)setNextLevelButtonText:(NSString *)nextLevelButtonText {
+    _nextLevelButton.title = nextLevelButtonText;
 }
 
 @end

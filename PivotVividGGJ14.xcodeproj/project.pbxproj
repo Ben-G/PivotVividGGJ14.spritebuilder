@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6201C5E21A2AD89E00C3DDAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6201C5E01A2AD89E00C3DDAC /* Default@2x.png */; };
 		6201C5E31A2AD89E00C3DDAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6201C5E11A2AD89E00C3DDAC /* Default-568h@2x.png */; };
+		6201C5E61A2B98C400C3DDAC /* FinalWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6201C5E51A2B98C400C3DDAC /* FinalWinScene.m */; };
 		62095C1F196A0E9300FCEC78 /* TutorialFragment1_4.m in Sources */ = {isa = PBXBuildFile; fileRef = 62095C1E196A0E9300FCEC78 /* TutorialFragment1_4.m */; };
 		62095C26196A18C800FCEC78 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 62095C25196A18C800FCEC78 /* UIUtils.m */; };
 		621168991A2A5FB5007951D9 /* Kamcord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621168931A2A5FB5007951D9 /* Kamcord.framework */; };
@@ -198,6 +199,8 @@
 /* Begin PBXFileReference section */
 		6201C5E01A2AD89E00C3DDAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6201C5E11A2AD89E00C3DDAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6201C5E41A2B98C400C3DDAC /* FinalWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalWinScene.h; sourceTree = "<group>"; };
+		6201C5E51A2B98C400C3DDAC /* FinalWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalWinScene.m; sourceTree = "<group>"; };
 		62095C1D196A0E9300FCEC78 /* TutorialFragment1_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFragment1_4.h; sourceTree = "<group>"; };
 		62095C1E196A0E9300FCEC78 /* TutorialFragment1_4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFragment1_4.m; sourceTree = "<group>"; };
 		62095C24196A18BD00FCEC78 /* UIUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
@@ -643,6 +646,8 @@
 				62CF7D69198DDBBA00ABF971 /* GameEndLayer.m */,
 				6241216A1997544600410E7C /* PurchaseScreen.h */,
 				6241216B1997544600410E7C /* PurchaseScreen.m */,
+				6201C5E41A2B98C400C3DDAC /* FinalWinScene.h */,
+				6201C5E51A2B98C400C3DDAC /* FinalWinScene.m */,
 			);
 			name = UIElements;
 			path = Source/UIElements;
@@ -1029,6 +1034,7 @@
 				62CB016918BC239C00EC8097 /* TutorialGameplay.m in Sources */,
 				627C5C0B1894677D00409C84 /* GroundBlock64.m in Sources */,
 				62A0B8E0189505B20037B7E4 /* LevelDetails.m in Sources */,
+				6201C5E61A2B98C400C3DDAC /* FinalWinScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				624462191935A18000895F2D /* TutorialInstructionPopup.m in Sources */,
 				627C5BC318939D5300409C84 /* Hero.m in Sources */,

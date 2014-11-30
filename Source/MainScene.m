@@ -90,7 +90,7 @@ static const NSInteger VERTICAL_MARGIN = 12;
             NSDictionary *currentLevel = _levels[selectedLevel];
             levelTile.premium = [currentLevel[@"premium"] boolValue];
 #ifdef DEBUG
-//            levelUnlocked = YES;
+            levelUnlocked = YES;
 #endif
             levelTile.levelNumber.string = [NSString stringWithFormat:@"%d", selectedLevel+1];
             levelTile.levelIndex = selectedLevel;

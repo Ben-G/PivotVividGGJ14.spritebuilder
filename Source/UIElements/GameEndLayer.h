@@ -10,6 +10,8 @@
 
 @interface GameEndLayer : CCNode
 
+@property (nonatomic, strong) NSString *nextLevelButtonText;
+
 - (void)displayCompletionRate:(CGFloat)completionRate;
 - (void)displayHint:(NSString *)hint;
 

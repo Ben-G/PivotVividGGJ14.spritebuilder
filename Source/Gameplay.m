@@ -632,8 +632,16 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
 }
 
 - (void)nextLevel {
-    // check if next level is paid
+    // check if this level was the last level
+    if ([[GameState sharedInstance] currentLevelIndex] == [[GameState sharedInstance] levelCount] - 1) {
+        CCScene *finalScene = [CCBReader loadAsScene:@"UI/FinalWinScene"];
+        CCTransition *finalSceneTransition = [CCTransition transitionFadeWithDuration:1.5f];
+        [[CCDirector sharedDirector] replaceScene:finalScene withTransition:finalSceneTransition];
+        
+        return;
+    }
     
+    // check if next level is paid
     if (![[IAPManager sharedInstance] hasPurchasedPremium] && [[GameState sharedInstance] isNextLevelPremium]) {
         CCLOG(@"Need to pay before moving on!");
         PurchaseScreen *purchaseScreen = (PurchaseScreen *)[CCBReader load:@"UI/PurchaseScreen"];
@@ -693,10 +701,15 @@ playerUpdateVelocity(cpBody *body, cpVect gravity, cpFloat damping, cpFloat dt)
     CGPoint goalWorldPosition = [_achievedGoalObject.parent convertToWorldSpace:_achievedGoalObject.position];
     [_achievedGoalObject removeFromParent];
     
-    CCNode *gameWinLayer = [CCBReader load:@"UI/GameWinLayer" owner:self];
+    GameEndLayer *gameWinLayer = (GameEndLayer *)[CCBReader load:@"UI/GameWinLayer" owner:self];
     gameWinLayer.cascadeOpacityEnabled = YES;
     gameWinLayer.opacity = 0.f;
     [self addChild:gameWinLayer];
+    
+    // check if this level was the last level
+    if ([[GameState sharedInstance] currentLevelIndex] == [[GameState sharedInstance] levelCount] - 1) {
+        gameWinLayer.nextLevelButtonText = @"Ceremony";
+    }
     
     _achievedGoalObject.position = [gameWinLayer convertToNodeSpace:goalWorldPosition];
     [gameWinLayer addChild:_achievedGoalObject];
