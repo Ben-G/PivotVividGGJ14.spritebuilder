@@ -71,7 +71,7 @@
     
     [Kamcord setDeveloperKey:@"uhZuvwvqIaerV5fixpkolWcZYxKYa8V9pbIr6vSsr88"
              developerSecret:@"XhhJElaHZHyuOJefokI6Gr88jf7S9hw610wFIHcPArk"
-                     appName:@"Magic Masks"
+                     appName:@"Hero's Masks"
         parentViewController:[CCDirector sharedDirector]];
     
 #endif
