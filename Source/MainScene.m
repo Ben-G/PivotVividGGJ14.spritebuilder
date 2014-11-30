@@ -160,7 +160,8 @@ static const NSInteger VERTICAL_MARGIN = 12;
 
 - (void)backButtonPressed {
     CCScene *scene = [CCBReader loadAsScene:@"Startscreen"];
-    [[CCDirector sharedDirector] replaceScene:scene];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:0.3f];
+    [[CCDirector sharedDirector] replaceScene:scene withTransition:transition];
 }
 
 - (void)restoreButtonPressed {
@@ -170,6 +171,8 @@ static const NSInteger VERTICAL_MARGIN = 12;
 - (void)restoredPurchase:(NSNumber *)successfull {
     if ([successfull boolValue] == YES) {
         [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Your purchase has been restored. Levels have been unlocked. Have fun!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+        CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
+        [[CCDirector sharedDirector] replaceScene:mainScene];
     } else {
         [[[UIAlertView alloc] initWithTitle:@"Sorry" message:@"We couldn't find any purchases that could be restored." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
     }

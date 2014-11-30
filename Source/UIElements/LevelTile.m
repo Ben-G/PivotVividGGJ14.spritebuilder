@@ -7,6 +7,7 @@
 //
 
 #import "LevelTile.h"
+#import "IAPManager.h"
 
 @implementation LevelTile {
     CCSprite *_lock;
@@ -36,7 +37,13 @@
 
 - (void)setPremium:(BOOL)premium {
     _premium = premium;
-    _coin.visible = premium;
+
+    if (![[IAPManager sharedInstance] hasPurchasedPremium]) {
+        _coin.visible = premium;
+    } else {
+        // if premium purchased don't show locks anymore
+        _coin.visible = NO;
+    }
 }
 
 @end
